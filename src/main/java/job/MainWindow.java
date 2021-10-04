@@ -116,9 +116,9 @@ public final class MainWindow
         GLFW.glfwSetKeyCallback(_windowId, Keyboard::keyCallback); //https://www.glfw.org/docs/3.3/input_guide.html#input_key
     }
 
+    float red = 0.0f;
     private void Loop()
     {
-        float red = 0.0f;
         while(!GLFW.glfwWindowShouldClose(_windowId)) //while window shouldn't be closed
         {
             //Poll events
@@ -127,7 +127,7 @@ public final class MainWindow
             //Sets the clear value for fixed-point and floating-point color buffers in RGBA mode
             GL11.glClearColor(red, 0, 0, 1.0f);
 
-            TestJob(red); //можно мигать экраном нажимая стрелку вверх/вниз
+            TestJob(); //можно мигать экраном нажимая стрелку вверх/вниз
 
             //Sets portions of every pixel in a particular buffer to the same value
             GL11.glClear(GL11.GL_COLOR_BUFFER_BIT);
@@ -137,7 +137,7 @@ public final class MainWindow
         }
     }
 
-    private void TestJob(float red)
+    private void TestJob()
     {
         if(Keyboard.isKeyPressed(GLFW_KEY_UP))
         {
