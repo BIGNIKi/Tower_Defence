@@ -10,7 +10,7 @@ public final class Mouse
     private static Mouse mouse; //we have only one instance of this class
     private double scrollX, scrollY;
     private double xPos, yPos, lastX, lastY;
-    private boolean mouseButtonPressed[] = new boolean[3];
+    private final boolean[] mouseButtonPressed = new boolean[3];
     private boolean isDragging;
 
     //it is prohibited to create instance of class outside this class (Singleton)
