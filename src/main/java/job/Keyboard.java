@@ -10,7 +10,7 @@ import org.lwjgl.glfw.GLFW;
 public final class Keyboard
 {
     private static Keyboard kbd;
-    private boolean keyPressed[] = new boolean[350];
+    private final boolean[] keyPressed = new boolean[350];
 
     private Keyboard()
     {
