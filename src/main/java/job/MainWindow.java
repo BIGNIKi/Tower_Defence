@@ -1,5 +1,6 @@
 package job;
 
+import Util.Time;
 import org.lwjgl.Version;
 import org.lwjgl.glfw.Callbacks;
 import org.lwjgl.glfw.GLFW;
@@ -20,14 +21,40 @@ public final class MainWindow
 
     private long _windowId;
 
+    private static Scene currentScene;
+
+    public float r,g,b,a; //temp solution for filling screen
+
     //it is prohibited to create instance of class outside this class (Singleton)
     private MainWindow()
     {
         this.width = 800;
         this.heigth = 600;
         this.title = "Tower defense";
+        r = 1;
+        g = 1;
+        b = 1;
+        a = 1;
     }
 
+    //method for switching scenes
+    public static void changeScene(int newScene)
+    {
+        switch(newScene)
+        {
+            case 0:
+                currentScene = new LevelEditorScene();
+                break;
+            case 1:
+                currentScene = new LevelScene();
+                break;
+            default:
+                assert false : "Unknown scene '" + newScene + "'";
+                break;
+        }
+    }
+
+    //it is used for interaction with the class instance
     public static MainWindow get()
     {
         if(wnd == null)
@@ -101,6 +128,8 @@ public final class MainWindow
         GL.createCapabilities(); //we do this so that the library functions use the context of the current (our window) to draw something
 
         //just some interesting bullshit http://jmonkeyengine.ru/page/2/?author=0
+
+        MainWindow.changeScene(0);
     }
 
     //connects tracker of mouse events
@@ -116,42 +145,34 @@ public final class MainWindow
         GLFW.glfwSetKeyCallback(_windowId, Keyboard::keyCallback); //https://www.glfw.org/docs/3.3/input_guide.html#input_key
     }
 
-    float red = 0.0f;
+    //main loop of the application
     private void Loop()
     {
+        double beginTime = Time.getTime(); //the time when current frame was started
+        double dt = -1.0; //the time between a start and an end of a frame
+
         while(!GLFW.glfwWindowShouldClose(_windowId)) //while window shouldn't be closed
         {
             //Poll events
             GLFW.glfwPollEvents(); //Processes all pending events.
 
             //Sets the clear value for fixed-point and floating-point color buffers in RGBA mode
-            GL11.glClearColor(red, 0, 0, 1.0f);
-
-            TestJob(); //можно мигать экраном нажимая стрелку вверх/вниз
+            GL11.glClearColor(r, g, b, a);
 
             //Sets portions of every pixel in a particular buffer to the same value
             GL11.glClear(GL11.GL_COLOR_BUFFER_BIT);
 
+            if(dt >= 0)
+            {
+                currentScene.update(dt); //a job with current scene
+            }
+
             //Swaps the front and back buffers of the specified window when rendering with OpenGL
             GLFW.glfwSwapBuffers(_windowId);
-        }
-    }
 
-    private void TestJob()
-    {
-        if(Keyboard.isKeyPressed(GLFW_KEY_UP))
-        {
-            if(red < 1.0f)
-            {
-                red += 0.01f;
-            }
-        }
-        else if(Keyboard.isKeyPressed(GLFW_KEY_DOWN))
-        {
-            if(red > 0.0f)
-            {
-                red -= 0.01f;
-            }
+            double endTime = Time.getTime(); //the time when frame was ended
+            dt = endTime - beginTime;
+            beginTime = endTime;
         }
     }
 }
