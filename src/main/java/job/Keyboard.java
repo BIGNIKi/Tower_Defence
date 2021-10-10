@@ -3,9 +3,7 @@ package job;
 import static org.lwjgl.glfw.GLFW.GLFW_PRESS;
 import static org.lwjgl.glfw.GLFW.GLFW_RELEASE;
 
-//all bullshit connected with IO operation here https://www.glfw.org/docs/3.3/input_guide.html
-
-import org.lwjgl.glfw.GLFW;
+//all bullshit connected with I operation here https://www.glfw.org/docs/3.3/input_guide.html
 
 public final class Keyboard
 {
