@@ -44,9 +44,11 @@ public final class MainWindow
         {
             case 0:
                 currentScene = new LevelEditorScene();
+                currentScene.init();
                 break;
             case 1:
                 currentScene = new LevelScene();
+                currentScene.init();
                 break;
             default:
                 assert false : "Unknown scene '" + newScene + "'";
@@ -151,6 +153,9 @@ public final class MainWindow
         double beginTime = Time.getTime(); //the time when current frame was started
         double dt = -1.0; //the time between a start and an end of a frame
 
+        int frameCount = 0;
+        double previousTime = beginTime;
+
         while(!GLFW.glfwWindowShouldClose(_windowId)) //while window shouldn't be closed
         {
             //Poll events
@@ -171,7 +176,20 @@ public final class MainWindow
             GLFW.glfwSwapBuffers(_windowId);
 
             double endTime = Time.getTime(); //the time when frame was ended
+
+            frameCount++;
+
+            if ( endTime - previousTime >= 1.0 )
+            {
+                //if we turned on v-sync, frame rate can't be more than Hz of your monitor
+                System.out.println("FPS = " + frameCount);
+
+                frameCount = 0;
+                previousTime = endTime;
+            }
+
             dt = endTime - beginTime;
+            //System.out.println(dt);
             beginTime = endTime;
         }
     }
