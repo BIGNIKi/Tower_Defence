@@ -9,6 +9,9 @@
 layout (location = 0) in vec3 aPos; //position that we will send to the shader
 layout (location = 1) in vec4 aColor; //color that we will send to the shader
 
+uniform mat4 uProjection;
+uniform mat4 uView;
+
 //variable that we are going to pass to the fragment shader
 out vec4 fColor;
 
@@ -19,7 +22,7 @@ void main()
     //Variables that start with gl_ are special global variables.
     //gl_Position, является выходным вектором вершинного шейдера, задающим вектор положения в пространстве отсечения.
     //Установка значения gl_Position является необходимым условием для вывода чего-либо на экран.
-    gl_Position = vec4(aPos, 1.0); //значение координат пространства отсечения
+    gl_Position = uProjection * uView * vec4(aPos, 1.0); //значение координат пространства отсечения
     //про пространство отсечения хорошо написано здесь https://habr.com/ru/post/324968/
 }
 
