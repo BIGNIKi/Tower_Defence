@@ -8,17 +8,20 @@
 //http://steps3d.narod.ru/tutorials/layout-tutorial.html
 layout (location = 0) in vec3 aPos; //position that we will send to the shader
 layout (location = 1) in vec4 aColor; //color that we will send to the shader
+layout (location = 2) in vec2 aTexCoords;
 
 uniform mat4 uProjection;
 uniform mat4 uView;
 
 //variable that we are going to pass to the fragment shader
 out vec4 fColor;
+out vec2 fTexCoords;
 
 //all shaders must have main function
 void main()
 {
     fColor = aColor; //pass the color to the fragment shader
+    fTexCoords = aTexCoords;
     //Variables that start with gl_ are special global variables.
     //gl_Position, является выходным вектором вершинного шейдера, задающим вектор положения в пространстве отсечения.
     //Установка значения gl_Position является необходимым условием для вывода чего-либо на экран.
@@ -30,9 +33,11 @@ void main()
 #version 330 core
 
 uniform float uTime;
+uniform sampler2D TEX_SAMPLER;
 
 //in means a value that it takes in
 in vec4 fColor;
+in vec2 fTexCoords;
 
 out vec4 color; //it is a color we are outputting
 
@@ -43,6 +48,5 @@ void main()
         float avg = (fColor.r + fColor.g + fColor.b) / 3;
         color = vec4(avg, avg, avg, 1);
     */
-    float noise = fract(sin(dot(fColor.xy, vec2(12.9898, 78.233))) * 43758.5453);
-    color = fColor * noise;
+    color = texture(TEX_SAMPLER, fTexCoords);
 }

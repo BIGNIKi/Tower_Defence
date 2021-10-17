@@ -25,7 +25,7 @@ public class Camera
         //zNear - we can view any objects up to 0, zFar - we can veiw up to 100 away (units)
         //эти измерения НЕ в пикселях! Это некое разбиение экрана на "клетки" (unit'ы)
         //это создаёт аля усеченный конус в котором камера что-либо может видеть
-        projectionMatrix.ortho(0.0f, 32.0f * 40.0f, 0.0f, 32.0f * 21.0f, 0.0f, 100.0f);
+        projectionMatrix.ortho(0.0f, 32.0f * 40.0f, 0.0f, 32.0f * 21.0f, 0.0f, 100f);
     }
 
     //it defines where the camera is in world space
