@@ -28,8 +28,8 @@ public final class MainWindow
     //it is prohibited to create instance of class outside this class (Singleton)
     private MainWindow()
     {
-        this.width = 800;
-        this.heigth = 600;
+        this.width = 1920;
+        this.heigth = 1080;
         this.title = "Tower defense";
         r = 1;
         g = 1;

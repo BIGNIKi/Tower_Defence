@@ -4,6 +4,7 @@ import Util.Time;
 import org.joml.Vector2f;
 import org.lwjgl.BufferUtils;
 import renderer.Shader;
+import renderer.Texture;
 
 import java.nio.FloatBuffer;
 import java.nio.IntBuffer;
@@ -17,12 +18,15 @@ public class LevelEditorScene extends Scene
     private int vertexId, fragmentId, shaderProgram;
     //shaderProgram - the combination of the vertex and the fragment source
 
+    private float offsetX = 100f;
+    private float offsetY = 100f;
+
     private float[] vertexArray = {
-            //postion               //color
-            150.5f, 75.5f, 0.0f,      1.0f, 0.0f, 0.0f, 1.0f, //Bottom right - red
-            50.5f, 150.5f, 0.0f,      0.0f, 1.0f, 0.0f, 1.0f, //Top left - green
-            150.5f,  150.5f, 0.0f,   1.0f, 0.0f, 1.0f, 1.0f, //Top right - blue
-            50.5f, 75.5f, 0.0f,        1.0f, 1.0f, 0.0f, 1.0f //Bottom left - yellow
+            //postion               //color                     //UV coordinates
+            100f + offsetX,   0f + offsetY, 0.0f,      1.0f, 0.0f, 0.0f, 1.0f,      1, 1,   //Bottom right - red
+              0f + offsetX, 100f + offsetY, 0.0f,      0.0f, 1.0f, 0.0f, 1.0f,      0, 0,   //Top left - green
+            100f + offsetX, 100f + offsetY, 0.0f,      1.0f, 0.0f, 1.0f, 1.0f,      1, 0,   //Top right - blue
+              0f + offsetX,   0f + offsetY, 0.0f,      1.0f, 1.0f, 0.0f, 1.0f,      0, 1   //Bottom left - yellow
     };
 
     //IMPORTANT: must be in counter-clockwise order
@@ -42,12 +46,15 @@ public class LevelEditorScene extends Scene
 
     private Shader defaultShader;
 
+    private Texture testTexture;
+
     @Override
     public void init()
     {
         this.camera = new Camera(new Vector2f());
         defaultShader = new Shader("assets/shaders/default.glsl");
         defaultShader.compileAndLink();
+        testTexture = new Texture("assets/images/testImage.png");
 
         //Generate VAO, VBO, and EBO buffer objects, and send to GPU
 
@@ -81,14 +88,17 @@ public class LevelEditorScene extends Scene
         //это нужно, чтобы GPU понимала длину Vertex'а (например 3 float'а на координаты и 4 на цвет)
         int positionSize = 3; //how many positions (XYZ)
         int colorSize = 4; //how many colors (RGBA)
-        int floatSizeBytes = 4; //4 bytes for one float    (если бы мы писали на си, написали бы "sizeof(float)")
-        int vertexSizeBytes = (positionSize +  colorSize) * floatSizeBytes; //сколько байт на одну вершину
+        int uvSize = 2;
+        int vertexSizeBytes = (positionSize +  colorSize + uvSize) * Float.BYTES; //сколько байт на одну вершину
         //этой строчкой мы стучимся к шейдеру, передавая ему layout(location = 0) - aPos
         glVertexAttribPointer(0, positionSize, GL_FLOAT, false, vertexSizeBytes, 0);
         glEnableVertexAttribArray(0);
         //этой строчкой мы стучимся к шейдеру, передавая ему layout(location = 1) - aColor
-        glVertexAttribPointer(1, colorSize, GL_FLOAT, false, vertexSizeBytes, positionSize * floatSizeBytes);
+        glVertexAttribPointer(1, colorSize, GL_FLOAT, false, vertexSizeBytes, positionSize * Float.BYTES);
         glEnableVertexAttribArray(1);
+
+        glVertexAttribPointer(2, uvSize, GL_FLOAT, false, vertexSizeBytes, (positionSize + colorSize) * Float.BYTES);
+        glEnableVertexAttribArray(2);
     }
 
     public LevelEditorScene()
@@ -101,10 +111,13 @@ public class LevelEditorScene extends Scene
     @Override
     public void update(double dt)
     {
-        this.camera.position.x -= dt*50.0f;
-        this.camera.position.y -= dt*20.0f;
-
         defaultShader.use();
+
+        //Upload texture to shader
+        defaultShader.uploadTexture("TEX_SAMPLER", 0);
+        glActiveTexture(GL_TEXTURE0);
+        testTexture.bind();
+
         defaultShader.uploadMat4f("uProjection", camera.getProjectionMatrix());
         defaultShader.uploadMat4f("uView", camera.getViewMatrix());
         defaultShader.uploadFloat("uTime", (float)Time.getTime());
