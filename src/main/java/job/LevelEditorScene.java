@@ -1,5 +1,6 @@
 package job;
 
+import Util.Time;
 import org.joml.Vector2f;
 import org.lwjgl.BufferUtils;
 import renderer.Shader;
@@ -49,6 +50,9 @@ public class LevelEditorScene extends Scene
         defaultShader.compileAndLink();
 
         //Generate VAO, VBO, and EBO buffer objects, and send to GPU
+
+
+
         vaoId = glGenVertexArrays();
         //it is says: everything we are about to do make sure we are doing it to this array specifically
         //so make sure that everything that comes after this line is happening to this vertexArray
@@ -98,9 +102,12 @@ public class LevelEditorScene extends Scene
     public void update(double dt)
     {
         this.camera.position.x -= dt*50.0f;
+        this.camera.position.y -= dt*20.0f;
+
         defaultShader.use();
         defaultShader.uploadMat4f("uProjection", camera.getProjectionMatrix());
         defaultShader.uploadMat4f("uView", camera.getViewMatrix());
+        defaultShader.uploadFloat("uTime", (float)Time.getTime());
 
         //bind the VAO that we're using
         glBindVertexArray(vaoId);
