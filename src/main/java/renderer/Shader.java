@@ -1,6 +1,10 @@
 package renderer;
 
+import org.joml.Matrix4f;
+import org.lwjgl.BufferUtils;
+
 import java.io.IOException;
+import java.nio.FloatBuffer;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -67,7 +71,7 @@ public class Shader
         }
     }
 
-    public void compile()
+    public void compileAndLink()
     {
         int vertexId, fragmentId;
 
@@ -130,5 +134,14 @@ public class Shader
     public void detach()
     {
         glUseProgram(0); // GPU, use nothing
+    }
+
+    //загрузка uniform-переменных в шейдер
+    public void uploadMat4f(String varName, Matrix4f mat4)
+    {
+        int varLocation = glGetUniformLocation(shaderProgramID, varName);
+        FloatBuffer matBuffer = BufferUtils.createFloatBuffer(4*4);
+        mat4.get(matBuffer); //кладет mat4 в matBuffer
+        glUniformMatrix4fv(varLocation, false, matBuffer);
     }
 }
