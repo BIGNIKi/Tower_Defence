@@ -28,8 +28,8 @@ public final class MainWindow
     //it is prohibited to create instance of class outside this class (Singleton)
     private MainWindow()
     {
-        this.width = 1920;
-        this.heigth = 1080;
+        this.width = 960;
+        this.heigth = 540;
         this.title = "Tower defense";
         r = 1;
         g = 1;
@@ -45,10 +45,12 @@ public final class MainWindow
             case 0:
                 currentScene = new LevelEditorScene();
                 currentScene.init();
+                currentScene.start();
                 break;
             case 1:
                 currentScene = new LevelScene();
                 currentScene.init();
+                currentScene.start();
                 break;
             default:
                 assert false : "Unknown scene '" + newScene + "'";
