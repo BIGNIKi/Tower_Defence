@@ -68,6 +68,11 @@ public final class MainWindow
         return wnd;
     }
 
+    public static Scene getScene()
+    {
+        return get().currentScene;
+    }
+
     public void Run()
     {
         System.out.println("Hello LWGJL " + Version.getVersion() + "!");
