@@ -1,5 +1,6 @@
 package job;
 
+import Util.AssetPool;
 import components.SpriteRenderer;
 import org.joml.Vector2f;
 import org.joml.Vector4f;
@@ -33,9 +34,14 @@ public class LevelEditorScene extends Scene
                 this.addGameObjectToScene(go);
             }
         }
+
+        loadResources();
     }
 
-
+    private void loadResources()
+    {
+        AssetPool.getShader("assets/shaders/default.glsl");
+    }
 
     public LevelEditorScene()
     {
