@@ -11,8 +11,8 @@ import static org.lwjgl.stb.STBImage.*;
 public class Texture
 {
     private String filePath;
-
     private int texId;
+    private int width, height;
 
     public Texture (String filePath)
     {
@@ -46,6 +46,9 @@ public class Texture
 
         if(image != null)
         {
+            this.width = width.get(0);
+            this.height = height.get(0);
+
             if(channels.get(0) == 3) //RGB picture
             {
                 glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width.get(0), height.get(0), 0, GL_RGB, GL_UNSIGNED_BYTE, image);
@@ -81,4 +84,15 @@ public class Texture
     {
         glBindTexture(GL_TEXTURE_2D, 0);
     }
+
+    public int getWidth()
+    {
+        return width;
+    }
+
+    public int getHeight()
+    {
+        return height;
+    }
+
 }
