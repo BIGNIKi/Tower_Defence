@@ -1,6 +1,5 @@
 package job;
 
-import Util.Time;
 import org.lwjgl.Version;
 import org.lwjgl.glfw.Callbacks;
 import org.lwjgl.glfw.GLFW;
@@ -31,9 +30,9 @@ public final class MainWindow
         this.width = 960;
         this.heigth = 540;
         this.title = "Tower defense";
-        r = 1;
-        g = 1;
-        b = 1;
+        r = 23f/255f;
+        g = 23f/255f;
+        b = 23f/255f;
         a = 1;
     }
 
@@ -157,7 +156,7 @@ public final class MainWindow
     //main loop of the application
     private void Loop()
     {
-        double beginTime = Time.getTime(); //the time when current frame was started
+        double beginTime = glfwGetTime(); //the time when current frame was started
         double dt = -1.0; //the time between a start and an end of a frame
 
         int frameCount = 0;
@@ -182,7 +181,7 @@ public final class MainWindow
             //Swaps the front and back buffers of the specified window when rendering with OpenGL
             GLFW.glfwSwapBuffers(_windowId);
 
-            double endTime = Time.getTime(); //the time when frame was ended
+            double endTime = glfwGetTime(); //the time when frame was ended
 
             frameCount++;
 
