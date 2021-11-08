@@ -25,6 +25,9 @@ repositories {
 }
 
 dependencies {
+    // GSON
+    implementation 'com.google.code.gson:gson:2.8.9'
+
     // IM GUI stuff
     implementation "io.imgui.java:binding:$imguiVersion"
     implementation "io.imgui.java:lwjgl3:$imguiVersion"
