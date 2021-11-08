@@ -20,8 +20,11 @@ public class LevelEditorScene extends Scene
     public void init()
     {
         loadResources();
-
         this.camera = new Camera(new Vector2f());
+        if(levelLoaded)
+        {
+            return;
+        }
 
         sprites = AssetPool.getSpritesheet("assets/images/spritesheet.png");
 
@@ -51,10 +54,6 @@ public class LevelEditorScene extends Scene
 
         // the way to make colored rectangle without texture
         //obj1.addComponent(new SpriteRenderer(new Vector4f(1,0,0,1)));
-
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
-        System.out.println(gson.toJson(obj1));
     }
 
     private void loadResources()
