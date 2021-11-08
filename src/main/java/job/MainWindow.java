@@ -1,5 +1,6 @@
 package job;
 
+import com.sun.tools.javac.Main;
 import org.lwjgl.Version;
 import org.lwjgl.glfw.Callbacks;
 import org.lwjgl.glfw.GLFW;
@@ -13,17 +14,17 @@ import static org.lwjgl.system.MemoryUtil.NULL;
 
 public final class MainWindow
 {
-    private final int width, heigth;
-
+    private int width;
+    private int heigth;
     private final String title;
+    private long _windowId;
+    private IMGuiLayer imguiLayer;
+
+    public float r,g,b,a; //temp solution for filling screen
 
     private static MainWindow wnd = null; //we have only one instance of this class
 
-    private long _windowId;
-
     private static Scene currentScene;
-
-    public float r,g,b,a; //temp solution for filling screen
 
     //it is prohibited to create instance of class outside this class (Singleton)
     private MainWindow()
@@ -141,6 +142,8 @@ public final class MainWindow
 
         glEnable(GL_BLEND);
         glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
+        this.imguiLayer = new IMGuiLayer(_windowId);
+        this.imguiLayer.initImGui();
 
         //just some interesting bullshit http://jmonkeyengine.ru/page/2/?author=0
 
@@ -158,6 +161,10 @@ public final class MainWindow
         GLFW.glfwSetScrollCallback(_windowId, Mouse::mouseScrollCallback); //https://www.glfw.org/docs/3.3/input_guide.html#scrolling
         //registers keyboard events
         GLFW.glfwSetKeyCallback(_windowId, Keyboard::keyCallback); //https://www.glfw.org/docs/3.3/input_guide.html#input_key
+        glfwSetWindowSizeCallback(_windowId, (w, newWidth, newHeight) -> {
+            MainWindow.setWidth(newWidth);
+            MainWindow.setHeight(newHeight);
+        });
     }
 
     //main loop of the application
@@ -185,6 +192,7 @@ public final class MainWindow
                 currentScene.update(dt); //a job with current scene
             }
 
+            this.imguiLayer.update((float)dt);
             //Swaps the front and back buffers of the specified window when rendering with OpenGL
             GLFW.glfwSwapBuffers(_windowId);
 
@@ -205,5 +213,25 @@ public final class MainWindow
             //System.out.println(dt);
             beginTime = endTime;
         }
+    }
+
+    public static float getWidth()
+    {
+        return get().width;
+    }
+
+    public static float getHeight()
+    {
+        return get().heigth;
+    }
+
+    public static void setWidth(int newWidth)
+    {
+        get().width = newWidth;
+    }
+
+    public static void setHeight(int newHeight)
+    {
+        get().heigth = newHeight;
     }
 }
