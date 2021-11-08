@@ -176,6 +176,8 @@ public final class MainWindow
         int frameCount = 0;
         double previousTime = beginTime;
 
+        currentScene.load();
+
         while(!GLFW.glfwWindowShouldClose(_windowId)) //while window shouldn't be closed
         {
             //Poll events
@@ -213,6 +215,8 @@ public final class MainWindow
             //System.out.println(dt);
             beginTime = endTime;
         }
+
+        currentScene.saveExit();
     }
 
     public static float getWidth()

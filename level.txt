@@ -1,24 +1,7 @@
 [
   {
-    "uid": 0,
-    "name": "Way",
+    "name": "Object 1",
     "components": [
-      {
-        "type": "job.Transform",
-        "properties": {
-          "position": {
-            "x": -0.37500048,
-            "y": 0.12500012
-          },
-          "scale": {
-            "x": 0.25,
-            "y": 0.25
-          },
-          "rotation": 0.0,
-          "zIndex": 0,
-          "uid": 19
-        }
-      },
       {
         "type": "components.SpriteRenderer",
         "properties": {
@@ -29,10 +12,9 @@
             "w": 1.0
           },
           "sprite": {
-            "width": 121.0,
-            "height": 120.0,
             "texture": {
               "filePath": "assets/images/spritesheet.png",
+              "texId": 2,
               "width": 242,
               "height": 120
             },
@@ -54,176 +36,40 @@
                 "y": 1.0
               }
             ]
-          },
-          "uid": 20
+          }
         }
       }
     ],
-    "doSerialization": true,
-    "isDead": false
+    "transform": {
+      "position": {
+        "x": 100.0,
+        "y": 100.0
+      },
+      "scale": {
+        "x": 121.0,
+        "y": 120.0
+      }
+    },
+    "zIndex": 0
   },
   {
-    "uid": 1,
-    "name": "Way",
+    "name": "Object 2",
     "components": [
-      {
-        "type": "job.Transform",
-        "properties": {
-          "position": {
-            "x": -0.12870002,
-            "y": 0.12500012
-          },
-          "scale": {
-            "x": 0.25,
-            "y": 0.25
-          },
-          "rotation": 0.0,
-          "zIndex": 0,
-          "uid": 19
-        }
-      },
       {
         "type": "components.SpriteRenderer",
         "properties": {
           "color": {
             "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 121.0,
-            "height": 120.0,
-            "texture": {
-              "filePath": "assets/images/spritesheet.png",
-              "width": 242,
-              "height": 120
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 1.0
-              }
-            ]
-          },
-          "uid": 20
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 2,
-    "name": "Way",
-    "components": [
-      {
-        "type": "job.Transform",
-        "properties": {
-          "position": {
-            "x": 0.112555504,
-            "y": 0.12500012
-          },
-          "scale": {
-            "x": 0.25,
-            "y": 0.25
-          },
-          "rotation": 0.0,
-          "zIndex": 0,
-          "uid": 19
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 121.0,
-            "height": 120.0,
-            "texture": {
-              "filePath": "assets/images/spritesheet.png",
-              "width": 242,
-              "height": 120
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 1.0
-              }
-            ]
-          },
-          "uid": 20
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 3,
-    "name": "Enemy",
-    "components": [
-      {
-        "type": "job.Transform",
-        "properties": {
-          "position": {
-            "x": -0.4181621,
-            "y": 0.12500012
-          },
-          "scale": {
-            "x": 0.07,
-            "y": 0.07
-          },
-          "rotation": 0.0,
-          "zIndex": 1,
-          "uid": 21
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 0.17721534,
-            "y": 1.0,
+            "y": 0.0,
             "z": 0.0,
             "w": 1.0
           },
           "sprite": {
-            "width": 0.0,
-            "height": 0.0,
             "texture": {
-              "filePath": "assets/images/greenEnemy1.png",
-              "width": 200,
-              "height": 200
+              "filePath": "assets/images/White.png",
+              "texId": 3,
+              "width": 100,
+              "height": 100
             },
             "texCoords": [
               {
@@ -243,42 +89,25 @@
                 "y": 1.0
               }
             ]
-          },
-          "uid": 22
-        }
-      },
-      {
-        "type": "components.EnemyAI",
-        "properties": {
-          "speed": 0.4,
-          "distanceFinish": 0.0,
-          "uid": 27
+          }
         }
       }
     ],
-    "doSerialization": true,
-    "isDead": false
+    "transform": {
+      "position": {
+        "x": 400.0,
+        "y": 100.0
+      },
+      "scale": {
+        "x": 100.0,
+        "y": 100.0
+      }
+    },
+    "zIndex": 1
   },
   {
-    "uid": 4,
-    "name": "Way",
+    "name": "Object 3",
     "components": [
-      {
-        "type": "job.Transform",
-        "properties": {
-          "position": {
-            "x": 0.11299944,
-            "y": -0.12163663
-          },
-          "scale": {
-            "x": 0.25,
-            "y": 0.25
-          },
-          "rotation": 0.0,
-          "zIndex": 0,
-          "uid": 19
-        }
-      },
       {
         "type": "components.SpriteRenderer",
         "properties": {
@@ -289,264 +118,11 @@
             "w": 1.0
           },
           "sprite": {
-            "width": 121.0,
-            "height": 120.0,
             "texture": {
-              "filePath": "assets/images/spritesheet.png",
-              "width": 242,
-              "height": 120
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 1.0
-              }
-            ]
-          },
-          "uid": 20
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 5,
-    "name": "Way",
-    "components": [
-      {
-        "type": "job.Transform",
-        "properties": {
-          "position": {
-            "x": 0.11299944,
-            "y": -0.37141228
-          },
-          "scale": {
-            "x": 0.25,
-            "y": 0.25
-          },
-          "rotation": 0.0,
-          "zIndex": 0,
-          "uid": 19
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 121.0,
-            "height": 120.0,
-            "texture": {
-              "filePath": "assets/images/spritesheet.png",
-              "width": 242,
-              "height": 120
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 1.0
-              }
-            ]
-          },
-          "uid": 20
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 6,
-    "name": "Way",
-    "components": [
-      {
-        "type": "job.Transform",
-        "properties": {
-          "position": {
-            "x": 0.3492098,
-            "y": -0.37099993
-          },
-          "scale": {
-            "x": 0.25,
-            "y": 0.25
-          },
-          "rotation": 0.0,
-          "zIndex": 0,
-          "uid": 19
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 121.0,
-            "height": 120.0,
-            "texture": {
-              "filePath": "assets/images/spritesheet.png",
-              "width": 242,
-              "height": 120
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 1.0
-              }
-            ]
-          },
-          "uid": 20
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 7,
-    "name": "Way",
-    "components": [
-      {
-        "type": "job.Transform",
-        "properties": {
-          "position": {
-            "x": 0.60055494,
-            "y": -0.37099993
-          },
-          "scale": {
-            "x": 0.25,
-            "y": 0.25
-          },
-          "rotation": 0.0,
-          "zIndex": 0,
-          "uid": 19
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 121.0,
-            "height": 120.0,
-            "texture": {
-              "filePath": "assets/images/spritesheet.png",
-              "width": 242,
-              "height": 120
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 1.0
-              }
-            ]
-          },
-          "uid": 20
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 8,
-    "name": "base",
-    "components": [
-      {
-        "type": "job.Transform",
-        "properties": {
-          "position": {
-            "x": 0.6149099,
-            "y": -0.37499988
-          },
-          "scale": {
-            "x": 0.125,
-            "y": 0.125
-          },
-          "rotation": 0.0,
-          "zIndex": 0,
-          "uid": 23
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 0.0,
-            "height": 0.0,
-            "texture": {
-              "filePath": "assets/images/base.png",
-              "width": 264,
-              "height": 250
+              "filePath": "assets/images/White.png",
+              "texId": 3,
+              "width": 100,
+              "height": 100
             },
             "texCoords": [
               {
@@ -566,207 +142,20 @@
                 "y": 1.0
               }
             ]
-          },
-          "uid": 24
+          }
         }
       }
     ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 9,
-    "name": "posForTower",
-    "components": [
-      {
-        "type": "job.Transform",
-        "properties": {
-          "position": {
-            "x": 0.36401272,
-            "y": 0.37634528
-          },
-          "scale": {
-            "x": 0.25,
-            "y": 0.25
-          },
-          "rotation": 0.0,
-          "zIndex": 0,
-          "uid": 25
-        }
+    "transform": {
+      "position": {
+        "x": 450.0,
+        "y": 100.0
       },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 121.0,
-            "height": 120.0,
-            "texture": {
-              "filePath": "assets/images/spritesheet.png",
-              "width": 242,
-              "height": 120
-            },
-            "texCoords": [
-              {
-                "x": 0.5,
-                "y": 1.0
-              },
-              {
-                "x": 0.5,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "uid": 26
-        }
+      "scale": {
+        "x": 100.0,
+        "y": 100.0
       }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 10,
-    "name": "towerSt",
-    "components": [
-      {
-        "type": "job.Transform",
-        "properties": {
-          "position": {
-            "x": 0.36155462,
-            "y": 0.37951648
-          },
-          "scale": {
-            "x": 0.16622376,
-            "y": 0.16622376
-          },
-          "rotation": 0.0,
-          "zIndex": 0,
-          "uid": 23
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 0.0,
-            "height": 0.0,
-            "texture": {
-              "filePath": "assets/images/standTower.png",
-              "width": 80,
-              "height": 80
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "uid": 24
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 11,
-    "name": "Tower",
-    "components": [
-      {
-        "type": "job.Transform",
-        "properties": {
-          "position": {
-            "x": 0.36350012,
-            "y": 0.3773023
-          },
-          "scale": {
-            "x": 0.08556497,
-            "y": 0.15383644
-          },
-          "rotation": 0.0,
-          "zIndex": 0,
-          "uid": 48
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 0.0,
-            "height": 0.0,
-            "texture": {
-              "filePath": "assets/images/standTower1.png",
-              "width": 32,
-              "height": 60
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "uid": 49
-        }
-      },
-      {
-        "type": "components.TowerRotate",
-        "properties": {
-          "uid": 70
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
+    },
+    "zIndex": 0
   }
 ]

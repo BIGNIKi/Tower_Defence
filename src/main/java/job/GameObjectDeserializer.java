@@ -1,19 +1,11 @@
 package job;
 
 import com.google.gson.*;
-import components.Component;
-import scenes.Scene;
 
 import java.lang.reflect.Type;
 
 public class GameObjectDeserializer implements JsonDeserializer<GameObject>
 {
-    private Scene currentScene;
-
-    public GameObjectDeserializer(Scene currentScene)
-    {
-        this.currentScene = currentScene;
-    }
 
     @Override
     public GameObject deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException
@@ -21,14 +13,15 @@ public class GameObjectDeserializer implements JsonDeserializer<GameObject>
         JsonObject jsonObject = json.getAsJsonObject();
         String name = jsonObject.get("name").getAsString();
         JsonArray components = jsonObject.getAsJsonArray("components");
+        Transform transform = context.deserialize(jsonObject.get("transform"), Transform.class);
+        int zIndex = context.deserialize(jsonObject.get("zIndex"), int.class);
 
-        GameObject go = new GameObject(name, currentScene);
+        GameObject go = new GameObject(name, transform, zIndex);
         for(JsonElement e : components)
         {
             Component c = context.deserialize(e, Component.class);
             go.addComponent(c);
         }
-        go.transform = go.getComponent(Transform.class);
         return go;
     }
 }
