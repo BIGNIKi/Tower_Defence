@@ -22,23 +22,27 @@ public class LevelEditorScene extends Scene
 
         sprites = AssetPool.getSpritesheet("assets/images/spritesheet.png");
 
-        obj1 = new GameObject("Object 1", new Transform(new Vector2f(100, 100), new Vector2f(334, 312)));
+        obj1 = new GameObject("Object 1", new Transform(new Vector2f(100, 100), new Vector2f(121, 120)), 0);
         obj1.addComponent(new SpriteRenderer(sprites.getSprite(0)));
         this.addGameObjectToScene(obj1);
 
-        GameObject obj2 = new GameObject("Object 2", new Transform(new Vector2f(600, 100), new Vector2f(121, 120)));
-        obj2.addComponent(new SpriteRenderer(sprites.getSprite(1)));
-        this.addGameObjectToScene(obj2);
+        //GameObject obj2 = new GameObject("Object 2", new Transform(new Vector2f(600, 100), new Vector2f(121, 120)));
+        //obj2.addComponent(new SpriteRenderer(sprites.getSprite(1)));
+        //this.addGameObjectToScene(obj2);
 
 
         // Below is the way to load and draw particular image
         /*GameObject obj1 = new GameObject("Object 1", new Transform(new Vector2f(100, 100), new Vector2f(131, 132)));
         obj1.addComponent(new SpriteRenderer(new Sprite(AssetPool.getTexture("assets/images/Stone0.png"))));
         this.addGameObjectToScene(obj1);
+        */
 
-        GameObject obj2 = new GameObject("Object 2", new Transform(new Vector2f(400, 100), new Vector2f(132, 132)));
-        obj2.addComponent(new SpriteRenderer(new Sprite(AssetPool.getTexture("assets/images/SpaceForTower.png"))));
-        this.addGameObjectToScene(obj2);*/
+        GameObject obj2 = new GameObject("Object 2", new Transform(new Vector2f(400, 100), new Vector2f(100, 100)), 1);
+        obj2.addComponent(new SpriteRenderer(new Sprite(AssetPool.getTexture("assets/images/Red.png"))));
+        this.addGameObjectToScene(obj2);
+        GameObject obj3 = new GameObject("Object 3", new Transform(new Vector2f(450, 100), new Vector2f(100, 100)), 0);
+        obj3.addComponent(new SpriteRenderer(new Sprite(AssetPool.getTexture("assets/images/Yellow.png"))));
+        this.addGameObjectToScene(obj3);
     }
 
     private void loadResources()
