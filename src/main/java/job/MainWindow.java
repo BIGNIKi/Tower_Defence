@@ -8,6 +8,7 @@ import org.lwjgl.opengl.GL;
 import org.lwjgl.opengl.GL11;
 
 import static org.lwjgl.glfw.GLFW.*;
+import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.system.MemoryUtil.NULL;
 
 public final class MainWindow
@@ -33,6 +34,9 @@ public final class MainWindow
         r = 23f/255f;
         g = 23f/255f;
         b = 23f/255f;
+        //r = 1;
+        //g = 1;
+        //b = 1;
         a = 1;
     }
 
@@ -134,6 +138,9 @@ public final class MainWindow
         GLFW.glfwShowWindow(_windowId); //Makes the specified window visible if it was previously hidden
 
         GL.createCapabilities(); //we do this so that the library functions use the context of the current (our window) to draw something
+
+        glEnable(GL_BLEND);
+        glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
 
         //just some interesting bullshit http://jmonkeyengine.ru/page/2/?author=0
 
