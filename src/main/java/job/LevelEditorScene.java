@@ -97,6 +97,7 @@ public class LevelEditorScene extends Scene
     {
         ImGui.begin("Параметры Игоря");
         ImGui.text("Урон: 5000");
+        ImGui.text("Длина: 15");
         ImGui.end();
     }
 }
