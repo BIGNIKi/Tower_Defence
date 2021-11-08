@@ -192,7 +192,7 @@ public final class MainWindow
                 currentScene.update(dt); //a job with current scene
             }
 
-            this.imguiLayer.update((float)dt);
+            this.imguiLayer.update((float)dt, currentScene);
             //Swaps the front and back buffers of the specified window when rendering with OpenGL
             GLFW.glfwSwapBuffers(_windowId);
 

@@ -4,6 +4,7 @@ import Util.AssetPool;
 import components.Sprite;
 import components.SpriteRenderer;
 import components.SpriteSheet;
+import imgui.ImGui;
 import org.joml.Vector2f;
 import org.joml.Vector4f;
 import org.lwjgl.system.CallbackI;
@@ -38,11 +39,16 @@ public class LevelEditorScene extends Scene
         */
 
         GameObject obj2 = new GameObject("Object 2", new Transform(new Vector2f(400, 100), new Vector2f(100, 100)), 1);
-        obj2.addComponent(new SpriteRenderer(new Sprite(AssetPool.getTexture("assets/images/Red.png"))));
+        obj2.addComponent(new SpriteRenderer(new Sprite(AssetPool.getTexture("assets/images/White.png"))));
         this.addGameObjectToScene(obj2);
         GameObject obj3 = new GameObject("Object 3", new Transform(new Vector2f(450, 100), new Vector2f(100, 100)), 0);
-        obj3.addComponent(new SpriteRenderer(new Sprite(AssetPool.getTexture("assets/images/Yellow.png"))));
+        obj3.addComponent(new SpriteRenderer(new Sprite(AssetPool.getTexture("assets/images/White.png"))));
         this.addGameObjectToScene(obj3);
+
+        this.activeGameObject = obj2;
+
+        // the way to make colored rectangle without texture
+        //obj1.addComponent(new SpriteRenderer(new Vector4f(1,0,0,1)));
     }
 
     private void loadResources()
@@ -84,5 +90,13 @@ public class LevelEditorScene extends Scene
             go.update((float)dt);
         }
         this.renderer.render();
+    }
+
+    @Override
+    public void imgui()
+    {
+        ImGui.begin("Параметры Игоря");
+        ImGui.text("Урон: 5000");
+        ImGui.end();
     }
 }
