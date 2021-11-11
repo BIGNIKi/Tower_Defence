@@ -15,7 +15,7 @@ public class SpriteRenderer extends Component
 
     //transient - означает, что процесс сериализации будет игнорить эти поля
     private transient Transform lastTransform;
-    private transient boolean isDirty = false;
+    private transient boolean isDirty = true;
 
 /*    public SpriteRenderer(Vector4f color)
     {

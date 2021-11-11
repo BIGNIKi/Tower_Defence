@@ -3,6 +3,7 @@ package job;
 import Util.AssetPool;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import components.Regidbody;
 import components.Sprite;
 import components.SpriteRenderer;
 import components.SpriteSheet;
@@ -23,6 +24,7 @@ public class LevelEditorScene extends Scene
         this.camera = new Camera(new Vector2f());
         if(levelLoaded)
         {
+            this.activeGameObject = gameObjects.get(0);
             return;
         }
 
@@ -40,6 +42,7 @@ public class LevelEditorScene extends Scene
         obj2Sprite.setTexture(AssetPool.getTexture("assets/images/White.png"));
         obj2SpriteRenderer.setSprite(obj2Sprite);
         obj2.addComponent(obj2SpriteRenderer);
+        obj2.addComponent(new Regidbody());
         this.addGameObjectToScene(obj2);
 
         GameObject obj3 = new GameObject("Object 3", new Transform(new Vector2f(450, 100), new Vector2f(100, 100)), 0);
@@ -50,7 +53,15 @@ public class LevelEditorScene extends Scene
         obj3.addComponent(obj3SpriteRenderer);
         this.addGameObjectToScene(obj3);
 
-        this.activeGameObject = obj2;
+/*        GameObject obj2 = new GameObject("Object 2", new Transform(new Vector2f(400, 100), new Vector2f(100, 100)), 1);
+        SpriteRenderer obj2SpriteRenderer = new SpriteRenderer();
+        obj2SpriteRenderer.setColor(new Vector4f(1, 0, 0, 1));
+        //Sprite obj2Sprite = new Sprite();
+        //obj2Sprite.setTexture(AssetPool.getTexture("assets/images/White.png"));
+        //obj2SpriteRenderer.setSprite(obj2Sprite);
+        obj2.addComponent(obj2SpriteRenderer);
+        obj2.addComponent(new Regidbody());
+        this.addGameObjectToScene(obj2);*/
 
         // the way to make colored rectangle without texture
         //obj1.addComponent(new SpriteRenderer(new Vector4f(1,0,0,1)));
@@ -78,7 +89,7 @@ public class LevelEditorScene extends Scene
     @Override
     public void update(double dt)
     {
-        spriteFlipTimeLeft -= dt;
+/*        spriteFlipTimeLeft -= dt;
         if(spriteFlipTimeLeft <= 0)
         {
             spriteFlipTimeLeft = spriteFlipTime;
@@ -88,7 +99,7 @@ public class LevelEditorScene extends Scene
                 spriteIndex = 0;
             }
             obj1.getComponent(SpriteRenderer.class).setSprite(sprites.getSprite(spriteIndex));
-        }
+        }*/
 
         for(GameObject go : this.gameObjects)
         {
@@ -102,7 +113,7 @@ public class LevelEditorScene extends Scene
     {
         ImGui.begin("Параметры Игоря");
         ImGui.text("Урон: 5000");
-        ImGui.text("Длина: 15");
+        ImGui.text("HP: 1");
         ImGui.end();
     }
 }
