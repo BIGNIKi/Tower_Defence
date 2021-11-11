@@ -1,10 +1,7 @@
 package components;
 
-import editor.JImGui;
 import imgui.ImGui;
-import imgui.type.ImInt;
 import job.GameObject;
-import org.joml.Vector2f;
 import org.joml.Vector3f;
 import org.joml.Vector4f;
 
@@ -28,11 +25,6 @@ public abstract class Component
 
     }
 
-    public void editorUpdate(float dt) {
-
-    }
-
-    // здесь написано, как инспектор должен отображать тот или иной тип данных
     public void imgui()
     {
         try
@@ -56,12 +48,20 @@ public abstract class Component
                 if(type == int.class)
                 {
                     int val = (int)value;
-                    field.set(this, JImGui.dragInt(name, val));
+                    int[] imInt = {val};
+                    if(ImGui.dragInt(name + ": ", imInt))
+                    {
+                        field.set(this, imInt[0]);
+                    }
                 }
                 else if(type == float.class)
                 {
                     float val = (float)value;
-                    field.set(this, JImGui.dragFloat(name, val));
+                    float[] imFloat = {val};
+                    if(ImGui.dragFloat(name + ": ", imFloat))
+                    {
+                        field.set(this, imFloat[0]);
+                    }
                 }
                 else if(type == boolean.class)
                 {
@@ -70,11 +70,6 @@ public abstract class Component
                     {
                         field.set(this, !val);
                     }
-                }
-                else if(type == Vector2f.class)
-                {
-                    Vector2f val = (Vector2f)value;
-                    JImGui.drawVec2Control(name, val);
                 }
                 else if(type == Vector3f.class)
                 {
@@ -93,22 +88,6 @@ public abstract class Component
                     {
                         val.set(imVec[0], imVec[1], imVec[2], imVec[3]);
                     }
-                }
-                else if (type.isEnum())
-                {
-                    String[] enumValues = getEnumValues(type);
-                    String enumType = ((Enum)value).name();
-                    ImInt index = new ImInt(indexOf(enumType, enumValues));
-                    if (ImGui.combo(field.getName(), index, enumValues, enumValues.length))
-                    {
-                        field.set(this, type.getEnumConstants()[index.get()]);
-                    }
-                }
-                else if (type == String.class)
-                {
-                    field.set(this,
-                            JImGui.inputText(field.getName() + ": ",
-                                    (String)value));
                 }
 
                 if(isPrivate)
@@ -131,26 +110,6 @@ public abstract class Component
         }
     }
 
-    private <T extends Enum<T>> String[] getEnumValues(Class<T> enumType) {
-        String[] enumValues = new String[enumType.getEnumConstants().length];
-        int i = 0;
-        for (T enumIntegerValue : enumType.getEnumConstants()) {
-            enumValues[i] = enumIntegerValue.name();
-            i++;
-        }
-        return enumValues;
-    }
-
-    private int indexOf(String str, String[] arr) {
-        for (int i=0; i < arr.length; i++) {
-            if (str.equals(arr[i])) {
-                return i;
-            }
-        }
-
-        return -1;
-    }
-
     public int getUid()
     {
         return this.uid;
@@ -159,9 +118,5 @@ public abstract class Component
     public static void init(int maxId)
     {
         ID_COUNTER = maxId;
-    }
-
-    public void destroy() {
-
     }
 }

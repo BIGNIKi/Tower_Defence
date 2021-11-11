@@ -1,4 +1,7 @@
-package job;
+package scenes;
+
+import job.MainWindow;
+import scenes.Scene;
 
 public class LevelScene extends Scene
 {
