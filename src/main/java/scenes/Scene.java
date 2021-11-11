@@ -1,9 +1,13 @@
-package job;
+package scenes;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import components.Component;
+import components.ComponentDeserializer;
 import imgui.ImGui;
-import org.lwjgl.system.CallbackI;
+import job.Camera;
+import job.GameObject;
+import job.GameObjectDeserializer;
 import renderer.Renderer;
 
 import java.io.FileWriter;
@@ -120,11 +124,30 @@ public abstract class Scene
 
         if(!inFile.equals(""))
         {
+            int maxGoId = -1;
+            int maxCompId = -1;
             GameObject[] objs = gson.fromJson(inFile, GameObject[].class);
             for(int i = 0; i<objs.length; i++)
             {
                 addGameObjectToScene(objs[i]);
+
+                for(Component c : objs[i].getAllComponents())
+                {
+                    if(c.getUid() > maxCompId)
+                    {
+                        maxCompId = c.getUid();
+                    }
+                }
+                if(objs[i].getUid() > maxGoId)
+                {
+                    maxGoId = objs[i].getUid();
+                }
             }
+
+            maxGoId++;
+            maxCompId++;
+            GameObject.init(maxGoId);
+            Component.init(maxCompId);
             this.levelLoaded = true;
         }
 

@@ -1,10 +1,9 @@
 package components;
 
-import job.Component;
 import org.joml.Vector3f;
 import org.joml.Vector4f;
 
-public class Regidbody extends Component
+public class Rigidbody extends Component
 {
     private int colliderType = 0;
     private float friction = 0.8f;

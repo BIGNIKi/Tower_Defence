@@ -1,22 +1,21 @@
-package job;
+package scenes;
 
 import Util.AssetPool;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import components.Regidbody;
-import components.Sprite;
-import components.SpriteRenderer;
-import components.SpriteSheet;
+import components.*;
 import imgui.ImGui;
 import imgui.ImVec2;
+import job.Camera;
+import job.GameObject;
+import job.Prefabs;
+import job.Transform;
 import org.joml.Vector2f;
-import org.joml.Vector4f;
-import org.lwjgl.system.CallbackI;
 
 public class LevelEditorScene extends Scene
 {
     private GameObject obj1;
     private SpriteSheet sprites;
+
+    MouseControls mouseControls = new MouseControls();
 
     @Override
     public void init()
@@ -42,7 +41,7 @@ public class LevelEditorScene extends Scene
         obj2Sprite.setTexture(AssetPool.getTexture("assets/images/White.png"));
         obj2SpriteRenderer.setSprite(obj2Sprite);
         obj2.addComponent(obj2SpriteRenderer);
-        obj2.addComponent(new Regidbody());
+        obj2.addComponent(new Rigidbody());
         this.addGameObjectToScene(obj2);
 
         GameObject obj3 = new GameObject("Object 3", new Transform(new Vector2f(450, 100), new Vector2f(100, 100)), 0);
@@ -89,6 +88,7 @@ public class LevelEditorScene extends Scene
     @Override
     public void update(double dt)
     {
+        mouseControls.update((float)dt);
 /*        spriteFlipTimeLeft -= dt;
         if(spriteFlipTimeLeft <= 0)
         {
@@ -136,7 +136,9 @@ public class LevelEditorScene extends Scene
             ImGui.pushID(i);
             if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[0].x, texCoords[0].y, texCoords[2].x, texCoords[2].y))
             {
-                System.out.println("Button " + i + " clicked");
+                GameObject object = Prefabs.generateSpriteObject(sprite, sprite.getWidth(), sprite.getHeight());
+                // Attach this to the mouse cursor
+                mouseControls.pickupObject(object);
             }
             ImGui.popID();
 

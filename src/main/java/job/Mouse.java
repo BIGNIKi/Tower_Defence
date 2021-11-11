@@ -13,7 +13,7 @@ public final class Mouse
     private static Mouse mouse; //we have only one instance of this class
     private double scrollX, scrollY;
     private double xPos, yPos, lastX, lastY;
-    private final boolean[] mouseButtonPressed = new boolean[3];
+    private final boolean[] mouseButtonPressed = new boolean[9];
     private boolean isDragging;
 
     //it is prohibited to create instance of class outside this class (Singleton)
@@ -106,7 +106,7 @@ public final class Mouse
 
     public static float getOrthoY()
     {
-        float currentY = getY();
+        float currentY = MainWindow.getHeight() - getY();
         currentY = (currentY / (float)MainWindow.getHeight()) * 2.0f - 1.0f;
         Vector4f tmp = new Vector4f(0, currentY, 0, 1);
         tmp.mul(MainWindow.getScene().camera().getInverseProjection()).mul(MainWindow.getScene().camera().getInverseVeiw());

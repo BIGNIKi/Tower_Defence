@@ -1,11 +1,9 @@
 package components;
 
 import imgui.ImGui;
-import job.Component;
 import job.Transform;
 import org.joml.Vector2f;
 import org.joml.Vector4f;
-import org.lwjgl.system.CallbackI;
 import renderer.Texture;
 
 public class SpriteRenderer extends Component
