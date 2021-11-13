@@ -34,8 +34,8 @@ public final class MainWindow
     //it is prohibited to create instance of class outside this class (Singleton)
     private MainWindow()
     {
-        this.width = 960;
-        this.heigth = 540;
+        this.width = 1920;
+        this.heigth = 1080;
         this.title = "Tower defense";
         r = 23f/255f;
         g = 23f/255f;
@@ -149,7 +149,8 @@ public final class MainWindow
         this.imguiLayer = new IMGuiLayer(_windowId);
         this.imguiLayer.initImGui();
 
-        this.framebuffer = new Framebuffer(1980,1080);
+        this.framebuffer = new Framebuffer(1920,1080);
+        glViewport(0, 0, 1920, 1080);
 
         //just some interesting bullshit http://jmonkeyengine.ru/page/2/?author=0
 
@@ -189,13 +190,13 @@ public final class MainWindow
 
             DebugDraw.beginFrame();
 
+            this.framebuffer.bind();
             //Sets the clear value for fixed-point and floating-point color buffers in RGBA mode
             GL11.glClearColor(r, g, b, a);
 
             //Sets portions of every pixel in a particular buffer to the same value
             GL11.glClear(GL11.GL_COLOR_BUFFER_BIT);
 
-            //this.framebuffer.bind();
             if(dt >= 0)
             {
                 DebugDraw.draw();
@@ -246,5 +247,15 @@ public final class MainWindow
     public static void setHeight(int newHeight)
     {
         get().heigth = newHeight;
+    }
+
+    public static Framebuffer getFramebuffer()
+    {
+        return get().framebuffer;
+    }
+
+    public static float getTargetAspectRatio()
+    {
+        return 16.0f / 9.0f;
     }
 }
