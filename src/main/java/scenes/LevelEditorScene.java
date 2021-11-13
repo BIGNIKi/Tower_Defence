@@ -9,6 +9,9 @@ import job.GameObject;
 import job.Prefabs;
 import job.Transform;
 import org.joml.Vector2f;
+import org.joml.Vector3f;
+import org.lwjgl.system.CallbackI;
+import renderer.DebugDraw;
 
 public class LevelEditorScene extends Scene
 {
@@ -21,8 +24,11 @@ public class LevelEditorScene extends Scene
     public void init()
     {
         loadResources();
-        this.camera = new Camera(new Vector2f());
+        this.camera = new Camera(new Vector2f(-250,0));
         sprites = AssetPool.getSpritesheet("assets/images/spritesheet.png");
+
+        //DebugDraw.addLine2D(new Vector2f(0,0), new Vector2f(800, 800), new Vector3f(1, 1, 1), 120);
+
         if(levelLoaded)
         {
             this.activeGameObject = gameObjects.get(0);
@@ -85,10 +91,17 @@ public class LevelEditorScene extends Scene
     private int spriteIndex = 0;
     private float spriteFlipTime = 0.3f;
     private float spriteFlipTimeLeft = 0.0f;
+    float t = 0.0f;
     @Override
     public void update(double dt)
     {
         mouseControls.update((float)dt);
+
+        float x = ((float)Math.sin(t) * 200.0f) + 600;
+        float y = ((float)Math.cos(t) * 200.0f) + 400;
+        t += 0.05f;
+        DebugDraw.addLine2D(new Vector2f(600, 400), new Vector2f(x, y), new Vector3f(0, 0, 1), 100);
+
 /*        spriteFlipTimeLeft -= dt;
         if(spriteFlipTimeLeft <= 0)
         {
