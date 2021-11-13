@@ -129,6 +129,11 @@ public class LevelEditorScene extends Scene
         {
             go.update((float)dt);
         }
+    }
+
+    @Override
+    public void render()
+    {
         this.renderer.render();
     }
 
