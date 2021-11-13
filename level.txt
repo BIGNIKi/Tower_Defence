@@ -22,19 +22,19 @@
             },
             "texCoords": [
               {
-                "x": 1.0,
+                "x": 0.5,
                 "y": 1.0
               },
               {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
                 "x": 0.5,
                 "y": 0.0
               },
               {
-                "x": 0.5,
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
                 "y": 1.0
               }
             ]
@@ -45,7 +45,7 @@
     ],
     "transform": {
       "position": {
-        "x": 450.0,
+        "x": 550.0,
         "y": 300.0
       },
       "scale": {
@@ -157,8 +157,8 @@
     ],
     "transform": {
       "position": {
-        "x": 550.0,
-        "y": 300.0
+        "x": 500.0,
+        "y": 350.0
       },
       "scale": {
         "x": 50.0,
@@ -213,8 +213,8 @@
     ],
     "transform": {
       "position": {
-        "x": 450.0,
-        "y": 250.0
+        "x": 550.0,
+        "y": 350.0
       },
       "scale": {
         "x": 50.0,
@@ -269,8 +269,8 @@
     ],
     "transform": {
       "position": {
-        "x": 550.0,
-        "y": 250.0
+        "x": 600.0,
+        "y": 300.0
       },
       "scale": {
         "x": 50.0,
@@ -325,8 +325,8 @@
     ],
     "transform": {
       "position": {
-        "x": 450.0,
-        "y": 200.0
+        "x": 600.0,
+        "y": 350.0
       },
       "scale": {
         "x": 50.0,
@@ -381,8 +381,8 @@
     ],
     "transform": {
       "position": {
-        "x": 550.0,
-        "y": 200.0
+        "x": 500.0,
+        "y": 250.0
       },
       "scale": {
         "x": 50.0,
@@ -437,8 +437,8 @@
     ],
     "transform": {
       "position": {
-        "x": 500.0,
-        "y": 200.0
+        "x": 550.0,
+        "y": 250.0
       },
       "scale": {
         "x": 50.0,
@@ -470,19 +470,19 @@
             },
             "texCoords": [
               {
-                "x": 0.5,
+                "x": 1.0,
                 "y": 1.0
               },
               {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
                 "x": 0.5,
                 "y": 0.0
               },
               {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
+                "x": 0.5,
                 "y": 1.0
               }
             ]
@@ -493,176 +493,8 @@
     ],
     "transform": {
       "position": {
-        "x": 500.0,
+        "x": 600.0,
         "y": 250.0
-      },
-      "scale": {
-        "x": 50.0,
-        "y": 50.0
-      }
-    },
-    "zIndex": 0
-  },
-  {
-    "uid": 10,
-    "name": "Sprite_Object_Gen",
-    "components": [
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 121.0,
-            "height": 120.0,
-            "texture": {
-              "filePath": "assets/images/spritesheet.png",
-              "width": 242,
-              "height": 120
-            },
-            "texCoords": [
-              {
-                "x": 0.5,
-                "y": 1.0
-              },
-              {
-                "x": 0.5,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "uid": 13
-        }
-      }
-    ],
-    "transform": {
-      "position": {
-        "x": 1000.0,
-        "y": 550.0
-      },
-      "scale": {
-        "x": 50.0,
-        "y": 50.0
-      }
-    },
-    "zIndex": 0
-  },
-  {
-    "uid": 11,
-    "name": "Sprite_Object_Gen",
-    "components": [
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 121.0,
-            "height": 120.0,
-            "texture": {
-              "filePath": "assets/images/spritesheet.png",
-              "width": 242,
-              "height": 120
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 1.0
-              }
-            ]
-          },
-          "uid": 16
-        }
-      }
-    ],
-    "transform": {
-      "position": {
-        "x": 650.0,
-        "y": 650.0
-      },
-      "scale": {
-        "x": 50.0,
-        "y": 50.0
-      }
-    },
-    "zIndex": 0
-  },
-  {
-    "uid": 12,
-    "name": "Sprite_Object_Gen",
-    "components": [
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 121.0,
-            "height": 120.0,
-            "texture": {
-              "filePath": "assets/images/spritesheet.png",
-              "width": 242,
-              "height": 120
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 1.0
-              }
-            ]
-          },
-          "uid": 19
-        }
-      }
-    ],
-    "transform": {
-      "position": {
-        "x": 1000.0,
-        "y": 650.0
       },
       "scale": {
         "x": 50.0,
