@@ -90,6 +90,8 @@ public class LevelEditorScene extends Scene
     public void update(double dt)
     {
         levelEditorStuff.update((float)dt);
+        DebugDraw.addBox2D(new Vector2f(200, 200), new Vector2f(64, 32), 0);
+        DebugDraw.addCircle(new Vector2f(300, 300), 50);
 
 /*        float x = ((float)Math.sin(t) * 200.0f) + 600;
         float y = ((float)Math.cos(t) * 200.0f) + 400;
