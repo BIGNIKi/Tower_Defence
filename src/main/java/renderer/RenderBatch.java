@@ -178,7 +178,7 @@ public class RenderBatch implements Comparable<RenderBatch>
         {
             for(int i = 0; i<textures.size(); i++)
             {
-                if(textures.get(i) == sprite.getTexture())
+                if(textures.get(i).equals(sprite.getTexture()))
                 {
                     texId = i + 1;
                     break;
