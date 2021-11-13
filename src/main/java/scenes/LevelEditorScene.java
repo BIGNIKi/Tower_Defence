@@ -35,7 +35,10 @@ public class LevelEditorScene extends Scene
 
         if(levelLoaded)
         {
-            this.activeGameObject = gameObjects.get(0);
+            if(gameObjects.size() > 0)
+            {
+                this.activeGameObject = gameObjects.get(0);
+            }
             return;
         }
 
@@ -73,6 +76,18 @@ public class LevelEditorScene extends Scene
         AssetPool.addSpritesheet("assets/images/spritesheet.png",
                 new SpriteSheet(AssetPool.getTexture("assets/images/spritesheet.png"),
                         121, 120, 2,0));
+
+        for(GameObject g : gameObjects)
+        {
+            if(g.getComponent(SpriteRenderer.class) != null)
+            {
+                SpriteRenderer spr = g.getComponent(SpriteRenderer.class);
+                if(spr.getTexture() != null)
+                {
+                    spr.setTexture(AssetPool.getTexture(spr.getTexture().getFilePath()));
+                }
+            }
+        }
     }
 
     public LevelEditorScene()
