@@ -17,25 +17,25 @@
             "height": 120.0,
             "texture": {
               "filePath": "assets/images/spritesheet.png",
-              "texId": 2,
+              "texId": 3,
               "width": 242,
               "height": 120
             },
             "texCoords": [
               {
-                "x": 0.5,
+                "x": 1.0,
                 "y": 1.0
               },
               {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
                 "x": 0.5,
                 "y": 0.0
               },
               {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
+                "x": 0.5,
                 "y": 1.0
               }
             ]
@@ -46,8 +46,8 @@
     ],
     "transform": {
       "position": {
-        "x": 500.0,
-        "y": 400.0
+        "x": 450.0,
+        "y": 350.0
       },
       "scale": {
         "x": 50.0,

@@ -7,6 +7,7 @@ import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
 import org.lwjgl.opengl.GL11;
 import renderer.DebugDraw;
+import renderer.Framebuffer;
 import scenes.LevelEditorScene;
 import scenes.LevelScene;
 import scenes.Scene;
@@ -22,6 +23,7 @@ public final class MainWindow
     private final String title;
     private long _windowId;
     private IMGuiLayer imguiLayer;
+    private Framebuffer framebuffer;
 
     public float r,g,b,a; //temp solution for filling screen
 
@@ -147,6 +149,8 @@ public final class MainWindow
         this.imguiLayer = new IMGuiLayer(_windowId);
         this.imguiLayer.initImGui();
 
+        this.framebuffer = new Framebuffer(1980,1080);
+
         //just some interesting bullshit http://jmonkeyengine.ru/page/2/?author=0
 
         MainWindow.changeScene(0);
@@ -191,11 +195,13 @@ public final class MainWindow
             //Sets portions of every pixel in a particular buffer to the same value
             GL11.glClear(GL11.GL_COLOR_BUFFER_BIT);
 
+            //this.framebuffer.bind();
             if(dt >= 0)
             {
                 DebugDraw.draw();
                 currentScene.update(dt); //a job with current scene
             }
+            this.framebuffer.unbind();
 
             this.imguiLayer.update((float)dt, currentScene);
             //Swaps the front and back buffers of the specified window when rendering with OpenGL
