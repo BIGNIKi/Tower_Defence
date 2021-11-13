@@ -62,6 +62,7 @@ public abstract class Scene
 
     //each scene has to have such method (it is all job which executes each frame)
     public abstract void update(double dt);
+    public abstract void render();
 
     public Camera camera()
     {
