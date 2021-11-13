@@ -8,6 +8,7 @@ public class Camera
 {
     private Matrix4f projectionMatrix, viewMatrix, inverseProjection, inverseVeiw;
     public Vector2f position;
+    private Vector2f projectionSize = new Vector2f(32.0f * 40.0f, 32.0f * 21.0f);
 
     public Camera(Vector2f position)
     {
@@ -27,7 +28,7 @@ public class Camera
         //zNear - we can view any objects up to 0, zFar - we can veiw up to 100 away (units)
         //эти измерения НЕ в пикселях! Это некое разбиение экрана на "клетки" (unit'ы)
         //это создаёт аля усеченный конус в котором камера что-либо может видеть
-        projectionMatrix.ortho(0.0f, 32.0f * 40.0f, 0.0f, 32.0f * 21.0f, 0.0f, 100f);
+        projectionMatrix.ortho(0.0f, projectionSize.x, 0.0f, projectionSize.y, 0.0f, 100f);
         projectionMatrix.invert(inverseProjection);
     }
 
@@ -62,5 +63,10 @@ public class Camera
     public Matrix4f getInverseVeiw()
     {
         return inverseVeiw;
+    }
+
+    public Vector2f getProjectionSize()
+    {
+        return this.projectionSize;
     }
 }
