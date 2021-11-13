@@ -6,6 +6,7 @@ import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
 import org.lwjgl.opengl.GL11;
+import renderer.DebugDraw;
 import scenes.LevelEditorScene;
 import scenes.LevelScene;
 import scenes.Scene;
@@ -182,6 +183,8 @@ public final class MainWindow
             //Poll events
             GLFW.glfwPollEvents(); //Processes all pending events.
 
+            DebugDraw.beginFrame();
+
             //Sets the clear value for fixed-point and floating-point color buffers in RGBA mode
             GL11.glClearColor(r, g, b, a);
 
@@ -190,6 +193,7 @@ public final class MainWindow
 
             if(dt >= 0)
             {
+                DebugDraw.draw();
                 currentScene.update(dt); //a job with current scene
             }
 
