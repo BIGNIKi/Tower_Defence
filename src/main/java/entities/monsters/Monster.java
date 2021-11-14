@@ -7,7 +7,6 @@ import entities.effects.Effect;
 import entities.towers.TowerType;
 
 public abstract class Monster {
-  /*
   private int coinsForKilling;
   private int experienceForKilling;
 
@@ -21,5 +20,20 @@ public abstract class Monster {
   private TowerEfficiency towerEfficiency;
   private int x;
   private int y;
-*/
+
+  public abstract void move(Direction direction);
+
+  public abstract void attack(Castle target);
+
+  public abstract void getDamage(int value, TowerType attacker);
+
+  public abstract void getDamage(int value);
+
+  public abstract void use(Effect effect);
+
+  public abstract void die();
+
+  public boolean isAlive() {
+    return health > 0;
+  }
 }
