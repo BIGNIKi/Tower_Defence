@@ -147,12 +147,13 @@ public final class MainWindow
 
         glEnable(GL_BLEND);
         glBlendFunc(GL_ONE, GL_ONE_MINUS_SRC_ALPHA);
-        this.imguiLayer = new IMGuiLayer(_windowId);
-        this.imguiLayer.initImGui();
 
         this.framebuffer = new Framebuffer(1920,1080);
         this.pickingTexture = new PickingTexture(1920, 1080);
         glViewport(0, 0, 1920, 1080);
+
+        this.imguiLayer = new IMGuiLayer(_windowId, pickingTexture);
+        this.imguiLayer.initImGui();
 
         //just some interesting bullshit http://jmonkeyengine.ru/page/2/?author=0
 
@@ -203,13 +204,6 @@ public final class MainWindow
 
             Renderer.bindShader(pickingShader);
             currentScene.render();
-
-            if(Mouse.mouseButtonDown(GLFW_MOUSE_BUTTON_LEFT))
-            {
-                int x = (int)Mouse.getScreenX();
-                int y = (int)Mouse.getScreenY();
-                System.out.println(pickingTexture.readPixel(x,y));
-            }
 
             pickingTexture.disableWriting();
             glEnable(GL_BLEND);
