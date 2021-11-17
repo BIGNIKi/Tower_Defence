@@ -9,9 +9,9 @@ import org.joml.Vector2f;
 
 public class GameViewWindow
 {
-    private static float leftX, rightX, topY, bottomY;
+    private float leftX, rightX, topY, bottomY;
 
-    public static void imgui()
+    public void imgui()
     {
         ImGui.begin("Область предпросмотра игры", ImGuiWindowFlags.NoScrollbar | ImGuiWindowFlags.NoScrollWithMouse);
 
@@ -38,13 +38,13 @@ public class GameViewWindow
         ImGui.end();
     }
 
-    public static boolean getWantCaptureMouse()
+    public boolean getWantCaptureMouse()
     {
         return Mouse.getX() >= leftX && Mouse.getX() <= rightX &&
                 Mouse.getY() >= bottomY && Mouse.getY() <= topY;
     }
 
-    private static ImVec2 getLargestSizeForViewport()
+    private ImVec2 getLargestSizeForViewport()
     {
         ImVec2 windowSize = new ImVec2();
         ImGui.getContentRegionAvail(windowSize);
@@ -62,7 +62,7 @@ public class GameViewWindow
         return new ImVec2(aspectWidth, aspectHeight);
     }
 
-    private static ImVec2 getCenteredPositionForViewport(ImVec2 aspectSize)
+    private ImVec2 getCenteredPositionForViewport(ImVec2 aspectSize)
     {
         ImVec2 windowSize = new ImVec2();
         ImGui.getContentRegionAvail(windowSize);

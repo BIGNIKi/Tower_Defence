@@ -27,7 +27,6 @@ public class MouseControls extends Component
     {
         if(holdingObject != null)
         {
-            //TODO поиграться с ценрированием
             holdingObject.transform.position.x = Mouse.getOrthoX();
             holdingObject.transform.position.y = Mouse.getOrthoY();
             holdingObject.transform.position.x = (int)(holdingObject.transform.position.x / Settings.GRID_WIDTH) * Settings.GRID_WIDTH;

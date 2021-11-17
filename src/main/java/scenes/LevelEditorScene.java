@@ -10,8 +10,6 @@ import job.GameObject;
 import job.Prefabs;
 import job.Transform;
 import org.joml.Vector2f;
-import org.joml.Vector3f;
-import org.lwjgl.system.CallbackI;
 import renderer.DebugDraw;
 
 public class LevelEditorScene extends Scene
@@ -32,15 +30,6 @@ public class LevelEditorScene extends Scene
         sprites = AssetPool.getSpritesheet("assets/images/spritesheet.png");
 
         //DebugDraw.addLine2D(new Vector2f(0,0), new Vector2f(800, 800), new Vector3f(1, 1, 1), 120);
-
-        if(levelLoaded)
-        {
-            if(gameObjects.size() > 0)
-            {
-                this.activeGameObject = gameObjects.get(0);
-            }
-            return;
-        }
 
 /*        obj1 = new GameObject("Object 1", new Transform(new Vector2f(100, 100), new Vector2f(121, 120)), 0);
         SpriteRenderer obj1SpriteRenderer = new SpriteRenderer();
@@ -105,7 +94,7 @@ public class LevelEditorScene extends Scene
     public void update(double dt)
     {
         levelEditorStuff.update((float)dt);
-        DebugDraw.addBox2D(new Vector2f(200, 200), new Vector2f(64, 32), 0);
+        DebugDraw.addBox2D(new Vector2f(200, 200), new Vector2f(64, 32), 45);
         DebugDraw.addCircle(new Vector2f(300, 300), 50);
 
 /*        float x = ((float)Math.sin(t) * 200.0f) + 600;

@@ -7,9 +7,9 @@
         "type": "components.SpriteRenderer",
         "properties": {
           "color": {
-            "x": 1.0,
-            "y": 0.99999,
-            "z": 0.99999,
+            "x": 0.10117483,
+            "y": 0.0,
+            "z": 1.0,
             "w": 1.0
           },
           "sprite": {
@@ -22,19 +22,19 @@
             },
             "texCoords": [
               {
-                "x": 0.5,
+                "x": 1.0,
                 "y": 1.0
               },
               {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
                 "x": 0.5,
                 "y": 0.0
               },
               {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
+                "x": 0.5,
                 "y": 1.0
               }
             ]
@@ -45,7 +45,7 @@
     ],
     "transform": {
       "position": {
-        "x": 550.0,
+        "x": 500.0,
         "y": 300.0
       },
       "scale": {
@@ -78,19 +78,19 @@
             },
             "texCoords": [
               {
-                "x": 1.0,
+                "x": 0.5,
                 "y": 1.0
               },
               {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
                 "x": 0.5,
                 "y": 0.0
               },
               {
-                "x": 0.5,
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
                 "y": 1.0
               }
             ]
@@ -101,7 +101,7 @@
     ],
     "transform": {
       "position": {
-        "x": 500.0,
+        "x": 450.0,
         "y": 300.0
       },
       "scale": {
@@ -119,9 +119,9 @@
         "type": "components.SpriteRenderer",
         "properties": {
           "color": {
-            "x": 1.0,
+            "x": 0.0,
             "y": 1.0,
-            "z": 1.0,
+            "z": 0.28169012,
             "w": 1.0
           },
           "sprite": {
@@ -157,8 +157,8 @@
     ],
     "transform": {
       "position": {
-        "x": 500.0,
-        "y": 350.0
+        "x": 400.0,
+        "y": 300.0
       },
       "scale": {
         "x": 50.0,
@@ -213,7 +213,7 @@
     ],
     "transform": {
       "position": {
-        "x": 550.0,
+        "x": 400.0,
         "y": 350.0
       },
       "scale": {
@@ -232,8 +232,8 @@
         "properties": {
           "color": {
             "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
+            "y": 0.0,
+            "z": 0.0,
             "w": 1.0
           },
           "sprite": {
@@ -269,8 +269,8 @@
     ],
     "transform": {
       "position": {
-        "x": 600.0,
-        "y": 300.0
+        "x": 450.0,
+        "y": 350.0
       },
       "scale": {
         "x": 50.0,
@@ -325,8 +325,8 @@
     ],
     "transform": {
       "position": {
-        "x": 600.0,
-        "y": 350.0
+        "x": 400.0,
+        "y": 250.0
       },
       "scale": {
         "x": 50.0,
@@ -343,8 +343,8 @@
         "type": "components.SpriteRenderer",
         "properties": {
           "color": {
-            "x": 1.0,
-            "y": 1.0,
+            "x": 0.0,
+            "y": 0.9577553,
             "z": 1.0,
             "w": 1.0
           },
@@ -381,7 +381,7 @@
     ],
     "transform": {
       "position": {
-        "x": 500.0,
+        "x": 450.0,
         "y": 250.0
       },
       "scale": {
@@ -431,13 +431,13 @@
               }
             ]
           },
-          "uid": 9
+          "uid": 10
         }
       }
     ],
     "transform": {
       "position": {
-        "x": 550.0,
+        "x": 500.0,
         "y": 250.0
       },
       "scale": {
@@ -487,14 +487,126 @@
               }
             ]
           },
-          "uid": 10
+          "uid": 11
         }
       }
     ],
     "transform": {
       "position": {
-        "x": 600.0,
-        "y": 250.0
+        "x": 500.0,
+        "y": 350.0
+      },
+      "scale": {
+        "x": 50.0,
+        "y": 50.0
+      }
+    },
+    "zIndex": 0
+  },
+  {
+    "uid": 10,
+    "name": "Sprite_Object_Gen",
+    "components": [
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.5,
+                "y": 1.0
+              }
+            ]
+          },
+          "uid": 14
+        }
+      }
+    ],
+    "transform": {
+      "position": {
+        "x": 650.0,
+        "y": 500.0
+      },
+      "scale": {
+        "x": 50.0,
+        "y": 50.0
+      }
+    },
+    "zIndex": 0
+  },
+  {
+    "uid": 11,
+    "name": "Sprite_Object_Gen",
+    "components": [
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 0.99999,
+            "z": 0.99999,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.5,
+                "y": 1.0
+              }
+            ]
+          },
+          "uid": 17
+        }
+      }
+    ],
+    "transform": {
+      "position": {
+        "x": 700.0,
+        "y": 450.0
       },
       "scale": {
         "x": 50.0,
