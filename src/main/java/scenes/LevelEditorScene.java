@@ -5,10 +5,7 @@ import Util.Settings;
 import components.*;
 import imgui.ImGui;
 import imgui.ImVec2;
-import job.Camera;
-import job.GameObject;
-import job.Prefabs;
-import job.Transform;
+import job.*;
 import org.joml.Vector2f;
 import renderer.DebugDraw;
 
@@ -22,13 +19,18 @@ public class LevelEditorScene extends Scene
     @Override
     public void init()
     {
+        loadResources();
+        sprites = AssetPool.getSpritesheet("assets/images/spritesheet.png");
+        SpriteSheet gizmos = AssetPool.getSpritesheet("assets/images/gizmos.png");
+
         this.camera = new Camera(new Vector2f(-250,0));
         levelEditorStuff.addComponent(new MouseControls());
         levelEditorStuff.addComponent(new GridLines());
         levelEditorStuff.addComponent(new EditorCamera(this.camera));
+        levelEditorStuff.addComponent(new TranslateGizmo(gizmos.getSprite(1),
+                MainWindow.getImguiLayer().getPropertiesWindow()));
 
-        loadResources();
-        sprites = AssetPool.getSpritesheet("assets/images/spritesheet.png");
+        levelEditorStuff.start();
 
         //DebugDraw.addLine2D(new Vector2f(0,0), new Vector2f(800, 800), new Vector3f(1, 1, 1), 120);
 
@@ -66,6 +68,9 @@ public class LevelEditorScene extends Scene
         AssetPool.addSpritesheet("assets/images/spritesheet.png",
                 new SpriteSheet(AssetPool.getTexture("assets/images/spritesheet.png"),
                         121, 120, 2,0));
+        AssetPool.addSpritesheet("assets/images/gizmos.png",
+                new SpriteSheet(AssetPool.getTexture("assets/images/gizmos.png"),
+                        24, 48, 2, 0));
 
         for(GameObject g : gameObjects)
         {
@@ -132,6 +137,10 @@ public class LevelEditorScene extends Scene
     @Override
     public void imgui()
     {
+        ImGui.begin("Level Editor Stuff");
+        levelEditorStuff.imgui();
+        ImGui.end();
+
         ImGui.begin("Обозреватель текстур: ");
 /*        ImGui.text("Урон: 5000");
         ImGui.text("HP: 1");*/

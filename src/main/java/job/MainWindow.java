@@ -282,4 +282,9 @@ public final class MainWindow
     {
         return 16.0f / 9.0f;
     }
+
+    public static IMGuiLayer getImguiLayer()
+    {
+        return get().imguiLayer;
+    }
 }
