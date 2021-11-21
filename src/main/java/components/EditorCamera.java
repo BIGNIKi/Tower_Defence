@@ -53,7 +53,7 @@ public class EditorCamera extends Component
         {
             float addValue = (float)Math.pow(Math.abs(Mouse.getScrollY() * scrollSensitivity),
                     1/levelEditorCamera.getZoom());
-            addValue *= Math.signum(Mouse.getScrollY());
+            addValue *= -Math.signum(Mouse.getScrollY());
             levelEditorCamera.addZoom(addValue);
         }
 
