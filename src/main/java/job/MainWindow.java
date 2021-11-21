@@ -230,6 +230,7 @@ public final class MainWindow
             this.imguiLayer.update((float)dt, currentScene);
             //Swaps the front and back buffers of the specified window when rendering with OpenGL
             GLFW.glfwSwapBuffers(_windowId);
+            Mouse.endFrame(); // это нужно делать в конце кадра, чтобы мышь забывала о скроле
 
             double endTime = glfwGetTime(); //the time when frame was ended
 
