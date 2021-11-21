@@ -22,11 +22,12 @@ public class LevelEditorScene extends Scene
     @Override
     public void init()
     {
+        this.camera = new Camera(new Vector2f(-250,0));
         levelEditorStuff.addComponent(new MouseControls());
         levelEditorStuff.addComponent(new GridLines());
+        levelEditorStuff.addComponent(new EditorCamera(this.camera));
 
         loadResources();
-        this.camera = new Camera(new Vector2f(-250,0));
         sprites = AssetPool.getSpritesheet("assets/images/spritesheet.png");
 
         //DebugDraw.addLine2D(new Vector2f(0,0), new Vector2f(800, 800), new Vector3f(1, 1, 1), 120);
@@ -94,6 +95,8 @@ public class LevelEditorScene extends Scene
     public void update(double dt)
     {
         levelEditorStuff.update((float)dt);
+        this.camera.adjuctProjection(); // нужно, чтобы зум работал
+
         DebugDraw.addBox2D(new Vector2f(200, 200), new Vector2f(64, 32), 45);
         DebugDraw.addCircle(new Vector2f(300, 300), 50);
 
