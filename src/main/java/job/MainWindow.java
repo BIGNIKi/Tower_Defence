@@ -1,6 +1,10 @@
 package job;
 
 import Util.AssetPool;
+import observers.EventSystem;
+import observers.Observer;
+import observers.events.Event;
+import observers.events.EventType;
 import org.lwjgl.Version;
 import org.lwjgl.glfw.Callbacks;
 import org.lwjgl.glfw.GLFW;
@@ -8,15 +12,15 @@ import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
 import org.lwjgl.opengl.GL11;
 import renderer.*;
-import scenes.LevelEditorScene;
-import scenes.LevelScene;
+import scenes.LevelEditorSceneInitializer;
 import scenes.Scene;
+import scenes.SceneInitializer;
 
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.system.MemoryUtil.NULL;
 
-public final class MainWindow
+public final class MainWindow implements Observer
 {
     private int width;
     private int heigth;
@@ -25,12 +29,12 @@ public final class MainWindow
     private IMGuiLayer imguiLayer;
     private Framebuffer framebuffer;
     private PickingTexture pickingTexture;
-
-    public float r,g,b,a; //temp solution for filling screen
+    private boolean runtimePlaying = false;
 
     private static MainWindow wnd = null; //we have only one instance of this class
 
     private static Scene currentScene;
+    private float r,g,b,a;
 
     //it is prohibited to create instance of class outside this class (Singleton)
     private MainWindow()
@@ -45,23 +49,16 @@ public final class MainWindow
         //g = 1;
         //b = 1;
         a = 1;
+        EventSystem.addObserver(this);
     }
 
     //method for switching scenes
-    public static void changeScene(int newScene)
-    {
-        switch(newScene)
-        {
-            case 0:
-                currentScene = new LevelEditorScene();
-                break;
-            case 1:
-                currentScene = new LevelScene();
-                break;
-            default:
-                assert false : "Unknown scene '" + newScene + "'";
-                break;
+    public static void changeScene(SceneInitializer sceneInitializer) {
+        if (currentScene != null) {
+            currentScene.destroy();
         }
+        getImguiLayer().getPropertiesWindow().setActiveGameObject(null);
+        currentScene = new Scene(sceneInitializer);
         currentScene.load();
         currentScene.init();
         currentScene.start();
@@ -157,7 +154,7 @@ public final class MainWindow
 
         //just some interesting bullshit http://jmonkeyengine.ru/page/2/?author=0
 
-        MainWindow.changeScene(0);
+        MainWindow.changeScene(new LevelEditorSceneInitializer());
     }
 
     //connects tracker of mouse events
@@ -222,7 +219,11 @@ public final class MainWindow
             {
                 DebugDraw.draw();
                 Renderer.bindShader(defaultShader);
-                currentScene.update(dt); //a job with current scene
+                if (runtimePlaying) {
+                    currentScene.update((float)dt);
+                } else {
+                    currentScene.editorUpdate((float) dt);
+                }
                 currentScene.render();
             }
             this.framebuffer.unbind();
@@ -249,8 +250,6 @@ public final class MainWindow
             //System.out.println(dt);
             beginTime = endTime;
         }
-
-        currentScene.saveExit();
     }
 
     public static float getWidth()
@@ -286,5 +285,26 @@ public final class MainWindow
     public static IMGuiLayer getImguiLayer()
     {
         return get().imguiLayer;
+    }
+
+    @Override
+    public void onNotify(GameObject object, Event event) {
+        switch (event.type) {
+            case GameEngineStartPlay:
+                this.runtimePlaying = true;
+                currentScene.save();
+                MainWindow.changeScene(new LevelEditorSceneInitializer());
+                break;
+            case GameEngineStopPlay:
+                this.runtimePlaying = false;
+                MainWindow.changeScene(new LevelEditorSceneInitializer());
+                break;
+            case LoadLevel:
+                MainWindow.changeScene(new LevelEditorSceneInitializer());
+                break;
+            case SaveLevel:
+                currentScene.save();
+                break;
+        }
     }
 }

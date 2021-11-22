@@ -8,20 +8,20 @@ import observers.events.EventType;
 public class MenuBar {
 
     public void imgui() {
-        ImGui.beginMenuBar();
+        ImGui.beginMainMenuBar();
 
-        if (ImGui.beginMenu("File")) {
-            if (ImGui.menuItem("Save", "Ctrl+S")) {
+        if (ImGui.beginMenu("Файл")) {
+            if (ImGui.menuItem("Сохранить", "Ctrl+S")) {
                 EventSystem.notify(null, new Event(EventType.SaveLevel));
             }
 
-            if (ImGui.menuItem("Load", "Ctrl+O")) {
+            if (ImGui.menuItem("Загрузить", "Ctrl+O")) {
                 EventSystem.notify(null, new Event(EventType.LoadLevel));
             }
 
             ImGui.endMenu();
         }
 
-        ImGui.endMenuBar();
+        ImGui.endMainMenuBar();
     }
 }
