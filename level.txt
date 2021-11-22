@@ -69,7 +69,7 @@
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 300.0,
+            "x": 314.0,
             "y": 300.0
           },
           "scale": {
@@ -118,6 +118,12 @@
             ]
           },
           "uid": 40
+        }
+      },
+      {
+        "type": "components.TestComponent",
+        "properties": {
+          "uid": 59
         }
       }
     ],
