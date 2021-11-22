@@ -1,6 +1,7 @@
 package editor;
 
 import components.NonPickable;
+import components.TestComponent;
 import imgui.ImGui;
 import job.GameObject;
 import job.Mouse;
@@ -10,6 +11,7 @@ import scenes.Scene;
 import static org.lwjgl.glfw.GLFW.GLFW_MOUSE_BUTTON_LEFT;
 
 // эта штука отвечает за выделение объектов на сцене
+// также отвечает за добавление новых компонентов
 public class PropertiesWindow
 {
     private GameObject activeGameObject = null;
@@ -48,7 +50,35 @@ public class PropertiesWindow
         // TODO: думаю, куда более интересный вариант - выводить это окно постоянно, вне зависимости от выбранного Game Object'а
         if(activeGameObject != null)
         {
-            ImGui.begin("Свойства: ");
+            ImGui.begin("Properties");
+            if (ImGui.beginPopupContextWindow("ComponentAdder")) {
+/*                if (ImGui.menuItem("Add Rigidbody")) {
+                    if (activeGameObject.getComponent(Rigidbody2D.class) == null) {
+                        activeGameObject.addComponent(new Rigidbody2D());
+                    }
+                }*/
+
+                if (ImGui.menuItem("Добавить тестовый компонент"))
+                {
+                    if(activeGameObject.getComponent(TestComponent.class) == null)
+                    {
+                        activeGameObject.addComponent(new TestComponent());
+                    }
+                }
+/*                if (ImGui.menuItem("Add Box Collider")) {
+                    if (activeGameObject.getComponent(Box2DCollider.class) == null && activeGameObject.getComponent(CircleCollider.class) == null) {
+                        activeGameObject.addComponent(new Box2DCollider());
+                    }
+                }*/
+
+/*                if (ImGui.menuItem("Add Circle Collider")) {
+                    if (activeGameObject.getComponent(Box2DCollider.class) == null && activeGameObject.getComponent(CircleCollider.class) == null) {
+                        activeGameObject.addComponent(new CircleCollider());
+                    }
+                }*/
+
+                ImGui.endPopup();
+            }
             activeGameObject.imgui();
             ImGui.end();
         }

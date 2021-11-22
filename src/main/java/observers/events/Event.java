@@ -1,13 +1,26 @@
 package observers.events;
 
-public class Event {
-    public EventType type;
+import job.GameObject;
+import observers.Observer;
 
-    public Event() {
-        type = EventType.UserEvent;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Event
+{
+    private static List<Observer> observers = new ArrayList<>();
+
+    public static void addObserver(Observer observer) {
+        observers.add(observer);
     }
 
-    public Event(EventType type) {
-        this.type = type;
+    public static void removeObserver(Observer observer) {
+        observers.remove(observer);
+    }
+
+    public static void notify(GameObject obj, Event event) {
+        for (Observer observer : observers) {
+            observer.onNotify(obj, event);
+        }
     }
 }
