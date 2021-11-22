@@ -12,10 +12,9 @@ import renderer.DebugDraw;
 
 public class LevelEditorScene extends Scene
 {
-    private GameObject obj1;
     private SpriteSheet sprites;
 
-    GameObject levelEditorStuff = new GameObject("LevelEditor", new Transform(new Vector2f()), 0);
+    GameObject levelEditorStuff = this.createGameObject("LevelEditor");
 
     @Override
     public void init()
@@ -71,6 +70,7 @@ public class LevelEditorScene extends Scene
         AssetPool.addSpritesheet("assets/images/gizmos.png",
                 new SpriteSheet(AssetPool.getTexture("assets/images/gizmos.png"),
                         24, 48, 3, 0));
+        //AssetPool.getTexture("assets/images/Stone0.png");
 
         for(GameObject g : gameObjects)
         {
@@ -102,8 +102,8 @@ public class LevelEditorScene extends Scene
         levelEditorStuff.update((float)dt);
         this.camera.adjuctProjection(); // нужно, чтобы зум работал
 
-        DebugDraw.addBox2D(new Vector2f(200, 200), new Vector2f(64, 32), 45);
-        DebugDraw.addCircle(new Vector2f(300, 300), 50);
+        //DebugDraw.addBox2D(new Vector2f(200, 200), new Vector2f(64, 32), 45);
+        //DebugDraw.addCircle(new Vector2f(300, 300), 50);
 
 /*        float x = ((float)Math.sin(t) * 200.0f) + 600;
         float y = ((float)Math.cos(t) * 200.0f) + 400;

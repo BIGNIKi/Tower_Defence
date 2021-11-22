@@ -3,14 +3,13 @@ package editor;
 import imgui.ImGui;
 import imgui.flag.ImGuiCol;
 import imgui.flag.ImGuiStyleVar;
-import imgui.type.ImString;
 import org.joml.Vector2f;
 import org.joml.Vector3f;
 import org.joml.Vector4f;
 
 public class JImGui {
 
-    private static float defaultColumnWidth = 70.0f;
+    private static float defaultColumnWidth = 220.0f;
 
     public static void drawVec2Control(String label, Vector2f values) {
         drawVec2Control(label, values, 0.0f, defaultColumnWidth);
@@ -30,8 +29,8 @@ public class JImGui {
 
         ImGui.pushStyleVar(ImGuiStyleVar.ItemSpacing, 0, 0);
 
-        float lineHeight = ImGui.getFontSize() + ImGui.getStyle().getFramePaddingY();
-        Vector2f buttonSize = new Vector2f(lineHeight, lineHeight+3);
+        float lineHeight = ImGui.getFontSize() + ImGui.getStyle().getFramePaddingY() * 2.0f;
+        Vector2f buttonSize = new Vector2f(lineHeight + 3.0f, lineHeight);
         float widthEach = (ImGui.calcItemWidth() - buttonSize.x * 2.0f) / 2.0f;
 
         ImGui.pushItemWidth(widthEach);
@@ -45,7 +44,7 @@ public class JImGui {
 
         ImGui.sameLine();
         float[] vecValuesX = {values.x};
-        ImGui.dragFloat("##x", vecValuesX, 0.01f);
+        ImGui.dragFloat("##x", vecValuesX, 0.1f);
         ImGui.popItemWidth();
         ImGui.sameLine();
 
@@ -60,7 +59,7 @@ public class JImGui {
 
         ImGui.sameLine();
         float[] vecValuesY = {values.y};
-        ImGui.dragFloat("##y", vecValuesY, 0.01f);
+        ImGui.dragFloat("##y", vecValuesY, 0.1f);
         ImGui.popItemWidth();
         ImGui.sameLine();
 
@@ -203,28 +202,5 @@ public class JImGui {
         ImGui.popID();
 
         return res;
-    }
-
-    public static String inputText(String label, String text) {
-        ImGui.pushID(label);
-
-        ImGui.columns(2);
-        ImGui.setColumnWidth(0, defaultColumnWidth);
-        ImGui.text(label);
-        ImGui.nextColumn();
-
-        ImString outString = new ImString(text, 256);
-        //ImGui.pushItemWidth(300);
-        if (ImGui.inputText("##" + label, outString)) {
-            ImGui.columns(1);
-            ImGui.popID();
-
-            return outString.get();
-        }
-
-        ImGui.columns(1);
-        ImGui.popID();
-
-        return text;
     }
 }
