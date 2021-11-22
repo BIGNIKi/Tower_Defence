@@ -14,9 +14,11 @@ public final class Mouse
 {
     private static Mouse mouse; //we have only one instance of this class
     private double scrollX, scrollY;
-    private double xPos, yPos, lastX, lastY;
+    private double xPos, yPos, lastX, lastY, worldX, worldY, lastWorldX, lastWorldY;
     private final boolean[] mouseButtonPressed = new boolean[9];
     private boolean isDragging;
+
+    private int mouseButtonDown = 0;
 
     private Vector2f gameViewportPos = new Vector2f();
     private Vector2f gameViewportSize = new Vector2f();
@@ -45,20 +47,29 @@ public final class Mouse
     //tracks position of mouse
     public static void mousePosCallback(long wnd, double xPos, double yPos)
     {
+        if(get().mouseButtonDown > 0)
+        {
+            get().isDragging = true;
+        }
+
         //remember old position values
         get().lastX = get().xPos;
         get().lastY = get().yPos;
+        get().lastWorldX = get().worldX;
+        get().lastWorldY = get().worldY;
         //set actual coordinates
         get().xPos = xPos;
         get().yPos = yPos;
-        //set dragging
-        get().isDragging = get().mouseButtonPressed[0] || get().mouseButtonPressed[1] || get().mouseButtonPressed[2];
+        calcOrthoX();
+        calcOrthoY();
     }
 
     public static void mouseButtonCallback(long wnd, int button, int action, int mods)
     {
         if(action == GLFW_PRESS) //the key or button was pressed
         {
+            get().mouseButtonDown++;
+
             if(button < get().mouseButtonPressed.length)
             {
                 get().mouseButtonPressed[button] = true;
@@ -66,6 +77,8 @@ public final class Mouse
         }
         else if(action == GLFW_RELEASE) //the key or button was released
         {
+            get().mouseButtonDown--;
+
             if(button < get().mouseButtonPressed.length)
             {
                 get().mouseButtonPressed[button] = false;
@@ -86,6 +99,8 @@ public final class Mouse
         get().scrollY = 0;
         get().lastX = get().xPos;
         get().lastY = get().yPos;
+        get().lastWorldX = get().worldX;
+        get().lastWorldY = get().worldY;
     }
 
     public static float getX()
@@ -103,9 +118,19 @@ public final class Mouse
         return (float)(get().xPos-get().lastX);
     }
 
+    public static float getWorldDx()
+    {
+        return (float)(get().lastWorldX-get().worldX);
+    }
+
     public static float getDy()
     {
         return (float)(get().yPos-get().lastY);
+    }
+
+    public static float getWorldDy()
+    {
+        return (float)(get().lastWorldY-get().worldY);
     }
 
     public static float getScrollX()
@@ -153,6 +178,11 @@ public final class Mouse
 
     public static float getOrthoX()
     {
+        return (float)get().worldX;
+    }
+
+    private static void calcOrthoX()
+    {
         float currentX = getX() - get().gameViewportPos.x;
         currentX = (currentX / get().gameViewportSize.x) * 2.0f - 1.0f;
         Vector4f tmp = new Vector4f(currentX, 0, 0, 1);
@@ -161,12 +191,11 @@ public final class Mouse
         Matrix4f viewProjection = new Matrix4f();
         camera.getInverseVeiw().mul(camera.getInverseProjection(), viewProjection);
         tmp.mul(viewProjection);
-        currentX = tmp.x;
 
-        return currentX;
+        get().worldX = tmp.x;
     }
 
-    public static float getOrthoY()
+    private static void calcOrthoY()
     {
         float currentY = getY() - get().gameViewportPos.y;
         currentY = -((currentY / get().gameViewportSize.y) * 2.0f - 1.0f);
@@ -176,9 +205,13 @@ public final class Mouse
         Matrix4f viewProjection = new Matrix4f();
         camera.getInverseVeiw().mul(camera.getInverseProjection(), viewProjection);
         tmp.mul(viewProjection);
-        currentY = tmp.y;
 
-        return currentY;
+        get().worldY = tmp.y;
+    }
+
+    public static float getOrthoY()
+    {
+        return (float)get().worldY;
     }
 
     public static void setGameViewportPos(Vector2f gameViewportPos)

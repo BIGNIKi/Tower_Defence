@@ -1,83 +1,31 @@
 package components;
 
 import editor.PropertiesWindow;
-import job.GameObject;
-import job.MainWindow;
-import job.Prefabs;
-import org.joml.Vector2f;
-import org.joml.Vector4f;
+import job.Mouse;
 
-public class TranslateGizmo extends Component
+// штука, чтобы двигать игровые объекты в редакторе
+public class TranslateGizmo extends Gizmo
 {
-    private Vector4f xAxisColor = new Vector4f(1,0,0,1);
-    private Vector4f xAxisColorHover = new Vector4f();
-    private Vector4f yAxisColor = new Vector4f(0,1,0,1);
-    private Vector4f yAxisColorHover = new Vector4f();
-
-    private GameObject xAxisObject;
-    private GameObject yAxisObject;
-    private SpriteRenderer xAxisSprite;
-    private SpriteRenderer yAxisSprite;
-    private GameObject activeGameObject = null;
-
-    private Vector2f xAxisOffset = new Vector2f(75.0f, 16.0f);
-    private Vector2f yAxisOffset = new Vector2f(36.0f, 69.0f);
-
-    private PropertiesWindow propertiesWindow;
-
     public TranslateGizmo(Sprite arrowSprite, PropertiesWindow propertiesWindow)
     {
-        this.xAxisObject = Prefabs.generateSpriteObject(arrowSprite, 16, 48);
-        this.yAxisObject = Prefabs.generateSpriteObject(arrowSprite, 16, 48);
-        this.xAxisSprite = this.xAxisObject.getComponent(SpriteRenderer.class);
-        this.yAxisSprite = this.yAxisObject.getComponent(SpriteRenderer.class);
-        this.propertiesWindow = propertiesWindow;
-
-        MainWindow.getScene().addGameObjectToScene(this.xAxisObject);
-        MainWindow.getScene().addGameObjectToScene(this.yAxisObject);
-    }
-
-    @Override
-    public void start()
-    {
-        this.xAxisObject.transform.rotation = 90;
-        this.yAxisObject.transform.rotation = 180;
-        this.xAxisObject.setNoSerialize();
-        this.yAxisObject.setNoSerialize();
+        super(arrowSprite, propertiesWindow);
     }
 
     @Override
     public void update(float dt)
     {
-        if(this.activeGameObject != null)
+        if(activeGameObject != null)
         {
-            this.xAxisObject.transform.position.set(this.activeGameObject.transform.position);
-            this.yAxisObject.transform.position.set(this.activeGameObject.transform.position);
-            this.xAxisObject.transform.position.add(this.xAxisOffset);
-            this.yAxisObject.transform.position.add(this.yAxisOffset);
+            if(xAxisActive && !yAxisActive)
+            {
+                activeGameObject.transform.position.x -= Mouse.getWorldDx();
+            }
+            else if(yAxisActive)
+            {
+                activeGameObject.transform.position.y -= Mouse.getWorldDy();
+            }
         }
 
-        this.activeGameObject = this.propertiesWindow.getActiveGameObject();
-        if(this.activeGameObject != null)
-        {
-            this.setActive();
-        }
-        else
-        {
-            this.setInactive();
-        }
-    }
-
-    private void setActive()
-    {
-        this.xAxisSprite.setColor(xAxisColor);
-        this.yAxisSprite.setColor(yAxisColor);
-    }
-
-    private void setInactive()
-    {
-        this.activeGameObject = null;
-        this.xAxisSprite.setColor(new Vector4f(0,0,0,0));
-        this.yAxisSprite.setColor(new Vector4f(0,0,0,0));
+        super.update(dt);
     }
 }

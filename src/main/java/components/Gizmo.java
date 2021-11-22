@@ -1,11 +1,14 @@
 package components;
 
 import editor.PropertiesWindow;
-import job.*;
+import job.GameObject;
+import job.MainWindow;
+import job.Mouse;
+import job.Prefabs;
 import org.joml.Vector2f;
 import org.joml.Vector4f;
 
-import static org.lwjgl.glfw.GLFW.*;
+import static org.lwjgl.glfw.GLFW.GLFW_MOUSE_BUTTON_LEFT;
 
 public class Gizmo extends Component
 {
@@ -20,28 +23,23 @@ public class Gizmo extends Component
     private SpriteRenderer yAxisSprite;
     protected GameObject activeGameObject = null;
 
-/*    private Vector2f xAxisOffset = new Vector2f(24f/80f, -6f/80f);
-    private Vector2f yAxisOffset = new Vector2f(-7f/80f, 21f/80f);    */
-    private Vector2f xAxisOffset = new Vector2f(12f/80f, 0f/80f);
-    private Vector2f yAxisOffset = new Vector2f(0f/80f, 12f/80f);
+    private Vector2f xAxisOffset = new Vector2f(75.0f, 16.0f);
+    private Vector2f yAxisOffset = new Vector2f(36.0f, 69.0f);
 
-/*    private float gizmoWidth = 16 / 80f;
-    private float gizmoHeight = 48 / 80f;*/
-    private float gizmoWidth = 0.1f;
-    private float gizmoHeight = 0.3f;
+    private int gizmoWidth = 16;
+    private int gizmoHeight = 48;
 
     protected boolean xAxisActive = false;
     protected boolean yAxisActive = false;
 
-    private boolean using = false; // эта штука висит локально на translate и на scale, чтобы знать, кто из них используется
-    private static boolean isUseGizmo = false; // это общая штука, чтобы понять, пытаемся ли что-то двигать или менять размеры
+    private boolean using = false;
 
     private PropertiesWindow propertiesWindow;
 
     public Gizmo(Sprite arrowSprite, PropertiesWindow propertiesWindow)
     {
-        this.xAxisObject = Prefabs.generateSpriteObject(arrowSprite, gizmoWidth, gizmoHeight);
-        this.yAxisObject = Prefabs.generateSpriteObject(arrowSprite, gizmoWidth, gizmoHeight);
+        this.xAxisObject = Prefabs.generateSpriteObject(arrowSprite, 16, 48);
+        this.yAxisObject = Prefabs.generateSpriteObject(arrowSprite, 16, 48);
         this.xAxisSprite = this.xAxisObject.getComponent(SpriteRenderer.class);
         this.yAxisSprite = this.yAxisObject.getComponent(SpriteRenderer.class);
         this.propertiesWindow = propertiesWindow;
@@ -56,32 +54,16 @@ public class Gizmo extends Component
     @Override
     public void start()
     {
-        this.xAxisObject.transform.rotation = -90;
-        //this.xAxisObject.transform.rotation = 90;
-        //this.yAxisObject.transform.rotation = 180;
-
+        this.xAxisObject.transform.rotation = 90;
         this.yAxisObject.transform.rotation = 180;
-        this.xAxisObject.transform.zIndex = 100;
-        this.yAxisObject.transform.zIndex = 100;
         this.xAxisObject.setNoSerialize();
         this.yAxisObject.setNoSerialize();
     }
 
     @Override
-    public void update(float dt) {
-        if (using) {
-            this.setInactive();
-        }
-        xAxisObject.getComponent(SpriteRenderer.class).setColor(new Vector4f(0,0,0,0));
-        yAxisObject.getComponent(SpriteRenderer.class).setColor(new Vector4f(0,0,0,0));
-    }
-
-    @Override
-    public void editorUpdate(float dt)
+    public void update(float dt)
     {
-        //System.out.println(using);
         if(!using) return;
-
 
         this.activeGameObject = this.propertiesWindow.getActiveGameObject();
         if(this.activeGameObject != null)
@@ -133,21 +115,17 @@ public class Gizmo extends Component
         this.activeGameObject = null;
         this.xAxisSprite.setColor(new Vector4f(0,0,0,0));
         this.yAxisSprite.setColor(new Vector4f(0,0,0,0));
-        // выглядит как костыльная фигня, но эти две строчки фиксят баг с невозможностью выделения объектов =)
-        xAxisObject.transform.position = new Vector2f(10000000, 10000000);
-        yAxisObject.transform.position = new Vector2f(10000000, 10000000);
     }
 
-    public boolean checkXHoverState()
+    private boolean checkXHoverState()
     {
-        Vector2f mousePos = Mouse.getWorld();
+        Vector2f mousePos = new Vector2f(Mouse.getOrthoX(), Mouse.getOrthoY());
         // проверка на вхождение мышки в прямоугольник
-        if(mousePos.x <= xAxisObject.transform.position.x + (gizmoHeight / 2.0f) &&
-                mousePos.x >= xAxisObject.transform.position.x - (gizmoWidth / 2.0f) &&
-                mousePos.y >= xAxisObject.transform.position.y - (gizmoHeight / 2.0f) &&
-                mousePos.y <= xAxisObject.transform.position.y + (gizmoWidth / 2.0f))
+        if(mousePos.x <= xAxisObject.transform.position.x &&
+                mousePos.x >= xAxisObject.transform.position.x - gizmoHeight &&
+                mousePos.y >= xAxisObject.transform.position.y &&
+                mousePos.y <= xAxisObject.transform.position.y + gizmoWidth)
         {
-            isUseGizmo = true;
             xAxisSprite.setColor(xAxisColorHover);
             return true;
         }
@@ -156,13 +134,15 @@ public class Gizmo extends Component
         return false;
     }
 
-    public boolean checkYHoverState()
+    private boolean checkYHoverState()
     {
-        Vector2f mousePos = Mouse.getWorld();
-        if (mousePos.x <= yAxisObject.transform.position.x + (gizmoWidth / 2.0f) &&
-                mousePos.x >= yAxisObject.transform.position.x - (gizmoWidth / 2.0f) &&
-                mousePos.y <= yAxisObject.transform.position.y + (gizmoHeight / 2.0f) &&
-                mousePos.y >= yAxisObject.transform.position.y - (gizmoHeight / 2.0f)) {
+        Vector2f mousePos = new Vector2f(Mouse.getOrthoX(), Mouse.getOrthoY());
+        // проверка на вхождение мышки в прямоугольник
+        if(mousePos.x <= yAxisObject.transform.position.x &&
+                mousePos.x >= yAxisObject.transform.position.x - gizmoWidth &&
+                mousePos.y <= yAxisObject.transform.position.y &&
+                mousePos.y >= yAxisObject.transform.position.y - gizmoHeight)
+        {
             yAxisSprite.setColor(yAxisColorHover);
             return true;
         }
