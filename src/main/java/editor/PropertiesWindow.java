@@ -1,5 +1,6 @@
 package editor;
 
+import components.NonPickable;
 import imgui.ImGui;
 import job.GameObject;
 import job.Mouse;
@@ -8,6 +9,7 @@ import scenes.Scene;
 
 import static org.lwjgl.glfw.GLFW.GLFW_MOUSE_BUTTON_LEFT;
 
+// эта штука отвечает за выделение объектов на сцене
 public class PropertiesWindow
 {
     private GameObject activeGameObject = null;
@@ -28,7 +30,15 @@ public class PropertiesWindow
             int x = (int)Mouse.getScreenX();
             int y = (int)Mouse.getScreenY();
             int gameObjectId = pickingTexture.readPixel(x,y);
-            activeGameObject = currentScene.getGameObject(gameObjectId);
+            GameObject pickedObj = currentScene.getGameObject(gameObjectId);
+            if(pickedObj != null && pickedObj.getComponent(NonPickable.class) == null)
+            {
+                activeGameObject = pickedObj;
+            }
+            else if(pickedObj == null && !Mouse.isDragging())
+            {
+                activeGameObject = null;
+            }
             this.debounce = 0.2f;
         }
     }
