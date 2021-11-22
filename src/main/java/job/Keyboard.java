@@ -9,6 +9,7 @@ public final class Keyboard
 {
     private static Keyboard kbd;
     private final boolean[] keyPressed = new boolean[350];
+    private boolean keyBeginPress[] = new boolean[350];
 
     private Keyboard()
     {
@@ -39,5 +40,13 @@ public final class Keyboard
     public static boolean isKeyPressed(int keyCode)
     {
         return get().keyPressed[keyCode];
+    }
+
+    public static boolean keyBeginPress(int keyCode) {
+        boolean result = get().keyBeginPress[keyCode];
+        if (result) {
+            get().keyBeginPress[keyCode] = false;
+        }
+        return result;
     }
 }

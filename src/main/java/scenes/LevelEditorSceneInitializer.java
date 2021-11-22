@@ -10,26 +10,24 @@ import job.*;
 import org.joml.Vector2f;
 import renderer.DebugDraw;
 
-public class LevelEditorScene extends Scene
+public class LevelEditorSceneInitializer extends SceneInitializer
 {
     private SpriteSheet sprites;
-
-    GameObject levelEditorStuff = this.createGameObject("LevelEditor");
+    private GameObject levelEditorStuff;
 
     @Override
-    public void init()
+    public void init(Scene scene)
     {
-        loadResources();
         sprites = AssetPool.getSpritesheet("assets/images/spritesheet.png");
         SpriteSheet gizmos = AssetPool.getSpritesheet("assets/images/gizmos.png");
 
-        this.camera = new Camera(new Vector2f(-250,0));
+        levelEditorStuff = scene.createGameObject("LevelEditor");
+        levelEditorStuff.setNoSerialize();
         levelEditorStuff.addComponent(new MouseControls());
         levelEditorStuff.addComponent(new GridLines());
-        levelEditorStuff.addComponent(new EditorCamera(this.camera));
+        levelEditorStuff.addComponent(new EditorCamera(scene.camera()));
         levelEditorStuff.addComponent(new GizmoSystem(gizmos));
-
-        levelEditorStuff.start();
+        scene.addGameObjectToScene(levelEditorStuff);
 
         //DebugDraw.addLine2D(new Vector2f(0,0), new Vector2f(800, 800), new Vector3f(1, 1, 1), 120);
 
@@ -60,7 +58,8 @@ public class LevelEditorScene extends Scene
         //obj1.addComponent(new SpriteRenderer(new Vector4f(1,0,0,1)));
     }
 
-    private void loadResources()
+    @Override
+    public void loadResources(Scene scene)
     {
         AssetPool.getShader("assets/shaders/default.glsl");
 
@@ -72,7 +71,7 @@ public class LevelEditorScene extends Scene
                         24, 48, 3, 0));
         //AssetPool.getTexture("assets/images/Stone0.png");
 
-        for(GameObject g : gameObjects)
+        for(GameObject g : scene.getGameObjects())
         {
             if(g.getComponent(SpriteRenderer.class) != null)
             {
@@ -85,7 +84,7 @@ public class LevelEditorScene extends Scene
         }
     }
 
-    public LevelEditorScene()
+    public LevelEditorSceneInitializer()
     {
 
     }
@@ -96,7 +95,7 @@ public class LevelEditorScene extends Scene
     private float spriteFlipTime = 0.3f;
     private float spriteFlipTimeLeft = 0.0f;
     //float t = 0.0f;
-    @Override
+/*    @Override
     public void update(double dt)
     {
         levelEditorStuff.update((float)dt);
@@ -105,12 +104,12 @@ public class LevelEditorScene extends Scene
         //DebugDraw.addBox2D(new Vector2f(200, 200), new Vector2f(64, 32), 45);
         //DebugDraw.addCircle(new Vector2f(300, 300), 50);
 
-/*        float x = ((float)Math.sin(t) * 200.0f) + 600;
+*//*        float x = ((float)Math.sin(t) * 200.0f) + 600;
         float y = ((float)Math.cos(t) * 200.0f) + 400;
         t += 0.05f;
-        DebugDraw.addLine2D(new Vector2f(600, 400), new Vector2f(x, y), new Vector3f(0, 0, 1), 100);*/
+        DebugDraw.addLine2D(new Vector2f(600, 400), new Vector2f(x, y), new Vector3f(0, 0, 1), 100);*//*
 
-/*        spriteFlipTimeLeft -= dt;
+*//*        spriteFlipTimeLeft -= dt;
         if(spriteFlipTimeLeft <= 0)
         {
             spriteFlipTimeLeft = spriteFlipTime;
@@ -120,19 +119,13 @@ public class LevelEditorScene extends Scene
                 spriteIndex = 0;
             }
             obj1.getComponent(SpriteRenderer.class).setSprite(sprites.getSprite(spriteIndex));
-        }*/
+        }*//*
 
         for(GameObject go : this.gameObjects)
         {
             go.update((float)dt);
         }
-    }
-
-    @Override
-    public void render()
-    {
-        this.renderer.render();
-    }
+    }*/
 
     @Override
     public void imgui()

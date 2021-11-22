@@ -1,13 +1,13 @@
 [
   {
-    "uid": 1,
+    "uid": 0,
     "name": "Sprite_Object_Gen",
     "components": [
       {
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 100.0,
+            "x": 315.5873,
             "y": 200.0
           },
           "scale": {
@@ -59,10 +59,11 @@
         }
       }
     ],
-    "doSerialization": true
+    "doSerialization": true,
+    "isDead": false
   },
   {
-    "uid": 2,
+    "uid": 1,
     "name": "Sprite_Object_Gen",
     "components": [
       {
@@ -127,6 +128,7 @@
         }
       }
     ],
-    "doSerialization": true
+    "doSerialization": true,
+    "isDead": false
   }
 ]

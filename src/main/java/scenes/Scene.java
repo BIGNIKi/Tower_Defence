@@ -9,6 +9,7 @@ import job.Camera;
 import job.GameObject;
 import job.GameObjectDeserializer;
 import job.Transform;
+import org.joml.Vector2f;
 import renderer.Renderer;
 
 import java.io.FileWriter;
@@ -19,32 +20,42 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public abstract class Scene
+public class Scene
 {
-    protected Renderer renderer = new Renderer();
-    protected Camera camera;
-    private boolean isRunning = false;
-    protected List<GameObject> gameObjects = new ArrayList<>();
-    protected boolean levelLoaded = false;
+    private Renderer renderer;
+    private Camera camera;
+    private boolean isRunning;
+    private List<GameObject> gameObjects;
 
-    public Scene()
-    {
+    private SceneInitializer sceneInitializer;
 
+    public Scene(SceneInitializer sceneInitializer) {
+        this.sceneInitializer = sceneInitializer;
+        this.renderer = new Renderer();
+        this.gameObjects = new ArrayList<>();
+        this.isRunning = false;
     }
 
     public void init()
     {
-
+        this.camera = new Camera(new Vector2f(-250, 0));
+        this.sceneInitializer.loadResources(this);
+        this.sceneInitializer.init(this);
     }
 
-    public void start()
-    {
-        for(GameObject go : gameObjects)
-        {
+    public void start() {
+        for (int i=0; i < gameObjects.size(); i++) {
+            GameObject go = gameObjects.get(i);
             go.start();
             this.renderer.add(go);
         }
         isRunning = true;
+    }
+
+    public void destroy() {
+        for (GameObject go : gameObjects) {
+            go.destroy();
+        }
     }
 
     public void addGameObjectToScene(GameObject go)
@@ -70,9 +81,62 @@ public abstract class Scene
         return result.orElse(null);
     }
 
+    public void editorUpdate(float dt) {
+        this.camera.adjuctProjection();
+
+        for (int i=0; i < gameObjects.size(); i++) {
+            GameObject go = gameObjects.get(i);
+            go.editorUpdate(dt);
+
+            if (go.isDead()) {
+                gameObjects.remove(i);
+                this.renderer.destroyGameObject(go);
+                i--;
+            }
+        }
+    }
+
     //each scene has to have such method (it is all job which executes each frame)
-    public abstract void update(double dt);
-    public abstract void render();
+    public void update(double dt)
+    {
+        this.camera.adjuctProjection(); // нужно, чтобы зум работал
+
+        //DebugDraw.addBox2D(new Vector2f(200, 200), new Vector2f(64, 32), 45);
+        //DebugDraw.addCircle(new Vector2f(300, 300), 50);
+
+/*        float x = ((float)Math.sin(t) * 200.0f) + 600;
+        float y = ((float)Math.cos(t) * 200.0f) + 400;
+        t += 0.05f;
+        DebugDraw.addLine2D(new Vector2f(600, 400), new Vector2f(x, y), new Vector3f(0, 0, 1), 100);*/
+
+/*        spriteFlipTimeLeft -= dt;
+        if(spriteFlipTimeLeft <= 0)
+        {
+            spriteFlipTimeLeft = spriteFlipTime;
+            spriteIndex++;
+            if(spriteIndex >= 2)
+            {
+                spriteIndex = 0;
+            }
+            obj1.getComponent(SpriteRenderer.class).setSprite(sprites.getSprite(spriteIndex));
+        }*/
+
+        for (int i=0; i < gameObjects.size(); i++) {
+            GameObject go = gameObjects.get(i);
+            go.update((float)dt);
+
+            if (go.isDead()) {
+                gameObjects.remove(i);
+                this.renderer.destroyGameObject(go);
+                i--;
+            }
+        }
+    }
+
+    public void render()
+    {
+        this.renderer.render();
+    }
 
     public Camera camera()
     {
@@ -81,7 +145,7 @@ public abstract class Scene
 
     public void imgui()
     {
-
+        this.sceneInitializer.imgui();
     }
 
     public GameObject createGameObject(String name) {
@@ -91,7 +155,7 @@ public abstract class Scene
         return go;
     }
 
-    public void saveExit()
+    public void save()
     {
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
@@ -162,8 +226,11 @@ public abstract class Scene
             maxCompId++;
             GameObject.init(maxGoId);
             Component.init(maxCompId);
-            this.levelLoaded = true;
         }
 
+    }
+
+    public List<GameObject> getGameObjects() {
+        return this.gameObjects;
     }
 }
