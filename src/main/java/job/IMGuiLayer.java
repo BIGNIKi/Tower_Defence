@@ -3,7 +3,7 @@ package job;
 import editor.GameViewWindow;
 import editor.MenuBar;
 import editor.PropertiesWindow;
-import editor.SceneHeirarchyWindow;
+import editor.SceneHierarchyWindow;
 import imgui.*;
 import imgui.callback.ImStrConsumer;
 import imgui.callback.ImStrSupplier;
@@ -13,8 +13,6 @@ import imgui.glfw.ImGuiImplGlfw;
 import imgui.type.ImBoolean;
 import renderer.PickingTexture;
 import scenes.Scene;
-
-import java.awt.event.KeyListener;
 
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL11.*;
@@ -32,7 +30,7 @@ public class IMGuiLayer
     private GameViewWindow gameViewWindow;
     private PropertiesWindow propertiesWindow;
     private MenuBar menuBar;
-    private SceneHeirarchyWindow sceneHeirarchyWindow;
+    private SceneHierarchyWindow sceneHeirarchyWindow;
 
     public IMGuiLayer(long glfwWindow, PickingTexture pickingTexture)
     {
@@ -40,7 +38,7 @@ public class IMGuiLayer
         this.gameViewWindow = new GameViewWindow();
         this.propertiesWindow = new PropertiesWindow(pickingTexture);
         this.menuBar = new MenuBar();
-        this.sceneHeirarchyWindow = new SceneHeirarchyWindow();
+        this.sceneHeirarchyWindow = new SceneHierarchyWindow();
     }
 
     // Initialize Dear ImGui.
@@ -54,8 +52,8 @@ public class IMGuiLayer
         final ImGuiIO io = ImGui.getIO();
 
         io.setIniFilename("imgui.ini"); // We don't want to save .ini file
-        io.setConfigFlags(ImGuiConfigFlags.DockingEnable);
-        //io.setConfigFlags(ImGuiConfigFlags.ViewportsEnable);
+        io.addConfigFlags(ImGuiConfigFlags.DockingEnable);
+        io.addConfigFlags(ImGuiConfigFlags.ViewportsEnable);
         io.setBackendPlatformName("imgui_java_impl_glfw");
 
         // ------------------------------------------------------------
@@ -211,10 +209,10 @@ public class IMGuiLayer
         ImGui.render();
         imGuiGl3.renderDrawData(ImGui.getDrawData());
 
-//        long backupWindowPtr = glfwGetCurrentContext();
-//        ImGui.updatePlatformWindows();
-//        ImGui.renderPlatformWindowsDefault();
-//        glfwMakeContextCurrent(backupWindowPtr);
+        long backupWindowPtr = glfwGetCurrentContext();
+        ImGui.updatePlatformWindows();
+        ImGui.renderPlatformWindowsDefault();
+        glfwMakeContextCurrent(backupWindowPtr);
     }
 
     // If you want to clean a room after yourself - do it by yourself
@@ -227,10 +225,10 @@ public class IMGuiLayer
     {
         int windowFlags = ImGuiWindowFlags.MenuBar | ImGuiWindowFlags.NoDocking;
 
-/*        ImGuiViewport mainViewPort = ImGui.getMainViewport();
+        ImGuiViewport mainViewPort = ImGui.getMainViewport();
         ImGui.setNextWindowPos(mainViewPort.getWorkPosX(), mainViewPort.getWorkPosY());
         ImGui.setNextWindowSize(mainViewPort.getWorkSizeX(), mainViewPort.getWorkSizeY());
-        ImGui.setNextWindowViewport(mainViewPort.getID());*/
+        ImGui.setNextWindowViewport(mainViewPort.getID());
         ImGui.setNextWindowPos(0.0f, 0.0f);
         ImGui.setNextWindowSize(MainWindow.getWidth(), MainWindow.getHeight());
         ImGui.pushStyleVar(ImGuiStyleVar.WindowRounding, 0.0f);

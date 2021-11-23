@@ -5,7 +5,8 @@
     <file url="file://$PROJECT_DIR$/src/main/java/editor/GameViewWindow.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/main/java/editor/MenuBar.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/main/java/editor/PropertiesWindow.java" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/src/main/java/editor/SceneHeirarchyWindow.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/editor/SceneHierarchyWindow.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/job/Transform.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/main/java/scenes/LevelEditorSceneInitializer.java" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/src/main/java/scenes/Scene.java" charset="windows-1251" />
   </component>
