@@ -145,7 +145,11 @@ public class LevelEditorSceneInitializer extends SceneInitializer
         ImVec2 itemSpacing = new ImVec2();
         ImGui.getStyle().getItemSpacing(itemSpacing);
 
+        // TODO: удалить переменную
+        int tempI = 0;
+
         float windowX2 = windowPos.x + windowSize.x;
+        // создание кнопок (текстур) в цикле
         for(int i = 0; i < sprites.size(); i++)
         {
             Sprite sprite = sprites.getSprite(i);
@@ -157,12 +161,14 @@ public class LevelEditorSceneInitializer extends SceneInitializer
             Vector2f[] texCoords = sprite.getTexCoords();
 
             ImGui.pushID(i);
+            // условия для кнопок
             if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))
             {
                 //GameObject object = Prefabs.generateSpriteObject(sprite, sprite.getWidth(), sprite.getHeight());
-                GameObject object = Prefabs.generateSpriteObject(sprite, Settings.GRID_WIDTH, Settings.GRID_HEIGHT);
+                GameObject object = Prefabs.generateSpriteObject(sprite, 0.25f, 0.25f);
                 // Attach this to the mouse cursor
-                //mouseControls.pickupObject(object);
+                // mouseControls.pickupObject(object);
+                // ЗАХВАТ ОБЪЕКТА
                 levelEditorStuff.getComponent(MouseControls.class).pickupObject(object);
             }
             ImGui.popID();
@@ -175,8 +181,55 @@ public class LevelEditorSceneInitializer extends SceneInitializer
             {
                 ImGui.sameLine();
             }
+            tempI = i;
         }
+
+        // ВРЕМЕННО
+
+/*        Sprite sprite = new Sprite();
+        sprite.setTexture(AssetPool.getTexture("assets/images/greenEnemy.png"));
+        float spriteWidth = 50;
+        float spriteHeight = 50;
+        int id = sprite.getTexId();
+        Vector2f[] texCoords = sprite.getTexCoords();
+        ImGui.pushID(tempI);
+        tempI++;
+        // условия для кнопок
+        if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))
+        {
+            //GameObject object = Prefabs.generateSpriteObject(sprite, sprite.getWidth(), sprite.getHeight());
+            GameObject object = Prefabs.generateSpriteObject(sprite, 25, 25);
+            // Attach this to the mouse cursor
+            // mouseControls.pickupObject(object);
+            // ЗАХВАТ ОБЪЕКТА
+            levelEditorStuff.getComponent(MouseControls.class).pickupObject(object);
+        }
+        ImGui.popID();
+
+        sprite = new Sprite();
+        sprite.setTexture(AssetPool.getTexture("assets/images/base.png"));
+        spriteWidth = 50;
+        spriteHeight = 50;
+        id = sprite.getTexId();
+        texCoords = sprite.getTexCoords();
+        ImGui.pushID(tempI);
+        tempI++;
+        // условия для кнопок
+        if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))
+        {
+            //GameObject object = Prefabs.generateSpriteObject(sprite, sprite.getWidth(), sprite.getHeight());
+            GameObject object = Prefabs.generateSpriteObject(sprite, 25, 25);
+            // Attach this to the mouse cursor
+            // mouseControls.pickupObject(object);
+            // ЗАХВАТ ОБЪЕКТА
+            levelEditorStuff.getComponent(MouseControls.class).pickupObject(object);
+        }
+        ImGui.popID();*/
+
+        // ВРЕМЕННО
 
         ImGui.end();
     }
+
+    // TODO: сделать нормально добавление текстур
 }

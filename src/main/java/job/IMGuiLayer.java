@@ -227,6 +227,7 @@ public class IMGuiLayer
         //ImGui.showDemoWindow();
         gameViewWindow.imgui();
         propertiesWindow.update(dt, currentScene);
+        // добавление компанент к объекту
         propertiesWindow.imgui();
         menuBar.imgui();
         ImGui.end();
