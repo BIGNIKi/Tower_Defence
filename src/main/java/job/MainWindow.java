@@ -252,12 +252,12 @@ public final class MainWindow implements Observer
         }
     }
 
-    public static float getWidth()
+    public static int getWidth()
     {
         return get().width;
     }
 
-    public static float getHeight()
+    public static int getHeight()
     {
         return get().heigth;
     }
