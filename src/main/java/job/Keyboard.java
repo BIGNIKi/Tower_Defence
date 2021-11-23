@@ -30,10 +30,12 @@ public final class Keyboard
         if(action == GLFW_PRESS) //the key or button was pressed
         {
             get().keyPressed[key] = true;
+            get().keyBeginPress[key] = true;
         }
         else if(action == GLFW_RELEASE)
         {
             get().keyPressed[key] = false;
+            get().keyBeginPress[key] = false;
         }
     }
 
@@ -42,6 +44,8 @@ public final class Keyboard
         return get().keyPressed[keyCode];
     }
 
+    // эта штука возвращает true только в первый кадр, когда кнопка была нажата
+    // если продолжать удерживать кнопку, то во все последующие кадры будет возвращать false
     public static boolean keyBeginPress(int keyCode) {
         boolean result = get().keyBeginPress[keyCode];
         if (result) {
