@@ -705,7 +705,7 @@
     "isDead": false
   },
   {
-    "uid": 16,
+    "uid": 11,
     "name": "Sprite_Object_Gen",
     "components": [
       {
@@ -768,7 +768,7 @@
     "isDead": false
   },
   {
-    "uid": 17,
+    "uid": 12,
     "name": "Sprite_Object_Gen",
     "components": [
       {
