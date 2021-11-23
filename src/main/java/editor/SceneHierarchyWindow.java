@@ -12,7 +12,7 @@ public class SceneHierarchyWindow
     private static String payloadDragDropType = "SceneHierarchy";
 
     public void imgui() {
-        ImGui.begin("Scene hierarchy");
+        ImGui.begin("�������� �����");
 
         List<GameObject> gameObjects = MainWindow.getScene().getGameObjects();
         int index = 0;
@@ -42,13 +42,6 @@ public class SceneHierarchyWindow
                 obj.name
         );
         ImGui.popID();
-
-        // если нажали на item в иерархии
-        if(ImGui.isItemClicked())
-        {
-            // выбираем объект
-            MainWindow.getImguiLayer().getPropertiesWindow().setActiveGameObject(obj);
-        }
 
         if (ImGui.beginDragDropSource()) {
             ImGui.setDragDropPayloadObject(payloadDragDropType, obj);

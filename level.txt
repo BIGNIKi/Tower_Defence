@@ -706,7 +706,7 @@
   },
   {
     "uid": 11,
-    "name": "Sprite_Object_Gen",
+    "name": "Amogus",
     "components": [
       {
         "type": "job.Transform",
@@ -824,6 +824,69 @@
             ]
           },
           "uid": 177
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 19,
+    "name": "Amogus",
+    "components": [
+      {
+        "type": "job.Transform",
+        "properties": {
+          "position": {
+            "x": -248.13782,
+            "y": 1.85
+          },
+          "scale": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "zIndex": 0,
+          "uid": 174
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 0.5,
+                "y": 1.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "uid": 175
         }
       }
     ],
