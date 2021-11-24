@@ -13,7 +13,7 @@ public class LevelEditorController {
     return level;
   }
 
-  public void CreateWave(HashMap<MonsterType, Integer> monsterDistribution, Long experienceForCompletion, Long coinsForCompletion) {
-    var wave = new Wave(monsterDistribution, experienceForCompletion, coinsForCompletion);
+  public void CreateWave(GameField gameField, HashMap<MonsterType, long> monsterDistribution, long experienceForCompletion, long coinsForCompletion) {
+    var wave = new Wave(gameField, monsterDistribution, experienceForCompletion, coinsForCompletion);
   }
 }
