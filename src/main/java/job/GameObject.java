@@ -7,6 +7,7 @@ import components.Component;
 import components.ComponentDeserializer;
 import components.SpriteRenderer;
 import imgui.ImGui;
+import scenes.Scene;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +23,9 @@ public class GameObject
     private boolean doSerialization = true;
     private boolean isDead = false;
 
+    // TODO mine
+    public transient Scene currentScene;
+
 /*    public GameObject(String name)
     {
         this.name = name;
@@ -30,12 +34,13 @@ public class GameObject
         this.zIndex = 0;
     }*/
 
-    public GameObject(String name)
+    public GameObject(String name, Scene currentScene)
     {
         this.name = name;
         this.components = new ArrayList<>();
 
         this.uid = ID_COUNTER++;
+        this.currentScene = currentScene;
     }
 
     public <T extends Component> T getComponent(Class<T> componentClass)
@@ -111,7 +116,7 @@ public class GameObject
         // TODO: come up with cleaner solution
         Gson gson = new GsonBuilder()
                 .registerTypeAdapter(Component.class, new ComponentDeserializer())
-                .registerTypeAdapter(GameObject.class, new GameObjectDeserializer())
+                .registerTypeAdapter(GameObject.class, new GameObjectDeserializer(currentScene))
                 .create();
         String objAsJson = gson.toJson(this);
         GameObject obj = gson.fromJson(objAsJson, GameObject.class);

@@ -223,7 +223,9 @@ public class RenderBatch implements Comparable<RenderBatch>
         {
             transformMatrix.translate(sprite.gameObject.transform.position.x,
                     sprite.gameObject.transform.position.y, 0);
-            transformMatrix.rotate((float)Math.toRadians(sprite.gameObject.transform.rotation),
+            // TODO: mine
+            float rotNew = -sprite.gameObject.transform.rotation;
+            transformMatrix.rotate((float)Math.toRadians(rotNew),
                     0,0,1);
             transformMatrix.scale(sprite.gameObject.transform.scale.x,
                     sprite.gameObject.transform.scale.y, 1);

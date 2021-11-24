@@ -2,8 +2,6 @@ package components;
 
 import job.GameObject;
 import org.joml.Vector2f;
-import org.joml.Vector3f;
-import renderer.DebugDraw;
 
 public class TowerRotate extends Component
 {
@@ -35,7 +33,5 @@ public class TowerRotate extends Component
 
             this.gameObject.transform.rotation =  (float)(atan % 360);
         }
-
-        //DebugDraw.addCircle(this.gameObject.transform.position, 1, new Vector3f(0,1,0));
     }
 }

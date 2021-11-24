@@ -17,7 +17,8 @@ public class EditorCamera extends Component
     private Vector2f clickOrigin;
     private boolean reset = false;
 
-    private float lerpTime = 0.0f;
+    private float lerpTimePos = 0.0f;
+    private float lerpTimeSize = 0.0f;
     private float dragSensitivity = 0.3f;
     private float scrollSensitivity = 0.1f;
 
@@ -64,14 +65,16 @@ public class EditorCamera extends Component
 
         if(reset)
         {
-            levelEditorCamera.position.lerp(new Vector2f(), lerpTime);
+            levelEditorCamera.position.lerp(new Vector2f(), lerpTimePos);
             levelEditorCamera.setZoom(this.levelEditorCamera.getZoom() +
-                    ((1.0f - levelEditorCamera.getZoom()) * lerpTime));
-            this.lerpTime += 0.1f * dt;
-            if(Math.abs(levelEditorCamera.position.x) <= 5.0f &&
-                    Math.abs(levelEditorCamera.position.y) <= 5.0f)
+                    ((1.0f - levelEditorCamera.getZoom()) * lerpTimeSize));
+            this.lerpTimePos += 0.01f * dt;
+            this.lerpTimeSize += 0.025f * dt;
+            if(Math.abs(levelEditorCamera.position.x) <= 0.1f &&
+                    Math.abs(levelEditorCamera.position.y) <= 0.1f)
             {
-                this.lerpTime = 0.0f;
+                this.lerpTimePos = 0.0f;
+                this.lerpTimeSize = 0.0f;
                 levelEditorCamera.position.set(0f, 0f);
                 this.levelEditorCamera.setZoom(1.0f);
                 reset = false;

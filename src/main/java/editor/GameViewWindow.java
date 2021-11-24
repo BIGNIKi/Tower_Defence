@@ -17,14 +17,14 @@ public class GameViewWindow
 
     public void imgui()
     {
-        ImGui.begin("Область предпросмотра игры", ImGuiWindowFlags.NoScrollbar | ImGuiWindowFlags.NoScrollWithMouse | ImGuiWindowFlags.MenuBar);
+        ImGui.begin("Scene", ImGuiWindowFlags.NoScrollbar | ImGuiWindowFlags.NoScrollWithMouse | ImGuiWindowFlags.MenuBar);
 
         ImGui.beginMenuBar();
-        if (ImGui.menuItem("Играть", "", isPlaying, !isPlaying)) {
+        if (ImGui.menuItem("Play", "", isPlaying, !isPlaying)) {
             isPlaying = true;
             EventSystem.notify(null, new Event(EventType.GameEngineStartPlay));
         }
-        if (ImGui.menuItem("Остановить", "", !isPlaying, isPlaying)) {
+        if (ImGui.menuItem("Stop", "", !isPlaying, isPlaying)) {
             isPlaying = false;
             EventSystem.notify(null, new Event(EventType.GameEngineStopPlay));
         }

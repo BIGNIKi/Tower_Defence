@@ -38,7 +38,7 @@ public class Scene
 
     public void init()
     {
-        this.camera = new Camera(new Vector2f(-250, 0));
+        this.camera = new Camera(new Vector2f(0, 0));
         this.sceneInitializer.loadResources(this);
         this.sceneInitializer.init(this);
     }
@@ -77,7 +77,16 @@ public class Scene
         Optional<GameObject> result = this.gameObjects.stream()
                 .filter(gameObject -> gameObject.getUid() == gameObjectId)
                 .findFirst();
-        // если есть результат, вёрнет GameObject, если нет, то null
+        // ???? ???? ?????????, ?????? GameObject, ???? ???, ?? null
+        return result.orElse(null);
+    }
+
+    // TODO mine
+    public GameObject getGameObjectByName(String name)
+    {
+        Optional<GameObject> result = this.gameObjects.stream()
+                .filter(gameObject -> gameObject.name.equals(name))
+                .findFirst();
         return result.orElse(null);
     }
 
@@ -99,7 +108,7 @@ public class Scene
     //each scene has to have such method (it is all job which executes each frame)
     public void update(double dt)
     {
-        this.camera.adjuctProjection(); // нужно, чтобы зум работал
+        this.camera.adjuctProjection(); // ?????, ????? ??? ???????
 
         //DebugDraw.addBox2D(new Vector2f(200, 200), new Vector2f(64, 32), 45);
         //DebugDraw.addCircle(new Vector2f(300, 300), 50);
@@ -149,7 +158,7 @@ public class Scene
     }
 
     public GameObject createGameObject(String name) {
-        GameObject go = new GameObject(name);
+        GameObject go = new GameObject(name, this);
         go.addComponent(new Transform());
         go.transform = go.getComponent(Transform.class);
         return go;
@@ -160,7 +169,7 @@ public class Scene
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
                 .registerTypeAdapter(Component.class, new ComponentDeserializer())
-                .registerTypeAdapter(GameObject.class, new GameObjectDeserializer())
+                .registerTypeAdapter(GameObject.class, new GameObjectDeserializer(this))
                 .create();
 
         try
@@ -188,7 +197,7 @@ public class Scene
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
                 .registerTypeAdapter(Component.class, new ComponentDeserializer())
-                .registerTypeAdapter(GameObject.class, new GameObjectDeserializer())
+                .registerTypeAdapter(GameObject.class, new GameObjectDeserializer(this))
                 .create();
 
         String inFile = "";
