@@ -17,12 +17,21 @@ test {
 project.ext.lwjglVersion = "3.2.3"
 project.ext.jomlVersion = "1.10.2"
 project.ext.lwjglNatives = "natives-windows"
+project.ext.imguiVersion = '1.81.0'
 
 repositories {
+    jcenter()
     mavenCentral()
 }
 
 dependencies {
+    // GSON
+    implementation 'com.google.code.gson:gson:2.8.9'
+
+    // IM GUI stuff
+    implementation "io.github.spair:imgui-java-app:$imguiVersion"
+
+    // LWJGL stuff
     implementation platform("org.lwjgl:lwjgl-bom:$lwjglVersion")
 
     implementation "org.lwjgl:lwjgl"

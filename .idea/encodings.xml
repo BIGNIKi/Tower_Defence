@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/components/SpriteRenderer.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/editor/GameViewWindow.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/editor/MenuBar.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/editor/PropertiesWindow.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/editor/SceneHierarchyWindow.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/job/Transform.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/scenes/LevelEditorSceneInitializer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/scenes/Scene.java" charset="windows-1251" />
+  </component>
+</project>

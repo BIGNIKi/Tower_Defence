@@ -9,6 +9,7 @@ public final class Keyboard
 {
     private static Keyboard kbd;
     private final boolean[] keyPressed = new boolean[350];
+    private boolean keyBeginPress[] = new boolean[350];
 
     private Keyboard()
     {
@@ -29,15 +30,27 @@ public final class Keyboard
         if(action == GLFW_PRESS) //the key or button was pressed
         {
             get().keyPressed[key] = true;
+            get().keyBeginPress[key] = true;
         }
         else if(action == GLFW_RELEASE)
         {
             get().keyPressed[key] = false;
+            get().keyBeginPress[key] = false;
         }
     }
 
     public static boolean isKeyPressed(int keyCode)
     {
         return get().keyPressed[keyCode];
+    }
+
+    // эта штука возвращает true только в первый кадр, когда кнопка была нажата
+    // если продолжать удерживать кнопку, то во все последующие кадры будет возвращать false
+    public static boolean keyBeginPress(int keyCode) {
+        boolean result = get().keyBeginPress[keyCode];
+        if (result) {
+            get().keyBeginPress[keyCode] = false;
+        }
+        return result;
     }
 }
