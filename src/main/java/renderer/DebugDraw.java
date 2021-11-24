@@ -17,7 +17,7 @@ import static org.lwjgl.opengl.GL30.glGenVertexArrays;
 
 public class DebugDraw
 {
-    private static int MAX_LINES = 500;
+    private static int MAX_LINES = 1500;
 
     private static List<Line2D> lines = new ArrayList<>();
     // 6 floats per vertex, 2 vertices per line
@@ -183,7 +183,7 @@ public class DebugDraw
 
     public static void addCircle(Vector2f center, float radius, Vector3f color, int lifetime)
     {
-        Vector2f[] points = new Vector2f[20];
+        Vector2f[] points = new Vector2f[50];
         int increment = 360 / points.length;
         int currentAngle = 0;
 
