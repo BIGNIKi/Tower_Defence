@@ -36,7 +36,6 @@ public class LevelEditorSceneInitializer extends SceneInitializer
         obj1SpriteRenderer.setSprite(sprites.getSprite(0));
         obj1.addComponent(obj1SpriteRenderer);
         this.addGameObjectToScene(obj1);
-
         GameObject obj2 = new GameObject("Object 2", new Transform(new Vector2f(400, 100), new Vector2f(100, 100)), 1);
         SpriteRenderer obj2SpriteRenderer = new SpriteRenderer();
         Sprite obj2Sprite = new Sprite();
@@ -45,7 +44,6 @@ public class LevelEditorSceneInitializer extends SceneInitializer
         obj2.addComponent(obj2SpriteRenderer);
         obj2.addComponent(new Rigidbody());
         this.addGameObjectToScene(obj2);
-
         GameObject obj3 = new GameObject("Object 3", new Transform(new Vector2f(450, 100), new Vector2f(100, 100)), 0);
         SpriteRenderer obj3SpriteRenderer = new SpriteRenderer();
         Sprite obj3Sprite = new Sprite();
@@ -99,17 +97,14 @@ public class LevelEditorSceneInitializer extends SceneInitializer
     public void update(double dt)
     {
         levelEditorStuff.update((float)dt);
-        this.camera.adjuctProjection(); // íóæíî, ÷òîáû çóì ðàáîòàë
-
+        this.camera.adjuctProjection(); // Ã­Ã³Ã¦Ã­Ã®, Ã·Ã²Ã®Ã¡Ã» Ã§Ã³Ã¬ Ã°Ã Ã¡Ã®Ã²Ã Ã«
         //DebugDraw.addBox2D(new Vector2f(200, 200), new Vector2f(64, 32), 45);
         //DebugDraw.addCircle(new Vector2f(300, 300), 50);
-
 *//*        float x = ((float)Math.sin(t) * 200.0f) + 600;
         float y = ((float)Math.cos(t) * 200.0f) + 400;
         t += 0.05f;
         DebugDraw.addLine2D(new Vector2f(600, 400), new Vector2f(x, y), new Vector3f(0, 0, 1), 100);*//*
-
-*//*        spriteFlipTimeLeft -= dt;
+ *//*        spriteFlipTimeLeft -= dt;
         if(spriteFlipTimeLeft <= 0)
         {
             spriteFlipTimeLeft = spriteFlipTime;
@@ -120,7 +115,6 @@ public class LevelEditorSceneInitializer extends SceneInitializer
             }
             obj1.getComponent(SpriteRenderer.class).setSprite(sprites.getSprite(spriteIndex));
         }*//*
-
         for(GameObject go : this.gameObjects)
         {
             go.update((float)dt);
@@ -134,8 +128,8 @@ public class LevelEditorSceneInitializer extends SceneInitializer
         levelEditorStuff.imgui();
         ImGui.end();
 
-        ImGui.begin("Îáîçðåâàòåëü òåêñòóð: ");
-/*        ImGui.text("Óðîí: 5000");
+        ImGui.begin("Sprites:");
+/*        ImGui.text("Ã“Ã°Ã®Ã­: 5000");
         ImGui.text("HP: 1");*/
 
         ImVec2 windowPos = new ImVec2();
@@ -145,11 +139,11 @@ public class LevelEditorSceneInitializer extends SceneInitializer
         ImVec2 itemSpacing = new ImVec2();
         ImGui.getStyle().getItemSpacing(itemSpacing);
 
-        // TODO: óäàëèòü ïåðåìåííóþ
+        // TODO: Ã³Ã¤Ã Ã«Ã¨Ã²Ã¼ Ã¯Ã¥Ã°Ã¥Ã¬Ã¥Ã­Ã­Ã³Ã¾
         int tempI = 0;
 
         float windowX2 = windowPos.x + windowSize.x;
-        // ñîçäàíèå êíîïîê (òåêñòóð) â öèêëå
+        // Ã±Ã®Ã§Ã¤Ã Ã­Ã¨Ã¥ ÃªÃ­Ã®Ã¯Ã®Ãª (Ã²Ã¥ÃªÃ±Ã²Ã³Ã°) Ã¢ Ã¶Ã¨ÃªÃ«Ã¥
         for(int i = 0; i < sprites.size(); i++)
         {
             Sprite sprite = sprites.getSprite(i);
@@ -161,14 +155,14 @@ public class LevelEditorSceneInitializer extends SceneInitializer
             Vector2f[] texCoords = sprite.getTexCoords();
 
             ImGui.pushID(i);
-            // óñëîâèÿ äëÿ êíîïîê
+            // Ã³Ã±Ã«Ã®Ã¢Ã¨Ã¿ Ã¤Ã«Ã¿ ÃªÃ­Ã®Ã¯Ã®Ãª
             if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))
             {
                 //GameObject object = Prefabs.generateSpriteObject(sprite, sprite.getWidth(), sprite.getHeight());
                 GameObject object = Prefabs.generateSpriteObject(sprite, 0.25f, 0.25f);
                 // Attach this to the mouse cursor
                 // mouseControls.pickupObject(object);
-                // ÇÀÕÂÀÒ ÎÁÚÅÊÒÀ
+                // Ã‡Ã€Ã•Ã‚Ã€Ã’ ÃŽÃÃšÃ…ÃŠÃ’Ã€
                 levelEditorStuff.getComponent(MouseControls.class).pickupObject(object);
             }
             ImGui.popID();
@@ -184,28 +178,27 @@ public class LevelEditorSceneInitializer extends SceneInitializer
             tempI = i;
         }
 
-        // ÂÐÅÌÅÍÍÎ
+        // Ð’Ð Ð•ÐœÐ•ÐÐÐž
 
-/*        Sprite sprite = new Sprite();
-        sprite.setTexture(AssetPool.getTexture("assets/images/greenEnemy.png"));
+        Sprite sprite = new Sprite();
+        sprite.setTexture(AssetPool.getTexture("assets/images/greenEnemy1.png"));
         float spriteWidth = 50;
         float spriteHeight = 50;
         int id = sprite.getTexId();
         Vector2f[] texCoords = sprite.getTexCoords();
         ImGui.pushID(tempI);
         tempI++;
-        // óñëîâèÿ äëÿ êíîïîê
+        // Ã³Ã±Ã«Ã®Ã¢Ã¨Ã¿ Ã¤Ã«Ã¿ ÃªÃ­Ã®Ã¯Ã®Ãª
         if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))
         {
             //GameObject object = Prefabs.generateSpriteObject(sprite, sprite.getWidth(), sprite.getHeight());
-            GameObject object = Prefabs.generateSpriteObject(sprite, 25, 25);
+            GameObject object = Prefabs.generateSpriteObject(sprite, 0.125f, 0.125f);
             // Attach this to the mouse cursor
             // mouseControls.pickupObject(object);
-            // ÇÀÕÂÀÒ ÎÁÚÅÊÒÀ
+            // Ã‡Ã€Ã•Ã‚Ã€Ã’ ÃŽÃÃšÃ…ÃŠÃ’Ã€
             levelEditorStuff.getComponent(MouseControls.class).pickupObject(object);
         }
         ImGui.popID();
-
         sprite = new Sprite();
         sprite.setTexture(AssetPool.getTexture("assets/images/base.png"));
         spriteWidth = 50;
@@ -214,22 +207,22 @@ public class LevelEditorSceneInitializer extends SceneInitializer
         texCoords = sprite.getTexCoords();
         ImGui.pushID(tempI);
         tempI++;
-        // óñëîâèÿ äëÿ êíîïîê
+        // Ã³Ã±Ã«Ã®Ã¢Ã¨Ã¿ Ã¤Ã«Ã¿ ÃªÃ­Ã®Ã¯Ã®Ãª
         if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))
         {
             //GameObject object = Prefabs.generateSpriteObject(sprite, sprite.getWidth(), sprite.getHeight());
-            GameObject object = Prefabs.generateSpriteObject(sprite, 25, 25);
+            GameObject object = Prefabs.generateSpriteObject(sprite, 0.125f, 0.125f);
             // Attach this to the mouse cursor
             // mouseControls.pickupObject(object);
-            // ÇÀÕÂÀÒ ÎÁÚÅÊÒÀ
+            // Ã‡Ã€Ã•Ã‚Ã€Ã’ ÃŽÃÃšÃ…ÃŠÃ’Ã€
             levelEditorStuff.getComponent(MouseControls.class).pickupObject(object);
         }
-        ImGui.popID();*/
+        ImGui.popID();
 
-        // ÂÐÅÌÅÍÍÎ
+        // Ð’Ð Ð•ÐœÐ•ÐÐÐž
 
         ImGui.end();
     }
 
-    // TODO: ñäåëàòü íîðìàëüíî äîáàâëåíèå òåêñòóð
+    // TODO: Ã±Ã¤Ã¥Ã«Ã Ã²Ã¼ Ã­Ã®Ã°Ã¬Ã Ã«Ã¼Ã­Ã® Ã¤Ã®Ã¡Ã Ã¢Ã«Ã¥Ã­Ã¨Ã¥ Ã²Ã¥ÃªÃ±Ã²Ã³Ã°
 }

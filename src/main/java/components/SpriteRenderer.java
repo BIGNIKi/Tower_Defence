@@ -12,7 +12,7 @@ public class SpriteRenderer extends Component
     private Vector4f color = new Vector4f(1,1,1,1);
     private Sprite sprite = new Sprite();
 
-    //transient - означает, что процесс сериализации будет игнорить эти поля
+    //transient - ????????, ??? ??????? ???????????? ????? ???????? ??? ????
     private transient Transform lastTransform;
     private transient boolean isDirty = true;
 
@@ -22,7 +22,6 @@ public class SpriteRenderer extends Component
         this.sprite = new Sprite(null);
         this.isDirty = true;
     }
-
     public SpriteRenderer(Sprite sprite)
     {
         this.sprite = sprite;
@@ -39,7 +38,7 @@ public class SpriteRenderer extends Component
     @Override
     public void update(float dt)
     {
-        //если что-либо изменилось в Transform'е
+        //???? ???-???? ?????????? ? Transform'?
         if(!this.lastTransform.equals(this.gameObject.transform))
         {
             this.gameObject.transform.copy(this.lastTransform);

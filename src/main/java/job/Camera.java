@@ -49,8 +49,8 @@ public class Camera
         //center - where is the camera looking towards
         //up - on which direction is up
         viewMatrix.lookAt(new Vector3f(position.x, position.y, 20.0f),
-                                            cameraFront.add(position.x, position.y, 0.0f), //center
-                                            cameraUp);
+                cameraFront.add(position.x, position.y, 0.0f), //center
+                cameraUp);
         this.viewMatrix.invert(inverseVeiw);
         return this.viewMatrix;
     }
