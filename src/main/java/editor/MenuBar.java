@@ -10,12 +10,12 @@ public class MenuBar {
     public void imgui() {
         ImGui.beginMenuBar();
 
-        if (ImGui.beginMenu("Файл")) {
-            if (ImGui.menuItem("Сохранить", "Ctrl+S")) {
+        if (ImGui.beginMenu("File")) {
+            if (ImGui.menuItem("Save", "Ctrl+S")) {
                 EventSystem.notify(null, new Event(EventType.SaveLevel));
             }
 
-            if (ImGui.menuItem("Загрузить", "Ctrl+O")) {
+            if (ImGui.menuItem("Load", "Ctrl+O")) {
                 EventSystem.notify(null, new Event(EventType.LoadLevel));
             }
 
