@@ -1,6 +1,6 @@
 [
   {
-    "uid": 0,
+    "uid": 34,
     "name": "Way",
     "components": [
       {
@@ -63,7 +63,7 @@
     "isDead": false
   },
   {
-    "uid": 1,
+    "uid": 35,
     "name": "Way",
     "components": [
       {
@@ -126,7 +126,7 @@
     "isDead": false
   },
   {
-    "uid": 2,
+    "uid": 36,
     "name": "Way",
     "components": [
       {
@@ -189,7 +189,7 @@
     "isDead": false
   },
   {
-    "uid": 3,
+    "uid": 37,
     "name": "Enemy",
     "components": [
       {
@@ -260,7 +260,7 @@
     "isDead": false
   },
   {
-    "uid": 4,
+    "uid": 38,
     "name": "Way",
     "components": [
       {
@@ -323,7 +323,7 @@
     "isDead": false
   },
   {
-    "uid": 5,
+    "uid": 39,
     "name": "Way",
     "components": [
       {
@@ -386,7 +386,7 @@
     "isDead": false
   },
   {
-    "uid": 6,
+    "uid": 40,
     "name": "Way",
     "components": [
       {
@@ -449,7 +449,7 @@
     "isDead": false
   },
   {
-    "uid": 7,
+    "uid": 41,
     "name": "Way",
     "components": [
       {
@@ -512,7 +512,7 @@
     "isDead": false
   },
   {
-    "uid": 8,
+    "uid": 42,
     "name": "base",
     "components": [
       {
@@ -575,7 +575,7 @@
     "isDead": false
   },
   {
-    "uid": 9,
+    "uid": 43,
     "name": "posForTower",
     "components": [
       {
@@ -638,7 +638,7 @@
     "isDead": false
   },
   {
-    "uid": 10,
+    "uid": 44,
     "name": "towerSt",
     "components": [
       {
@@ -701,14 +701,14 @@
     "isDead": false
   },
   {
-    "uid": 11,
+    "uid": 45,
     "name": "tower",
     "components": [
       {
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 2.986807,
+            "x": 2.987,
             "y": 2.0024178
           },
           "scale": {

@@ -30,6 +30,7 @@ public class LevelEditorSceneInitializer extends SceneInitializer
         // и задействует следующие функции:
         levelEditorStuff.setNoSerialize(); // этот объект не сохраняется
         levelEditorStuff.addComponent(new MouseControls()); // отвечает за захват, размещение игрового объекта
+        levelEditorStuff.addComponent(new KeyControls());
         levelEditorStuff.addComponent(new GridLines()); // рисует сетку
         levelEditorStuff.addComponent(new EditorCamera(scene.camera())); // все взаимодействия с камерой для редактора
         levelEditorStuff.addComponent(new GizmoSystem(gizmos)); // отрисовка стрелок для смены позиции/размера

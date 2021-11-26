@@ -9,49 +9,29 @@ import job.Mouse;
 import renderer.PickingTexture;
 import scenes.Scene;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.lwjgl.glfw.GLFW.GLFW_MOUSE_BUTTON_LEFT;
 
 public class PropertiesWindow
 {
+    private List<GameObject> activeGameObjects;
     private GameObject activeGameObject = null;
     private PickingTexture pickingTexture;
 
-    private float debounce = 0.2f;
-
     public PropertiesWindow(PickingTexture pickingTexture)
     {
+        this.activeGameObjects = new ArrayList<>();
         this.pickingTexture = pickingTexture;
-    }
-
-    public void update(float dt, Scene currentScene)
-    {
-        debounce -= dt;
-        // здесь нужно получать координату на экране (не мировую, а именно на экране)
-        // получить цвет пикселя, соответствующий номеру игрового объекта
-        // и если нужно, помечать этот объект как активный в редакторе
-        if(Mouse.mouseButtonDown(GLFW_MOUSE_BUTTON_LEFT) && debounce < 0)
-        {
-            int x = (int)Mouse.getScreenX();
-            int y = (int)Mouse.getScreenY();
-            int gameObjectId = pickingTexture.readPixel(x,y);
-            GameObject pickedObj = currentScene.getGameObject(gameObjectId);
-            if(pickedObj != null && pickedObj.getComponent(NonPickable.class) == null)
-            {
-                activeGameObject = pickedObj;
-            }
-            else if(pickedObj == null && !Mouse.isDragging())
-            {
-                activeGameObject = null;
-            }
-            this.debounce = 0.2f;
-        }
     }
 
     public void imgui()
     {
-        // TODO: ?????, ???? ????? ?????????? ??????? - ???????? ??? ???? ?????????, ??? ??????????? ?? ?????????? Game Object'?
-        if(activeGameObject != null)
+        // когда объект выбран (один объект, не больше), выводим его компоненты
+        if(activeGameObjects.size() == 1 && activeGameObjects.get(0) != null)
         {
+            activeGameObject = activeGameObjects.get(0);
             ImGui.begin("Properties");
             if (ImGui.beginPopupContextWindow("ComponentAdder")) {
                 if (ImGui.menuItem("Add test component"))
@@ -77,10 +57,34 @@ public class PropertiesWindow
 
     public GameObject getActiveGameObject()
     {
-        return this.activeGameObject;
+        return activeGameObjects.size() == 1 ? this.activeGameObjects.get(0) : null;
+    }
+
+    public List<GameObject> getActiveGameObjects()
+    {
+        return this.activeGameObjects;
+    }
+
+    public void clearSelected()
+    {
+        this.activeGameObjects.clear();
     }
 
     public void setActiveGameObject(GameObject go) {
-        this.activeGameObject = go;
+        if(go != null)
+        {
+            clearSelected();
+            this.activeGameObjects.add(go);
+        }
+    }
+
+    public void addActiveGameObject(GameObject go)
+    {
+        this.activeGameObjects.add(go);
+    }
+
+    public PickingTexture getPickingTexture()
+    {
+        return this.pickingTexture;
     }
 }
