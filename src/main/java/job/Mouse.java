@@ -14,7 +14,7 @@ public final class Mouse
 {
     private static Mouse mouse; //we have only one instance of this class
     private double scrollX, scrollY;
-    private double xPos, yPos, lastX, lastY, worldX, worldY, lastWorldX, lastWorldY;
+    private double xPos, yPos, worldX, worldY;
     private final boolean[] mouseButtonPressed = new boolean[9];
     private boolean isDragging;
 
@@ -30,8 +30,6 @@ public final class Mouse
         scrollY = 0;
         xPos = 0;
         yPos = 0;
-        lastX = 0;
-        lastY = 0;
     }
 
     public static Mouse get()
@@ -52,16 +50,9 @@ public final class Mouse
             get().isDragging = true;
         }
 
-        //remember old position values
-        get().lastX = get().xPos;
-        get().lastY = get().yPos;
-        get().lastWorldX = get().worldX;
-        get().lastWorldY = get().worldY;
         //set actual coordinates
         get().xPos = xPos;
         get().yPos = yPos;
-        calcOrthoX();
-        calcOrthoY();
     }
 
     public static void mouseButtonCallback(long wnd, int button, int action, int mods)
@@ -97,10 +88,6 @@ public final class Mouse
     {
         get().scrollX = 0;
         get().scrollY = 0;
-        get().lastX = get().xPos;
-        get().lastY = get().yPos;
-        get().lastWorldX = get().worldX;
-        get().lastWorldY = get().worldY;
     }
 
     public static float getX()
@@ -111,26 +98,6 @@ public final class Mouse
     public static float getY()
     {
         return (float)get().yPos;
-    }
-
-    public static float getDx()
-    {
-        return (float)(get().xPos-get().lastX);
-    }
-
-    public static float getWorldDx()
-    {
-        return (float)(get().lastWorldX-get().worldX);
-    }
-
-    public static float getDy()
-    {
-        return (float)(get().yPos-get().lastY);
-    }
-
-    public static float getWorldDy()
-    {
-        return (float)(get().lastWorldY-get().worldY);
     }
 
     public static float getScrollX()
@@ -162,56 +129,49 @@ public final class Mouse
 
     public static float getScreenX()
     {
-        float currentX = getX() - get().gameViewportPos.x;
-        currentX = (currentX / get().gameViewportSize.x) * 1920.0f;
-
-        return currentX;
+        return getScreen().x;
     }
 
     public static float getScreenY()
     {
+        return getScreen().y;
+    }
+
+    public static Vector2f getScreen()
+    {
+        float currentX = getX() - get().gameViewportPos.x;
+        currentX = (currentX / get().gameViewportSize.x) * 1920.0f;
         float currentY = getY() - get().gameViewportPos.y;
         currentY = 1080.0f - ((currentY / get().gameViewportSize.y) * 1080.0f);
 
-        return currentY;
+        return new Vector2f(currentX, currentY);
     }
 
-    public static float getOrthoX()
+    public static float getWorldX()
     {
-        return (float)get().worldX;
+        return getWorld().x;
     }
 
-    private static void calcOrthoX()
+    // возвращает на какаую координату (в игровом мире) была наведена мышь
+    public static Vector2f getWorld()
     {
         float currentX = getX() - get().gameViewportPos.x;
         currentX = (currentX / get().gameViewportSize.x) * 2.0f - 1.0f;
-        Vector4f tmp = new Vector4f(currentX, 0, 0, 1);
-
-        Camera camera = MainWindow.getScene().camera();
-        Matrix4f viewProjection = new Matrix4f();
-        camera.getInverseVeiw().mul(camera.getInverseProjection(), viewProjection);
-        tmp.mul(viewProjection);
-
-        get().worldX = tmp.x;
-    }
-
-    private static void calcOrthoY()
-    {
         float currentY = getY() - get().gameViewportPos.y;
         currentY = -((currentY / get().gameViewportSize.y) * 2.0f - 1.0f);
-        Vector4f tmp = new Vector4f(0, currentY, 0, 1);
+        Vector4f tmp = new Vector4f(currentX, currentY, 0, 1);
 
         Camera camera = MainWindow.getScene().camera();
-        Matrix4f viewProjection = new Matrix4f();
-        camera.getInverseVeiw().mul(camera.getInverseProjection(), viewProjection);
-        tmp.mul(viewProjection);
+        Matrix4f inverseView = new Matrix4f(camera.getInverseVeiw());
+        Matrix4f inverseProjection = new Matrix4f(camera.getInverseProjection());
+        tmp.mul(inverseView.mul(inverseProjection));
 
-        get().worldY = tmp.y;
+        return new Vector2f(tmp.x, tmp.y);
     }
 
-    public static float getOrthoY()
+    public static float getWorldY()
     {
-        return (float)get().worldY;
+        return getWorld().y;
     }
 
     public static void setGameViewportPos(Vector2f gameViewportPos)

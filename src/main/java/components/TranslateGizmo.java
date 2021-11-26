@@ -18,11 +18,11 @@ public class TranslateGizmo extends Gizmo
         {
             if(xAxisActive && !yAxisActive)
             {
-                activeGameObject.transform.position.x -= Mouse.getWorldDx();
+                activeGameObject.transform.position.x -= Mouse.getWorldX();
             }
             else if(yAxisActive)
             {
-                activeGameObject.transform.position.y -= Mouse.getWorldDy();
+                activeGameObject.transform.position.y -= Mouse.getWorldY();
             }
         }
 
