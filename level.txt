@@ -1,6 +1,6 @@
 [
   {
-    "uid": 34,
+    "uid": 0,
     "name": "Way",
     "components": [
       {
@@ -63,7 +63,7 @@
     "isDead": false
   },
   {
-    "uid": 35,
+    "uid": 1,
     "name": "Way",
     "components": [
       {
@@ -126,7 +126,7 @@
     "isDead": false
   },
   {
-    "uid": 36,
+    "uid": 2,
     "name": "Way",
     "components": [
       {
@@ -189,7 +189,7 @@
     "isDead": false
   },
   {
-    "uid": 37,
+    "uid": 3,
     "name": "Enemy",
     "components": [
       {
@@ -260,7 +260,7 @@
     "isDead": false
   },
   {
-    "uid": 38,
+    "uid": 4,
     "name": "Way",
     "components": [
       {
@@ -323,7 +323,7 @@
     "isDead": false
   },
   {
-    "uid": 39,
+    "uid": 5,
     "name": "Way",
     "components": [
       {
@@ -386,7 +386,7 @@
     "isDead": false
   },
   {
-    "uid": 40,
+    "uid": 6,
     "name": "Way",
     "components": [
       {
@@ -449,7 +449,7 @@
     "isDead": false
   },
   {
-    "uid": 41,
+    "uid": 7,
     "name": "Way",
     "components": [
       {
@@ -512,7 +512,7 @@
     "isDead": false
   },
   {
-    "uid": 42,
+    "uid": 8,
     "name": "base",
     "components": [
       {
@@ -575,7 +575,7 @@
     "isDead": false
   },
   {
-    "uid": 43,
+    "uid": 9,
     "name": "posForTower",
     "components": [
       {
@@ -638,7 +638,7 @@
     "isDead": false
   },
   {
-    "uid": 44,
+    "uid": 10,
     "name": "towerSt",
     "components": [
       {
@@ -701,7 +701,7 @@
     "isDead": false
   },
   {
-    "uid": 45,
+    "uid": 11,
     "name": "tower",
     "components": [
       {
