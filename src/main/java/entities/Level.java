@@ -2,11 +2,12 @@ package entities;
 
 import entities.towers.Tower;
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Level {
   private ArrayList<Wave> waves;
-  private long currentWave = 0;
-  private ArrayList<Tower> towers;
+  private int currentWave = 0;
+  private LinkedList<Tower> towers;
   private Player player;
   private Castle castle;
   private long experienceForCompletion;
@@ -18,7 +19,7 @@ public class Level {
   }
 
   public void SetPlayer(Player player) {
-    towers = player.getTowers();
+    towers = new LinkedList<Tower>();
     castle = player.getCastle();
   }
 
@@ -28,5 +29,21 @@ public class Level {
 
   public ArrayList<Wave> GetWaves() {
     return waves;
+  }
+
+  public Wave GetCurrentWave(){
+    return waves.get(currentWave);
+  }
+
+  public Player GetPlayer() { return player; }
+
+  public long GetCurrentCoins() { return currentCoins; }
+
+  public void AddTower(Tower tower) {
+    towers.add(tower);
+  }
+
+  public void DecreaseCoins(int getConstructionCost) {
+    this.currentCoins -= getConstructionCost;
   }
 }

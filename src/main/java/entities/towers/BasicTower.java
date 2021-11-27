@@ -5,13 +5,8 @@ import entities.upgrades.Upgrade;
 
 public class BasicTower extends Tower {
 
-  private BasicTower() {
+  public BasicTower(int x, int y) {
     super();
-  }
-
-  @Override
-  public void create(int x, int y) {
-
   }
 
   @Override
