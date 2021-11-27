@@ -88,7 +88,6 @@ public class MouseControls extends Component
         }
         else if(!Mouse.isDragging() && Mouse.mouseButtonDown(GLFW_MOUSE_BUTTON_LEFT) && debounce < 0)
         {
-            System.out.println("aboba");
             int x = (int)Mouse.getScreenX();
             int y = (int)Mouse.getScreenY();
             int gameObjectId = pickingTexture.readPixel(x,y);
@@ -103,9 +102,9 @@ public class MouseControls extends Component
             }
             this.debounce = 0.2f;
         }
-        else if(Mouse.isDragging() && Mouse.mouseButtonDown(GLFW_MOUSE_BUTTON_LEFT))
+        else if(Mouse.isDragging() && Mouse.mouseButtonDown(GLFW_MOUSE_BUTTON_LEFT)
+                && !gameObject.getComponent(GizmoSystem.class).checkHoverity())
         {
-
             if(!boxSelectSet)
             {
                 MainWindow.getImguiLayer().getPropertiesWindow().clearSelected();

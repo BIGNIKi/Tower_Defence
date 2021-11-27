@@ -18,6 +18,7 @@ public final class Mouse
     private static Mouse mouse; //we have only one instance of this class
     private double scrollX, scrollY;
     private double xPos, yPos, worldX, lastY, lastX, worldY, lastWorldX, lastWorldY;
+    private double deltaWorldX, deltaWorldY;
     private final boolean[] mouseButtonPressed = new boolean[9];
     private boolean isDragging;
 
@@ -35,6 +36,8 @@ public final class Mouse
         this.yPos = 0.0;
         this.lastX = 0.0;
         this.lastY = 0.0;
+        this.deltaWorldX = 0.0;
+        this.deltaWorldY = 0.0;
     }
 
     public static Mouse get()
@@ -55,6 +58,8 @@ public final class Mouse
         get().yPos = 0;
         get().lastX = 0.0;
         get().lastY = 0.0;
+        get().deltaWorldX = 0.0;
+        get().deltaWorldY = 0.0;
         get().mouseButtonDown = 0;
         get().isDragging = false;
         Arrays.fill(get().mouseButtonPressed, false);
@@ -76,8 +81,11 @@ public final class Mouse
         //set actual coordinates
         get().lastX = get().xPos;
         get().lastY = get().yPos;
-        get().lastWorldX = get().worldX;
-        get().lastWorldY = get().worldY;
+        get().deltaWorldX = getWorldX() - get().lastWorldX;
+        get().deltaWorldY = getWorldY() - get().lastWorldY;
+        get().lastWorldX = getWorldX();
+        get().lastWorldY = getWorldY();
+        System.out.println(get().worldX + " + " + get().lastWorldX);
         get().xPos = xPos;
         get().yPos = yPos;
     }
@@ -115,6 +123,8 @@ public final class Mouse
     {
         get().scrollX = 0;
         get().scrollY = 0;
+        get().deltaWorldX = 0;
+        get().deltaWorldY = 0;
     }
 
     public static float getX()
@@ -182,6 +192,16 @@ public final class Mouse
         windowSpace.mul(new Vector2f(MainWindow.getWidth(), MainWindow.getHeight()));
 
         return windowSpace;
+    }
+
+    public static float getDeltaWorldX()
+    {
+        return (float)get().deltaWorldX;
+    }
+
+    public static float getDeltaWorldY()
+    {
+        return (float)get().deltaWorldY;
     }
 
     public static float getScreenX()

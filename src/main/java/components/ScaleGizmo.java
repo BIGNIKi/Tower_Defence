@@ -12,9 +12,9 @@ public class ScaleGizmo extends Gizmo {
     public void editorUpdate(float dt) {
         if (activeGameObject != null) {
             if (xAxisActive && !yAxisActive) {
-                activeGameObject.transform.scale.x -= Mouse.getWorldX();
+                activeGameObject.transform.scale.x += Mouse.getDeltaWorldX();
             } else if (yAxisActive) {
-                activeGameObject.transform.scale.y -= Mouse.getWorldY();
+                activeGameObject.transform.scale.y += Mouse.getDeltaWorldY();
             }
         }
 

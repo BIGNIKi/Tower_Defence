@@ -33,7 +33,8 @@ public class Gizmo extends Component
     protected boolean xAxisActive = false;
     protected boolean yAxisActive = false;
 
-    private boolean using = false;
+    private boolean using = false; // эта штука висит локально на translate и на scale, чтобы знать, кто из них используется
+    private static boolean isUseGizmo = false; // это общая штука, чтобы понять, пытаемся ли что-то двигать или менять размеры
 
     private PropertiesWindow propertiesWindow;
 
@@ -79,6 +80,7 @@ public class Gizmo extends Component
     @Override
     public void editorUpdate(float dt)
     {
+        //System.out.println(using);
         if(!using) return;
 
 
@@ -86,8 +88,6 @@ public class Gizmo extends Component
         if(this.activeGameObject != null)
         {
             this.setActive();
-
-
         }
         else
         {
@@ -136,7 +136,7 @@ public class Gizmo extends Component
         this.yAxisSprite.setColor(new Vector4f(0,0,0,0));
     }
 
-    private boolean checkXHoverState()
+    public boolean checkXHoverState()
     {
         Vector2f mousePos = Mouse.getWorld();
         // проверка на вхождение мышки в прямоугольник
@@ -145,6 +145,7 @@ public class Gizmo extends Component
                 mousePos.y >= xAxisObject.transform.position.y - (gizmoHeight / 2.0f) &&
                 mousePos.y <= xAxisObject.transform.position.y + (gizmoWidth / 2.0f))
         {
+            isUseGizmo = true;
             xAxisSprite.setColor(xAxisColorHover);
             return true;
         }
@@ -153,7 +154,7 @@ public class Gizmo extends Component
         return false;
     }
 
-    private boolean checkYHoverState()
+    public boolean checkYHoverState()
     {
         Vector2f mousePos = Mouse.getWorld();
         if (mousePos.x <= yAxisObject.transform.position.x + (gizmoWidth / 2.0f) &&
