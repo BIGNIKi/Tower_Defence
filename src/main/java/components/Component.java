@@ -32,6 +32,7 @@ public abstract class Component
 
     }
 
+    // здесь написано, как инспектор должен отображать тот или иной тип данных
     public void imgui()
     {
         try
@@ -93,13 +94,21 @@ public abstract class Component
                         val.set(imVec[0], imVec[1], imVec[2], imVec[3]);
                     }
                 }
-                else if (type.isEnum()) {
+                else if (type.isEnum())
+                {
                     String[] enumValues = getEnumValues(type);
                     String enumType = ((Enum)value).name();
                     ImInt index = new ImInt(indexOf(enumType, enumValues));
-                    if (ImGui.combo(field.getName(), index, enumValues, enumValues.length)) {
+                    if (ImGui.combo(field.getName(), index, enumValues, enumValues.length))
+                    {
                         field.set(this, type.getEnumConstants()[index.get()]);
                     }
+                }
+                else if (type == String.class)
+                {
+                    field.set(this,
+                            JImGui.inputText(field.getName() + ": ",
+                                    (String)value));
                 }
 
                 if(isPrivate)

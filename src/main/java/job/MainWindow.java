@@ -5,6 +5,7 @@ import observers.EventSystem;
 import observers.Observer;
 import observers.events.Event;
 import observers.events.EventType;
+import org.joml.Vector4f;
 import org.lwjgl.Version;
 import org.lwjgl.glfw.Callbacks;
 import org.lwjgl.glfw.GLFW;
@@ -13,6 +14,7 @@ import org.lwjgl.opengl.GL;
 import org.lwjgl.opengl.GL11;
 import renderer.*;
 import scenes.LevelEditorSceneInitializer;
+import scenes.LevelSceneInitializer;
 import scenes.Scene;
 import scenes.SceneInitializer;
 
@@ -210,7 +212,8 @@ public final class MainWindow implements Observer
 
             this.framebuffer.bind();
             //Sets the clear value for fixed-point and floating-point color buffers in RGBA mode
-            GL11.glClearColor(r, g, b, a);
+            Vector4f clearColor = currentScene.camera().clearColor;
+            GL11.glClearColor(clearColor.x, clearColor.y, clearColor.z, clearColor.w);
 
             //Sets portions of every pixel in a particular buffer to the same value
             GL11.glClear(GL11.GL_COLOR_BUFFER_BIT);
@@ -298,7 +301,7 @@ public final class MainWindow implements Observer
             case GameEngineStartPlay:
                 this.runtimePlaying = true;
                 currentScene.save();
-                MainWindow.changeScene(new LevelEditorSceneInitializer());
+                MainWindow.changeScene(new LevelSceneInitializer());
                 break;
             case GameEngineStopPlay:
                 this.runtimePlaying = false;

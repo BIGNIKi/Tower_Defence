@@ -58,6 +58,17 @@ public class Scene
         }
     }
 
+    // получает первый объект с данный компонентом или null
+    public <T extends Component> GameObject getGameObjectWith(Class<T> clazz) {
+        for (GameObject go : gameObjects) {
+            if (go.getComponent(clazz) != null) {
+                return go;
+            }
+        }
+
+        return null;
+    }
+
     public void addGameObjectToScene(GameObject go)
     {
         if(!isRunning)

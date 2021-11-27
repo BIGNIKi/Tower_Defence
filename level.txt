@@ -7,8 +7,8 @@
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 2.25,
-            "y": 1.75
+            "x": 2.3749995,
+            "y": 1.6250001
           },
           "scale": {
             "x": 0.25,
@@ -70,8 +70,8 @@
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 2.4963005,
-            "y": 1.75
+            "x": 2.6213,
+            "y": 1.6250001
           },
           "scale": {
             "x": 0.25,
@@ -133,8 +133,8 @@
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 2.737556,
-            "y": 1.75
+            "x": 2.8625555,
+            "y": 1.6250001
           },
           "scale": {
             "x": 0.25,
@@ -196,8 +196,8 @@
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 2.2068384,
-            "y": 1.75
+            "x": 2.331838,
+            "y": 1.6250001
           },
           "scale": {
             "x": 0.07,
@@ -267,8 +267,8 @@
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 2.738,
-            "y": 1.5033633
+            "x": 2.8629994,
+            "y": 1.3783634
           },
           "scale": {
             "x": 0.25,
@@ -330,8 +330,8 @@
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 2.738,
-            "y": 1.2535876
+            "x": 2.8629994,
+            "y": 1.1285877
           },
           "scale": {
             "x": 0.25,
@@ -393,8 +393,8 @@
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 2.9742103,
-            "y": 1.254
+            "x": 3.0992098,
+            "y": 1.1290001
           },
           "scale": {
             "x": 0.25,
@@ -456,8 +456,8 @@
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 3.2255554,
-            "y": 1.254
+            "x": 3.350555,
+            "y": 1.1290001
           },
           "scale": {
             "x": 0.25,
@@ -519,8 +519,8 @@
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 3.2399104,
-            "y": 1.25
+            "x": 3.36491,
+            "y": 1.1250001
           },
           "scale": {
             "x": 0.125,
@@ -582,8 +582,8 @@
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 2.9890132,
-            "y": 2.0013452
+            "x": 3.1140127,
+            "y": 1.8763453
           },
           "scale": {
             "x": 0.25,
@@ -645,8 +645,8 @@
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 2.986555,
-            "y": 2.0045164
+            "x": 3.1115546,
+            "y": 1.8795165
           },
           "scale": {
             "x": 0.16622376,
@@ -708,8 +708,8 @@
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 2.987,
-            "y": 2.0024178
+            "x": 3.1119995,
+            "y": 1.8774179
           },
           "scale": {
             "x": 0.07650852,
