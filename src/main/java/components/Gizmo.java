@@ -134,6 +134,8 @@ public class Gizmo extends Component
         this.activeGameObject = null;
         this.xAxisSprite.setColor(new Vector4f(0,0,0,0));
         this.yAxisSprite.setColor(new Vector4f(0,0,0,0));
+        xAxisObject.transform.position = new Vector2f(10000000, 10000000);
+        yAxisObject.transform.position = new Vector2f(10000000, 10000000);
     }
 
     public boolean checkXHoverState()

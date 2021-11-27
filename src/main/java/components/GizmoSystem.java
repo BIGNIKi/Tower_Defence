@@ -66,9 +66,11 @@ public class GizmoSystem extends Component
 
     public boolean checkHoverity()
     {
-        return translateGizmo.checkXHoverState() || translateGizmo.checkYHoverState()
-                || translateGizmo.xAxisActive || translateGizmo.yAxisActive
-                || scaleGizmo.checkXHoverState() || scaleGizmo.checkYHoverState()
-                || scaleGizmo.xAxisActive || scaleGizmo.yAxisActive;
+        boolean boo = translateGizmo.checkXHoverState() || translateGizmo.checkYHoverState()
+            || translateGizmo.xAxisActive || translateGizmo.yAxisActive
+            || scaleGizmo.checkXHoverState() || scaleGizmo.checkYHoverState()
+            || scaleGizmo.xAxisActive || scaleGizmo.yAxisActive;
+        if(translateGizmo.checkYHoverState()) System.out.println("true4");
+        return boo;
     }
 }

@@ -85,7 +85,6 @@ public final class Mouse
         get().deltaWorldY = getWorldY() - get().lastWorldY;
         get().lastWorldX = getWorldX();
         get().lastWorldY = getWorldY();
-        System.out.println(get().worldX + " + " + get().lastWorldX);
         get().xPos = xPos;
         get().yPos = yPos;
     }

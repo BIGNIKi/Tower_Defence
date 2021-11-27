@@ -57,6 +57,11 @@ public class PropertiesWindow
             activeGameObject.imgui();
             ImGui.end();
         }
+        else
+        {
+            ImGui.begin("Properties");
+            ImGui.end();
+        }
     }
 
     public GameObject getActiveGameObject()
