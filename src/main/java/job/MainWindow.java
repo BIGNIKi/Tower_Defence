@@ -229,6 +229,9 @@ public final class MainWindow implements Observer
             this.framebuffer.unbind();
 
             this.imguiLayer.update((float)dt, currentScene);
+
+            Keyboard.endFrame();
+
             //Swaps the front and back buffers of the specified window when rendering with OpenGL
             GLFW.glfwSwapBuffers(_windowId);
             Mouse.endFrame(); // это нужно делать в конце кадра, чтобы мышь забывала о скроле
