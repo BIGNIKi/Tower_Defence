@@ -7,6 +7,7 @@ import org.joml.Vector4f;
 
 public class Camera
 {
+    // projectionMatrix рамеры экрана в пикселях
     private Matrix4f projectionMatrix, viewMatrix, inverseProjection, inverseVeiw;
     public Vector2f position;
 

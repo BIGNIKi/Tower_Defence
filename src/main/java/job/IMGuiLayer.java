@@ -197,6 +197,12 @@ public class IMGuiLayer
         setupDockspace();
         currentScene.imgui();
         //ImGui.showDemoWindow();
+
+ /*       if(ImGui.begin)
+        {
+
+        }*/
+
         gameViewWindow.imgui();
         // добавление компанент к объекту
         propertiesWindow.imgui();

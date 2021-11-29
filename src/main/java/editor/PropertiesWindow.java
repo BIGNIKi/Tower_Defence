@@ -1,20 +1,15 @@
 package editor;
 
-import components.NonPickable;
+import components.EnemyAI;
 import components.SpriteRenderer;
-import components.TestComponent;
 import components.TowerRotate;
 import imgui.ImGui;
 import job.GameObject;
-import job.Mouse;
 import org.joml.Vector4f;
 import renderer.PickingTexture;
-import scenes.Scene;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.lwjgl.glfw.GLFW.GLFW_MOUSE_BUTTON_LEFT;
 
 public class PropertiesWindow
 {
@@ -38,11 +33,11 @@ public class PropertiesWindow
             activeGameObject = activeGameObjects.get(0);
             ImGui.begin("Properties");
             if (ImGui.beginPopupContextWindow("ComponentAdder")) {
-                if (ImGui.menuItem("Add test component"))
+                if (ImGui.menuItem("Add EnemyAI"))
                 {
-                    if(activeGameObject.getComponent(TestComponent.class) == null)
+                    if(activeGameObject.getComponent(EnemyAI.class) == null)
                     {
-                        activeGameObject.addComponent(new TestComponent());
+                        activeGameObject.addComponent(new EnemyAI());
                     }
                 }
                 if (ImGui.menuItem("Add tower rotate"))

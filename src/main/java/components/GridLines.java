@@ -34,12 +34,12 @@ public class GridLines extends Component
 
             if(i < numVtLines)
             {
-                DebugDraw.addLine2D(new Vector2f(x, firstY), new Vector2f(x, firstY + height), color);
+                DebugDraw.addGridLine2D(new Vector2f(x, firstY), new Vector2f(x, firstY + height), color);
             }
 
             if(i < numHzLines)
             {
-                DebugDraw.addLine2D(new Vector2f(firstX, y), new Vector2f(firstX + width, y), color);
+                DebugDraw.addGridLine2D(new Vector2f(firstX, y), new Vector2f(firstX + width, y), color);
             }
         }
     }

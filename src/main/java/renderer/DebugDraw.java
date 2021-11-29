@@ -21,12 +21,14 @@ public class DebugDraw
     private static int MAX_LINES = 3000;
 
     private static List<Line2D> lines = new ArrayList<>();
+    private static List<Line2D> notGridLines = new ArrayList<>();
     // 6 floats per vertex, 2 vertices per line
     private static float[] vertexArray = new float[MAX_LINES * 6 * 2];
     private static Shader shader = AssetPool.getShader("assets/shaders/debugLine2D.glsl");
 
     private static int vaoID;
     private static int vboID;
+    private static int lastOneId = 0;
 
     private static boolean started = false;
 
@@ -68,9 +70,67 @@ public class DebugDraw
                 i--;
             }
         }
+        for(int i = 0; i < notGridLines.size(); i++)
+        {
+            if(notGridLines.get(i).beginFrame() < 0)
+            {
+                notGridLines.remove(i);
+                i--;
+            }
+        }
     }
 
-    public static void draw()
+    public static void drawAnother()
+    {
+        if(notGridLines.size() <= 0) return;
+
+        int index = 0;
+        for(Line2D line : notGridLines)
+        {
+            for(int i = 0; i < 2; i++)
+            {
+                Vector2f position = i == 0 ? line.getFrom() : line.getTo();
+                Vector3f color = line.getColor();
+
+                // Load position
+                vertexArray[index] = position.x;
+                vertexArray[index + 1] = position.y;
+                vertexArray[index + 2] = -10.0f;
+
+                // Load the color
+                vertexArray[index + 3] = color.x;
+                vertexArray[index + 4] = color.y;
+                vertexArray[index + 5] = color.z;
+                index += 6;
+            }
+        }
+
+        glBindBuffer(GL_ARRAY_BUFFER, vboID);
+        glBufferSubData(GL_ARRAY_BUFFER, 0, Arrays.copyOfRange(vertexArray, 0, notGridLines.size() * 6 * 2));
+
+        // Use our shader
+        shader.use();
+        shader.uploadMat4f("uProjection", MainWindow.getScene().camera().getProjectionMatrix());
+        shader.uploadMat4f("uView", MainWindow.getScene().camera().getViewMatrix());
+
+        // Bind the vao
+        glBindVertexArray(vaoID);
+        glEnableVertexAttribArray(0);
+        glEnableVertexAttribArray(1);
+
+        // Draw the batch
+        glDrawArrays(GL_LINES, 0, notGridLines.size());
+
+        // Disable location
+        glDisableVertexAttribArray(0);
+        glDisableVertexAttribArray(1);
+        glBindVertexArray(0);
+
+        // Unbind shader
+        shader.detach();
+    }
+
+    public static void drawGrid()
     {
         if(lines.size() <= 0) return;
 
@@ -132,6 +192,29 @@ public class DebugDraw
     }
 
     public static void addLine2D(Vector2f from, Vector2f to, Vector3f color, int lifetime)
+    {
+        Camera camera = MainWindow.getScene().camera();
+        // нижний левый угол камеры
+        Vector2f cameraLeft = new Vector2f(camera.position).add(new Vector2f(-2.0f, -2.0f));
+        Vector2f cameraRight = new Vector2f(camera.position).
+                add(new Vector2f(camera.getProjectionSize()).mul(camera.getZoom())).
+                add(new Vector2f(4.0f, 4.0f));
+        boolean lineInView =
+                ((from.x >= cameraLeft.x && from.x <= cameraRight.x) && (from.y >= cameraLeft.y && from.y <= cameraRight.y)) ||
+                        ((to.x >= cameraLeft.x && to.x <= cameraRight.x) && (to.y >= cameraLeft.y && to.y <= cameraRight.y));
+        if(notGridLines.size() >= MAX_LINES || !lineInView)
+        {
+            return;
+        }
+        DebugDraw.notGridLines.add(new Line2D(from, to, color, lifetime));
+    }
+
+    public static void addGridLine2D(Vector2f from, Vector2f to, Vector3f color)
+    {
+        addGridLine2D(from, to, color, 1);
+    }
+
+    public static void addGridLine2D(Vector2f from, Vector2f to, Vector3f color, int lifetime)
     {
         Camera camera = MainWindow.getScene().camera();
         // нижний левый угол камеры

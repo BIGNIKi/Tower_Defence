@@ -43,6 +43,13 @@ public class SceneHierarchyWindow
         );
         ImGui.popID();
 
+        // если нажали на item в иерархии
+        if(ImGui.isItemClicked())
+        {
+            // выбираем объект
+            MainWindow.getImguiLayer().getPropertiesWindow().setActiveGameObject(obj);
+        }
+
         if (ImGui.beginDragDropSource()) {
             ImGui.setDragDropPayloadObject(payloadDragDropType, obj);
             ImGui.text(obj.name);

@@ -70,7 +70,6 @@ public class GizmoSystem extends Component
             || translateGizmo.xAxisActive || translateGizmo.yAxisActive
             || scaleGizmo.checkXHoverState() || scaleGizmo.checkYHoverState()
             || scaleGizmo.xAxisActive || scaleGizmo.yAxisActive;
-        if(translateGizmo.checkYHoverState()) System.out.println("true4");
         return boo;
     }
 }

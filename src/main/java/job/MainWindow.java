@@ -208,7 +208,7 @@ public final class MainWindow implements Observer
             glEnable(GL_BLEND);
 
             //Render pass 2. Render actual game
-            DebugDraw.beginFrame();
+            DebugDraw.beginFrame(); // удаляет старые линии
 
             this.framebuffer.bind();
             //Sets the clear value for fixed-point and floating-point color buffers in RGBA mode
@@ -220,14 +220,16 @@ public final class MainWindow implements Observer
 
             if(dt >= 0)
             {
+                //DebugDraw.draw(); // рисует линию сетки
                 Renderer.bindShader(defaultShader);
                 if (runtimePlaying) {
                     currentScene.update((float)dt);
                 } else {
                     currentScene.editorUpdate((float) dt);
                 }
+                DebugDraw.drawGrid(); // рисует линию сетки
                 currentScene.render();
-                DebugDraw.draw();
+                DebugDraw.drawAnother(); // рисует остальные дебажные линии
             }
             this.framebuffer.unbind();
 

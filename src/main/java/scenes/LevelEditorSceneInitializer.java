@@ -24,6 +24,7 @@ public class LevelEditorSceneInitializer extends SceneInitializer
     @Override
     public void init(Scene scene)
     {
+        System.out.println("LevelEditor");
         SpriteSheet gizmos = AssetPool.getSpritesheet("assets/images/gizmos.png");
 
         levelEditorStuff = scene.createGameObject("LevelEditor"); // объект, который всегда висит на сцене
@@ -142,9 +143,9 @@ public class LevelEditorSceneInitializer extends SceneInitializer
     @Override
     public void imgui()
     {
-        ImGui.begin("Level Editor Stuff");
+/*        ImGui.begin("Level Editor Stuff");
         levelEditorStuff.imgui();
-        ImGui.end();
+        ImGui.end();*/
 
         ImGui.begin("Sprites:");
 /*       ImGui.text("Sample text = 5000");
