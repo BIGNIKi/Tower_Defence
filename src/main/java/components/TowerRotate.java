@@ -36,6 +36,6 @@ public class TowerRotate extends Component
             this.gameObject.transform.rotation =  (float)(atan % 360);
         }
 
-        DebugDraw.addCircle(this.gameObject.transform.position, 1, new Vector3f(0,1,0));
+        //DebugDraw.addCircle(this.gameObject.transform.position, 1, new Vector3f(0,1,0));
     }
 }

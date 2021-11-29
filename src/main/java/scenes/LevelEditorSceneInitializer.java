@@ -78,6 +78,8 @@ public class LevelEditorSceneInitializer extends SceneInitializer
         spriteSheetToSprites("assets/images/spritesheet.png", 121, 120, 2,0);
         textureToSprite("assets/images/greenEnemy1.png");
         textureToSprite("assets/images/base.png");
+        textureToSprite("assets/images/standTower.png");
+        textureToSprite("assets/images/standTower1.png");
 
         // STOP
 

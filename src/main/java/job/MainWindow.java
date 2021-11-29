@@ -64,6 +64,8 @@ public final class MainWindow implements Observer
         currentScene.load();
         currentScene.init();
         currentScene.start();
+        // при запуске сцены нет активного объекта
+        getImguiLayer().getPropertiesWindow().clearSelected();
     }
 
     //it is used for interaction with the class instance

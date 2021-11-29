@@ -1,5 +1,6 @@
 package editor;
 
+import components.Component;
 import components.EnemyAI;
 import components.SpriteRenderer;
 import components.TowerRotate;
@@ -18,11 +19,18 @@ public class PropertiesWindow
     private GameObject activeGameObject = null;
     private PickingTexture pickingTexture;
 
+    // все классы, которые можно добавить объекту
+    private List<Class<? extends Component>> possibleClasses = new ArrayList<>();
+
     public PropertiesWindow(PickingTexture pickingTexture)
     {
         this.activeGameObjects = new ArrayList<>();
         this.pickingTexture = pickingTexture;
         this.activeGameObjectsOgColor = new ArrayList<>();
+
+        // СЮДА нужно писать компоненты, которые хочешь добавить к объекту на сцене
+        possibleClasses.add(EnemyAI.class);
+        possibleClasses.add(TowerRotate.class);
     }
 
     public void imgui()
@@ -33,18 +41,36 @@ public class PropertiesWindow
             activeGameObject = activeGameObjects.get(0);
             ImGui.begin("Properties");
             if (ImGui.beginPopupContextWindow("ComponentAdder")) {
-                if (ImGui.menuItem("Add EnemyAI"))
+                // добавляет всевозможные кнопки для добавления компонентов
+                for(Class<? extends Component> c : possibleClasses)
                 {
-                    if(activeGameObject.getComponent(EnemyAI.class) == null)
+                    if(activeGameObject.getComponent(c) == null)
                     {
-                        activeGameObject.addComponent(new EnemyAI());
+                        if(ImGui.menuItem("Add " + c.getSimpleName()))
+                        {
+                            try
+                            {
+                                Object ob = c.newInstance();
+                                Component co = Component.class.cast(ob).getClass().newInstance();
+                                activeGameObject.addComponent(co);
+                            } catch(InstantiationException | IllegalAccessException e)
+                            {
+                                e.printStackTrace();
+                            }
+                        }
                     }
                 }
-                if (ImGui.menuItem("Add tower rotate"))
+
+                for(Component comp : activeGameObject.getAllComponents())
                 {
-                    if(activeGameObject.getComponent(TowerRotate.class) == null)
+                    if(comp.getClass().getSimpleName().equals("Transform"))
                     {
-                        activeGameObject.addComponent(new TowerRotate());
+                        continue;
+                    }
+                    if(ImGui.menuItem("Remove " + comp.getClass().getSimpleName()))
+                    {
+                        activeGameObject.removeComponent(comp.getClass());
+                        break;
                     }
                 }
                 ImGui.endPopup();

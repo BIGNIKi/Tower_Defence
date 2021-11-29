@@ -137,9 +137,9 @@ public class LevelSceneInitializer extends SceneInitializer
     @Override
     public void imgui()
     {
-        ImGui.begin("Level Editor Stuff");
+/*        ImGui.begin("Level Editor Stuff");
         gameCamera.imgui();
-        ImGui.end();
+        ImGui.end();*/
 
         ImGui.begin("Sprites:");
 /*       ImGui.text("Sample text = 5000");

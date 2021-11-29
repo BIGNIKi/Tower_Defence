@@ -1,6 +1,6 @@
 [
   {
-    "uid": 0,
+    "uid": 30,
     "name": "Way",
     "components": [
       {
@@ -63,7 +63,7 @@
     "isDead": false
   },
   {
-    "uid": 1,
+    "uid": 31,
     "name": "Way",
     "components": [
       {
@@ -126,7 +126,7 @@
     "isDead": false
   },
   {
-    "uid": 2,
+    "uid": 32,
     "name": "Way",
     "components": [
       {
@@ -189,7 +189,7 @@
     "isDead": false
   },
   {
-    "uid": 3,
+    "uid": 33,
     "name": "Enemy",
     "components": [
       {
@@ -260,7 +260,7 @@
     "isDead": false
   },
   {
-    "uid": 4,
+    "uid": 34,
     "name": "Way",
     "components": [
       {
@@ -323,7 +323,7 @@
     "isDead": false
   },
   {
-    "uid": 5,
+    "uid": 35,
     "name": "Way",
     "components": [
       {
@@ -386,7 +386,7 @@
     "isDead": false
   },
   {
-    "uid": 6,
+    "uid": 36,
     "name": "Way",
     "components": [
       {
@@ -449,7 +449,7 @@
     "isDead": false
   },
   {
-    "uid": 7,
+    "uid": 37,
     "name": "Way",
     "components": [
       {
@@ -512,7 +512,7 @@
     "isDead": false
   },
   {
-    "uid": 8,
+    "uid": 38,
     "name": "base",
     "components": [
       {
@@ -575,7 +575,7 @@
     "isDead": false
   },
   {
-    "uid": 9,
+    "uid": 39,
     "name": "posForTower",
     "components": [
       {
@@ -638,7 +638,7 @@
     "isDead": false
   },
   {
-    "uid": 10,
+    "uid": 40,
     "name": "towerSt",
     "components": [
       {
@@ -701,23 +701,23 @@
     "isDead": false
   },
   {
-    "uid": 11,
-    "name": "tower",
+    "uid": 41,
+    "name": "Tower",
     "components": [
       {
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 3.1119995,
-            "y": 1.8774179
+            "x": 3.1135,
+            "y": 1.8773023
           },
           "scale": {
-            "x": 0.07650852,
-            "y": 0.13597488
+            "x": 0.08556497,
+            "y": 0.15383644
           },
           "rotation": 0.0,
           "zIndex": 0,
-          "uid": 23
+          "uid": 48
         }
       },
       {
@@ -756,13 +756,13 @@
               }
             ]
           },
-          "uid": 24
+          "uid": 49
         }
       },
       {
         "type": "components.TowerRotate",
         "properties": {
-          "uid": 47
+          "uid": 70
         }
       }
     ],
