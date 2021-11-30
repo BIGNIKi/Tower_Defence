@@ -92,7 +92,6 @@ public class Scene
         return result.orElse(null);
     }
 
-    // TODO mine
     public GameObject getGameObjectByName(String name)
     {
         Optional<GameObject> result = this.gameObjects.stream()

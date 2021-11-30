@@ -23,7 +23,6 @@ public class GameObject
     private boolean doSerialization = true;
     private boolean isDead = false;
 
-    // TODO mine
     public transient Scene currentScene;
 
 /*    public GameObject(String name)

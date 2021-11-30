@@ -50,6 +50,7 @@ public class EditorCamera extends Component
             dragDebounce = 0.1f;
         }
 
+        // приближение, отдаление камеры
         if(Mouse.getScrollY() != 0.0f)
         {
             float addValue = (float)Math.pow(Math.abs(Mouse.getScrollY() * scrollSensitivity),

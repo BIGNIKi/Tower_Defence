@@ -56,7 +56,6 @@ public class Gizmo extends Component
     @Override
     public void start()
     {
-        // TODO mine
         this.xAxisObject.transform.rotation = -90;
         //this.xAxisObject.transform.rotation = 90;
         //this.yAxisObject.transform.rotation = 180;

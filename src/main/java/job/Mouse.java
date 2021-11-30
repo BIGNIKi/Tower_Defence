@@ -13,6 +13,7 @@ import static org.lwjgl.glfw.GLFW.GLFW_RELEASE;
 
 //all bullshit connected with I operation here https://www.glfw.org/docs/3.3/input_guide.html
 
+// TODO: возможно стоит добавить свой класс с кнопками мышки и кнопками клавы, чтобы было проще их находить
 public final class Mouse
 {
     private static Mouse mouse; //we have only one instance of this class

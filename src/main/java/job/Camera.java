@@ -11,10 +11,10 @@ public class Camera
     private Matrix4f projectionMatrix, viewMatrix, inverseProjection, inverseVeiw;
     public Vector2f position;
 
-    private float projectionWidth = 6;
-    private float projectionHeight = 3;
+    private final float projectionWidth = 6;
+    private final float projectionHeight = 3;
     public Vector4f clearColor = new Vector4f(23f/255f, 23f/255f, 23f/255f, 1);
-    private Vector2f projectionSize = new Vector2f(projectionWidth, projectionHeight);
+    private final Vector2f projectionSize = new Vector2f(projectionWidth, projectionHeight);
 
     private float zoom = 1.0f;
 
@@ -36,7 +36,9 @@ public class Camera
         //zNear - we can view any objects up to 0, zFar - we can veiw up to 100 away (units)
         //эти измерения НЕ в пикселях! Это некое разбиение экрана на "клетки" (unit'ы)
         //это создаёт аля усеченный конус в котором камера что-либо может видеть
-        projectionMatrix.ortho(0.0f, projectionSize.x * this.zoom, 0.0f, projectionSize.y * this.zoom, 0.0f, 100f);
+        // эта штука отвечает за то, куда мы будем центрироваться и как широко мы вообще смотрим
+        // TODO: хотелось бы возможность зумить туда, где стоит мышка, а не к центру
+        projectionMatrix.ortho(-projectionSize.x/2 * this.zoom, projectionSize.x/2 * this.zoom, -projectionSize.y/2 * this.zoom, projectionSize.y/2 * this.zoom, 0.0f, 100f);
         projectionMatrix.invert(inverseProjection);
     }
 

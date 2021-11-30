@@ -1,14 +1,14 @@
 [
   {
-    "uid": 30,
+    "uid": 0,
     "name": "Way",
     "components": [
       {
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 2.3749995,
-            "y": 1.6250001
+            "x": -0.37500048,
+            "y": 0.12500012
           },
           "scale": {
             "x": 0.25,
@@ -63,15 +63,15 @@
     "isDead": false
   },
   {
-    "uid": 31,
+    "uid": 1,
     "name": "Way",
     "components": [
       {
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 2.6213,
-            "y": 1.6250001
+            "x": -0.12870002,
+            "y": 0.12500012
           },
           "scale": {
             "x": 0.25,
@@ -126,15 +126,15 @@
     "isDead": false
   },
   {
-    "uid": 32,
+    "uid": 2,
     "name": "Way",
     "components": [
       {
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 2.8625555,
-            "y": 1.6250001
+            "x": 0.112555504,
+            "y": 0.12500012
           },
           "scale": {
             "x": 0.25,
@@ -189,15 +189,15 @@
     "isDead": false
   },
   {
-    "uid": 33,
+    "uid": 3,
     "name": "Enemy",
     "components": [
       {
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 2.331838,
-            "y": 1.6250001
+            "x": -0.4181621,
+            "y": 0.12500012
           },
           "scale": {
             "x": 0.07,
@@ -260,15 +260,15 @@
     "isDead": false
   },
   {
-    "uid": 34,
+    "uid": 4,
     "name": "Way",
     "components": [
       {
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 2.8629994,
-            "y": 1.3783634
+            "x": 0.11299944,
+            "y": -0.12163663
           },
           "scale": {
             "x": 0.25,
@@ -323,15 +323,15 @@
     "isDead": false
   },
   {
-    "uid": 35,
+    "uid": 5,
     "name": "Way",
     "components": [
       {
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 2.8629994,
-            "y": 1.1285877
+            "x": 0.11299944,
+            "y": -0.37141228
           },
           "scale": {
             "x": 0.25,
@@ -386,15 +386,15 @@
     "isDead": false
   },
   {
-    "uid": 36,
+    "uid": 6,
     "name": "Way",
     "components": [
       {
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 3.0992098,
-            "y": 1.1290001
+            "x": 0.3492098,
+            "y": -0.37099993
           },
           "scale": {
             "x": 0.25,
@@ -449,15 +449,15 @@
     "isDead": false
   },
   {
-    "uid": 37,
+    "uid": 7,
     "name": "Way",
     "components": [
       {
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 3.350555,
-            "y": 1.1290001
+            "x": 0.60055494,
+            "y": -0.37099993
           },
           "scale": {
             "x": 0.25,
@@ -512,15 +512,15 @@
     "isDead": false
   },
   {
-    "uid": 38,
+    "uid": 8,
     "name": "base",
     "components": [
       {
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 3.36491,
-            "y": 1.1250001
+            "x": 0.6149099,
+            "y": -0.37499988
           },
           "scale": {
             "x": 0.125,
@@ -575,15 +575,15 @@
     "isDead": false
   },
   {
-    "uid": 39,
+    "uid": 9,
     "name": "posForTower",
     "components": [
       {
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 3.1140127,
-            "y": 1.8763453
+            "x": 0.36401272,
+            "y": 0.37634528
           },
           "scale": {
             "x": 0.25,
@@ -638,15 +638,15 @@
     "isDead": false
   },
   {
-    "uid": 40,
+    "uid": 10,
     "name": "towerSt",
     "components": [
       {
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 3.1115546,
-            "y": 1.8795165
+            "x": 0.36155462,
+            "y": 0.37951648
           },
           "scale": {
             "x": 0.16622376,
@@ -701,15 +701,15 @@
     "isDead": false
   },
   {
-    "uid": 41,
+    "uid": 11,
     "name": "Tower",
     "components": [
       {
         "type": "job.Transform",
         "properties": {
           "position": {
-            "x": 3.1135,
-            "y": 1.8773023
+            "x": 0.36350012,
+            "y": 0.3773023
           },
           "scale": {
             "x": 0.08556497,

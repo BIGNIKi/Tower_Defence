@@ -58,7 +58,6 @@ public class IMGuiLayer
 
         io.setIniFilename("imgui.ini"); // We don't want to save .ini file
         io.addConfigFlags(ImGuiConfigFlags.DockingEnable);
-        //TODO
         //io.addConfigFlags(ImGuiConfigFlags.ViewportsEnable);
         io.setBackendPlatformName("imgui_java_impl_glfw");
 
