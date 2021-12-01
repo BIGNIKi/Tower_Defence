@@ -25,7 +25,6 @@ public class LevelSceneInitializer extends SceneInitializer
     public void init(Scene scene)
     {
         SpriteSheet gizmos = AssetPool.getSpritesheet("assets/images/gizmos.png");
-
         gameCamera = scene.createGameObject("GameCamera"); // объект, который всегда висит на сцене
         gameCamera.addComponent(new GameCamera(scene.camera()));
         gameCamera.start();

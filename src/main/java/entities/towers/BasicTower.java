@@ -9,7 +9,7 @@ public class BasicTower extends Tower {
     super();
   }
 
-  @Override
+/*  @Override
   public void attack(Monster target) {
 
   }
@@ -17,5 +17,5 @@ public class BasicTower extends Tower {
   @Override
   public void use(Upgrade upgrade) {
 
-  }
+  }*/
 }

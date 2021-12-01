@@ -4,29 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ced4412-5794-4c53-9b60-6433e10c4188" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Tower_Defence.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="Attempt to reset all">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imgui.ini" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/level.txt" beforeDir="false" afterPath="$PROJECT_DIR$/level.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/EditorCamera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/EditorCamera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/Gizmo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/Gizmo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/GridLines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/GridLines.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/IMGuiLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/IMGuiLayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/Mouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/Mouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/DebugDraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/renderer/DebugDraw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/RenderBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/renderer/RenderBatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scenes/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scenes/Scene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/EnemyAI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/MouseControls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/MouseControls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/TowerRotate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/editor/PropertiesWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/editor/PropertiesWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/monsters/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/monsters/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/towers/BasicTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/towers/BasicTower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/towers/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/towers/Tower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/job/Prefabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/Prefabs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scenes/LevelSceneInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scenes/LevelSceneInitializer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +32,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="21dDQiBrSJKSn53ETBxB2D5g3Eh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -68,12 +61,24 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3ced4412-5794-4c53-9b60-6433e10c4188" name="Changes" comment="" />
+      <changelist id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="Attempt to reset all" />
       <created>1638262059656</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638262059656</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

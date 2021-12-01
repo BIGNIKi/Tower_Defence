@@ -248,11 +248,11 @@
         }
       },
       {
-        "type": "components.EnemyAI",
+        "type": "entities.monsters.Monster",
         "properties": {
-          "speed": 0.4,
+          "speed": 0.3,
           "distanceFinish": 0.0,
-          "uid": 27
+          "uid": 91
         }
       }
     ],
@@ -760,9 +760,33 @@
         }
       },
       {
-        "type": "components.TowerRotate",
+        "type": "entities.towers.Tower",
         "properties": {
-          "uid": 70
+          "uid": 112
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 12,
+    "name": "Way",
+    "components": [
+      {
+        "type": "job.Transform",
+        "properties": {
+          "position": {
+            "x": 0.3625555,
+            "y": 0.12500012
+          },
+          "scale": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "zIndex": 0,
+          "uid": 19
         }
       }
     ],

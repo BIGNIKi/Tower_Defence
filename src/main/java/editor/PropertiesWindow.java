@@ -1,9 +1,9 @@
 package editor;
 
 import components.Component;
-import components.EnemyAI;
 import components.SpriteRenderer;
-import components.TowerRotate;
+import entities.monsters.Monster;
+import entities.towers.Tower;
 import imgui.ImGui;
 import job.GameObject;
 import org.joml.Vector4f;
@@ -29,8 +29,8 @@ public class PropertiesWindow
         this.activeGameObjectsOgColor = new ArrayList<>();
 
         // СЮДА нужно писать компоненты, которые хочешь добавить к объекту на сцене
-        possibleClasses.add(EnemyAI.class);
-        possibleClasses.add(TowerRotate.class);
+        possibleClasses.add(Monster.class);
+        possibleClasses.add(Tower.class);
     }
 
     public void imgui()
@@ -69,6 +69,7 @@ public class PropertiesWindow
                     }
                     if(ImGui.menuItem("Remove " + comp.getClass().getSimpleName()))
                     {
+                        // TODO: при удалении sprite render объект всё-равно рисуется
                         activeGameObject.removeComponent(comp.getClass());
                         break;
                     }
