@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+// такой экзмпляр всегда один у каждой сцены
+// он хранит батчи, благодаря которым мы и рисуем
 public class Renderer
 {
     private final int MAX_BATCH_SIZE = 1000;
@@ -32,7 +34,7 @@ public class Renderer
         boolean added = false;
         for(RenderBatch batch : batches)
         {
-            if(batch.hasRoom() && batch.zIndex() == sprite.gameObject.transform.zIndex)
+            if(batch.hasRoom() && batch.zIndex() == sprite.zIndex)
             {
                 Texture tex = sprite.getTexture();
                 if(tex == null || batch.hasTexture(tex) || batch.hasTextureRoom())
@@ -45,7 +47,7 @@ public class Renderer
         }
         if(!added)
         {
-            RenderBatch newBatch = new RenderBatch(MAX_BATCH_SIZE, sprite.gameObject.transform.zIndex, this);
+            RenderBatch newBatch = new RenderBatch(MAX_BATCH_SIZE, sprite.zIndex, this);
             newBatch.start();
             batches.add(newBatch);
             newBatch.addSprite(sprite);

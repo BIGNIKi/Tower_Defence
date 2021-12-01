@@ -19,7 +19,7 @@ public class GameObject
 
     public String name;
     private List<Component> components;
-    public transient Transform transform;
+    public transient StateInWorld stateInWorld;
     private boolean doSerialization = true;
     private boolean isDead = false;
 

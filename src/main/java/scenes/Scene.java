@@ -4,11 +4,10 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import components.Component;
 import components.ComponentDeserializer;
-import imgui.ImGui;
 import job.Camera;
 import job.GameObject;
 import job.GameObjectDeserializer;
-import job.Transform;
+import job.StateInWorld;
 import org.joml.Vector2f;
 import renderer.Renderer;
 
@@ -34,6 +33,11 @@ public class Scene
         this.renderer = new Renderer();
         this.gameObjects = new ArrayList<>();
         this.isRunning = false;
+    }
+
+    public Renderer getRenderer()
+    {
+        return renderer;
     }
 
     public void init()
@@ -169,8 +173,8 @@ public class Scene
 
     public GameObject createGameObject(String name) {
         GameObject go = new GameObject(name, this);
-        go.addComponent(new Transform());
-        go.transform = go.getComponent(Transform.class);
+        go.addComponent(new StateInWorld());
+        go.stateInWorld = go.getComponent(StateInWorld.class);
         return go;
     }
 

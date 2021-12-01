@@ -2,11 +2,7 @@ package entities.towers;
 
 import components.*;
 import entities.effects.Effect;
-import entities.monsters.Monster;
-import entities.upgrades.Upgrade;
 import job.GameObject;
-import job.MainWindow;
-import job.Transform;
 import org.joml.Vector2f;
 
 public class Tower extends Component
@@ -47,8 +43,8 @@ public class Tower extends Component
   {
     if(goal != null)
     {
-      Vector2f from = this.gameObject.transform.position;
-      Vector2f to = goal.transform.position;
+      Vector2f from = this.gameObject.stateInWorld.getPosition();
+      Vector2f to = goal.stateInWorld.getPosition();
       var h = to.x - from.x;
       var w = to.y - from.y;
 
@@ -60,7 +56,7 @@ public class Tower extends Component
       if (atan < 0)
         atan += 360;
 
-      this.gameObject.transform.rotation =  (float)(atan % 360);
+      this.gameObject.stateInWorld.setRotation((float)(atan % 360));
     }
 
     //DebugDraw.addCircle(this.gameObject.transform.position, 1, new Vector3f(0,1,0));

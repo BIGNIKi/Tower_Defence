@@ -1,11 +1,11 @@
 package components;
 
 import Util.Settings;
-import com.sun.tools.javac.Main;
 import editor.PropertiesWindow;
 import job.GameObject;
 import job.Keyboard;
 import job.MainWindow;
+import org.joml.Vector2f;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +34,7 @@ public class KeyControls extends Component
             GameObject newObj = activeGameObject.copy();
             MainWindow.getScene().addGameObjectToScene(newObj);
             // newObj.transform.position.add(0.1f, 0.1f);
-            newObj.transform.position.add(Settings.GRID_WIDTH, 0.0f);
+            newObj.stateInWorld.setPosition(newObj.stateInWorld.getPosition().add(Settings.GRID_WIDTH, 0.0f));
             propertiesWindow.setActiveGameObject(newObj);
         }
         // множественное копирование объектов
@@ -63,7 +63,7 @@ public class KeyControls extends Component
             debounce = debounceTime;
             for (GameObject go : activeGameObjects)
             {
-                go.transform.position.y += Settings.GRID_HEIGHT * multiplier;
+                go.stateInWorld.addToPosition(new Vector2f(0, Settings.GRID_HEIGHT * multiplier));
             }
         }
         else if (Keyboard.isKeyPressed(GLFW_KEY_LEFT) && debounce < 0)
@@ -71,7 +71,7 @@ public class KeyControls extends Component
             debounce = debounceTime;
             for (GameObject go : activeGameObjects)
             {
-                go.transform.position.x -= Settings.GRID_HEIGHT * multiplier;
+                go.stateInWorld.addToPosition(new Vector2f(-Settings.GRID_HEIGHT * multiplier, 0));
             }
         }
         else if (Keyboard.isKeyPressed(GLFW_KEY_RIGHT) && debounce < 0) {
@@ -79,7 +79,7 @@ public class KeyControls extends Component
             debounce = debounceTime;
             for (GameObject go : activeGameObjects)
             {
-                go.transform.position.x += Settings.GRID_HEIGHT * multiplier;
+                go.stateInWorld.addToPosition(new Vector2f(Settings.GRID_HEIGHT * multiplier, 0));
             }
         }
         else if (Keyboard.isKeyPressed(GLFW_KEY_DOWN) && debounce < 0)
@@ -87,7 +87,7 @@ public class KeyControls extends Component
             debounce = debounceTime;
             for (GameObject go : activeGameObjects)
             {
-                go.transform.position.y -= Settings.GRID_HEIGHT * multiplier;
+                go.stateInWorld.addToPosition(new Vector2f(0, -Settings.GRID_HEIGHT * multiplier));
             }
         }
     }

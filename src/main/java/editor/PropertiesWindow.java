@@ -6,6 +6,7 @@ import entities.monsters.Monster;
 import entities.towers.Tower;
 import imgui.ImGui;
 import job.GameObject;
+import job.MainWindow;
 import org.joml.Vector4f;
 import renderer.PickingTexture;
 
@@ -69,7 +70,13 @@ public class PropertiesWindow
                     }
                     if(ImGui.menuItem("Remove " + comp.getClass().getSimpleName()))
                     {
-                        // TODO: при удалении sprite render объект всё-равно рисуется
+                        // этот ифчик удаляет текстуру из отрисовки, если был удалён spriteRenderer
+                        if(comp.getClass().getSimpleName().equals(SpriteRenderer.class.getSimpleName()))
+                        {
+                            // эта строка НЕ удаляет игровой объект со сцены
+                            // она удаляет всё связанное с его отрисовкой из renderer
+                            MainWindow.getScene().getRenderer().destroyGameObject(activeGameObject);
+                        }
                         activeGameObject.removeComponent(comp.getClass());
                         break;
                     }

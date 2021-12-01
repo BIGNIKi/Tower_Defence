@@ -43,10 +43,6 @@ public class GridLines extends Component
             if(i < numVtLines)
             {
                 DebugDraw.addGridLine2D(new Vector2f(x, firstY), new Vector2f(x, firstY + height), color);
-                if(i == 1)
-                {
-                    //System.out.println(x + " " + firstY + " " + (firstY + height));
-                }
             }
 
             if(i < numHzLines)

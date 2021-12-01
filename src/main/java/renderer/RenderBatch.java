@@ -1,6 +1,5 @@
 package renderer;
 
-import Util.AssetPool;
 import components.SpriteRenderer;
 import job.GameObject;
 import job.MainWindow;
@@ -16,6 +15,7 @@ import static org.lwjgl.opengl.GL20.*;
 import static org.lwjgl.opengl.GL30.glBindVertexArray;
 import static org.lwjgl.opengl.GL30.glGenVertexArrays;
 
+// такие штуки валяются во множественно количестве в Renderer на сцене и занимаются отрисовкой текстур
 public class RenderBatch implements Comparable<RenderBatch>
 {
     // Vertex
@@ -160,7 +160,7 @@ public class RenderBatch implements Comparable<RenderBatch>
                 }
             }
 
-            if (spr.gameObject.transform.zIndex != this.zIndex) {
+            if (spr.zIndex != this.zIndex) {
                 destroyIfExists(spr.gameObject);
                 renderer.add(spr.gameObject);
                 i--;
@@ -225,17 +225,17 @@ public class RenderBatch implements Comparable<RenderBatch>
             }
         }
 
-        boolean isRotated = sprite.gameObject.transform.rotation != 0.0f;
+        boolean isRotated = sprite.gameObject.stateInWorld.getRotation() != 0.0f;
         Matrix4f transformMatrix = new Matrix4f().identity();
         if(isRotated)
         {
-            transformMatrix.translate(sprite.gameObject.transform.position.x,
-                    sprite.gameObject.transform.position.y, 0);
-            float rotNew = -sprite.gameObject.transform.rotation;
+            transformMatrix.translate(sprite.gameObject.stateInWorld.getPosition().x,
+                    sprite.gameObject.stateInWorld.getPosition().y, 0);
+            float rotNew = -sprite.gameObject.stateInWorld.getRotation();
             transformMatrix.rotate((float)Math.toRadians(rotNew),
                     0,0,1);
-            transformMatrix.scale(sprite.gameObject.transform.scale.x,
-                    sprite.gameObject.transform.scale.y, 1);
+            transformMatrix.scale(sprite.gameObject.stateInWorld.getScale().x,
+                    sprite.gameObject.stateInWorld.getScale().y, 1);
         }
 
         // Add vertices with the appropriate properties
@@ -256,8 +256,8 @@ public class RenderBatch implements Comparable<RenderBatch>
                 yAdd = 0.5f;
             }
 
-            Vector4f currentPos = new Vector4f(sprite.gameObject.transform.position.x + (xAdd * sprite.gameObject.transform.scale.x),
-                    sprite.gameObject.transform.position.y + (yAdd * sprite.gameObject.transform.scale.y), 0, 1);
+            Vector4f currentPos = new Vector4f(sprite.gameObject.stateInWorld.getPosition().x + (xAdd * sprite.gameObject.stateInWorld.getScale().x),
+                    sprite.gameObject.stateInWorld.getPosition().y + (yAdd * sprite.gameObject.stateInWorld.getScale().y), 0, 1);
             if(isRotated)
             {
                 currentPos = new Vector4f(xAdd, yAdd, 0, 1).mul(transformMatrix);

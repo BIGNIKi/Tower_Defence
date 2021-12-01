@@ -6,7 +6,7 @@
     <file url="file://$PROJECT_DIR$/src/main/java/editor/MenuBar.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/editor/PropertiesWindow.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/editor/SceneHierarchyWindow.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/job/Transform.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/job/StateInWorld.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/scenes/LevelEditorSceneInitializer.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/scenes/Scene.java" charset="windows-1251" />
   </component>

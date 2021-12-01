@@ -1,11 +1,7 @@
 package entities.monsters;
 
 import components.Component;
-import entities.Castle;
-import entities.common.Direction;
-import entities.common.TowerEfficiency;
-import entities.effects.Effect;
-import entities.towers.TowerType;
+import org.joml.Vector2f;
 
 public class Monster extends Component
 {
@@ -41,15 +37,15 @@ public class Monster extends Component
 
         if(neededDistance0 > distanceFinish)
         {
-            this.gameObject.transform.position.x += dt*speed;
+            this.gameObject.stateInWorld.addToPosition(new Vector2f(dt*speed, 0));
         }
         else if(neededDistance1 > distanceFinish)
         {
-            this.gameObject.transform.position.y -= dt*speed;
+            this.gameObject.stateInWorld.addToPosition(new Vector2f(0, -dt*speed));
         }
         else if(neededDistance2 > distanceFinish)
         {
-            this.gameObject.transform.position.x += dt*speed;
+            this.gameObject.stateInWorld.addToPosition(new Vector2f(dt*speed, 0));
         }
         else
         {

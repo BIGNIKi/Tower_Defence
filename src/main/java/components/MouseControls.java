@@ -60,18 +60,18 @@ public class MouseControls extends Component
 
         if(holdingObject != null)
         {
-            holdingObject.transform.position.x = Mouse.getWorldX();
-            holdingObject.transform.position.y = Mouse.getWorldY();
-            holdingObject.transform.position.x = ((int)Math.floor(holdingObject.transform.position.x / Settings.GRID_WIDTH) * Settings.GRID_WIDTH) + Settings.GRID_WIDTH / 2.0f;
-            holdingObject.transform.position.y = ((int)Math.floor(holdingObject.transform.position.y / Settings.GRID_HEIGHT) * Settings.GRID_HEIGHT) + Settings.GRID_HEIGHT / 2.0f;
+            holdingObject.stateInWorld.setPosition(new Vector2f(Mouse.getWorldX(), Mouse.getWorldY()));
+            float xx = ((int)Math.floor(holdingObject.stateInWorld.getPosition().x / Settings.GRID_WIDTH) * Settings.GRID_WIDTH) + Settings.GRID_WIDTH / 2.0f;
+            float yy = ((int)Math.floor(holdingObject.stateInWorld.getPosition().y / Settings.GRID_HEIGHT) * Settings.GRID_HEIGHT) + Settings.GRID_HEIGHT / 2.0f;
+            holdingObject.stateInWorld.setPosition(new Vector2f(xx, yy));
 
             if(Mouse.mouseButtonDown(GLFW_MOUSE_BUTTON_LEFT))
             {
                 float halfWidth = Settings.GRID_WIDTH / 2.0f;
                 float halfHeight = Settings.GRID_HEIGHT / 2.0f;
                 if (Mouse.isDragging() &&
-                        !blockInSquare(holdingObject.transform.position.x - halfWidth,
-                                holdingObject.transform.position.y - halfHeight)) {
+                        !blockInSquare(holdingObject.stateInWorld.getPosition().x - halfWidth,
+                                holdingObject.stateInWorld.getPosition().y - halfHeight)) {
                     place();
                 } else if (!Mouse.isDragging() && debounce < 0) {
                     place();

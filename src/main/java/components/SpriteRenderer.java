@@ -1,55 +1,49 @@
 package components;
 
 import editor.JImGui;
-import imgui.ImGui;
-import job.Transform;
+import job.StateInWorld;
 import org.joml.Vector2f;
 import org.joml.Vector4f;
 import renderer.Texture;
+
+import java.lang.reflect.Field;
 
 public class SpriteRenderer extends Component
 {
     private Vector4f color = new Vector4f(1,1,1,1);
     private Sprite sprite = new Sprite();
 
-    //transient - ????????, ??? ??????? ???????????? ????? ???????? ??? ????
-    private transient Transform lastTransform;
-    private transient boolean isDirty = true;
+    public int zIndex;
 
-/*    public SpriteRenderer(Vector4f color)
-    {
-        this.color = color;
-        this.sprite = new Sprite(null);
-        this.isDirty = true;
-    }
-    public SpriteRenderer(Sprite sprite)
-    {
-        this.sprite = sprite;
-        this.color = new Vector4f(1,1,1,1);
-        this.isDirty = true;
-    }*/
+    //transient - ????????, ??? ??????? ???????????? ????? ???????? ??? ????
+    private transient StateInWorld lastStateInWorld;
+    private transient int lastZind; // нужно хранить предудщий zInd, чтобы в случае, если он изменится, перерисовать объект
+    private transient boolean isDirty = true;
 
     @Override
     public void start()
     {
-        this.lastTransform = gameObject.transform.copy();
+        this.lastStateInWorld = gameObject.stateInWorld.copy();
+        this.lastZind = zIndex;
     }
 
     @Override
     public void update(float dt)
     {
         //???? ???-???? ?????????? ? Transform'?
-        if(!this.lastTransform.equals(this.gameObject.transform))
+        if(!this.lastStateInWorld.equals(this.gameObject.stateInWorld) || this.lastZind != zIndex)
         {
-            this.gameObject.transform.copy(this.lastTransform);
+            this.gameObject.stateInWorld.copy(this.lastStateInWorld);
+            this.lastZind = zIndex;
             isDirty = true;
         }
     }
 
     @Override
     public void editorUpdate(float dt) {
-        if (!this.lastTransform.equals(this.gameObject.transform)) {
-            this.gameObject.transform.copy(this.lastTransform);
+        if (!this.lastStateInWorld.equals(this.gameObject.stateInWorld) || this.lastZind != zIndex) {
+            this.gameObject.stateInWorld.copy(this.lastStateInWorld);
+            this.lastZind = zIndex;
             isDirty = true;
         }
     }
@@ -57,6 +51,7 @@ public class SpriteRenderer extends Component
     @Override
     public void imgui()
     {
+        zIndex = JImGui.dragInt("zIndex", zIndex);
         if (JImGui.colorPicker4("Color Picker", this.color)) {
             this.isDirty = true;
         }

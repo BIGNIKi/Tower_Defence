@@ -28,7 +28,7 @@ public class GameObjectDeserializer implements JsonDeserializer<GameObject>
             Component c = context.deserialize(e, Component.class);
             go.addComponent(c);
         }
-        go.transform = go.getComponent(Transform.class);
+        go.stateInWorld = go.getComponent(StateInWorld.class);
         return go;
     }
 }

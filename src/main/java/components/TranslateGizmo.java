@@ -2,6 +2,7 @@ package components;
 
 import editor.PropertiesWindow;
 import job.Mouse;
+import org.joml.Vector2f;
 
 // штука, чтобы двигать игровые объекты в редакторе
 public class TranslateGizmo extends Gizmo
@@ -18,11 +19,11 @@ public class TranslateGizmo extends Gizmo
         {
             if(xAxisActive && !yAxisActive)
             {
-                activeGameObject.transform.position.x += Mouse.getDeltaWorldX();
+                activeGameObject.stateInWorld.addToPosition(new Vector2f(Mouse.getDeltaWorldX(), 0));
             }
             else if(yAxisActive)
             {
-                activeGameObject.transform.position.y += Mouse.getDeltaWorldY();
+                activeGameObject.stateInWorld.addToPosition(new Vector2f(0, Mouse.getDeltaWorldY()));
             }
         }
 

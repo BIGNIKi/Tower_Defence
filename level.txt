@@ -4,18 +4,17 @@
     "name": "Way",
     "components": [
       {
-        "type": "job.Transform",
+        "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.37500048,
+            "x": -0.3793578,
             "y": 0.12500012
           },
-          "scale": {
+          "size": {
             "x": 0.25,
             "y": 0.25
           },
           "rotation": 0.0,
-          "zIndex": 0,
           "uid": 19
         }
       },
@@ -55,6 +54,7 @@
               }
             ]
           },
+          "zIndex": 0,
           "uid": 20
         }
       }
@@ -67,18 +67,17 @@
     "name": "Way",
     "components": [
       {
-        "type": "job.Transform",
+        "type": "job.StateInWorld",
         "properties": {
           "position": {
             "x": -0.12870002,
-            "y": 0.12500012
+            "y": 0.12500018
           },
-          "scale": {
+          "size": {
             "x": 0.25,
             "y": 0.25
           },
           "rotation": 0.0,
-          "zIndex": 0,
           "uid": 19
         }
       },
@@ -118,6 +117,7 @@
               }
             ]
           },
+          "zIndex": 0,
           "uid": 20
         }
       }
@@ -130,18 +130,17 @@
     "name": "Way",
     "components": [
       {
-        "type": "job.Transform",
+        "type": "job.StateInWorld",
         "properties": {
           "position": {
             "x": 0.112555504,
             "y": 0.12500012
           },
-          "scale": {
+          "size": {
             "x": 0.25,
             "y": 0.25
           },
           "rotation": 0.0,
-          "zIndex": 0,
           "uid": 19
         }
       },
@@ -181,6 +180,7 @@
               }
             ]
           },
+          "zIndex": 0,
           "uid": 20
         }
       }
@@ -193,18 +193,17 @@
     "name": "Enemy",
     "components": [
       {
-        "type": "job.Transform",
+        "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.4181621,
+            "x": -0.39637578,
             "y": 0.12500012
           },
-          "scale": {
+          "size": {
             "x": 0.07,
             "y": 0.07
           },
           "rotation": 0.0,
-          "zIndex": 1,
           "uid": 21
         }
       },
@@ -212,7 +211,7 @@
         "type": "components.SpriteRenderer",
         "properties": {
           "color": {
-            "x": 0.17721534,
+            "x": 0.15189886,
             "y": 1.0,
             "z": 0.0,
             "w": 1.0
@@ -244,6 +243,7 @@
               }
             ]
           },
+          "zIndex": 1,
           "uid": 22
         }
       },
@@ -252,7 +252,7 @@
         "properties": {
           "speed": 0.3,
           "distanceFinish": 0.0,
-          "uid": 91
+          "uid": 133
         }
       }
     ],
@@ -264,18 +264,17 @@
     "name": "Way",
     "components": [
       {
-        "type": "job.Transform",
+        "type": "job.StateInWorld",
         "properties": {
           "position": {
             "x": 0.11299944,
             "y": -0.12163663
           },
-          "scale": {
+          "size": {
             "x": 0.25,
             "y": 0.25
           },
           "rotation": 0.0,
-          "zIndex": 0,
           "uid": 19
         }
       },
@@ -315,6 +314,7 @@
               }
             ]
           },
+          "zIndex": 0,
           "uid": 20
         }
       }
@@ -327,18 +327,17 @@
     "name": "Way",
     "components": [
       {
-        "type": "job.Transform",
+        "type": "job.StateInWorld",
         "properties": {
           "position": {
             "x": 0.11299944,
             "y": -0.37141228
           },
-          "scale": {
+          "size": {
             "x": 0.25,
             "y": 0.25
           },
           "rotation": 0.0,
-          "zIndex": 0,
           "uid": 19
         }
       },
@@ -378,6 +377,7 @@
               }
             ]
           },
+          "zIndex": 0,
           "uid": 20
         }
       }
@@ -390,18 +390,17 @@
     "name": "Way",
     "components": [
       {
-        "type": "job.Transform",
+        "type": "job.StateInWorld",
         "properties": {
           "position": {
             "x": 0.3492098,
             "y": -0.37099993
           },
-          "scale": {
+          "size": {
             "x": 0.25,
             "y": 0.25
           },
           "rotation": 0.0,
-          "zIndex": 0,
           "uid": 19
         }
       },
@@ -441,6 +440,7 @@
               }
             ]
           },
+          "zIndex": 0,
           "uid": 20
         }
       }
@@ -453,18 +453,17 @@
     "name": "Way",
     "components": [
       {
-        "type": "job.Transform",
+        "type": "job.StateInWorld",
         "properties": {
           "position": {
             "x": 0.60055494,
             "y": -0.37099993
           },
-          "scale": {
+          "size": {
             "x": 0.25,
             "y": 0.25
           },
           "rotation": 0.0,
-          "zIndex": 0,
           "uid": 19
         }
       },
@@ -504,6 +503,7 @@
               }
             ]
           },
+          "zIndex": 0,
           "uid": 20
         }
       }
@@ -516,18 +516,17 @@
     "name": "base",
     "components": [
       {
-        "type": "job.Transform",
+        "type": "job.StateInWorld",
         "properties": {
           "position": {
             "x": 0.6149099,
             "y": -0.37499988
           },
-          "scale": {
+          "size": {
             "x": 0.125,
             "y": 0.125
           },
           "rotation": 0.0,
-          "zIndex": 0,
           "uid": 23
         }
       },
@@ -536,8 +535,8 @@
         "properties": {
           "color": {
             "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
+            "y": 0.99999,
+            "z": 0.99999,
             "w": 1.0
           },
           "sprite": {
@@ -567,6 +566,7 @@
               }
             ]
           },
+          "zIndex": 2,
           "uid": 24
         }
       }
@@ -579,18 +579,17 @@
     "name": "posForTower",
     "components": [
       {
-        "type": "job.Transform",
+        "type": "job.StateInWorld",
         "properties": {
           "position": {
             "x": 0.36401272,
             "y": 0.37634528
           },
-          "scale": {
+          "size": {
             "x": 0.25,
             "y": 0.25
           },
           "rotation": 0.0,
-          "zIndex": 0,
           "uid": 25
         }
       },
@@ -630,6 +629,7 @@
               }
             ]
           },
+          "zIndex": 0,
           "uid": 26
         }
       }
@@ -642,18 +642,17 @@
     "name": "towerSt",
     "components": [
       {
-        "type": "job.Transform",
+        "type": "job.StateInWorld",
         "properties": {
           "position": {
             "x": 0.36155462,
             "y": 0.37951648
           },
-          "scale": {
+          "size": {
             "x": 0.16622376,
             "y": 0.16622376
           },
           "rotation": 0.0,
-          "zIndex": 0,
           "uid": 23
         }
       },
@@ -693,6 +692,7 @@
               }
             ]
           },
+          "zIndex": 1,
           "uid": 24
         }
       }
@@ -705,18 +705,17 @@
     "name": "Tower",
     "components": [
       {
-        "type": "job.Transform",
+        "type": "job.StateInWorld",
         "properties": {
           "position": {
             "x": 0.36350012,
             "y": 0.3773023
           },
-          "scale": {
+          "size": {
             "x": 0.08556497,
             "y": 0.15383644
           },
           "rotation": 0.0,
-          "zIndex": 0,
           "uid": 48
         }
       },
@@ -756,6 +755,7 @@
               }
             ]
           },
+          "zIndex": 2,
           "uid": 49
         }
       },
@@ -770,23 +770,194 @@
     "isDead": false
   },
   {
-    "uid": 12,
-    "name": "Way",
+    "uid": 14,
+    "name": "Tower",
     "components": [
       {
-        "type": "job.Transform",
+        "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.3625555,
-            "y": 0.12500012
+            "x": -0.13649988,
+            "y": -0.12269771
           },
-          "scale": {
+          "size": {
+            "x": 0.08556497,
+            "y": 0.15383644
+          },
+          "rotation": 0.0,
+          "uid": 48
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/standTower1.png",
+              "width": 32,
+              "height": 60
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 2,
+          "uid": 49
+        }
+      },
+      {
+        "type": "entities.towers.Tower",
+        "properties": {
+          "uid": 112
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 15,
+    "name": "posForTower",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -0.13598728,
+            "y": -0.12365472
+          },
+          "size": {
             "x": 0.25,
             "y": 0.25
           },
           "rotation": 0.0,
+          "uid": 25
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 0.5,
+                "y": 1.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
           "zIndex": 0,
-          "uid": 19
+          "uid": 26
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 16,
+    "name": "towerSt",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -0.13844538,
+            "y": -0.12048352
+          },
+          "size": {
+            "x": 0.16622376,
+            "y": 0.16622376
+          },
+          "rotation": 0.0,
+          "uid": 23
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/standTower.png",
+              "width": 80,
+              "height": 80
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 1,
+          "uid": 24
         }
       }
     ],
