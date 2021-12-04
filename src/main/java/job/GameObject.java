@@ -3,6 +3,7 @@ package job;
 import Util.AssetPool;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.google.gson.annotations.SerializedName;
 import components.Component;
 import components.ComponentDeserializer;
 import components.SpriteRenderer;
@@ -18,21 +19,16 @@ public class GameObject {
   private static int ID_COUNTER = 0;
   private int uid = -1;
 
+  @SerializedName("name")
   public String name;
+
+  @SerializedName("components")
   private List<Component> components;
   public transient StateInWorld stateInWorld;
   private boolean isSerializable = true;
   private boolean isDead = false;
 
   public transient Scene currentScene;
-
-/*    public GameObject(String name)
-    {
-        this.name = name;
-        this.components = new ArrayList<>();
-        this.transform = new Transform();
-        this.zIndex = 0;
-    }*/
 
   public GameObject(String name, Scene currentScene) {
     this.name = name;

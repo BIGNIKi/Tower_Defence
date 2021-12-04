@@ -18,6 +18,8 @@ public abstract class Component
 
     public transient GameObject gameObject = null;
 
+    public Component(){}
+
     public void start()
     {
 

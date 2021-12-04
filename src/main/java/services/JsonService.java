@@ -37,7 +37,7 @@ public class JsonService {
 
       var gameObjects = gson.fromJson(source, GameObject[].class);
       return gameObjects;
-    } catch (IOException e) {
+    } catch (Exception e) {
       e.printStackTrace();
     }
     return null;
