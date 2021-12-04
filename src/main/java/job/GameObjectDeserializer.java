@@ -18,8 +18,8 @@ public class GameObjectDeserializer implements JsonDeserializer<GameObject>
     @Override
     public GameObject deserialize(JsonElement json, Type typeOfT, JsonDeserializationContext context) throws JsonParseException
     {
-        JsonObject jsonObject = json.getAsJsonObject();
-        String name = jsonObject.get("name").getAsString();
+        var jsonObject = json.getAsJsonObject();
+        var name = jsonObject.get("name").getAsString();
         JsonArray components = jsonObject.getAsJsonArray("components");
 
         GameObject go = new GameObject(name, currentScene);
