@@ -17,7 +17,7 @@ public class SceneHierarchyWindow
         List<GameObject> gameObjects = MainWindow.getScene().getGameObjects();
         int index = 0;
         for (GameObject obj : gameObjects) {
-            if (!obj.doSerialization()) {
+            if (!obj.isSerializable()) {
                 continue;
             }
 
