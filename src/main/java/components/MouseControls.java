@@ -120,6 +120,10 @@ public class MouseControls extends Component
                     (new Vector2f(boxSelectStartWorld)).add(halfSize),
                     new Vector2f(halfSize).mul(2.0f),
                     0.0f);
+/*            DebugDraw.addBox2D(
+                    new Vector2f(boxSelectStartWorld),
+                    new Vector2f(boxSelectEndWorld),
+                    0.0f);*/
         }
         else if (boxSelectSet) {
             boxSelectSet = false;

@@ -4,6 +4,7 @@ import components.*;
 import entities.effects.Effect;
 import job.GameObject;
 import org.joml.Vector2f;
+import renderer.DebugDraw;
 
 public class Tower extends Component
 {

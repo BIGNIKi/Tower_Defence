@@ -198,10 +198,15 @@ public class DebugDraw
         Vector2f cameraRight = new Vector2f(camera.position).
                 add(new Vector2f(camera.getProjectionSize()).mul(camera.getZoom())).
                 add(new Vector2f(4.0f, 4.0f));
-        boolean lineInView =
+        // TODO: проверять, что линия в поле зрения камеры (нет смысла рисовать линии вне камеры)
+/*        boolean lineInView =
                 ((from.x >= cameraLeft.x && from.x <= cameraRight.x) && (from.y >= cameraLeft.y && from.y <= cameraRight.y)) ||
                         ((to.x >= cameraLeft.x && to.x <= cameraRight.x) && (to.y >= cameraLeft.y && to.y <= cameraRight.y));
         if(notGridLines.size() >= MAX_LINES || !lineInView)
+        {
+            return;
+        }*/
+        if(notGridLines.size() >= MAX_LINES)
         {
             return;
         }
