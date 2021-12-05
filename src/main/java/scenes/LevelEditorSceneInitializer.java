@@ -1,14 +1,11 @@
 package scenes;
 
 import Util.AssetPool;
-import Util.Settings;
-import com.sun.tools.javac.Main;
 import components.*;
 import imgui.ImGui;
 import imgui.ImVec2;
 import job.*;
 import org.joml.Vector2f;
-import renderer.DebugDraw;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -80,6 +77,7 @@ public class LevelEditorSceneInitializer extends SceneInitializer
         textureToSprite("assets/images/base.png");
         textureToSprite("assets/images/standTower.png");
         textureToSprite("assets/images/standTower1.png");
+        textureToSprite("assets/images/enemySpawn.png");
 
         // STOP
 

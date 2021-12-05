@@ -1,6 +1,6 @@
 [
   {
-    "uid": 0,
+    "uid": 47,
     "name": "Way",
     "components": [
       {
@@ -63,7 +63,7 @@
     "isDead": false
   },
   {
-    "uid": 1,
+    "uid": 48,
     "name": "Way",
     "components": [
       {
@@ -126,7 +126,7 @@
     "isDead": false
   },
   {
-    "uid": 2,
+    "uid": 49,
     "name": "Way",
     "components": [
       {
@@ -189,78 +189,7 @@
     "isDead": false
   },
   {
-    "uid": 3,
-    "name": "Enemy",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": -0.39637578,
-            "y": 0.12500012
-          },
-          "size": {
-            "x": 0.07,
-            "y": 0.07
-          },
-          "rotation": 0.0,
-          "uid": 21
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 0.15189886,
-            "y": 1.0,
-            "z": 0.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 0.0,
-            "height": 0.0,
-            "texture": {
-              "filePath": "assets/images/greenEnemy1.png",
-              "width": 200,
-              "height": 200
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 1,
-          "uid": 22
-        }
-      },
-      {
-        "type": "entities.monsters.Monster",
-        "properties": {
-          "speed": 0.3,
-          "distanceFinish": 0.0,
-          "uid": 133
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 4,
+    "uid": 50,
     "name": "Way",
     "components": [
       {
@@ -323,7 +252,7 @@
     "isDead": false
   },
   {
-    "uid": 5,
+    "uid": 51,
     "name": "Way",
     "components": [
       {
@@ -386,7 +315,7 @@
     "isDead": false
   },
   {
-    "uid": 6,
+    "uid": 52,
     "name": "Way",
     "components": [
       {
@@ -449,7 +378,7 @@
     "isDead": false
   },
   {
-    "uid": 7,
+    "uid": 53,
     "name": "Way",
     "components": [
       {
@@ -512,7 +441,7 @@
     "isDead": false
   },
   {
-    "uid": 8,
+    "uid": 54,
     "name": "base",
     "components": [
       {
@@ -575,7 +504,7 @@
     "isDead": false
   },
   {
-    "uid": 9,
+    "uid": 55,
     "name": "posForTower",
     "components": [
       {
@@ -638,7 +567,7 @@
     "isDead": false
   },
   {
-    "uid": 10,
+    "uid": 56,
     "name": "towerSt",
     "components": [
       {
@@ -701,7 +630,7 @@
     "isDead": false
   },
   {
-    "uid": 11,
+    "uid": 57,
     "name": "Tower",
     "components": [
       {
@@ -762,6 +691,7 @@
       {
         "type": "entities.towers.Tower",
         "properties": {
+          "rotateSpeed": 50.0,
           "uid": 112
         }
       }
@@ -770,7 +700,7 @@
     "isDead": false
   },
   {
-    "uid": 12,
+    "uid": 58,
     "name": "Tower",
     "components": [
       {
@@ -831,6 +761,7 @@
       {
         "type": "entities.towers.Tower",
         "properties": {
+          "rotateSpeed": 50.0,
           "uid": 112
         }
       }
@@ -839,7 +770,7 @@
     "isDead": false
   },
   {
-    "uid": 13,
+    "uid": 59,
     "name": "posForTower",
     "components": [
       {
@@ -902,7 +833,7 @@
     "isDead": false
   },
   {
-    "uid": 14,
+    "uid": 60,
     "name": "towerSt",
     "components": [
       {
@@ -958,6 +889,152 @@
           },
           "zIndex": 1,
           "uid": 24
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 61,
+    "name": "Point0",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 0.10253006,
+            "y": 0.112509936
+          },
+          "size": {
+            "x": 0.07,
+            "y": 0.07
+          },
+          "rotation": 0.0,
+          "uid": 21
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 62,
+    "name": "Point1",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 0.121265054,
+            "y": -0.37499988
+          },
+          "size": {
+            "x": 0.07,
+            "y": 0.07
+          },
+          "rotation": 0.0,
+          "uid": 21
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 63,
+    "name": "Point2",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 0.62126505,
+            "y": -0.37499988
+          },
+          "size": {
+            "x": 0.07,
+            "y": 0.07
+          },
+          "rotation": 0.0,
+          "uid": 21
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 64,
+    "name": "Spawn",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -0.375,
+            "y": 0.13749036
+          },
+          "size": {
+            "x": 0.19049342,
+            "y": 0.15703353
+          },
+          "rotation": 0.0,
+          "uid": 154
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 0.1772151,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/enemySpawn.png",
+              "width": 512,
+              "height": 512
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 155
+        }
+      },
+      {
+        "type": "controllers.Waves",
+        "properties": {
+          "speed": 0.3,
+          "numOfMonsters": 5,
+          "timeBetweenMonsters": 1.0,
+          "wayPoints": [
+            "Point0",
+            "Point1",
+            "Point2"
+          ],
+          "uid": 176
         }
       }
     ],

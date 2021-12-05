@@ -43,6 +43,8 @@ public class EditorCamera extends Component
             Vector2f delta = new Vector2f(mousePos).sub(this.clickOrigin);
             levelEditorCamera.position.sub(delta.mul(dragSensitivity));
             this.clickOrigin.lerp(mousePos, dt);
+            // если мы пытаемся двигать камеру, отключаем режим сброса положения камеры
+            setResetToFalse();
         }
 
         if(dragDebounce <= 0.0f && !Mouse.mouseButtonDown(GLFW_MOUSE_BUTTON_MIDDLE))
@@ -71,15 +73,22 @@ public class EditorCamera extends Component
                     ((1.0f - levelEditorCamera.getZoom()) * lerpTimeSize));
             this.lerpTimePos += 0.01f * dt;
             this.lerpTimeSize += 0.025f * dt;
-            if(Math.abs(levelEditorCamera.position.x) <= 0.1f &&
-                    Math.abs(levelEditorCamera.position.y) <= 0.1f)
+            if(Math.abs(levelEditorCamera.position.x) <= 0.001f &&
+                    Math.abs(levelEditorCamera.position.y) <= 0.001f &&
+                    levelEditorCamera.getZoom() > 0.997f && levelEditorCamera.getZoom() < 1.003f)
             {
-                this.lerpTimePos = 0.0f;
-                this.lerpTimeSize = 0.0f;
                 levelEditorCamera.position.set(0f, 0f);
                 this.levelEditorCamera.setZoom(1.0f);
-                reset = false;
+                setResetToFalse();
             }
         }
+    }
+
+    // отключение режима сброса положения камеры к изначальному
+    private void setResetToFalse()
+    {
+        this.lerpTimePos = 0.0f;
+        this.lerpTimeSize = 0.0f;
+        reset = false;
     }
 }

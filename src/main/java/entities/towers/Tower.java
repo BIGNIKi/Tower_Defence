@@ -1,10 +1,16 @@
 package entities.towers;
 
+import Util.SmartCalc;
 import components.*;
 import entities.effects.Effect;
 import job.GameObject;
+import job.MainWindow;
 import org.joml.Vector2f;
 import renderer.DebugDraw;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class Tower extends Component
 {
@@ -33,19 +39,35 @@ public class Tower extends Component
 
   public transient GameObject goal;
 
+  public float rotateSpeed;
+
   @Override
   public void start()
   {
-    goal = this.gameObject.currentScene.getGameObjectByName("Enemy");
   }
 
   @Override
   public void update(float dt)
   {
-    if(goal != null)
+    List<GameObject> result = GameObject.FindAllByName("Enemy");
+    GameObject nearest = null;
+    for(GameObject go : result)
+    {
+      if(nearest == null)
+      {
+        nearest = go;
+        continue;
+      }
+      if(this.gameObject.stateInWorld.getPosition().distance(go.stateInWorld.getPosition()) <
+              this.gameObject.stateInWorld.getPosition().distance(nearest.stateInWorld.getPosition()))
+      {
+        nearest = go;
+      }
+    }
+    if(nearest != null)
     {
       Vector2f from = this.gameObject.stateInWorld.getPosition();
-      Vector2f to = goal.stateInWorld.getPosition();
+      Vector2f to = nearest.stateInWorld.getPosition();
       var h = to.x - from.x;
       var w = to.y - from.y;
 
@@ -57,9 +79,8 @@ public class Tower extends Component
       if (atan < 0)
         atan += 360;
 
-      this.gameObject.stateInWorld.setRotation((float)(atan % 360));
+      float degree = -(float)(atan % 360);
+      this.gameObject.stateInWorld.setRotation(SmartCalc.rotateAtoBwithStepT(this.gameObject.stateInWorld.getRotation(), degree, rotateSpeed*dt));
     }
-
-    //DebugDraw.addCircle(this.gameObject.transform.position, 1, new Vector3f(0,1,0));
   }
 }

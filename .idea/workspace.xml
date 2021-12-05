@@ -4,10 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="Nothing new">
+    <list default="true" id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="Fixed bug with non-drawing selection box">
+      <change afterPath="$PROJECT_DIR$/assets/images/enemySpawn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Util/SmartCalc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Util/StringList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/Waves.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/MouseControls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/MouseControls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui.ini" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level.json" beforeDir="false" afterPath="$PROJECT_DIR$/level.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/EditorCamera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/EditorCamera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/Gizmo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/Gizmo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/editor/JImGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/editor/JImGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/editor/PropertiesWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/editor/PropertiesWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/monsters/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/monsters/Monster.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/towers/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/towers/Tower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/job/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/job/Prefabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/Prefabs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/job/StateInWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/StateInWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/RenderBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/renderer/RenderBatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scenes/LevelEditorSceneInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scenes/LevelEditorSceneInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scenes/LevelSceneInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scenes/LevelSceneInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scenes/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scenes/Scene.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +36,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,6 +68,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nikit\IdeaProjects\Tower_Defence\assets\images" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -88,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638691234619</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed bug with non-drawing selection box">
+      <created>1638692064360</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638692064360</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,33 +143,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Renamed entities to more understandable names and make fields private (added getters and setters also). The game logic is independent of drawing now. Fixed bug with drawing object whose SpriteRenderer component was already destroyed." />
     <MESSAGE value="Nothing new" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nothing new" />
+    <MESSAGE value="Fixed bug with non-drawing selection box" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug with non-drawing selection box" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/renderer/Renderer.java</url>
-          <line>31</line>
-          <properties class="renderer.Renderer" method="add">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/renderer/RenderBatch.java</url>
-          <line>340</line>
+          <line>341</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/renderer/RenderBatch.java</url>
-          <line>147</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/scenes/Scene.java</url>
-          <line>160</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

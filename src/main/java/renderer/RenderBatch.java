@@ -231,7 +231,8 @@ public class RenderBatch implements Comparable<RenderBatch>
         {
             transformMatrix.translate(sprite.gameObject.stateInWorld.getPosition().x,
                     sprite.gameObject.stateInWorld.getPosition().y, 0);
-            float rotNew = -sprite.gameObject.stateInWorld.getRotation();
+            //TODO: здесь задаётся поворот объекта
+            float rotNew = sprite.gameObject.stateInWorld.getRotation();
             transformMatrix.rotate((float)Math.toRadians(rotNew),
                     0,0,1);
             transformMatrix.scale(sprite.gameObject.stateInWorld.getScale().x,

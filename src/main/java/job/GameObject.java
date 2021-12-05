@@ -7,10 +7,14 @@ import components.Component;
 import components.ComponentDeserializer;
 import components.SpriteRenderer;
 import imgui.ImGui;
+import org.joml.Vector2f;
+import org.joml.Vector2fc;
 import scenes.Scene;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class GameObject
 {
@@ -165,5 +169,22 @@ public class GameObject
     public boolean isDead()
     {
         return this.isDead;
+    }
+
+    // найти объект по имени
+    public static GameObject Find(String name)
+    {
+        Optional<GameObject> result = MainWindow.getScene().getGameObjects().stream()
+                .filter(gameObject -> gameObject.name.equals(name))
+                .findFirst();
+        return result.orElse(null);
+    }
+
+    // получить список объектов со схожим именем
+    public static List<GameObject> FindAllByName(String name)
+    {
+        return MainWindow.getScene().getGameObjects().stream()
+                .filter(gameObject -> gameObject.name.equals(name))
+                .collect(Collectors.toList());
     }
 }

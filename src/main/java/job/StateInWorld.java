@@ -1,7 +1,9 @@
 package job;
 
 import components.Component;
+import editor.JImGui;
 import org.joml.Vector2f;
+import org.joml.Vector2fc;
 
 public class StateInWorld extends Component
 {
@@ -16,12 +18,13 @@ public class StateInWorld extends Component
 
     public void setPosition(Vector2f position)
     {
-        this.position.set(position);
+        this.position = position;
     }
 
     public void addToPosition(Vector2f position)
     {
-        this.position.add(position);
+        this.position.x += position.x;
+        this.position.y += position.y;
     }
 
 
@@ -88,5 +91,14 @@ public class StateInWorld extends Component
                 t.rotation == this.rotation;
     }
 
+    @Override
+    public void imgui() {
+        gameObject.name = JImGui.inputText("Name: ", gameObject.name);
+        super.imgui();
+    }
 
+    public void set(Vector2fc v) {
+        this.position.x = v.x();
+        this.position.y = v.y();
+    }
 }

@@ -1,5 +1,6 @@
 package components;
 
+import Util.StringList;
 import editor.JImGui;
 import imgui.ImGui;
 import imgui.type.ImInt;
@@ -10,6 +11,7 @@ import org.joml.Vector4f;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
+import java.util.List;
 
 public abstract class Component
 {
@@ -109,6 +111,16 @@ public abstract class Component
                     field.set(this,
                             JImGui.inputText(field.getName() + ": ",
                                     (String)value));
+                }
+                // отображает лист стрингов
+                else if(type == StringList.class)
+                {
+                    StringList sL = (StringList) value;
+                    sL.setSize(JImGui.dragInt("size : ", sL.getSize()));
+                    for(int i = 0; i<sL.size(); i++)
+                    {
+                        sL.set(i, JImGui.inputText(field.getName() + i + ": ", sL.get(i)));
+                    }
                 }
 
                 if(isPrivate)

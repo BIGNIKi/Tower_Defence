@@ -1,6 +1,9 @@
 package entities.monsters;
 
+import Util.SmartCalc;
+import Util.StringList;
 import components.Component;
+import job.GameObject;
 import org.joml.Vector2f;
 
 public class Monster extends Component
@@ -22,35 +25,65 @@ public class Monster extends Component
   private int y;
 */
 
-    private float speed;
+    private transient float speed;
 
-    private float distanceFinish = 0;
+    private transient StringList wayPoints; // список имен точек, по которым нужно ходить
+    private transient int numOfPointsNow = 0; // точка, в которой мы сейчас
+    private transient float currentTime = 0;
+    private transient float timeOfTravel;
+    private transient Vector2f startPosition; // позиция врага перед тем, как идти к точке
+    private transient boolean isInProgress = false; // идет ли уже к точке
+    private transient GameObject goal; // точка, к которой идет противник
+
+    public void settingMonster(float speed, StringList wayPoints)
+    {
+        this.speed = speed;
+        this.wayPoints = (StringList) wayPoints.clone();
+    }
+
+    @Override
+    public void start()
+    {
+
+    }
 
     @Override
     public void update(float dt)
     {
-        distanceFinish += dt*speed;
-
-        float neededDistance0 = 0.55f;
-        float neededDistance1 = 1.05f;
-        float neededDistance2 = 1.55f;
-
-        if(neededDistance0 > distanceFinish)
+        if(!isInProgress)
         {
-            this.gameObject.stateInWorld.addToPosition(new Vector2f(dt*speed, 0));
+            if(numOfPointsNow >= wayPoints.size())
+            {
+                this.gameObject.destroy();
+                return;
+            }
+            else
+            {
+                goal = GameObject.Find(wayPoints.get(numOfPointsNow));
+            }
+            numOfPointsNow++;
+            if(goal != null)
+            {
+                float distance = Vector2f.distance(this.gameObject.stateInWorld.getPosition().x, this.gameObject.stateInWorld.getPosition().y,
+                        goal.stateInWorld.getPosition().x, goal.stateInWorld.getPosition().y);
+                timeOfTravel = distance/speed;
+                startPosition = this.gameObject.stateInWorld.getPosition();
+                isInProgress = true;
+            }
         }
-        else if(neededDistance1 > distanceFinish)
+        if(goal != null)
         {
-            this.gameObject.stateInWorld.addToPosition(new Vector2f(0, -dt*speed));
+            currentTime += dt;
+            if(currentTime < timeOfTravel) {
+                float normalizedValue = currentTime / timeOfTravel;
+                this.gameObject.stateInWorld.setPosition(SmartCalc.Lerp(startPosition, goal.stateInWorld.getPosition(), normalizedValue));
+            }
+            else
+            {
+                goal = null;
+                isInProgress = false;
+                currentTime = 0;
+            }
         }
-        else if(neededDistance2 > distanceFinish)
-        {
-            this.gameObject.stateInWorld.addToPosition(new Vector2f(dt*speed, 0));
-        }
-        else
-        {
-            this.gameObject.destroy();
-        }
-
     }
 }

@@ -56,11 +56,11 @@ public class Gizmo extends Component
     @Override
     public void start()
     {
-        this.xAxisObject.stateInWorld.setRotation(-90);
+        this.xAxisObject.stateInWorld.setRotation(90);
         //this.xAxisObject.transform.rotation = 90;
         //this.yAxisObject.transform.rotation = 180;
 
-        this.yAxisObject.stateInWorld.setRotation(180);
+        this.yAxisObject.stateInWorld.setRotation(-180);
         this.xAxisObject.getComponent(SpriteRenderer.class).zIndex = 100;
         this.yAxisObject.getComponent(SpriteRenderer.class).zIndex = 100;
         this.xAxisObject.setNoSerialize();
@@ -115,9 +115,8 @@ public class Gizmo extends Component
 
         if(this.activeGameObject != null)
         {
-            Vector2f aboba = new Vector2f(this.activeGameObject.stateInWorld.getPosition());
-            this.xAxisObject.stateInWorld.setPosition(aboba);
-            this.yAxisObject.stateInWorld.setPosition(aboba);
+            this.xAxisObject.stateInWorld.set(this.activeGameObject.stateInWorld.getPosition());
+            this.yAxisObject.stateInWorld.set(this.activeGameObject.stateInWorld.getPosition());
             this.xAxisObject.stateInWorld.addToPosition(this.xAxisOffset);
             this.yAxisObject.stateInWorld.addToPosition(this.yAxisOffset);
         }

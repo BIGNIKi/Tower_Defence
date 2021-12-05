@@ -68,9 +68,7 @@ public class LevelSceneInitializer extends SceneInitializer
 
         // START сюда пишутся текстуры, которые нужно видеть в редакторе выбора текстур
 
-        spriteSheetToSprites("assets/images/spritesheet.png", 121, 120, 2,0);
-        textureToSprite("assets/images/greenEnemy1.png");
-        textureToSprite("assets/images/base.png");
+
 
         // STOP
 

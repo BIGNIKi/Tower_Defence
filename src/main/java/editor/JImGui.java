@@ -10,7 +10,7 @@ import org.joml.Vector4f;
 
 public class JImGui {
 
-    private static float defaultColumnWidth = 70.0f;
+    private static float defaultColumnWidth = 100.0f;
 
     public static void drawVec2Control(String label, Vector2f values) {
         drawVec2Control(label, values, 0.0f, defaultColumnWidth);
