@@ -770,7 +770,7 @@
     "isDead": false
   },
   {
-    "uid": 14,
+    "uid": 12,
     "name": "Tower",
     "components": [
       {
@@ -839,7 +839,7 @@
     "isDead": false
   },
   {
-    "uid": 15,
+    "uid": 13,
     "name": "posForTower",
     "components": [
       {
@@ -902,7 +902,7 @@
     "isDead": false
   },
   {
-    "uid": 16,
+    "uid": 14,
     "name": "towerSt",
     "components": [
       {

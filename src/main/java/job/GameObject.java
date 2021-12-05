@@ -25,14 +25,6 @@ public class GameObject
 
     public transient Scene currentScene;
 
-/*    public GameObject(String name)
-    {
-        this.name = name;
-        this.components = new ArrayList<>();
-        this.transform = new Transform();
-        this.zIndex = 0;
-    }*/
-
     public GameObject(String name, Scene currentScene)
     {
         this.name = name;
