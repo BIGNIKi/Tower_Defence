@@ -59,6 +59,7 @@ public class EditorCamera extends Component
                     1/levelEditorCamera.getZoom());
             addValue *= -Math.signum(Mouse.getScrollY());
             levelEditorCamera.addZoom(addValue);
+            setResetToFalse();
         }
 
         if(Keyboard.isKeyPressed(GLFW_KEY_R))

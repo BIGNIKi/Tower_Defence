@@ -1,6 +1,6 @@
 [
   {
-    "uid": 47,
+    "uid": 0,
     "name": "Way",
     "components": [
       {
@@ -63,7 +63,7 @@
     "isDead": false
   },
   {
-    "uid": 48,
+    "uid": 1,
     "name": "Way",
     "components": [
       {
@@ -126,7 +126,7 @@
     "isDead": false
   },
   {
-    "uid": 49,
+    "uid": 2,
     "name": "Way",
     "components": [
       {
@@ -189,7 +189,7 @@
     "isDead": false
   },
   {
-    "uid": 50,
+    "uid": 3,
     "name": "Way",
     "components": [
       {
@@ -252,7 +252,7 @@
     "isDead": false
   },
   {
-    "uid": 51,
+    "uid": 4,
     "name": "Way",
     "components": [
       {
@@ -315,7 +315,7 @@
     "isDead": false
   },
   {
-    "uid": 52,
+    "uid": 5,
     "name": "Way",
     "components": [
       {
@@ -378,7 +378,7 @@
     "isDead": false
   },
   {
-    "uid": 53,
+    "uid": 6,
     "name": "Way",
     "components": [
       {
@@ -441,7 +441,7 @@
     "isDead": false
   },
   {
-    "uid": 54,
+    "uid": 7,
     "name": "base",
     "components": [
       {
@@ -504,7 +504,7 @@
     "isDead": false
   },
   {
-    "uid": 55,
+    "uid": 8,
     "name": "posForTower",
     "components": [
       {
@@ -567,7 +567,7 @@
     "isDead": false
   },
   {
-    "uid": 56,
+    "uid": 9,
     "name": "towerSt",
     "components": [
       {
@@ -630,7 +630,7 @@
     "isDead": false
   },
   {
-    "uid": 57,
+    "uid": 10,
     "name": "Tower",
     "components": [
       {
@@ -700,7 +700,7 @@
     "isDead": false
   },
   {
-    "uid": 58,
+    "uid": 11,
     "name": "Tower",
     "components": [
       {
@@ -770,7 +770,7 @@
     "isDead": false
   },
   {
-    "uid": 59,
+    "uid": 12,
     "name": "posForTower",
     "components": [
       {
@@ -833,7 +833,7 @@
     "isDead": false
   },
   {
-    "uid": 60,
+    "uid": 13,
     "name": "towerSt",
     "components": [
       {
@@ -896,7 +896,7 @@
     "isDead": false
   },
   {
-    "uid": 61,
+    "uid": 14,
     "name": "Point0",
     "components": [
       {
@@ -919,7 +919,7 @@
     "isDead": false
   },
   {
-    "uid": 62,
+    "uid": 15,
     "name": "Point1",
     "components": [
       {
@@ -942,7 +942,7 @@
     "isDead": false
   },
   {
-    "uid": 63,
+    "uid": 16,
     "name": "Point2",
     "components": [
       {
@@ -965,7 +965,7 @@
     "isDead": false
   },
   {
-    "uid": 64,
+    "uid": 17,
     "name": "Spawn",
     "components": [
       {
