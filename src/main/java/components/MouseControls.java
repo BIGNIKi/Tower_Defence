@@ -115,7 +115,6 @@ public class MouseControls extends Component
             Vector2f boxSelectStartWorld = Mouse.screenToWorld(boxSelectStart);
             Vector2f boxSelectEndWorld = Mouse.screenToWorld(boxSelectEnd);
             Vector2f halfSize = (new Vector2f(boxSelectEndWorld).sub(boxSelectStartWorld)).mul(0.5f);
-            // TODO: box не отрисовывается за краями центровки камеры
             DebugDraw.addBox2D(
                     (new Vector2f(boxSelectStartWorld)).add(halfSize),
                     new Vector2f(halfSize).mul(2.0f),

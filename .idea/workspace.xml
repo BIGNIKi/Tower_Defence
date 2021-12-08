@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ced4412-5794-4c53-9b60-6433e10c4188" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Bullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/level.json" beforeDir="false" afterPath="$PROJECT_DIR$/level.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Util/SmartCalc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/SmartCalc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Waves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Waves.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/monsters/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/monsters/Monster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/towers/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/towers/Tower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/Prefabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/Prefabs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/MouseControls.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/MouseControls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/job/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/MainWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,6 +155,14 @@
             <option name="lambda-ordinal" value="-1" />
           </properties>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/editor/PropertiesWindow.java</url>
+          <line>107</line>
+          <properties class="editor.PropertiesWindow" method="clearSelected">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

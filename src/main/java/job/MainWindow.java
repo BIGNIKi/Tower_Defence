@@ -303,6 +303,7 @@ public final class MainWindow implements Observer
     public void onNotify(GameObject object, Event event) {
         switch (event.type) {
             case GameEngineStartPlay:
+                MainWindow.getImguiLayer().getPropertiesWindow().clearSelected(); // это нужно, чтобы не сохранялось желтое выделение
                 this.runtimePlaying = true;
                 currentScene.save();
                 MainWindow.changeScene(new LevelSceneInitializer());
@@ -315,6 +316,7 @@ public final class MainWindow implements Observer
                 MainWindow.changeScene(new LevelEditorSceneInitializer());
                 break;
             case SaveLevel:
+                MainWindow.getImguiLayer().getPropertiesWindow().clearSelected(); // это нужно, чтобы не сохранялось желтое выделение
                 currentScene.save();
                 break;
         }

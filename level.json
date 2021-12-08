@@ -1,6 +1,6 @@
 [
   {
-    "uid": 0,
+    "uid": 96,
     "name": "Way",
     "components": [
       {
@@ -63,7 +63,7 @@
     "isDead": false
   },
   {
-    "uid": 1,
+    "uid": 97,
     "name": "Way",
     "components": [
       {
@@ -126,7 +126,7 @@
     "isDead": false
   },
   {
-    "uid": 2,
+    "uid": 98,
     "name": "Way",
     "components": [
       {
@@ -189,7 +189,7 @@
     "isDead": false
   },
   {
-    "uid": 3,
+    "uid": 99,
     "name": "Way",
     "components": [
       {
@@ -252,7 +252,7 @@
     "isDead": false
   },
   {
-    "uid": 4,
+    "uid": 100,
     "name": "Way",
     "components": [
       {
@@ -315,7 +315,7 @@
     "isDead": false
   },
   {
-    "uid": 5,
+    "uid": 101,
     "name": "Way",
     "components": [
       {
@@ -378,7 +378,7 @@
     "isDead": false
   },
   {
-    "uid": 6,
+    "uid": 102,
     "name": "Way",
     "components": [
       {
@@ -441,7 +441,7 @@
     "isDead": false
   },
   {
-    "uid": 7,
+    "uid": 103,
     "name": "base",
     "components": [
       {
@@ -504,7 +504,7 @@
     "isDead": false
   },
   {
-    "uid": 8,
+    "uid": 104,
     "name": "Tower",
     "components": [
       {
@@ -577,7 +577,7 @@
     "isDead": false
   },
   {
-    "uid": 9,
+    "uid": 105,
     "name": "posForTower",
     "components": [
       {
@@ -640,7 +640,7 @@
     "isDead": false
   },
   {
-    "uid": 10,
+    "uid": 106,
     "name": "towerSt",
     "components": [
       {
@@ -703,7 +703,7 @@
     "isDead": false
   },
   {
-    "uid": 11,
+    "uid": 107,
     "name": "Point0",
     "components": [
       {
@@ -726,7 +726,7 @@
     "isDead": false
   },
   {
-    "uid": 12,
+    "uid": 108,
     "name": "Point1",
     "components": [
       {
@@ -749,7 +749,7 @@
     "isDead": false
   },
   {
-    "uid": 13,
+    "uid": 109,
     "name": "Point2",
     "components": [
       {
@@ -772,7 +772,7 @@
     "isDead": false
   },
   {
-    "uid": 14,
+    "uid": 110,
     "name": "Spawn",
     "components": [
       {
@@ -850,7 +850,7 @@
     "isDead": false
   },
   {
-    "uid": 15,
+    "uid": 111,
     "name": "Way",
     "components": [
       {
@@ -913,7 +913,7 @@
     "isDead": false
   },
   {
-    "uid": 16,
+    "uid": 112,
     "name": "Tower",
     "components": [
       {
@@ -986,7 +986,7 @@
     "isDead": false
   },
   {
-    "uid": 17,
+    "uid": 113,
     "name": "posForTower",
     "components": [
       {
@@ -1049,7 +1049,7 @@
     "isDead": false
   },
   {
-    "uid": 18,
+    "uid": 114,
     "name": "towerSt",
     "components": [
       {
@@ -1112,7 +1112,7 @@
     "isDead": false
   },
   {
-    "uid": 19,
+    "uid": 115,
     "name": "Tower",
     "components": [
       {
@@ -1185,7 +1185,7 @@
     "isDead": false
   },
   {
-    "uid": 20,
+    "uid": 116,
     "name": "posForTower",
     "components": [
       {
@@ -1248,7 +1248,7 @@
     "isDead": false
   },
   {
-    "uid": 21,
+    "uid": 117,
     "name": "towerSt",
     "components": [
       {
@@ -1311,7 +1311,7 @@
     "isDead": false
   },
   {
-    "uid": 22,
+    "uid": 118,
     "name": "Tower",
     "components": [
       {
@@ -1384,7 +1384,7 @@
     "isDead": false
   },
   {
-    "uid": 23,
+    "uid": 119,
     "name": "posForTower",
     "components": [
       {
@@ -1447,7 +1447,7 @@
     "isDead": false
   },
   {
-    "uid": 24,
+    "uid": 120,
     "name": "towerSt",
     "components": [
       {
