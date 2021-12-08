@@ -6,6 +6,7 @@ import entities.effects.Effect;
 import entities.monsters.Monster;
 import job.GameObject;
 import job.MainWindow;
+import job.Prefabs;
 import org.joml.Vector2f;
 import renderer.DebugDraw;
 
@@ -18,7 +19,6 @@ public class Tower extends Component
 {
   public transient int constructionCost;
 
-  private transient int damage;
   private transient int range;
   private transient int firingRate;
   private transient Effect effect;
@@ -43,6 +43,9 @@ public class Tower extends Component
 
   public float rotateSpeed; // скорость поворота
   public float observeRadius; // радиус, в котором может стрелять
+  public float timeToAttack; // время между выстрелами
+  private transient float reloadTime = 0; // если 0 - может стрелять
+  public float damage; // урон
 
   @Override
   public void start()
@@ -52,7 +55,8 @@ public class Tower extends Component
   @Override
   public void update(float dt)
   {
-    DebugDraw.addCircle(this.gameObject.stateInWorld.getPosition(), observeRadius);
+    // строчка ниже отрисует дистанцию поражения
+    // DebugDraw.addCircle(this.gameObject.stateInWorld.getPosition(), observeRadius);
     if(goal != null)
     {
       if(goal.stateInWorld.getPosition().distance(this.gameObject.stateInWorld.getPosition()) > observeRadius
@@ -64,26 +68,27 @@ public class Tower extends Component
     if(goal == null)
     {
       goal = findGoal();
+      if(goal == null)
+      {
+        GameObject goalToSee = findNearest(); // ищем ближайшего врага, чтобы смотреть в его сторону (хоть и не можем стрелять, зато можем на него смотреть)
+        if(goalToSee != null)
+        {
+          seeTowardsObj(dt, goalToSee);
+        }
+      }
     }
 
     if(goal != null)
     {
-      Vector2f from = this.gameObject.stateInWorld.getPosition();
-      Vector2f to = goal.stateInWorld.getPosition();
-      var h = to.x - from.x;
-      var w = to.y - from.y;
-
-      var atan = Math.atan(h/w) / Math.PI * 180;
-      if (w < 0 || h < 0)
-        atan += 180;
-      if (w > 0 && h < 0)
-        atan -= 180;
-      if (atan < 0)
-        atan += 360;
-
-      float degree = -(float)(atan % 360);
-      this.gameObject.stateInWorld.setRotation(SmartCalc.rotateAtoBwithStepT(this.gameObject.stateInWorld.getRotation(), degree, rotateSpeed*dt));
+      seeTowardsObj(dt, goal);
+      attack(dt);
     }
+  }
+
+  private void seeTowardsObj(float dt, GameObject obj)
+  {
+    float degree = SmartCalc.getAngleToVec(this.gameObject.stateInWorld.getPosition(), obj.stateInWorld.getPosition());
+    this.gameObject.stateInWorld.setRotation(SmartCalc.rotateAtoBwithStepT(this.gameObject.stateInWorld.getRotation(), degree, rotateSpeed*dt));
   }
 
   private GameObject findGoal()
@@ -92,7 +97,8 @@ public class Tower extends Component
     List<GameObject> result = GameObject.FindAllByName("Enemy");
     // получили список противников, которые в радиусе поражения
     List<GameObject> inRadius = result.stream()
-            .filter(gameObject -> gameObject.stateInWorld.getPosition().distance(myPos) <= observeRadius)
+            .filter(gameObject -> gameObject.stateInWorld.getPosition().distance(myPos) <= observeRadius
+                    && gameObject.getComponent(Monster.class) != null)
             .collect(Collectors.toList());
     GameObject nearest = null;
     float oldFinishDistance = -1;
@@ -107,5 +113,53 @@ public class Tower extends Component
     }
 
     return nearest;
+  }
+
+  private GameObject findNearest()
+  {
+    Vector2f myPos = this.gameObject.stateInWorld.getPosition();
+    List<GameObject> result = GameObject.FindAllByName("Enemy");
+    // получили список противников, которые в радиусе поражения
+    List<GameObject> inRadius = result.stream()
+            .filter(gameObject -> gameObject.getComponent(Monster.class) != null)
+            .collect(Collectors.toList());
+    GameObject nearest = null;
+    float oldFinishDistance = -1;
+    for(GameObject go : inRadius)
+    {
+      // находит врага, который максимально близко к базе
+      if(oldFinishDistance < go.getComponent(Monster.class).getFinishDistance())
+      {
+        oldFinishDistance = go.getComponent(Monster.class).getFinishDistance();
+        nearest = go;
+      }
+    }
+
+    return nearest;
+  }
+
+  private void attack(float dt)
+  {
+    reloadTime -= dt;
+    if(reloadTime <= 0)
+    {
+      reloadTime = 0;
+    }
+    // если башня смотрит (ПОЧTI) на цель (только тогда можно стрелять)
+    float angleToGoal = Math.abs(
+            SmartCalc.getNorm(SmartCalc.getAngleToVec(this.gameObject.stateInWorld.getPosition(), goal.stateInWorld.getPosition()))
+            - SmartCalc.getNorm(this.gameObject.stateInWorld.getRotation())
+    );
+    if(angleToGoal < 15)
+    {
+      if(reloadTime <= 0)
+      {
+        Prefabs.addBullet(goal, this.gameObject.stateInWorld.getPosition(), damage); // создает пулю
+        if(goal.getComponent(Monster.class).amIDie(damage)) goal = null; // если этот чечен будет убит, убираем как цель
+
+        reloadTime = timeToAttack;
+      }
+    }
+
   }
 }

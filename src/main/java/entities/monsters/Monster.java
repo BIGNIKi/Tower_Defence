@@ -3,8 +3,10 @@ package entities.monsters;
 import Util.SmartCalc;
 import Util.StringList;
 import components.Component;
+import components.SpriteRenderer;
 import job.GameObject;
 import org.joml.Vector2f;
+import org.joml.Vector4f;
 
 public class Monster extends Component
 {
@@ -35,11 +37,15 @@ public class Monster extends Component
     private transient boolean isInProgress = false; // идет ли уже к точке
     private transient GameObject goal; // точка, к которой идет противник
     private transient float finishDistance = 0; // общая пройденная дистанция
+    private transient float health; // число хп максимальное
+    private transient float healthNow; // число хп сейчас
 
-    public void settingMonster(float speed, StringList wayPoints)
+    public void settingMonster(float speed, StringList wayPoints, float health)
     {
         this.speed = speed;
         this.wayPoints = (StringList) wayPoints.clone();
+        this.health = health;
+        this.healthNow = health;
     }
 
     @Override
@@ -51,6 +57,7 @@ public class Monster extends Component
     @Override
     public void update(float dt)
     {
+        changeColor();
         if(!isInProgress)
         {
             if(numOfPointsNow >= wayPoints.size())
@@ -76,7 +83,6 @@ public class Monster extends Component
         {
             currentTime += dt;
             finishDistance += dt*speed;
-            System.out.println(finishDistance);
             if(currentTime < timeOfTravel) {
                 float normalizedValue = currentTime / timeOfTravel;
                 this.gameObject.stateInWorld.setPosition(SmartCalc.Lerp(startPosition, goal.stateInWorld.getPosition(), normalizedValue));
@@ -93,5 +99,41 @@ public class Monster extends Component
     public float getFinishDistance()
     {
         return finishDistance;
+    }
+
+    public boolean amIDie(float damage)
+    {
+        float helthWillHave = healthNow - damage;
+        if(helthWillHave <= 0)
+        {
+            return true;
+        }
+        return false;
+    }
+
+    // получение урона
+    // return true - если умер
+    public void getDamage(float damage)
+    {
+        healthNow -= damage;
+        if(healthNow <= 0)
+        {
+            this.gameObject.destroy();
+        }
+    }
+
+    private void changeColor()
+    {
+        SpriteRenderer sR = this.gameObject.getComponent(SpriteRenderer.class);
+        float percent = healthNow * 100 / health;
+        if(percent >= 50)
+        {
+            float temp = 100 - percent;
+            sR.setColor(new Vector4f(temp/50,1,0,1));
+        }
+        else if(percent<50 && percent >= 0)
+        {
+            sR.setColor(new Vector4f(1, percent/50, 0, 1));
+        }
     }
 }

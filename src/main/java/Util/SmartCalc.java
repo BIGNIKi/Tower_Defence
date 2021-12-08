@@ -85,6 +85,7 @@ public class SmartCalc
         return aNorm;
     }
 
+    // получает угол правильного размера (от -180 до 180)
     public static float getNorm(float angle)
     {
         if(angle > 180)
@@ -100,5 +101,22 @@ public class SmartCalc
             angle += 360;
         }
         return angle;
+    }
+
+    // получает угол между двумя векторами
+    public static float getAngleToVec(Vector2f from, Vector2f to)
+    {
+        var h = to.x - from.x;
+        var w = to.y - from.y;
+
+        var atan = Math.atan(h/w) / Math.PI * 180;
+        if (w < 0 || h < 0)
+            atan += 180;
+        if (w > 0 && h < 0)
+            atan -= 180;
+        if (atan < 0)
+            atan += 360;
+
+        return -(float)(atan % 360);
     }
 }

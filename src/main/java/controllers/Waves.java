@@ -10,6 +10,7 @@ public class Waves extends Component
 
     public transient int alreadyMonsters = 0;
     public int numOfMonsters; // число монстров
+    public float healthOfMonsters; // здоровье монстров
 
     public transient float alreadyTime = 0;
     public float timeBetweenMonsters; // время между спауном монстров
@@ -24,7 +25,7 @@ public class Waves extends Component
         {
             alreadyTime = 0;
 
-            Prefabs.addEnemy(speed, wayPoints, this.gameObject.stateInWorld.getPosition());
+            Prefabs.addEnemy(speed, wayPoints, this.gameObject.stateInWorld.getPosition(), healthOfMonsters);
 
             alreadyMonsters++;
         }
