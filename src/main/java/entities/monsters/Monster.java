@@ -34,6 +34,7 @@ public class Monster extends Component
     private transient Vector2f startPosition; // позиция врага перед тем, как идти к точке
     private transient boolean isInProgress = false; // идет ли уже к точке
     private transient GameObject goal; // точка, к которой идет противник
+    private transient float finishDistance = 0; // общая пройденная дистанция
 
     public void settingMonster(float speed, StringList wayPoints)
     {
@@ -74,6 +75,8 @@ public class Monster extends Component
         if(goal != null)
         {
             currentTime += dt;
+            finishDistance += dt*speed;
+            System.out.println(finishDistance);
             if(currentTime < timeOfTravel) {
                 float normalizedValue = currentTime / timeOfTravel;
                 this.gameObject.stateInWorld.setPosition(SmartCalc.Lerp(startPosition, goal.stateInWorld.getPosition(), normalizedValue));
@@ -85,5 +88,10 @@ public class Monster extends Component
                 currentTime = 0;
             }
         }
+    }
+
+    public float getFinishDistance()
+    {
+        return finishDistance;
     }
 }

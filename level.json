@@ -1,6 +1,6 @@
 [
   {
-    "uid": 0,
+    "uid": 375,
     "name": "Way",
     "components": [
       {
@@ -63,7 +63,7 @@
     "isDead": false
   },
   {
-    "uid": 1,
+    "uid": 376,
     "name": "Way",
     "components": [
       {
@@ -126,7 +126,7 @@
     "isDead": false
   },
   {
-    "uid": 2,
+    "uid": 377,
     "name": "Way",
     "components": [
       {
@@ -189,7 +189,7 @@
     "isDead": false
   },
   {
-    "uid": 3,
+    "uid": 378,
     "name": "Way",
     "components": [
       {
@@ -252,7 +252,7 @@
     "isDead": false
   },
   {
-    "uid": 4,
+    "uid": 379,
     "name": "Way",
     "components": [
       {
@@ -315,7 +315,7 @@
     "isDead": false
   },
   {
-    "uid": 5,
+    "uid": 380,
     "name": "Way",
     "components": [
       {
@@ -378,7 +378,7 @@
     "isDead": false
   },
   {
-    "uid": 6,
+    "uid": 381,
     "name": "Way",
     "components": [
       {
@@ -441,7 +441,7 @@
     "isDead": false
   },
   {
-    "uid": 7,
+    "uid": 382,
     "name": "base",
     "components": [
       {
@@ -504,7 +504,7 @@
     "isDead": false
   },
   {
-    "uid": 8,
+    "uid": 383,
     "name": "posForTower",
     "components": [
       {
@@ -567,7 +567,7 @@
     "isDead": false
   },
   {
-    "uid": 9,
+    "uid": 384,
     "name": "towerSt",
     "components": [
       {
@@ -630,7 +630,7 @@
     "isDead": false
   },
   {
-    "uid": 10,
+    "uid": 385,
     "name": "Tower",
     "components": [
       {
@@ -692,6 +692,7 @@
         "type": "entities.towers.Tower",
         "properties": {
           "rotateSpeed": 50.0,
+          "observeRadius": 0.5,
           "uid": 112
         }
       }
@@ -700,7 +701,7 @@
     "isDead": false
   },
   {
-    "uid": 11,
+    "uid": 386,
     "name": "Tower",
     "components": [
       {
@@ -762,6 +763,7 @@
         "type": "entities.towers.Tower",
         "properties": {
           "rotateSpeed": 50.0,
+          "observeRadius": 0.5,
           "uid": 112
         }
       }
@@ -770,7 +772,7 @@
     "isDead": false
   },
   {
-    "uid": 12,
+    "uid": 387,
     "name": "posForTower",
     "components": [
       {
@@ -833,7 +835,7 @@
     "isDead": false
   },
   {
-    "uid": 13,
+    "uid": 388,
     "name": "towerSt",
     "components": [
       {
@@ -896,7 +898,7 @@
     "isDead": false
   },
   {
-    "uid": 14,
+    "uid": 389,
     "name": "Point0",
     "components": [
       {
@@ -919,7 +921,7 @@
     "isDead": false
   },
   {
-    "uid": 15,
+    "uid": 390,
     "name": "Point1",
     "components": [
       {
@@ -942,7 +944,7 @@
     "isDead": false
   },
   {
-    "uid": 16,
+    "uid": 391,
     "name": "Point2",
     "components": [
       {
@@ -965,7 +967,7 @@
     "isDead": false
   },
   {
-    "uid": 17,
+    "uid": 392,
     "name": "Spawn",
     "components": [
       {
