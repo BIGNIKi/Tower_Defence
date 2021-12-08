@@ -101,6 +101,7 @@ public class Tower extends Component
       // находит врага, который максимально близко к базе
       if(oldFinishDistance < go.getComponent(Monster.class).getFinishDistance())
       {
+        oldFinishDistance = go.getComponent(Monster.class).getFinishDistance();
         nearest = go;
       }
     }
