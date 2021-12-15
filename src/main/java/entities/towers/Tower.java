@@ -41,11 +41,19 @@ public class Tower extends Component
 
   public transient GameObject goal = null;
 
-  public float rotateSpeed; // скорость поворота
-  public float observeRadius; // радиус, в котором может стрелять
-  public float timeToAttack; // время между выстрелами
+  public transient float rotateSpeed; // скорость поворота
+  public transient float observeRadius; // радиус, в котором может стрелять
+  public transient float timeToAttack; // время между выстрелами
   private transient float reloadTime = 0; // если 0 - может стрелять
-  public float damage; // урон
+  public transient float damage; // урон
+
+  public void settingTower(float rotateSpeed, float observeRadius, float timeToAttack, float damage)
+  {
+    this.rotateSpeed = rotateSpeed;
+    this.observeRadius = observeRadius;
+    this.timeToAttack = timeToAttack;
+    this.damage = damage;
+  }
 
   @Override
   public void start()

@@ -1,6 +1,6 @@
 [
   {
-    "uid": 96,
+    "uid": 60,
     "name": "Way",
     "components": [
       {
@@ -63,7 +63,7 @@
     "isDead": false
   },
   {
-    "uid": 97,
+    "uid": 61,
     "name": "Way",
     "components": [
       {
@@ -126,7 +126,7 @@
     "isDead": false
   },
   {
-    "uid": 98,
+    "uid": 62,
     "name": "Way",
     "components": [
       {
@@ -189,7 +189,7 @@
     "isDead": false
   },
   {
-    "uid": 99,
+    "uid": 63,
     "name": "Way",
     "components": [
       {
@@ -252,7 +252,7 @@
     "isDead": false
   },
   {
-    "uid": 100,
+    "uid": 64,
     "name": "Way",
     "components": [
       {
@@ -315,7 +315,7 @@
     "isDead": false
   },
   {
-    "uid": 101,
+    "uid": 65,
     "name": "Way",
     "components": [
       {
@@ -378,7 +378,7 @@
     "isDead": false
   },
   {
-    "uid": 102,
+    "uid": 66,
     "name": "Way",
     "components": [
       {
@@ -441,7 +441,7 @@
     "isDead": false
   },
   {
-    "uid": 103,
+    "uid": 67,
     "name": "base",
     "components": [
       {
@@ -498,78 +498,16 @@
           "zIndex": 2,
           "uid": 24
         }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 104,
-    "name": "Tower",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": -0.13649988,
-            "y": -0.12269771
-          },
-          "size": {
-            "x": 0.08556497,
-            "y": 0.15383644
-          },
-          "rotation": 0.0,
-          "uid": 48
-        }
       },
       {
-        "type": "components.SpriteRenderer",
+        "type": "controllers.LevelCntrl",
         "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 0.0,
-            "height": 0.0,
-            "texture": {
-              "filePath": "assets/images/standTower1.png",
-              "width": 32,
-              "height": 60
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 2,
-          "uid": 49
-        }
-      },
-      {
-        "type": "entities.towers.Tower",
-        "properties": {
-          "rotateSpeed": 60.0,
-          "observeRadius": 0.5,
-          "timeToAttack": 1.0,
-          "damage": 20.0,
-          "uid": 112
+          "coin": 100,
+          "baseHpMax": 1,
+          "costBlue": 30,
+          "costGreen": 50,
+          "costRed": 70,
+          "uid": 197
         }
       }
     ],
@@ -577,133 +515,7 @@
     "isDead": false
   },
   {
-    "uid": 105,
-    "name": "posForTower",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": -0.13598728,
-            "y": -0.12365472
-          },
-          "size": {
-            "x": 0.25,
-            "y": 0.25
-          },
-          "rotation": 0.0,
-          "uid": 25
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 121.0,
-            "height": 120.0,
-            "texture": {
-              "filePath": "assets/images/spritesheet.png",
-              "width": 242,
-              "height": 120
-            },
-            "texCoords": [
-              {
-                "x": 0.5,
-                "y": 1.0
-              },
-              {
-                "x": 0.5,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 0,
-          "uid": 26
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 106,
-    "name": "towerSt",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": -0.13844538,
-            "y": -0.12048352
-          },
-          "size": {
-            "x": 0.16622376,
-            "y": 0.16622376
-          },
-          "rotation": 0.0,
-          "uid": 23
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 0.0,
-            "height": 0.0,
-            "texture": {
-              "filePath": "assets/images/standTower.png",
-              "width": 80,
-              "height": 80
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 1,
-          "uid": 24
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 107,
+    "uid": 68,
     "name": "Point0",
     "components": [
       {
@@ -726,7 +538,7 @@
     "isDead": false
   },
   {
-    "uid": 108,
+    "uid": 69,
     "name": "Point1",
     "components": [
       {
@@ -749,7 +561,7 @@
     "isDead": false
   },
   {
-    "uid": 109,
+    "uid": 70,
     "name": "Point2",
     "components": [
       {
@@ -772,7 +584,7 @@
     "isDead": false
   },
   {
-    "uid": 110,
+    "uid": 71,
     "name": "Spawn",
     "components": [
       {
@@ -834,9 +646,11 @@
         "type": "controllers.Waves",
         "properties": {
           "speed": 0.3,
-          "numOfMonsters": 5,
+          "numOfMonsters": 20,
           "healthOfMonsters": 50.0,
           "timeBetweenMonsters": 1.0,
+          "timeToStart": 5.0,
+          "moneyForKill": 10,
           "wayPoints": [
             "Point0",
             "Point1",
@@ -850,7 +664,7 @@
     "isDead": false
   },
   {
-    "uid": 111,
+    "uid": 72,
     "name": "Way",
     "components": [
       {
@@ -913,80 +727,7 @@
     "isDead": false
   },
   {
-    "uid": 112,
-    "name": "Tower",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": 0.36350012,
-            "y": 0.3773023
-          },
-          "size": {
-            "x": 0.08556497,
-            "y": 0.15383644
-          },
-          "rotation": 0.0,
-          "uid": 48
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 0.0,
-            "height": 0.0,
-            "texture": {
-              "filePath": "assets/images/standTower1.png",
-              "width": 32,
-              "height": 60
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 2,
-          "uid": 49
-        }
-      },
-      {
-        "type": "entities.towers.Tower",
-        "properties": {
-          "rotateSpeed": 60.0,
-          "observeRadius": 0.5,
-          "timeToAttack": 0.25,
-          "damage": 4.0,
-          "uid": 112
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 113,
+    "uid": 73,
     "name": "posForTower",
     "components": [
       {
@@ -1043,68 +784,12 @@
           "zIndex": 0,
           "uid": 26
         }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 114,
-    "name": "towerSt",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": 0.36155462,
-            "y": 0.37951648
-          },
-          "size": {
-            "x": 0.16622376,
-            "y": 0.16622376
-          },
-          "rotation": 0.0,
-          "uid": 23
-        }
       },
       {
-        "type": "components.SpriteRenderer",
+        "type": "entities.towers.PlaceForTower",
         "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 0.0,
-            "height": 0.0,
-            "texture": {
-              "filePath": "assets/images/standTower.png",
-              "width": 80,
-              "height": 80
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 1,
-          "uid": 24
+          "initialRotation": 90,
+          "uid": 218
         }
       }
     ],
@@ -1112,80 +797,7 @@
     "isDead": false
   },
   {
-    "uid": 115,
-    "name": "Tower",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": 0.11350012,
-            "y": -0.6226977
-          },
-          "size": {
-            "x": 0.08556497,
-            "y": 0.15383644
-          },
-          "rotation": 0.0,
-          "uid": 48
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 0.0,
-            "height": 0.0,
-            "texture": {
-              "filePath": "assets/images/standTower1.png",
-              "width": 32,
-              "height": 60
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 2,
-          "uid": 49
-        }
-      },
-      {
-        "type": "entities.towers.Tower",
-        "properties": {
-          "rotateSpeed": 60.0,
-          "observeRadius": 0.5,
-          "timeToAttack": 2.0,
-          "damage": 50.0,
-          "uid": 112
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 116,
+    "uid": 74,
     "name": "posForTower",
     "components": [
       {
@@ -1242,68 +854,12 @@
           "zIndex": 0,
           "uid": 26
         }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 117,
-    "name": "towerSt",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": 0.11155462,
-            "y": -0.6204835
-          },
-          "size": {
-            "x": 0.16622376,
-            "y": 0.16622376
-          },
-          "rotation": 0.0,
-          "uid": 23
-        }
       },
       {
-        "type": "components.SpriteRenderer",
+        "type": "entities.towers.PlaceForTower",
         "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 0.0,
-            "height": 0.0,
-            "texture": {
-              "filePath": "assets/images/standTower.png",
-              "width": 80,
-              "height": 80
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 1,
-          "uid": 24
+          "initialRotation": 0,
+          "uid": 220
         }
       }
     ],
@@ -1311,87 +867,14 @@
     "isDead": false
   },
   {
-    "uid": 118,
-    "name": "Tower",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": -0.38649988,
-            "y": -0.12269771
-          },
-          "size": {
-            "x": 0.08556497,
-            "y": 0.15383644
-          },
-          "rotation": 0.0,
-          "uid": 48
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 0.0,
-            "height": 0.0,
-            "texture": {
-              "filePath": "assets/images/standTower1.png",
-              "width": 32,
-              "height": 60
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 2,
-          "uid": 49
-        }
-      },
-      {
-        "type": "entities.towers.Tower",
-        "properties": {
-          "rotateSpeed": 60.0,
-          "observeRadius": 0.5,
-          "timeToAttack": 0.25,
-          "damage": 4.0,
-          "uid": 112
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 119,
+    "uid": 75,
     "name": "posForTower",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.38598728,
+            "x": -0.37489516,
             "y": -0.12365472
           },
           "size": {
@@ -1441,68 +924,12 @@
           "zIndex": 0,
           "uid": 26
         }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 120,
-    "name": "towerSt",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": -0.38844538,
-            "y": -0.12048352
-          },
-          "size": {
-            "x": 0.16622376,
-            "y": 0.16622376
-          },
-          "rotation": 0.0,
-          "uid": 23
-        }
       },
       {
-        "type": "components.SpriteRenderer",
+        "type": "entities.towers.PlaceForTower",
         "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 0.0,
-            "height": 0.0,
-            "texture": {
-              "filePath": "assets/images/standTower.png",
-              "width": 80,
-              "height": 80
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 1,
-          "uid": 24
+          "initialRotation": 0,
+          "uid": 219
         }
       }
     ],

@@ -187,4 +187,19 @@ public class GameObject
                 .filter(gameObject -> gameObject.name.equals(name))
                 .collect(Collectors.toList());
     }
+
+    public static <T extends Component> GameObject FindWithComp(Class<T> componentClass)
+    {
+        Optional<GameObject> result = MainWindow.getScene().getGameObjects().stream()
+                .filter(gameObject -> gameObject.getComponent(componentClass) != null)
+                .findFirst();
+        return result.orElse(null);
+    }
+
+    public static <T extends Component> List<GameObject> FindAllByComp(Class<T> componentClass)
+    {
+        return MainWindow.getScene().getGameObjects().stream()
+                .filter(gameObject -> gameObject.getComponent(componentClass) != null)
+                .collect(Collectors.toList());
+    }
 }

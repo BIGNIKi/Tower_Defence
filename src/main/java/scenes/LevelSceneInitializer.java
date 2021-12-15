@@ -28,6 +28,7 @@ public class LevelSceneInitializer extends SceneInitializer
         gameCamera = scene.createGameObject("GameCamera"); // объект, который всегда висит на сцене
         gameCamera.addComponent(new GameCamera(scene.camera()));
         gameCamera.start();
+        MainWindow.getScene().camera().setZoom(0.7f);
         scene.addGameObjectToScene(gameCamera);
 
         //DebugDraw.addLine2D(new Vector2f(0,0), new Vector2f(800, 800), new Vector3f(1, 1, 1), 120);

@@ -4,6 +4,7 @@ import Util.SmartCalc;
 import Util.StringList;
 import components.Component;
 import components.SpriteRenderer;
+import controllers.LevelCntrl;
 import job.GameObject;
 import org.joml.Vector2f;
 import org.joml.Vector4f;
@@ -39,13 +40,15 @@ public class Monster extends Component
     private transient float finishDistance = 0; // общая пройденная дистанция
     private transient float health; // число хп максимальное
     private transient float healthNow; // число хп сейчас
+    private transient int moneyForKill; // число coin'ов за убийство
 
-    public void settingMonster(float speed, StringList wayPoints, float health)
+    public void settingMonster(float speed, StringList wayPoints, float health, int moneyForKill)
     {
         this.speed = speed;
         this.wayPoints = (StringList) wayPoints.clone();
         this.health = health;
         this.healthNow = health;
+        this.moneyForKill = moneyForKill;
     }
 
     @Override
@@ -62,6 +65,11 @@ public class Monster extends Component
         {
             if(numOfPointsNow >= wayPoints.size())
             {
+                GameObject lvlCntrl = GameObject.FindWithComp(LevelCntrl.class);
+                if(lvlCntrl != null)
+                {
+                    lvlCntrl.getComponent(LevelCntrl.class).getDamage();
+                }
                 this.gameObject.destroy();
                 return;
             }
@@ -118,6 +126,11 @@ public class Monster extends Component
         healthNow -= damage;
         if(healthNow <= 0)
         {
+            GameObject lvlCntrl = GameObject.FindWithComp(LevelCntrl.class);
+            if(lvlCntrl != null)
+            {
+                lvlCntrl.getComponent(LevelCntrl.class).addCoin(moneyForKill);
+            }
             this.gameObject.destroy();
         }
     }

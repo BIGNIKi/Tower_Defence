@@ -2,8 +2,10 @@ package editor;
 
 import components.Component;
 import components.SpriteRenderer;
+import controllers.LevelCntrl;
 import controllers.Waves;
 import entities.monsters.Monster;
+import entities.towers.PlaceForTower;
 import entities.towers.Tower;
 import imgui.ImGui;
 import job.GameObject;
@@ -31,8 +33,9 @@ public class PropertiesWindow
         this.activeGameObjectsOgColor = new ArrayList<>();
 
         // СЮДА нужно писать компоненты, которые хочешь добавить к объекту на сцене
-        possibleClasses.add(Tower.class);
         possibleClasses.add(Waves.class);
+        possibleClasses.add(LevelCntrl.class);
+        possibleClasses.add(PlaceForTower.class);
     }
 
     public void imgui()

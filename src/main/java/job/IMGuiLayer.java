@@ -1,9 +1,11 @@
 package job;
 
+import controllers.LevelCntrl;
 import editor.GameViewWindow;
 import editor.MenuBar;
 import editor.PropertiesWindow;
 import editor.SceneHierarchyWindow;
+import entities.towers.PlaceForTower;
 import imgui.*;
 import imgui.callback.ImStrConsumer;
 import imgui.callback.ImStrSupplier;
@@ -13,6 +15,8 @@ import imgui.glfw.ImGuiImplGlfw;
 import imgui.type.ImBoolean;
 import renderer.PickingTexture;
 import scenes.Scene;
+
+import java.util.List;
 
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL11.*;
@@ -206,6 +210,18 @@ public class IMGuiLayer
         // добавление компанент к объекту
         propertiesWindow.imgui();
         sceneHeirarchyWindow.imgui();
+
+        GameObject lvlCntrl = GameObject.FindWithComp(LevelCntrl.class);
+        if(lvlCntrl != null)
+        {
+            lvlCntrl.getComponent(LevelCntrl.class).guiStatus();
+        }
+
+        List<GameObject> plsForTow = GameObject.FindAllByComp(PlaceForTower.class);
+        for(GameObject go : plsForTow)
+        {
+            go.getComponent(PlaceForTower.class).selectWindowDraw();
+        }
 
         endFrame();
     }

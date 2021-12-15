@@ -14,6 +14,8 @@ public class Waves extends Component
 
     public transient float alreadyTime = 0;
     public float timeBetweenMonsters; // время между спауном монстров
+    public float timeToStart; // время до начала атаки
+    public int moneyForKill; // число монет за убийство моба
 
     private StringList wayPoints = new StringList(); // список имен точек, по которым нужно ходить
 
@@ -21,11 +23,16 @@ public class Waves extends Component
     public void update(float dt)
     {
         alreadyTime += dt;
+        if(timeToStart > 0.0f)
+        {
+            timeToStart -= dt;
+            return;
+        }
         if(alreadyMonsters < numOfMonsters && alreadyTime >= timeBetweenMonsters)
         {
             alreadyTime = 0;
 
-            Prefabs.addEnemy(speed, wayPoints, this.gameObject.stateInWorld.getPosition(), healthOfMonsters);
+            Prefabs.addEnemy(speed, wayPoints, this.gameObject.stateInWorld.getPosition(), healthOfMonsters, moneyForKill);
 
             alreadyMonsters++;
         }

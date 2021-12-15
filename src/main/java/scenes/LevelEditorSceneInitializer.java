@@ -75,8 +75,6 @@ public class LevelEditorSceneInitializer extends SceneInitializer
         spriteSheetToSprites("assets/images/spritesheet.png", 121, 120, 2,0);
         textureToSprite("assets/images/greenEnemy1.png");
         textureToSprite("assets/images/base.png");
-        textureToSprite("assets/images/standTower.png");
-        textureToSprite("assets/images/standTower1.png");
         textureToSprite("assets/images/enemySpawn.png");
 
         // STOP
@@ -148,8 +146,6 @@ public class LevelEditorSceneInitializer extends SceneInitializer
         ImGui.end();*/
 
         ImGui.begin("Sprites:");
-/*       ImGui.text("Sample text = 5000");
-        ImGui.text("HP: 1");*/
 
         ImVec2 windowPos = new ImVec2();
         ImGui.getWindowPos(windowPos);
