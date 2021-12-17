@@ -4,6 +4,8 @@ import components.Component;
 import components.SpriteRenderer;
 import controllers.LevelCntrl;
 import controllers.Waves;
+import entities.Bird;
+import entities.Wheel;
 import entities.monsters.Monster;
 import entities.towers.PlaceForTower;
 import entities.towers.Tower;
@@ -36,6 +38,8 @@ public class PropertiesWindow
         possibleClasses.add(Waves.class);
         possibleClasses.add(LevelCntrl.class);
         possibleClasses.add(PlaceForTower.class);
+        possibleClasses.add(Bird.class);
+        possibleClasses.add(Wheel.class);
     }
 
     public void imgui()

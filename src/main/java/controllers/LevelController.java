@@ -28,7 +28,7 @@ public class LevelController {
     var curWave = level.GetCurrentWave();
   }
 
-  public boolean CreateTower(TowerType towerType, int x, int y) {
+/*  public boolean CreateTower(TowerType towerType, int x, int y) {
     var player = level.GetPlayer();
     if (!player.HasTowerOfType(towerType)) {
       return false;
@@ -42,7 +42,7 @@ public class LevelController {
     level.DecreaseCoins(tower.GetConstructionCost());
     level.AddTower(tower);
     return true;
-  }
+  }*/
 
   private void initWaves() {
     var waves = level.GetWaves().stream().map(wave -> fillWave(wave))

@@ -1,6 +1,6 @@
 [
   {
-    "uid": 60,
+    "uid": 0,
     "name": "Way",
     "components": [
       {
@@ -63,7 +63,7 @@
     "isDead": false
   },
   {
-    "uid": 61,
+    "uid": 1,
     "name": "Way",
     "components": [
       {
@@ -126,7 +126,7 @@
     "isDead": false
   },
   {
-    "uid": 62,
+    "uid": 2,
     "name": "Way",
     "components": [
       {
@@ -189,7 +189,7 @@
     "isDead": false
   },
   {
-    "uid": 63,
+    "uid": 3,
     "name": "Way",
     "components": [
       {
@@ -252,7 +252,7 @@
     "isDead": false
   },
   {
-    "uid": 64,
+    "uid": 4,
     "name": "Way",
     "components": [
       {
@@ -315,7 +315,7 @@
     "isDead": false
   },
   {
-    "uid": 65,
+    "uid": 5,
     "name": "Way",
     "components": [
       {
@@ -378,7 +378,7 @@
     "isDead": false
   },
   {
-    "uid": 66,
+    "uid": 6,
     "name": "Way",
     "components": [
       {
@@ -441,7 +441,7 @@
     "isDead": false
   },
   {
-    "uid": 67,
+    "uid": 7,
     "name": "base",
     "components": [
       {
@@ -515,7 +515,7 @@
     "isDead": false
   },
   {
-    "uid": 68,
+    "uid": 8,
     "name": "Point0",
     "components": [
       {
@@ -538,7 +538,7 @@
     "isDead": false
   },
   {
-    "uid": 69,
+    "uid": 9,
     "name": "Point1",
     "components": [
       {
@@ -561,7 +561,7 @@
     "isDead": false
   },
   {
-    "uid": 70,
+    "uid": 10,
     "name": "Point2",
     "components": [
       {
@@ -584,7 +584,7 @@
     "isDead": false
   },
   {
-    "uid": 71,
+    "uid": 11,
     "name": "Spawn",
     "components": [
       {
@@ -664,7 +664,7 @@
     "isDead": false
   },
   {
-    "uid": 72,
+    "uid": 12,
     "name": "Way",
     "components": [
       {
@@ -727,7 +727,7 @@
     "isDead": false
   },
   {
-    "uid": 73,
+    "uid": 13,
     "name": "posForTower",
     "components": [
       {
@@ -797,7 +797,7 @@
     "isDead": false
   },
   {
-    "uid": 74,
+    "uid": 14,
     "name": "posForTower",
     "components": [
       {
@@ -867,14 +867,14 @@
     "isDead": false
   },
   {
-    "uid": 75,
+    "uid": 15,
     "name": "posForTower",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.37489516,
+            "x": -0.124895155,
             "y": -0.12365472
           },
           "size": {
@@ -930,6 +930,396 @@
         "properties": {
           "initialRotation": 0,
           "uid": 219
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 16,
+    "name": "bush",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 0.8797078,
+            "y": -0.61244774
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.18723857
+          },
+          "rotation": 0.0,
+          "uid": 243
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/bash.png",
+              "width": 500,
+              "height": 376
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 244
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 17,
+    "name": "bush",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -0.125,
+            "y": -0.375
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.14671084
+          },
+          "rotation": 0.0,
+          "uid": 265
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/bush1.png",
+              "width": 269,
+              "height": 178
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 266
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 18,
+    "name": "bush",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -0.125,
+            "y": 0.375
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.1949324
+          },
+          "rotation": 0.0,
+          "uid": 287
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/bush2.png",
+              "width": 266,
+              "height": 196
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 288
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 19,
+    "name": "bush",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 0.375,
+            "y": -0.125
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.20869927
+          },
+          "rotation": 0.0,
+          "uid": 289
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/bush4.png",
+              "width": 247,
+              "height": 193
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 290
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 20,
+    "name": "bird",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -4.125,
+            "y": 0.625
+          },
+          "size": {
+            "x": 0.2161088,
+            "y": 0.19728035
+          },
+          "rotation": 0.0,
+          "uid": 311
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/angryBird.png",
+              "width": 920,
+              "height": 920
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 312
+        }
+      },
+      {
+        "type": "entities.Bird",
+        "properties": {
+          "uid": 333
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 21,
+    "name": "wheel",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 3.1381311,
+            "y": -0.9390169
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "uid": 356
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/wheel.png",
+              "width": 225,
+              "height": 225
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 1,
+          "uid": 357
+        }
+      },
+      {
+        "type": "entities.Wheel",
+        "properties": {
+          "uid": 378
         }
       }
     ],

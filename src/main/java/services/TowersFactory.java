@@ -11,7 +11,7 @@ public class TowersFactory {
     this.availableTowers = availableTowers;
   }
 
-  public Tower CreateTower(TowerType towerType, int x, int y, long coins) {
+/*  public Tower CreateTower(TowerType towerType, int x, int y, long coins) {
     var availableTower = availableTowers.stream()
         .filter(tower -> tower.GetType() == towerType)
         .findFirst()
@@ -26,5 +26,5 @@ public class TowersFactory {
     }
 
     return availableTower;
-  }
+  }*/
 }

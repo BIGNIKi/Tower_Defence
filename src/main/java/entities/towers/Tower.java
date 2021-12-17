@@ -17,27 +17,27 @@ import java.util.stream.Collectors;
 
 public class Tower extends Component
 {
-  public transient int constructionCost;
+/*  public transient int constructionCost;*/
 
-  private transient int range;
+/*  private transient int range;
   private transient int firingRate;
   private transient Effect effect;
   private transient TowerType type;
   private transient int level;
   private transient int x;
-  private transient int y;
+  private transient int y;*/
 
   //public abstract void attack(Monster target);
 
   //public abstract void use(Upgrade upgrade);
 
-  public TowerType GetType() {
+/*  public TowerType GetType() {
     return this.type;
-  }
+  }*/
 
-  public int GetConstructionCost() {
+/*  public int GetConstructionCost() {
     return this.constructionCost;
-  }
+  }*/
 
   public transient GameObject goal = null;
 

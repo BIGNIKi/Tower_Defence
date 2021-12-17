@@ -4,34 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="Fixed: bug with scrolling when trying to reset camera to initial position">
-      <change afterPath="$PROJECT_DIR$/assets/images/fullBlue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/fullGreen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/fullRed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/standTower1Green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/standTower1Red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/standTowerGreen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/standTowerRed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs_err_pid11052.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/LevelCntrl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entities/towers/PlaceForTower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="Added new textures for towers, possibility to collect and spend coin, add tower while play, some new engine features, base now have hp and we can lose, added delay to start wave">
+      <change afterPath="$PROJECT_DIR$/assets/images/angryBird.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/bash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/bush1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/bush2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/bush3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/bush4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/wheel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Bird.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entities/Wheel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgui.ini" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/level.json" beforeDir="false" afterPath="$PROJECT_DIR$/level.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/GameCamera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/GameCamera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Waves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Waves.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/editor/GameViewWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/editor/GameViewWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/LevelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/LevelController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/editor/PropertiesWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/editor/PropertiesWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/monsters/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/monsters/Monster.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/towers/Tower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/towers/Tower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/IMGuiLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/IMGuiLayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/Prefabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/Prefabs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/renderer/Texture.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/scenes/LevelEditorSceneInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scenes/LevelEditorSceneInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scenes/LevelSceneInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scenes/LevelSceneInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/TowersFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/TowersFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +64,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -88,6 +78,42 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="bbPath" value="" />
+      <setting name="parameters" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <setting name="workingDir" value="" />
+      <setting name="focusEditor" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="replType" value="NREPL" />
+      <setting name="execution" value="LEININGEN" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="" />
+      <setting name="profiles" value="" />
+      <setting name="aliases" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="host" value="" />
+      <setting name="port" value="0" />
+      <setting name="replType" value="SOCKET" />
+      <setting name="configType" value="SPECIFY" />
+      <setting name="replPortFileType" value="STANDARD" />
+      <setting name="customPortFile" value="" />
+      <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
+      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
@@ -139,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638730919848</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added new textures for towers, possibility to collect and spend coin, add tower while play, some new engine features, base now have hp and we can lose, added delay to start wave">
+      <created>1639553093440</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639553093440</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,7 +193,8 @@
     <MESSAGE value="Nothing new" />
     <MESSAGE value="Fixed bug with non-drawing selection box" />
     <MESSAGE value="Added possibility for editor to show List&lt;String&gt;, now reset for editor camera works smoother, replaces and rename func for get GameObject by name and added possibility to get List&lt;GameObject&gt; with the same name, now all monsters move point by point (and we can set these points in editor), settings wave of the enemies, smooth rotation of towers, some bug fixing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added possibility for editor to show List&lt;String&gt;, now reset for editor camera works smoother, replaces and rename func for get GameObject by name and added possibility to get List&lt;GameObject&gt; with the same name, now all monsters move point by point (and we can set these points in editor), settings wave of the enemies, smooth rotation of towers, some bug fixing" />
+    <MESSAGE value="Added new textures for towers, possibility to collect and spend coin, add tower while play, some new engine features, base now have hp and we can lose, added delay to start wave" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added new textures for towers, possibility to collect and spend coin, add tower while play, some new engine features, base now have hp and we can lose, added delay to start wave" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -177,7 +211,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/scenes/LevelEditorSceneInitializer.java</url>
-          <line>154</line>
+          <line>160</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
