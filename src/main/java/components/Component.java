@@ -50,7 +50,7 @@ public abstract class Component
                     field.setAccessible(true);
                 }
 
-                Class type = field.getType();
+                Class<?> type = field.getType();
                 Object value = field.get(this);
                 String name = field.getName();
 
@@ -97,7 +97,7 @@ public abstract class Component
                 }
                 else if (type.isEnum())
                 {
-                    String[] enumValues = getEnumValues(type);
+                    String[] enumValues = getEnumValues((Class)type);
                     String enumType = ((Enum)value).name();
                     ImInt index = new ImInt(indexOf(enumType, enumValues));
                     if (ImGui.combo(field.getName(), index, enumValues, enumValues.length))

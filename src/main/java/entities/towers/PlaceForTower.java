@@ -103,45 +103,46 @@ public class PlaceForTower extends Component
                 float rotateSpeed, observeRadius, timeToAttack, damage;
                 switch(ide)
                 {
-                    case 0: // blue
+                    case 0 -> { // blue
                         cost = lC.costBlue;
                         path = "assets/images/standTower.png";
-                        size = new Vector2f(0.086f,0.154f);
+                        size = new Vector2f(0.086f, 0.154f);
                         path1 = "assets/images/standTower1.png";
                         rotateSpeed = 60;
                         observeRadius = 0.5f;
                         timeToAttack = 0.25f;
                         damage = 8;
-                        break;
-                    case 1:
+                    }
+                    case 1 -> {
                         cost = lC.costGreen;
                         path = "assets/images/standTowerGreen.png";
-                        size = new Vector2f(0.064f,0.065f);
+                        size = new Vector2f(0.064f, 0.065f);
                         path1 = "assets/images/standTower1Green.png";
                         rotateSpeed = 60;
                         observeRadius = 0.5f;
                         timeToAttack = 1f;
                         damage = 32;
-                        break;
-                    case 2:
+                    }
+                    case 2 -> {
                         cost = lC.costRed;
                         path = "assets/images/standTowerRed.png";
-                        size = new Vector2f(0.097f,0.099f);
+                        size = new Vector2f(0.097f, 0.099f);
                         path1 = "assets/images/standTower1Red.png";
                         rotateSpeed = 60;
                         observeRadius = 0.5f;
                         timeToAttack = 2f;
                         damage = 100;
-                        break;
-                    default:
+                    }
+                    default -> {
                         cost = 0;
                         path = "";
-                        size = new Vector2f(0,0);
+                        size = new Vector2f(0, 0);
                         path1 = "";
                         rotateSpeed = 0;
                         observeRadius = 0;
                         timeToAttack = 0;
                         damage = 0;
+                    }
                 }
                 if(lC.getCoin() >= cost)
                 {

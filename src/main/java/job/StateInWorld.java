@@ -84,9 +84,11 @@ public class StateInWorld extends Component
     public boolean equals(Object o)
     {
         if(o == null) return false;
-        if(!(o instanceof StateInWorld)) return false;
+        if(!(o instanceof StateInWorld t))
+        {
+            return false;
+        }
 
-        StateInWorld t = (StateInWorld)o;
         return t.position.equals(this.position) && t.size.equals(this.size) &&
                 t.rotation == this.rotation;
     }

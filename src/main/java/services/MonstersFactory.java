@@ -20,15 +20,15 @@ public class MonstersFactory {
   public ArrayList<Monster> CreateMonsters(MonsterType monsterType, int count) {
     var monsters = new ArrayList<Monster>(count);
     for (var i = 0; i < count; i++) {
-      monsters.set(i, CreateMonster(monsterType));
+      //monsters.set(i, CreateMonster(monsterType));
     }
 
     return monsters;
   }
 
-  public Monster CreateMonster(MonsterType monsterType) {
+/*  public Monster CreateMonster(MonsterType monsterType) {
     return switch (monsterType) {
       case REGULAR -> new BasicMonster();
     };
-  }
+  }*/
 }

@@ -4,7 +4,6 @@ import Util.AssetPool;
 import observers.EventSystem;
 import observers.Observer;
 import observers.events.Event;
-import observers.events.EventType;
 import org.joml.Vector4f;
 import org.lwjgl.Version;
 import org.lwjgl.glfw.Callbacks;
@@ -36,7 +35,6 @@ public final class MainWindow implements Observer
     private static MainWindow wnd = null; //we have only one instance of this class
 
     private static Scene currentScene;
-    private float r,g,b,a;
 
     //it is prohibited to create instance of class outside this class (Singleton)
     private MainWindow()
@@ -44,13 +42,6 @@ public final class MainWindow implements Observer
         this.width = 1920;
         this.heigth = 1080;
         this.title = "Tower defense";
-        r = 23f/255f;
-        g = 23f/255f;
-        b = 23f/255f;
-        //r = 1;
-        //g = 1;
-        //b = 1;
-        a = 1;
         EventSystem.addObserver(this);
     }
 
@@ -80,7 +71,7 @@ public final class MainWindow implements Observer
 
     public static Scene getScene()
     {
-        return get().currentScene;
+        return currentScene;
     }
 
     public void Run()
@@ -301,24 +292,23 @@ public final class MainWindow implements Observer
 
     @Override
     public void onNotify(GameObject object, Event event) {
-        switch (event.type) {
-            case GameEngineStartPlay:
+        switch(event.type)
+        {
+            case GameEngineStartPlay -> {
                 MainWindow.getImguiLayer().getPropertiesWindow().clearSelected(); // это нужно, чтобы не сохранялось желтое выделение
                 this.runtimePlaying = true;
                 currentScene.save();
                 MainWindow.changeScene(new LevelSceneInitializer());
-                break;
-            case GameEngineStopPlay:
+            }
+            case GameEngineStopPlay -> {
                 this.runtimePlaying = false;
                 MainWindow.changeScene(new LevelEditorSceneInitializer());
-                break;
-            case LoadLevel:
-                MainWindow.changeScene(new LevelEditorSceneInitializer());
-                break;
-            case SaveLevel:
+            }
+            case LoadLevel -> MainWindow.changeScene(new LevelEditorSceneInitializer());
+            case SaveLevel -> {
                 MainWindow.getImguiLayer().getPropertiesWindow().clearSelected(); // это нужно, чтобы не сохранялось желтое выделение
                 currentScene.save();
-                break;
+            }
         }
     }
 }
