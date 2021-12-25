@@ -23,178 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14b7f6df-c63f-4ea9-817c-6af2046b6254" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/ClojureProjectResolveSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/.idea/Tower_Defence.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Tower_Defence.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/ArialMT.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/Red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/SpaceForTower.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/Stone0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/White.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/Yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/angryBird.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/base.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bush1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bush2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bush3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bush4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/enemySpawn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/fullBlue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/fullGreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/fullRed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/gizmos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/greenEnemy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/greenEnemy1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/spritesheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/standTower.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/standTower1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/standTower1Green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/standTower1Red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/standTowerGreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/standTowerRed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/testImage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/wheel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/shaders/debugLine2D.glsl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/shaders/default.glsl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/shaders/pickingShader.glsl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/changlelog.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_005d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_006d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_007d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_008d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_009d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_010d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_011d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_012d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_013d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_014d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_015d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_016d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_017d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_018d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_019d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_020d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_021d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_022d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_023d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_024d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_025d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_026d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_027d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_028d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_029d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_030d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_031f" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_032d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_033d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_034d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_035d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_036d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/tower defense.vpp.bak_037d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid11052.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgui.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/level.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/entities/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/assets/shaders/debugLine2D.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/old/assets/shaders/debugLine2D.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/assets/shaders/default.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/old/assets/shaders/default.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/assets/shaders/pickingShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/old/assets/shaders/pickingShader.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old/hs_err_pid11052.log" beforeDir="false" afterPath="$PROJECT_DIR$/old/hs_err_pid11052.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Util/AssetPool.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Util/JMath.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Util/Settings.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Util/SmartCalc.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Util/StringList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/Component.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/ComponentDeserializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/EditorCamera.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/FontRenderer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/GameCamera.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/Gizmo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/GizmoSystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/GridLines.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/KeyControls.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/MouseControls.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/NonPickable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/Rigidbody.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/ScaleGizmo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/Sprite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/SpriteRenderer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/SpriteSheet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/TranslateGizmo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/GlobalController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/LevelCntrl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/LevelController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/LevelEditorController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Waves.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/editor/GameViewWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/editor/JImGui.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/editor/MenuBar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/editor/PropertiesWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/editor/SceneHierarchyWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Bird.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Bullet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Castle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/GameField.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Level.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Wave.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/Wheel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/abitilies/Ability.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/common/Direction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/common/TowerEfficiency.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/effects/Effect.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/monsters/BasicMonster.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/monsters/Monster.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/monsters/MonsterType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/researching/ResearchTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/towers/BasicTower.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/towers/PlaceForTower.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/towers/Tower.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/towers/TowerType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/upgrades/Upgrade.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/Camera.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/GameObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/GameObjectDeserializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/IMGuiLayer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/Keyboard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/MainWindow.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/Mouse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/Prefabs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/StateInWorld.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/observers/EventSystem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/observers/Observer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/observers/events/Event.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/observers/events/EventType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/DebugDraw.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/Framebuffer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/Line2D.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/PickingTexture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/RenderBatch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/Renderer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/Shader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/renderer/Texture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scenes/LevelEditorSceneInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scenes/LevelSceneInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scenes/Scene.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scenes/SceneInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/MonstersFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/services/TowersFactory.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,6 +87,30 @@
       <setting name="fixLineNumbers" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Tower_Defence [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.Tower_Defence [dependencies]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

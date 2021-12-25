@@ -19,8 +19,8 @@ out vec4 fColor;
 out vec2 fTexCoords;
 out float fTexId;
 
-//all shaders must have main function
-void main()
+//all shaders must have utils function
+void utils()
 {
     fColor = aColor; //pass the color to the fragment shader
     fTexCoords = aTexCoords;
@@ -44,7 +44,7 @@ uniform sampler2D uTextures[8];
 
 out vec4 color; //it is a color we are outputting
 
-void main()
+void utils()
 {
     /*
         the way to make picture black and white

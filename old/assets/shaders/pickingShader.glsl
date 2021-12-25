@@ -21,8 +21,8 @@ out vec2 fTexCoords;
 out float fTexId;
 out float fEntityId;
 
-//all shaders must have main function
-void main()
+//all shaders must have utils function
+void utils()
 {
     fColor = aColor; //pass the color to the fragment shader
     fTexCoords = aTexCoords;
@@ -48,7 +48,7 @@ uniform sampler2D uTextures[8];
 
 out vec3 color; //it is a color we are outputting
 
-void main()
+void utils()
 {
     vec4 texColor = vec4(1,1,1,1);
     /*

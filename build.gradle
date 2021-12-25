@@ -1,19 +1,13 @@
-plugins {
-    id 'java'
-}
-
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-
-}
-
 allprojects {
     group 'org.example'
     version '1.0-SNAPSHOT'
+
+    ext {
+        lwjglVersion = "3.2.3"
+        jomlVersion = "1.10.2"
+        lwjglNatives = "natives-windows"
+        imguiVersion = '1.81.0'
+    }
 }
 
 subprojects {
@@ -21,10 +15,6 @@ subprojects {
 
     repositories {
         mavenCentral()
-    }
-
-    dependencies {
-        testCompile group: 'junit', name: 'junit', version: '4.12'
     }
 }
 

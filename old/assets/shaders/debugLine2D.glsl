@@ -8,7 +8,7 @@ out vec3 fColor;
 uniform mat4 uView;
 uniform mat4 uProjection;
 
-void main()
+void utils()
 {
     fColor = aColor;
 
@@ -21,7 +21,7 @@ in vec3 fColor;
 
 out vec4 color;
 
-void main()
+void utils()
 {
     color = vec4(fColor, 1);
 }

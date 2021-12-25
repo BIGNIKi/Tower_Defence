@@ -25,7 +25,7 @@ Time: Wed Dec 15 10:21:56 2021 Novosibirsk Standard Time elapsed time: 3.436973 
 
 ---------------  T H R E A D  ---------------
 
-Current thread (0x0000025d6a645b50):  JavaThread "main" [_thread_in_native, id=5252, stack(0x0000006a72400000,0x0000006a72500000)]
+Current thread (0x0000025d6a645b50):  JavaThread "utils" [_thread_in_native, id=5252, stack(0x0000006a72400000,0x0000006a72500000)]
 
 Stack: [0x0000006a72400000,0x0000006a72500000],  sp=0x0000006a724fef70,  free space=1019k
 Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
@@ -38,7 +38,7 @@ j  job.GameObject.update(F)V+29
 j  scenes.Scene.update(D)V+41
 j  job.MainWindow.Loop()V+178
 j  job.MainWindow.Run()V+19
-j  Main.main([Ljava/lang/String;)V+5
+j  Main.utils([Ljava/lang/String;)V+5
 v  ~StubRoutines::call_stub
 
 siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), writing address 0x00000000000000d1
@@ -148,7 +148,7 @@ _java_thread_list=0x0000025d20121220, length=15, elements={
 }
 
 Java Threads: ( => current thread )
-=>0x0000025d6a645b50 JavaThread "main" [_thread_in_native, id=5252, stack(0x0000006a72400000,0x0000006a72500000)]
+=>0x0000025d6a645b50 JavaThread "utils" [_thread_in_native, id=5252, stack(0x0000006a72400000,0x0000006a72500000)]
   0x0000025d7e9079a0 JavaThread "Reference Handler" daemon [_thread_blocked, id=7420, stack(0x0000006a72b00000,0x0000006a72c00000)]
   0x0000025d7e908610 JavaThread "Finalizer" daemon [_thread_blocked, id=8504, stack(0x0000006a72c00000,0x0000006a72d00000)]
   0x0000025d7e9206d0 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=12656, stack(0x0000006a72d00000,0x0000006a72e00000)]
@@ -477,45 +477,45 @@ No events
 
 Internal exceptions (20 events):
 Event: 0.242 Thread 0x0000025d6a645b50 Exception <a 'java/lang/NoSuchMethodError'{0x00000007186c1078}: 'void java.lang.invoke.DirectMethodHandle$Holder.invokeSpecial(java.lang.Object, java.lang.Object, java.lang.Object)'> (0x00000007186c1078) 
-thrown [t:\workspace\open\src\hotspot\share\interpreter\linkResolver.cpp, line 766]
+thrown [t:\workspace\open\utils\hotspot\share\interpreter\linkResolver.cpp, line 766]
 Event: 0.247 Thread 0x0000025d6a645b50 Exception <a 'java/lang/NoSuchMethodError'{0x00000007186d2da8}: 'java.lang.Object java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(java.lang.Object, java.lang.Object, int)'> (0x00000007186d2da8) 
-thrown [t:\workspace\open\src\hotspot\share\interpreter\linkResolver.cpp, line 766]
+thrown [t:\workspace\open\utils\hotspot\share\interpreter\linkResolver.cpp, line 766]
 Event: 0.249 Thread 0x0000025d6a645b50 Exception <a 'java/lang/NoSuchMethodError'{0x00000007186dea98}: 'void java.lang.invoke.DelegatingMethodHandle$Holder.delegate(java.lang.Object, java.lang.Object, int, java.lang.Object)'> (0x00000007186dea98) 
-thrown [t:\workspace\open\src\hotspot\share\interpreter\linkResolver.cpp, line 766]
+thrown [t:\workspace\open\utils\hotspot\share\interpreter\linkResolver.cpp, line 766]
 Event: 0.250 Thread 0x0000025d6a645b50 Exception <a 'java/lang/NoSuchMethodError'{0x00000007186e2f18}: 'int java.lang.invoke.DirectMethodHandle$Holder.invokeSpecial(java.lang.Object, java.lang.Object, java.lang.Object)'> (0x00000007186e2f18) 
-thrown [t:\workspace\open\src\hotspot\share\interpreter\linkResolver.cpp, line 766]
+thrown [t:\workspace\open\utils\hotspot\share\interpreter\linkResolver.cpp, line 766]
 Event: 0.296 Thread 0x0000025d6a645b50 Exception <a 'sun/nio/fs/WindowsException'{0x000000071873f6a0}> (0x000000071873f6a0) 
-thrown [t:\workspace\open\src\hotspot\share\prims\jni.cpp, line 516]
+thrown [t:\workspace\open\utils\hotspot\share\prims\jni.cpp, line 516]
 Event: 0.296 Thread 0x0000025d6a645b50 Exception <a 'sun/nio/fs/WindowsException'{0x000000071873fbf8}> (0x000000071873fbf8) 
-thrown [t:\workspace\open\src\hotspot\share\prims\jni.cpp, line 516]
+thrown [t:\workspace\open\utils\hotspot\share\prims\jni.cpp, line 516]
 Event: 0.340 Thread 0x0000025d6a645b50 Exception <a 'sun/nio/fs/WindowsException'{0x0000000718421258}> (0x0000000718421258) 
-thrown [t:\workspace\open\src\hotspot\share\prims\jni.cpp, line 516]
+thrown [t:\workspace\open\utils\hotspot\share\prims\jni.cpp, line 516]
 Event: 0.340 Thread 0x0000025d6a645b50 Exception <a 'sun/nio/fs/WindowsException'{0x00000007184215c8}> (0x00000007184215c8) 
-thrown [t:\workspace\open\src\hotspot\share\prims\jni.cpp, line 516]
+thrown [t:\workspace\open\utils\hotspot\share\prims\jni.cpp, line 516]
 Event: 1.281 Thread 0x0000025d6a645b50 Exception <a 'java/lang/NoSuchMethodError'{0x0000000718489a30}: 'void java.lang.invoke.DirectMethodHandle$Holder.invokeStaticInit(java.lang.Object, long, double, double)'> (0x0000000718489a30) 
-thrown [t:\workspace\open\src\hotspot\share\interpreter\linkResolver.cpp, line 766]
+thrown [t:\workspace\open\utils\hotspot\share\interpreter\linkResolver.cpp, line 766]
 Event: 1.285 Thread 0x0000025d6a645b50 Exception <a 'java/lang/NoSuchMethodError'{0x0000000718499438}: 'void java.lang.invoke.DirectMethodHandle$Holder.invokeStaticInit(java.lang.Object, long, int, int, int)'> (0x0000000718499438) 
-thrown [t:\workspace\open\src\hotspot\share\interpreter\linkResolver.cpp, line 766]
+thrown [t:\workspace\open\utils\hotspot\share\interpreter\linkResolver.cpp, line 766]
 Event: 1.290 Thread 0x0000025d6a645b50 Exception <a 'java/lang/NoSuchMethodError'{0x00000007184b2b50}: 'void java.lang.invoke.DirectMethodHandle$Holder.invokeStaticInit(java.lang.Object, long, int, int, int, int)'> (0x00000007184b2b50) 
-thrown [t:\workspace\open\src\hotspot\share\interpreter\linkResolver.cpp, line 766]
+thrown [t:\workspace\open\utils\hotspot\share\interpreter\linkResolver.cpp, line 766]
 Event: 1.293 Thread 0x0000025d6a645b50 Exception <a 'java/lang/NoSuchMethodError'{0x00000007184beda0}: 'void java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(java.lang.Object, long, int, int)'> (0x00000007184beda0) 
-thrown [t:\workspace\open\src\hotspot\share\interpreter\linkResolver.cpp, line 766]
+thrown [t:\workspace\open\utils\hotspot\share\interpreter\linkResolver.cpp, line 766]
 Event: 1.335 Thread 0x0000025d6a645b50 Exception <a 'sun/nio/fs/WindowsException'{0x00000007184f9b60}> (0x00000007184f9b60) 
-thrown [t:\workspace\open\src\hotspot\share\prims\jni.cpp, line 516]
+thrown [t:\workspace\open\utils\hotspot\share\prims\jni.cpp, line 516]
 Event: 1.335 Thread 0x0000025d6a645b50 Exception <a 'sun/nio/fs/WindowsException'{0x00000007184f9f10}> (0x00000007184f9f10) 
-thrown [t:\workspace\open\src\hotspot\share\prims\jni.cpp, line 516]
+thrown [t:\workspace\open\utils\hotspot\share\prims\jni.cpp, line 516]
 Event: 1.339 Thread 0x0000025d6a645b50 Exception <a 'sun/nio/fs/WindowsException'{0x0000000718502560}> (0x0000000718502560) 
-thrown [t:\workspace\open\src\hotspot\share\prims\jni.cpp, line 516]
+thrown [t:\workspace\open\utils\hotspot\share\prims\jni.cpp, line 516]
 Event: 1.339 Thread 0x0000025d6a645b50 Exception <a 'sun/nio/fs/WindowsException'{0x0000000718502848}> (0x0000000718502848) 
-thrown [t:\workspace\open\src\hotspot\share\prims\jni.cpp, line 516]
+thrown [t:\workspace\open\utils\hotspot\share\prims\jni.cpp, line 516]
 Event: 1.703 Thread 0x0000025d6a645b50 Exception <a 'sun/nio/fs/WindowsException'{0x0000000717a70560}> (0x0000000717a70560) 
-thrown [t:\workspace\open\src\hotspot\share\prims\jni.cpp, line 516]
+thrown [t:\workspace\open\utils\hotspot\share\prims\jni.cpp, line 516]
 Event: 1.784 Thread 0x0000025d6a645b50 Exception <a 'java/lang/NoSuchMethodError'{0x0000000717b253c8}: 'void java.lang.invoke.DirectMethodHandle$Holder.invokeVirtual(java.lang.Object, java.lang.Object, long, int)'> (0x0000000717b253c8) 
-thrown [t:\workspace\open\src\hotspot\share\interpreter\linkResolver.cpp, line 766]
+thrown [t:\workspace\open\utils\hotspot\share\interpreter\linkResolver.cpp, line 766]
 Event: 1.992 Thread 0x0000025d6a645b50 Exception <a 'sun/nio/fs/WindowsException'{0x00000007176e2198}> (0x00000007176e2198) 
-thrown [t:\workspace\open\src\hotspot\share\prims\jni.cpp, line 516]
+thrown [t:\workspace\open\utils\hotspot\share\prims\jni.cpp, line 516]
 Event: 1.992 Thread 0x0000025d6a645b50 Exception <a 'sun/nio/fs/WindowsException'{0x00000007176e2520}> (0x00000007176e2520) 
-thrown [t:\workspace\open\src\hotspot\share\prims\jni.cpp, line 516]
+thrown [t:\workspace\open\utils\hotspot\share\prims\jni.cpp, line 516]
 
 VM Operations (16 events):
 Event: 0.122 Executing VM operation: HandshakeAllThreads
@@ -665,7 +665,7 @@ symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Us
 VM Arguments:
 jvm_args: -Dfile.encoding=windows-1251 -Duser.country=US -Duser.language=en -Duser.variant 
 java_command: Main
-java_class_path (initial): C:\Users\nikit\IdeaProjects\Tower_Defence\build\classes\java\main;C:\Users\nikit\IdeaProjects\Tower_Defence\build\resources\main;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.9\8a432c1d6825781e21a02db2e2c33c5fde2833b9\gson-2.8.9.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\io.github.spair\imgui-java-app\1.81.0\37a0be053a63da53c3628b3d6186ccbd380f7106\imgui-java-app-1.81.0.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\io.github.spair\imgui-java-lwjgl3\1.81.0\6c92680fc6e9951532445ecc35b44f2d4cd82d76\imgui-java-lwjgl3-1.81.0.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-assimp\3.2.3\f62aa07a20afbdd3097efc296c4841e0d29700eb\lwjgl-assimp-3.2.3.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-assimp\3.2.3\4e60aeb75f0343c4a9ede4ef8b6b32ca702a00a3\lwjgl-assimp-3.2.3-natives-windows.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.2.3\5e520d5c290c8b012545a8d34fa5db5ab051ea53\lwjgl-glfw-3.2.3.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.2.3\b4d8a3477cdc2edcf7a5f1e822926be846223f54\lwjgl-glfw-3.2.3-natives-windows.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.2.3\62b044d9b0a057444bef2ab70b9afc288ec09dba\lwjgl-glfw-3.2.3-natives-linux.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.2.3\58661272eacb9116336c88b4aadccf1f17c09b\lwjgl-glfw-3.2.3-natives-macos.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-nfd\3.2.3\c44fee1043c022cf6614a28872d44cf114ca7737\lwjgl-nfd-3.2.3.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-nfd\3.2.3\32782f5f5c57769efb82af864e70b819c77bc891\lwjgl-nfd-3.2.3-natives-windows.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-openal\3.2.3\106742e805803ab9eab8e343f0fb31a3d263903c\lwjgl-openal-3.2.3.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.l
+java_class_path (initial): C:\Users\nikit\IdeaProjects\Tower_Defence\build\classes\java\utils;C:\Users\nikit\IdeaProjects\Tower_Defence\build\resources\utils;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.9\8a432c1d6825781e21a02db2e2c33c5fde2833b9\gson-2.8.9.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\io.github.spair\imgui-java-app\1.81.0\37a0be053a63da53c3628b3d6186ccbd380f7106\imgui-java-app-1.81.0.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\io.github.spair\imgui-java-lwjgl3\1.81.0\6c92680fc6e9951532445ecc35b44f2d4cd82d76\imgui-java-lwjgl3-1.81.0.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-assimp\3.2.3\f62aa07a20afbdd3097efc296c4841e0d29700eb\lwjgl-assimp-3.2.3.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-assimp\3.2.3\4e60aeb75f0343c4a9ede4ef8b6b32ca702a00a3\lwjgl-assimp-3.2.3-natives-windows.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.2.3\5e520d5c290c8b012545a8d34fa5db5ab051ea53\lwjgl-glfw-3.2.3.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.2.3\b4d8a3477cdc2edcf7a5f1e822926be846223f54\lwjgl-glfw-3.2.3-natives-windows.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.2.3\62b044d9b0a057444bef2ab70b9afc288ec09dba\lwjgl-glfw-3.2.3-natives-linux.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-glfw\3.2.3\58661272eacb9116336c88b4aadccf1f17c09b\lwjgl-glfw-3.2.3-natives-macos.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-nfd\3.2.3\c44fee1043c022cf6614a28872d44cf114ca7737\lwjgl-nfd-3.2.3.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-nfd\3.2.3\32782f5f5c57769efb82af864e70b819c77bc891\lwjgl-nfd-3.2.3-natives-windows.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.lwjgl\lwjgl-openal\3.2.3\106742e805803ab9eab8e343f0fb31a3d263903c\lwjgl-openal-3.2.3.jar;C:\Users\nikit\.gradle\caches\modules-2\files-2.1\org.l
 Launcher Type: SUN_STANDARD
 
 [Global flags]
