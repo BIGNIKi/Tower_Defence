@@ -1,7 +1,7 @@
 package job;
 
-import Util.AssetPool;
-import Util.StringList;
+import utils.AssetPool;
+import utils.StringList;
 import components.Sprite;
 import components.SpriteRenderer;
 import entities.Bullet;

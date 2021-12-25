@@ -1,6 +1,6 @@
 package controllers;
 
-import Util.StringList;
+import utils.StringList;
 import components.Component;
 import job.Prefabs;
 

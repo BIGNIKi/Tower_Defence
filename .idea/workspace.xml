@@ -23,15 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14b7f6df-c63f-4ea9-817c-6af2046b6254" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/entities/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/assets/shaders/debugLine2D.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/old/assets/shaders/debugLine2D.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/assets/shaders/default.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/old/assets/shaders/default.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/assets/shaders/pickingShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/old/assets/shaders/pickingShader.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/hs_err_pid11052.log" beforeDir="false" afterPath="$PROJECT_DIR$/old/hs_err_pid11052.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/controllers/Waves.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/controllers/Waves.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

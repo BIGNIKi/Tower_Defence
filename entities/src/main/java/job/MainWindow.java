@@ -1,9 +1,9 @@
 package job;
 
-import Util.AssetPool;
+import utils.AssetPool;
 import observers.EventSystem;
 import observers.Observer;
-import observers.events.Event;
+import events.Event;
 import org.joml.Vector4f;
 import org.lwjgl.Version;
 import org.lwjgl.glfw.Callbacks;

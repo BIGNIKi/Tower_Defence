@@ -1,10 +1,9 @@
 package entities.monsters;
 
-import Util.SmartCalc;
-import Util.StringList;
+import utils.SmartCalc;
+import utils.StringList;
 import components.Component;
 import components.SpriteRenderer;
-import controllers.LevelCntrl;
 import job.GameObject;
 import org.joml.Vector2f;
 import org.joml.Vector4f;

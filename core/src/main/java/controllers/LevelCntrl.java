@@ -1,14 +1,12 @@
 package controllers;
 
 import components.Component;
-import entities.towers.PlaceForTower;
 import imgui.ImGui;
 import imgui.flag.ImGuiWindowFlags;
 import job.GameObject;
 import job.MainWindow;
 import observers.EventSystem;
-import observers.events.Event;
-import observers.events.EventType;
+import events.Event;
 
 public class LevelCntrl extends Component
 {
