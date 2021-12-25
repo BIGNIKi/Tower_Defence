@@ -1,6 +1,7 @@
 allprojects {
     group 'org.example'
     version '1.0-SNAPSHOT'
+    apply plugin: 'java'
 
     ext {
         lwjglVersion = "3.2.3"
@@ -8,14 +9,11 @@ allprojects {
         lwjglNatives = "natives-windows"
         imguiVersion = '1.81.0'
     }
-}
-
-subprojects {
-    apply plugin: 'java'
-
     repositories {
+        jcenter()
         mavenCentral()
     }
+
 }
 
 
