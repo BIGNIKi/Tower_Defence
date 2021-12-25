@@ -1,8 +1,8 @@
 package services;
 
-import entities.monsters.BasicMonster;
-import entities.monsters.Monster;
-import entities.monsters.MonsterType;
+import entities1.monsters.BasicMonster;
+import entities1.monsters.Monster;
+import entities1.monsters.MonsterType;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.stream.Collectors;

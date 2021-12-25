@@ -1,6 +1,6 @@
-package entities;
+package entities1;
 
-import entities.towers.Tower;
+import entities1.towers.Tower;
 import java.util.ArrayList;
 import java.util.LinkedList;
 

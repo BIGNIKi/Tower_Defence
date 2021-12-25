@@ -1,9 +1,9 @@
-package entities;
+package entities1;
 
-import entities.abitilies.Ability;
-import entities.researching.ResearchTree;
-import entities.towers.Tower;
-import entities.towers.TowerType;
+import entities1.abitilies.Ability;
+import entities1.researching.ResearchTree;
+import entities1.towers.Tower;
+import entities1.towers.TowerType;
 import java.util.ArrayList;
 
 public class Player {

@@ -1,4 +1,4 @@
-package entities;
+package entities1;
 
 import components.Component;
 import org.joml.Vector2f;

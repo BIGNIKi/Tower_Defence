@@ -1,4 +1,4 @@
-package entities.abitilies;
+package entities1.abitilies;
 
 public abstract class Ability {
 

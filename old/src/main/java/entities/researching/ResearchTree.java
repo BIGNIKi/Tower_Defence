@@ -1,4 +1,4 @@
-package entities.researching;
+package entities1.researching;
 
 public class ResearchTree {
 

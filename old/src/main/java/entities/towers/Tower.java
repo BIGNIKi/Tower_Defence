@@ -1,9 +1,9 @@
-package entities.towers;
+package entities1.towers;
 
 import Util.SmartCalc;
 import components.*;
-import entities.effects.Effect;
-import entities.monsters.Monster;
+import entities1.effects.Effect;
+import entities1.monsters.Monster;
 import job.GameObject;
 import job.MainWindow;
 import job.Prefabs;

@@ -1,8 +1,8 @@
-package entities;
+package entities1;
 
 import Util.SmartCalc;
 import components.Component;
-import entities.monsters.Monster;
+import entities1.monsters.Monster;
 import job.GameObject;
 import org.joml.Vector2f;
 

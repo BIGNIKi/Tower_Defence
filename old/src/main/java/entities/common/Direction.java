@@ -1,4 +1,4 @@
-package entities.common;
+package entities1.common;
 
 public enum Direction {
   EAST,

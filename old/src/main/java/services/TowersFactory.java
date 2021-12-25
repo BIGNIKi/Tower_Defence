@@ -1,6 +1,6 @@
 package services;
-import entities.towers.Tower;
-import entities.towers.TowerType;
+import entities1.towers.Tower;
+import entities1.towers.TowerType;
 import java.util.ArrayList;
 
 public class TowersFactory {

@@ -1,7 +1,7 @@
-package entities;
+package entities1;
 
-import entities.monsters.Monster;
-import entities.monsters.MonsterType;
+import entities1.monsters.Monster;
+import entities1.monsters.MonsterType;
 import java.util.ArrayList;
 import java.util.HashMap;
 

@@ -1,17 +1,15 @@
 package editor;
 
-import components.Component;
-import components.SpriteRenderer;
+import entities.components.Component;
+import entities.components.SpriteRenderer;
 import controllers.LevelCntrl;
 import controllers.Waves;
-import entities.Bird;
-import entities.Wheel;
-import entities.monsters.Monster;
-import entities.towers.PlaceForTower;
-import entities.towers.Tower;
+import entities.entities1.Bird;
+import entities.entities1.Wheel;
+import entities.entities1.towers.PlaceForTower;
 import imgui.ImGui;
-import job.GameObject;
-import job.MainWindow;
+import entities.job.GameObject;
+import entities.job.MainWindow;
 import org.joml.Vector4f;
 import renderer.PickingTexture;
 

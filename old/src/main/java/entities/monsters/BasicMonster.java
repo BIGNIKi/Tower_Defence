@@ -1,9 +1,9 @@
-package entities.monsters;
+package entities1.monsters;
 
-import entities.Castle;
-import entities.common.Direction;
-import entities.effects.Effect;
-import entities.towers.TowerType;
+import entities1.Castle;
+import entities1.common.Direction;
+import entities1.effects.Effect;
+import entities1.towers.TowerType;
 
 public class BasicMonster extends Monster {
 

@@ -1,7 +1,7 @@
-package entities.towers;
+package entities1.towers;
 
-import entities.monsters.Monster;
-import entities.upgrades.Upgrade;
+import entities1.monsters.Monster;
+import entities1.upgrades.Upgrade;
 
 public class BasicTower extends Tower {
 

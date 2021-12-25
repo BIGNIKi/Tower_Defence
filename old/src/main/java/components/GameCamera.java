@@ -1,6 +1,6 @@
 package components;
 
-import entities.towers.PlaceForTower;
+import entities1.towers.PlaceForTower;
 import job.*;
 import renderer.PickingTexture;
 import scenes.Scene;

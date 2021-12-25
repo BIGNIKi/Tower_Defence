@@ -1,9 +1,9 @@
 package controllers;
 
-import entities.Level;
-import entities.Player;
-import entities.Wave;
-import entities.towers.TowerType;
+import entities1.Level;
+import entities1.Player;
+import entities1.Wave;
+import entities1.towers.TowerType;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
 import services.MonstersFactory;

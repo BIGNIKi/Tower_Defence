@@ -5,7 +5,7 @@ import editor.GameViewWindow;
 import editor.MenuBar;
 import editor.PropertiesWindow;
 import editor.SceneHierarchyWindow;
-import entities.towers.PlaceForTower;
+import entities1.towers.PlaceForTower;
 import imgui.*;
 import imgui.callback.ImStrConsumer;
 import imgui.callback.ImStrSupplier;

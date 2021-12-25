@@ -1,4 +1,4 @@
-package entities.monsters;
+package entities1.monsters;
 
 import Util.SmartCalc;
 import Util.StringList;

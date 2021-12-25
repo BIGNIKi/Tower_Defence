@@ -1,9 +1,9 @@
 package controllers;
 
-import entities.GameField;
-import entities.Level;
-import entities.Wave;
-import entities.monsters.MonsterType;
+import entities1.GameField;
+import entities1.Level;
+import entities1.Wave;
+import entities1.monsters.MonsterType;
 import java.util.HashMap;
 
 public class LevelEditorController {

@@ -4,9 +4,9 @@ import Util.AssetPool;
 import Util.StringList;
 import components.Sprite;
 import components.SpriteRenderer;
-import entities.Bullet;
-import entities.monsters.Monster;
-import entities.towers.Tower;
+import entities1.Bullet;
+import entities1.monsters.Monster;
+import entities1.towers.Tower;
 import org.joml.Vector2f;
 import org.joml.Vector4f;
 

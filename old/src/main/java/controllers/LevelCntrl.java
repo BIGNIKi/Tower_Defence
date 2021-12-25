@@ -1,7 +1,7 @@
 package controllers;
 
 import components.Component;
-import entities.towers.PlaceForTower;
+import entities1.towers.PlaceForTower;
 import imgui.ImGui;
 import imgui.flag.ImGuiWindowFlags;
 import job.GameObject;

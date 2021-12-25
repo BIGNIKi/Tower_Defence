@@ -1,4 +1,4 @@
-package entities.upgrades;
+package entities1.upgrades;
 
 public class Upgrade {
 
