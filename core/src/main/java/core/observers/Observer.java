@@ -1,7 +1,7 @@
 package core.observers;
 
 import entities.job.GameObject;
-import observers.events.Event;
+import entities.events.Event;
 
 public interface Observer {
     void onNotify(GameObject object, Event event);
