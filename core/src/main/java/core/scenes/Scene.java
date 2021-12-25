@@ -1,16 +1,16 @@
-package entities.scenes;
+package core.scenes;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import core.renderers.Renderer;
 import entities.components.Component;
 import entities.components.ComponentDeserializer;
 import entities.job.Camera;
 import entities.job.GameObject;
 import entities.job.GameObjectDeserializer;
 import entities.job.StateInWorld;
-import org.joml.Vector2f;
-import renderer.Renderer;
 
+import org.joml.Vector2f;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;

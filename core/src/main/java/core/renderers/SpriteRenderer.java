@@ -3,6 +3,7 @@ package core.renderers;
 import editor.JImGui;
 import entities.components.Component;
 import entities.components.Sprite;
+import entities.textures.Texture;
 import entities.job.StateInWorld;
 import org.joml.Vector2f;
 import org.joml.Vector4f;

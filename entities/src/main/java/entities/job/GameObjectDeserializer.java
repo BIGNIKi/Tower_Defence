@@ -2,7 +2,7 @@ package entities.job;
 
 import com.google.gson.*;
 import entities.components.Component;
-import entities.scenes.Scene;
+import core.scenes.Scene;
 
 import java.lang.reflect.Type;
 

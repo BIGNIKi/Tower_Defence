@@ -1,10 +1,9 @@
-package entities.components;
+package core.controls;
 
-import Util.Settings;
-import editor.PropertiesWindow;
+import core.ui.MainWindow;
+
+import entities.components.Component;
 import entities.job.GameObject;
-import entities.job.Keyboard;
-import entities.job.MainWindow;
 import org.joml.Vector2f;
 
 import java.util.ArrayList;

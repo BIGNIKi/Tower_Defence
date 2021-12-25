@@ -1,20 +1,21 @@
-package entities.components;
+package core.controls;
 
-import Util.Settings;
+import core.renderers.DebugDraw;
+import core.renderers.SpriteRenderer;
 import editor.PropertiesWindow;
+import entities.components.Component;
+import entities.components.GizmoSystem;
+import entities.components.NonPickable;
 import entities.job.GameObject;
-import entities.job.Keyboard;
-import entities.job.MainWindow;
-import entities.job.Mouse;
 import org.joml.Vector2f;
 import org.joml.Vector2i;
 import org.joml.Vector4f;
-import renderer.DebugDraw;
-import renderer.PickingTexture;
-import entities.scenes.Scene;
+
+import core.scenes.Scene;
 
 import java.util.HashSet;
 import java.util.Set;
+import utils.Settings;
 
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_ESCAPE;
 import static org.lwjgl.glfw.GLFW.GLFW_MOUSE_BUTTON_LEFT;
@@ -55,7 +56,7 @@ public class MouseControls extends Component
     public void editorUpdate(float dt)
     {
         debounce -= dt;
-        PickingTexture pickingTexture = MainWindow.getImguiLayer().getPropertiesWindow().getPickingTexture();
+        var pickingTexture = MainWindow.getImguiLayer().getPropertiesWindow().getPickingTexture();
         Scene currentScene = MainWindow.getScene();
 
         if(holdingObject != null)

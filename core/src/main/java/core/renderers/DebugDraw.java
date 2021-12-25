@@ -1,9 +1,9 @@
 package core.renderers;
 
-import utils.AssetPool;
+import core.pools.AssetPool;
 import utils.JMath;
 import entities.job.Camera;
-import entities.job.MainWindow;
+import core.ui.MainWindow;
 import org.joml.Vector2f;
 import org.joml.Vector3f;
 

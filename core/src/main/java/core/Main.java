@@ -1,6 +1,6 @@
 package core;
 
-import entities.job.MainWindow;
+import core.ui.MainWindow;
 
 public final class Main
   {

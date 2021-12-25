@@ -1,7 +1,7 @@
 package entities.components;
 
+import entities.textures.Texture;
 import org.joml.Vector2f;
-import renderer.Texture;
 
 import java.util.ArrayList;
 import java.util.List;

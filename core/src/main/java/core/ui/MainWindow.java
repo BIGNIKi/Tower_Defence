@@ -1,8 +1,13 @@
-package entities.job;
+package core.ui;
 
-import utils.AssetPool;
-import observers.EventSystem;
-import observers.Observer;
+import core.observers.EventSystem;
+import core.observers.Observer;
+import core.renderers.Framebuffer;
+import entities.textures.PickingTexture;
+import entities.job.GameObject;
+import entities.job.IMGuiLayer;
+import core.controls.Keyboard;
+import core.controls.Mouse;
 import entities.events.Event;
 import org.joml.Vector4f;
 import org.lwjgl.Version;
@@ -11,11 +16,11 @@ import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
 import org.lwjgl.opengl.GL11;
-import renderer.*;
-import entities.scenes.LevelEditorSceneInitializer;
-import entities.scenes.LevelSceneInitializer;
-import entities.scenes.Scene;
-import entities.scenes.SceneInitializer;
+
+import core.scenes.LevelEditorSceneInitializer;
+import core.scenes.LevelSceneInitializer;
+import core.scenes.Scene;
+import core.scenes.SceneInitializer;
 
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL11.*;

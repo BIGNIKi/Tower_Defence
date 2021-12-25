@@ -7,7 +7,7 @@ import entities.components.Component;
 import entities.components.ComponentDeserializer;
 import entities.components.SpriteRenderer;
 import imgui.ImGui;
-import entities.scenes.Scene;
+import core.scenes.Scene;
 
 import java.util.ArrayList;
 import java.util.List;

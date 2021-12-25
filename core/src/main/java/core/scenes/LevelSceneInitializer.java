@@ -1,29 +1,27 @@
-package entities.scenes;
+package core.scenes;
 
 import Util.AssetPool;
+import Util.Settings;
 import components.*;
-import entities.components.EditorCamera;
-import entities.components.GizmoSystem;
-import entities.components.GridLines;
-import entities.components.KeyControls;
-import entities.components.MouseControls;
+import entities.components.GameCamera;
 import entities.components.Sprite;
 import entities.components.SpriteRenderer;
 import entities.components.SpriteSheet;
 import entities.job.GameObject;
-import entities.job.Prefabs;
+import entities.job.MainWindow;
 import imgui.ImGui;
 import imgui.ImVec2;
 import job.*;
 import org.joml.Vector2f;
+import renderer.DebugDraw;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class LevelEditorSceneInitializer extends SceneInitializer
+public class LevelSceneInitializer extends SceneInitializer
 {
     //private SpriteSheet sprites;
-    private GameObject levelEditorStuff;
+    private GameObject gameCamera;
 
     private final List<Sprite> btnTexture = new ArrayList<>(); // все спрайты, которые нужно будет отобразить как кнопки
 
@@ -31,18 +29,12 @@ public class LevelEditorSceneInitializer extends SceneInitializer
     @Override
     public void init(Scene scene)
     {
-        System.out.println("LevelEditor");
         SpriteSheet gizmos = AssetPool.getSpritesheet("assets/images/gizmos.png");
-
-        levelEditorStuff = scene.createGameObject("LevelEditor"); // объект, который всегда висит на сцене
-        // и задействует следующие функции:
-        levelEditorStuff.setNoSerialize(); // этот объект не сохраняется
-        levelEditorStuff.addComponent(new MouseControls()); // отвечает за захват, размещение игрового объекта
-        levelEditorStuff.addComponent(new KeyControls());
-        levelEditorStuff.addComponent(new GridLines()); // рисует сетку
-        levelEditorStuff.addComponent(new EditorCamera(scene.camera())); // все взаимодействия с камерой для редактора
-        levelEditorStuff.addComponent(new GizmoSystem(gizmos)); // отрисовка стрелок для смены позиции/размера
-        scene.addGameObjectToScene(levelEditorStuff);
+        gameCamera = scene.createGameObject("GameCamera"); // объект, который всегда висит на сцене
+        gameCamera.addComponent(new GameCamera(scene.camera()));
+        gameCamera.start();
+        MainWindow.getScene().camera().setZoom(0.7f);
+        scene.addGameObjectToScene(gameCamera);
 
         //DebugDraw.addLine2D(new Vector2f(0,0), new Vector2f(800, 800), new Vector3f(1, 1, 1), 120);
 
@@ -82,16 +74,7 @@ public class LevelEditorSceneInitializer extends SceneInitializer
 
         // START сюда пишутся текстуры, которые нужно видеть в редакторе выбора текстур
 
-        spriteSheetToSprites("assets/images/spritesheet.png", 121, 120, 2,0);
-        textureToSprite("assets/images/greenEnemy1.png");
-        textureToSprite("assets/images/base.png");
-        textureToSprite("assets/images/enemySpawn.png");
-        textureToSprite("assets/images/bash.png");
-        textureToSprite("assets/images/bush1.png");
-        textureToSprite("assets/images/bush2.png");
-        textureToSprite("assets/images/bush3.png");
-        textureToSprite("assets/images/bush4.png");
-        //textureToSprite("assets/images/angryBird.png");
+
 
         // STOP
 
@@ -114,7 +97,7 @@ public class LevelEditorSceneInitializer extends SceneInitializer
         }
     }
 
-    public LevelEditorSceneInitializer()
+    public LevelSceneInitializer()
     {
 
     }
@@ -158,10 +141,12 @@ public class LevelEditorSceneInitializer extends SceneInitializer
     public void imgui()
     {
 /*        ImGui.begin("Level Editor Stuff");
-        levelEditorStuff.imgui();
+        gameCamera.imgui();
         ImGui.end();*/
 
         ImGui.begin("Sprites:");
+/*       ImGui.text("Sample text = 5000");
+        ImGui.text("HP: 1");*/
 
         ImVec2 windowPos = new ImVec2();
         ImGui.getWindowPos(windowPos);
@@ -186,10 +171,7 @@ public class LevelEditorSceneInitializer extends SceneInitializer
             float spriteHeight = 50;
             if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))
             {
-                GameObject object = Prefabs.generateSpriteObject(sprite, 0.25f, 0.25f);
-                // Attach this to the mouse cursor
-                // mouseControls.pickupObject(object);
-                levelEditorStuff.getComponent(MouseControls.class).pickupObject(object);
+                // ничего не должно происходить, пока сцена запущена
             }
             ImGui.popID();
 

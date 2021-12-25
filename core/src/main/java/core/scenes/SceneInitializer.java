@@ -1,4 +1,4 @@
-package entities.scenes;
+package core.scenes;
 
 public abstract class SceneInitializer {
     public abstract void init(Scene scene);

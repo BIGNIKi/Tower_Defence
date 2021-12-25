@@ -1,5 +1,7 @@
-package entities.job;
+package core.controls;
 
+import core.ui.MainWindow;
+import entities.job.Camera;
 import org.joml.Matrix4f;
 import org.joml.Vector2f;
 import org.joml.Vector4f;

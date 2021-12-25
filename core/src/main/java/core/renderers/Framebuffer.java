@@ -2,6 +2,8 @@ package core.renderers;
 
 import static org.lwjgl.opengl.GL30.*;
 
+import entities.textures.Texture;
+
 public class Framebuffer
 {
     private int fboID = 0;

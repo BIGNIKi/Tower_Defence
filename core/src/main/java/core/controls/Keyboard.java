@@ -1,4 +1,4 @@
-package entities.job;
+package core.controls;
 
 import java.util.Arrays;
 
