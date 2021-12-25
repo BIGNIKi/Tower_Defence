@@ -1,4 +1,4 @@
-package core.controls;
+package editor.components;
 
 import core.renderers.DebugDraw;
 import core.renderers.SpriteRenderer;
@@ -66,7 +66,7 @@ public class MouseControls extends Component
             float yy = ((int)Math.floor(holdingObject.stateInWorld.getPosition().y / Settings.GRID_HEIGHT) * Settings.GRID_HEIGHT) + Settings.GRID_HEIGHT / 2.0f;
             holdingObject.stateInWorld.setPosition(new Vector2f(xx, yy));
 
-            if(Mouse.mouseButtonDown(GLFW_MOUSE_BUTTON_LEFT))
+            if(Mouse.mouseButtonDown(GLFW.GLFW_MOUSE_BUTTON_LEFT))
             {
                 float halfWidth = Settings.GRID_WIDTH / 2.0f;
                 float halfHeight = Settings.GRID_HEIGHT / 2.0f;
@@ -81,13 +81,13 @@ public class MouseControls extends Component
             }
 
             // отмена создания нового игрового объекта
-            if(Keyboard.isKeyPressed(GLFW_KEY_ESCAPE))
+            if(Keyboard.isKeyPressed(GLFW.GLFW_KEY_ESCAPE))
             {
                 holdingObject.destroy();
                 holdingObject = null;
             }
         }
-        else if(!Mouse.isDragging() && Mouse.mouseButtonDown(GLFW_MOUSE_BUTTON_LEFT) && debounce < 0)
+        else if(!Mouse.isDragging() && Mouse.mouseButtonDown(GLFW.GLFW_MOUSE_BUTTON_LEFT) && debounce < 0)
         {
             int x = (int)Mouse.getScreenX();
             int y = (int)Mouse.getScreenY();
@@ -103,7 +103,7 @@ public class MouseControls extends Component
             }
             this.debounce = 0.2f;
         }
-        else if(Mouse.isDragging() && Mouse.mouseButtonDown(GLFW_MOUSE_BUTTON_LEFT)
+        else if(Mouse.isDragging() && Mouse.mouseButtonDown(GLFW.GLFW_MOUSE_BUTTON_LEFT)
                 && !gameObject.getComponent(GizmoSystem.class).checkHoverity())
         {
             if(!boxSelectSet)

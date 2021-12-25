@@ -1,7 +1,7 @@
 package core.scenes;
 
-import core.controls.KeyControls;
-import core.controls.MouseControls;
+import editor.components.KeyControls;
+import editor.components.MouseControls;
 import core.pools.AssetPool;
 import core.renderers.SpriteRenderer;
 import entities.components.EditorCamera;

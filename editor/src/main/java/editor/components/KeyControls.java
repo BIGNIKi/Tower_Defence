@@ -1,4 +1,4 @@
-package core.controls;
+package editor.components;
 
 import core.ui.MainWindow;
 
@@ -25,10 +25,10 @@ public class KeyControls extends Component
         GameObject activeGameObject = propertiesWindow.getActiveGameObject();
         List<GameObject> activeGameObjects = propertiesWindow.getActiveGameObjects();
         // можно нажать на шифт, чтобы двигать объекты с большей точностью
-        float multiplier = Keyboard.isKeyPressed(GLFW_KEY_LEFT_SHIFT) ? 0.1f : 1.0f;
+        float multiplier = Keyboard.isKeyPressed(GLFW.GLFW_KEY_LEFT_SHIFT) ? 0.1f : 1.0f;
 
-        if (Keyboard.isKeyPressed(GLFW_KEY_LEFT_CONTROL) &&
-                Keyboard.keyBeginPress(GLFW_KEY_D) && activeGameObject != null)
+        if (Keyboard.isKeyPressed(GLFW.GLFW_KEY_LEFT_CONTROL) &&
+                Keyboard.keyBeginPress(GLFW.GLFW_KEY_D) && activeGameObject != null)
         {
             GameObject newObj = activeGameObject.copy();
             MainWindow.getScene().addGameObjectToScene(newObj);
@@ -37,8 +37,8 @@ public class KeyControls extends Component
             propertiesWindow.setActiveGameObject(newObj);
         }
         // множественное копирование объектов
-        else if (Keyboard.isKeyPressed(GLFW_KEY_LEFT_CONTROL) &&
-            Keyboard.keyBeginPress(GLFW_KEY_D) && activeGameObjects.size() > 1)
+        else if (Keyboard.isKeyPressed(GLFW.GLFW_KEY_LEFT_CONTROL) &&
+            Keyboard.keyBeginPress(GLFW.GLFW_KEY_D) && activeGameObjects.size() > 1)
         {
             List<GameObject> gameObjects = new ArrayList<>(activeGameObjects);
             propertiesWindow.clearSelected();
@@ -49,7 +49,7 @@ public class KeyControls extends Component
                 propertiesWindow.addActiveGameObject(copy);
             }
         }
-        else if (Keyboard.keyBeginPress(GLFW_KEY_DELETE))
+        else if (Keyboard.keyBeginPress(GLFW.GLFW_KEY_DELETE))
         {
             for(GameObject go : activeGameObjects)
             {
@@ -57,7 +57,7 @@ public class KeyControls extends Component
             }
             propertiesWindow.clearSelected();
         }
-        else if (Keyboard.isKeyPressed(GLFW_KEY_UP) && debounce < 0)
+        else if (Keyboard.isKeyPressed(GLFW.GLFW_KEY_UP) && debounce < 0)
         {
             debounce = debounceTime;
             for (GameObject go : activeGameObjects)
@@ -65,7 +65,7 @@ public class KeyControls extends Component
                 go.stateInWorld.addToPosition(new Vector2f(0, Settings.GRID_HEIGHT * multiplier));
             }
         }
-        else if (Keyboard.isKeyPressed(GLFW_KEY_LEFT) && debounce < 0)
+        else if (Keyboard.isKeyPressed(GLFW.GLFW_KEY_LEFT) && debounce < 0)
         {
             debounce = debounceTime;
             for (GameObject go : activeGameObjects)
@@ -73,7 +73,7 @@ public class KeyControls extends Component
                 go.stateInWorld.addToPosition(new Vector2f(-Settings.GRID_HEIGHT * multiplier, 0));
             }
         }
-        else if (Keyboard.isKeyPressed(GLFW_KEY_RIGHT) && debounce < 0) {
+        else if (Keyboard.isKeyPressed(GLFW.GLFW_KEY_RIGHT) && debounce < 0) {
 
             debounce = debounceTime;
             for (GameObject go : activeGameObjects)
@@ -81,7 +81,7 @@ public class KeyControls extends Component
                 go.stateInWorld.addToPosition(new Vector2f(Settings.GRID_HEIGHT * multiplier, 0));
             }
         }
-        else if (Keyboard.isKeyPressed(GLFW_KEY_DOWN) && debounce < 0)
+        else if (Keyboard.isKeyPressed(GLFW.GLFW_KEY_DOWN) && debounce < 0)
         {
             debounce = debounceTime;
             for (GameObject go : activeGameObjects)

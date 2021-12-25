@@ -1,6 +1,5 @@
 package core.renderers;
 
-import entities.components.SpriteRenderer;
 import entities.textures.Texture;
 import entities.job.GameObject;
 import core.ui.MainWindow;

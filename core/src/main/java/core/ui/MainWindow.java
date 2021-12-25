@@ -2,7 +2,10 @@ package core.ui;
 
 import core.observers.EventSystem;
 import core.observers.Observer;
+import core.pools.AssetPool;
+import core.renderers.DebugDraw;
 import core.renderers.Framebuffer;
+import core.renderers.Renderer;
 import entities.textures.PickingTexture;
 import entities.job.GameObject;
 import entities.job.IMGuiLayer;
@@ -29,7 +32,7 @@ import static org.lwjgl.system.MemoryUtil.NULL;
 public final class MainWindow implements Observer
 {
     private int width;
-    private int heigth;
+    private int height;
     private final String title;
     private long _windowId;
     private IMGuiLayer imguiLayer;
@@ -45,7 +48,7 @@ public final class MainWindow implements Observer
     private MainWindow()
     {
         this.width = 1920;
-        this.heigth = 1080;
+        this.height = 1080;
         this.title = "Tower defense";
         EventSystem.addObserver(this);
     }
@@ -122,7 +125,7 @@ public final class MainWindow implements Observer
         GLFW.glfwWindowHint(GLFW_MAXIMIZED, GLFW_TRUE); //window will be maximized when created
 
         //Create the OpenGL window
-        this._windowId = GLFW.glfwCreateWindow(this.width, this.heigth, this.title, NULL, NULL); // it returns the handle of the created window, or NULL if an error occurred
+        this._windowId = GLFW.glfwCreateWindow(this.width, this.height, this.title, NULL, NULL); // it returns the handle of the created window, or NULL if an error occurred
         if(this._windowId == NULL)
         {
             throw new IllegalStateException("Failed to create GLFW window.");
@@ -180,8 +183,8 @@ public final class MainWindow implements Observer
         double beginTime = glfwGetTime(); //the time when current frame was started
         double dt = -1.0; //the time between a start and an end of a frame
 
-        Shader defaultShader = AssetPool.getShader("assets/shaders/default.glsl");
-        Shader pickingShader = AssetPool.getShader("assets/shaders/pickingShader.glsl");
+        var defaultShader = AssetPool.getShader("assets/shaders/default.glsl");
+        var pickingShader = AssetPool.getShader("assets/shaders/pickingShader.glsl");
 
         int frameCount = 0;
         double previousTime = beginTime;
@@ -225,9 +228,9 @@ public final class MainWindow implements Observer
                 } else {
                     currentScene.editorUpdate((float) dt);
                 }
-                DebugDraw.drawGrid(); // рисует линию сетки
+                DebugDraw.drawGrid(currentScene.camera()); // рисует линию сетки
                 currentScene.render();
-                DebugDraw.drawAnother(); // рисует остальные дебажные линии
+                DebugDraw.drawAnother(currentScene.camera()); // рисует остальные дебажные линии
             }
             this.framebuffer.unbind();
 
@@ -277,7 +280,7 @@ public final class MainWindow implements Observer
 
     public static void setHeight(int newHeight)
     {
-        get().heigth = newHeight;
+        get().height = newHeight;
     }
 
     public static Framebuffer getFramebuffer()

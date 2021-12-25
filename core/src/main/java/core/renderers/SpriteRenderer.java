@@ -9,9 +9,9 @@ import org.joml.Vector2f;
 import org.joml.Vector4f;
 
 
-public class SpriteRenderer extends Component
-{
-  private Vector4f color = new Vector4f(1,1,1,1);
+public class SpriteRenderer extends Component {
+
+  private Vector4f color = new Vector4f(1, 1, 1, 1);
   private Sprite sprite = new Sprite();
 
   public int zIndex;
@@ -22,18 +22,15 @@ public class SpriteRenderer extends Component
   private transient boolean isDirty = true;
 
   @Override
-  public void start()
-  {
+  public void start() {
     this.lastStateInWorld = gameObject.stateInWorld.copy();
     this.lastZind = zIndex;
   }
 
   @Override
-  public void update(float dt)
-  {
+  public void update(float dt) {
     //???? ???-???? ?????????? ? Transform'?
-    if(!this.lastStateInWorld.equals(this.gameObject.stateInWorld) || this.lastZind != zIndex)
-    {
+    if (!this.lastStateInWorld.equals(this.gameObject.stateInWorld) || this.lastZind != zIndex) {
       this.gameObject.stateInWorld.copy(this.lastStateInWorld);
       this.lastZind = zIndex;
       isDirty = true;
@@ -50,46 +47,38 @@ public class SpriteRenderer extends Component
   }
 
   @Override
-  public void imgui()
-  {
+  public void imgui() {
     zIndex = JImGui.dragInt("zIndex", zIndex);
     if (JImGui.colorPicker4("Color Picker", this.color)) {
       this.isDirty = true;
     }
   }
 
-  public Vector4f getColor()
-  {
+  public Vector4f getColor() {
     return this.color;
   }
 
-  public Texture getTexture()
-  {
+  public Texture getTexture() {
     return sprite.getTexture();
   }
 
-  public Vector2f[] getTexCoords()
-  {
+  public Vector2f[] getTexCoords() {
     return sprite.getTexCoords();
   }
 
-  public void setSprite(Sprite sprite)
-  {
+  public void setSprite(Sprite sprite) {
     this.sprite = sprite;
     this.isDirty = true;
   }
 
-  public void setColor(Vector4f color)
-  {
-    if(!this.color.equals(color))
-    {
+  public void setColor(Vector4f color) {
+    if (!this.color.equals(color)) {
       this.isDirty = true;
       this.color.set(color);
     }
   }
 
-  public boolean isDirty()
-  {
+  public boolean isDirty() {
     return this.isDirty;
   }
 
@@ -97,13 +86,11 @@ public class SpriteRenderer extends Component
     this.isDirty = true;
   }
 
-  public void setClean()
-  {
+  public void setClean() {
     this.isDirty = false;
   }
 
-  public void setTexture(Texture texture)
-  {
+  public void setTexture(Texture texture) {
     this.sprite.setTexture(texture);
   }
 }

@@ -3,4 +3,5 @@ include 'utils'
 include 'core'
 include 'editor'
 include 'entities'
+include 'debug'
 
