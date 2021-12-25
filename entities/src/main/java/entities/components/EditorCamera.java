@@ -1,8 +1,6 @@
 package entities.components;
 
 import entities.job.Camera;
-import entities.job.Keyboard;
-import entities.job.Mouse;
 import org.joml.Vector2f;
 
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_R;

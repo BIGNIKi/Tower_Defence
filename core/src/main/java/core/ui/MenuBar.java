@@ -1,9 +1,9 @@
-package editor;
+package core.ui;
 
+import core.observers.EventSystem;
+import entities.events.Event;
+import entities.events.EventType;
 import imgui.ImGui;
-import observers.EventSystem;
-import observers.events.Event;
-import observers.events.EventType;
 
 public class MenuBar {
 

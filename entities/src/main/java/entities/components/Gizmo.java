@@ -1,11 +1,7 @@
 package entities.components;
 
-import editor.PropertiesWindow;
 import entities.job.GameObject;
-import entities.job.MainWindow;
-import entities.job.Mouse;
 import entities.job.Prefabs;
-import job.*;
 import org.joml.Vector2f;
 import org.joml.Vector4f;
 

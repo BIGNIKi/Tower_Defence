@@ -1,9 +1,6 @@
 package entities.components;
 
 import utils.StringList;
-import editor.JImGui;
-import imgui.ImGui;
-import imgui.type.ImInt;
 import entities.job.GameObject;
 import org.joml.Vector2f;
 import org.joml.Vector3f;

@@ -1,6 +1,7 @@
 package core.controllers;
 
 import entities.components.Component;
+import entities.events.EventType;
 import imgui.ImGui;
 import imgui.flag.ImGuiWindowFlags;
 import entities.job.GameObject;

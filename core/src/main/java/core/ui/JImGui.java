@@ -1,4 +1,4 @@
-package editor;
+package core.ui;
 
 import imgui.ImGui;
 import imgui.flag.ImGuiCol;

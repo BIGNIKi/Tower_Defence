@@ -1,11 +1,10 @@
-package editor;
+package core.ui;
 
+import entities.job.GameObject;
 import imgui.ImGui;
 import imgui.flag.ImGuiTreeNodeFlags;
-import job.GameObject;
-import job.MainWindow;
-
 import java.util.List;
+
 
 public class SceneHierarchyWindow
 {

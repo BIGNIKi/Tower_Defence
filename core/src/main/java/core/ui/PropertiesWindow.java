@@ -39,48 +39,50 @@ public class PropertiesWindow {
 
   public void imgui() {
     // когда объект выбран (один объект, не больше), выводим его компоненты
-    if (activeGameObjects.size() == 1 && activeGameObjects.get(0) != null) {
-      activeGameObject = activeGameObjects.get(0);
-      ImGui.begin("Properties");
-      if (ImGui.beginPopupContextWindow("ComponentAdder")) {
-        // добавляет всевозможные кнопки для добавления компонентов
-        for (Class<? extends Component> c : possibleClasses) {
-          if (activeGameObject.getComponent(c) == null) {
-            if (ImGui.menuItem("Add " + c.getSimpleName())) {
-              try {
-                Object ob = c.newInstance();
-                Component co = Component.class.cast(ob).getClass().newInstance();
-                activeGameObject.addComponent(co);
-              } catch (InstantiationException | IllegalAccessException e) {
-                e.printStackTrace();
-              }
-            }
-          }
-        }
-
-        for (Component comp : activeGameObject.getAllComponents()) {
-          if (comp.getClass().getSimpleName().equals("Transform")) {
-            continue;
-          }
-          if (ImGui.menuItem("Remove " + comp.getClass().getSimpleName())) {
-            // этот ифчик удаляет текстуру из отрисовки, если был удалён spriteRenderer
-            if (comp.getClass().getSimpleName().equals(SpriteRenderer.class.getSimpleName())) {
-              // эта строка НЕ удаляет игровой объект со сцены
-              // она удаляет всё связанное с его отрисовкой из renderer
-              MainWindow.getScene().getRenderer().destroyGameObject(activeGameObject);
-            }
-            activeGameObject.removeComponent(comp.getClass());
-            break;
-          }
-        }
-        ImGui.endPopup();
-      }
-      activeGameObject.imgui();
-      ImGui.end();
-    } else {
+    var isOnlyOneSelected = activeGameObjects.size() == 1 && activeGameObjects.get(0) != null;
+    if (!isOnlyOneSelected) {
       ImGui.begin("Properties");
       ImGui.end();
+      return;
     }
+
+    activeGameObject = activeGameObjects.get(0);
+    ImGui.begin("Properties");
+    if (ImGui.beginPopupContextWindow("ComponentAdder")) {
+      // добавляет всевозможные кнопки для добавления компонентов
+      for (Class<? extends Component> c : possibleClasses) {
+        if (activeGameObject.getComponent(c) == null) {
+          if (ImGui.menuItem("Add " + c.getSimpleName())) {
+            try {
+              Object ob = c.newInstance();
+              Component co = Component.class.cast(ob).getClass().newInstance();
+              activeGameObject.addComponent(co);
+            } catch (InstantiationException | IllegalAccessException e) {
+              e.printStackTrace();
+            }
+          }
+        }
+      }
+
+      for (Component comp : activeGameObject.getAllComponents()) {
+        if (comp.getClass().getSimpleName().equals("Transform")) {
+          continue;
+        }
+        if (ImGui.menuItem("Remove " + comp.getClass().getSimpleName())) {
+          // этот ифчик удаляет текстуру из отрисовки, если был удалён spriteRenderer
+          if (comp.getClass().getSimpleName().equals(SpriteRenderer.class.getSimpleName())) {
+            // эта строка НЕ удаляет игровой объект со сцены
+            // она удаляет всё связанное с его отрисовкой из renderer
+            MainWindow.getScene().getRenderer().destroyGameObject(activeGameObject);
+          }
+          activeGameObject.removeComponent(comp.getClass());
+          break;
+        }
+      }
+      ImGui.endPopup();
+    }
+    activeGameObject.imgui();
+    ImGui.end();
   }
 
   public GameObject getActiveGameObject() {

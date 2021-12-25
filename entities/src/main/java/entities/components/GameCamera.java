@@ -3,13 +3,12 @@ package entities.components;
 import entities.entities1.towers.PlaceForTower;
 import entities.job.Camera;
 import entities.job.GameObject;
-import core.scenes.Scene;
 import entities.textures.PickingTexture;
 
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_ESCAPE;
 import static org.lwjgl.glfw.GLFW.GLFW_MOUSE_BUTTON_LEFT;
 
-public class GameCamera extends Component {
+public class GameCamera extends Camera {
 
   private transient Camera gameCamera;
   private transient PickingTexture pickTxt = null;
