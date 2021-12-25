@@ -1,0 +1,5 @@
+rootProject.name = 'Tower_Defence'
+include 'Entities'
+include 'src:main:untitled'
+findProject(':src:main:untitled')?.name = 'untitled'
+
