@@ -19,8 +19,6 @@ public class EventSystem
     }
 
     public static void notify(GameObject obj, Event event) {
-        for (Observer observer : observers) {
-            observer.onNotify(obj, event);
-        }
+        observers.forEach(o -> o.onNotify(obj, event));
     }
 }
