@@ -207,9 +207,13 @@ public class IMGuiLayer
         }*/
 
         gameViewWindow.imgui();
+        if(!MainWindow.get().isRuntimePlaying())
+        {
+            propertiesWindow.imgui();
+            sceneHeirarchyWindow.imgui();
+        }
         // добавление компанент к объекту
-        propertiesWindow.imgui();
-        sceneHeirarchyWindow.imgui();
+
 
         GameObject lvlCntrl = GameObject.FindWithComp(LevelCntrl.class);
         if(lvlCntrl != null)

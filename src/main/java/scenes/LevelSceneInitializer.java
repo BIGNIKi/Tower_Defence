@@ -28,37 +28,13 @@ public class LevelSceneInitializer extends SceneInitializer
         gameCamera = scene.createGameObject("GameCamera"); // объект, который всегда висит на сцене
         gameCamera.addComponent(new GameCamera(scene.camera()));
         gameCamera.start();
-        MainWindow.getScene().camera().setZoom(0.7f);
+        MainWindow.getScene().camera().setZoom(1f);
         scene.addGameObjectToScene(gameCamera);
 
         //DebugDraw.addLine2D(new Vector2f(0,0), new Vector2f(800, 800), new Vector3f(1, 1, 1), 120);
 
         // the way to make colored rectangle without texture
         //obj1.addComponent(new SpriteRenderer(new Vector4f(1,0,0,1)));
-    }
-
-    // перегоняет все спрайты из спрайтшита в List всех спрайтов btnTexture
-    private void spriteSheetToSprites(String path, int spriteWidth, int spriteHeight, int numSprites, int spacing)
-    {
-        // положили спрайты на видеокарту (теперь она знает о них)
-        AssetPool.addSpritesheet(path,
-                new SpriteSheet(AssetPool.getTexture(path),
-                        spriteWidth, spriteHeight, numSprites,spacing));
-        SpriteSheet sprites = AssetPool.getSpritesheet(path); // получили сам созданный спрайтshit
-        for(int i = 0; i < sprites.size(); i++)
-        {
-            Sprite sprite = sprites.getSprite(i);
-            btnTexture.add(sprite);
-        }
-
-    }
-
-    // загрузит текстуру в List всех спрайтов btnTexture
-    private void textureToSprite(String path)
-    {
-        Sprite sprite = new Sprite();
-        sprite.setTexture(AssetPool.getTexture(path));
-        btnTexture.add(sprite);
     }
 
     // эта функция запускается РАНЬШЕ чем init
@@ -135,51 +111,6 @@ public class LevelSceneInitializer extends SceneInitializer
     @Override
     public void imgui()
     {
-/*        ImGui.begin("Level Editor Stuff");
-        gameCamera.imgui();
-        ImGui.end();*/
 
-        ImGui.begin("Sprites:");
-/*       ImGui.text("Sample text = 5000");
-        ImGui.text("HP: 1");*/
-
-        ImVec2 windowPos = new ImVec2();
-        ImGui.getWindowPos(windowPos);
-        ImVec2 windowSize = new ImVec2();
-        ImGui.getWindowSize(windowSize);
-        ImVec2 itemSpacing = new ImVec2();
-        ImGui.getStyle().getItemSpacing(itemSpacing);
-
-        float windowX2 = windowPos.x + windowSize.x;
-        // создание кнопок на котороые можно нажать, чтобы выбрать текстуру
-        for(int i = 0; i < btnTexture.size(); i++)
-        {
-            Sprite sprite = btnTexture.get(i);
-            int id = sprite.getTexId();
-            Vector2f[] texCoords = sprite.getTexCoords();
-
-            ImGui.pushID(i);
-            // само создание кнопок
-            // количество пикселей в ширину
-            float spriteWidth = 50;
-            // в длину
-            float spriteHeight = 50;
-            if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))
-            {
-                // ничего не должно происходить, пока сцена запущена
-            }
-            ImGui.popID();
-
-            ImVec2 lastButtonPos = new ImVec2();
-            ImGui.getItemRectMax(lastButtonPos);
-            float lastButtonX2 = lastButtonPos.x;
-            float nextButtonX2 = lastButtonX2 + itemSpacing.x + spriteWidth;
-            if(nextButtonX2 < windowX2)
-            {
-                ImGui.sameLine();
-            }
-        }
-
-        ImGui.end();
     }
 }

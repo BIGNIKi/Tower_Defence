@@ -170,7 +170,7 @@ public class Scene
         return go;
     }
 
-    public void save()
+    public void save(String saveFileName)
     {
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
@@ -180,7 +180,8 @@ public class Scene
 
         try
         {
-            FileWriter writer = new FileWriter("level.json");
+            // FileWriter writer = new FileWriter("level.json");
+            FileWriter writer = new FileWriter(saveFileName);
             List<GameObject> objsToSerialize = new ArrayList<>();
             for(GameObject obj : this.gameObjects)
             {
@@ -198,7 +199,7 @@ public class Scene
         }
     }
 
-    public void load()
+    public void load(String sceneName)
     {
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
@@ -209,7 +210,8 @@ public class Scene
         String inFile = "";
         try
         {
-            inFile = new String(Files.readAllBytes(Paths.get("level.json")));
+            //inFile = new String(Files.readAllBytes(Paths.get("level.json")));
+            inFile = new String(Files.readAllBytes(Paths.get(sceneName)));
         } catch(IOException e)
         {
             e.printStackTrace();

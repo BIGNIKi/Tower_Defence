@@ -1,21 +1,21 @@
 [
   {
-    "uid": 11,
-    "name": "Way",
+    "uid": 397,
+    "name": "Sprite_Object_Gen",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.6293578,
-            "y": 0.37500012
+            "x": -0.375,
+            "y": 0.625
           },
           "size": {
             "x": 0.25,
             "y": 0.25
           },
           "rotation": 0.0,
-          "uid": 19
+          "uid": 331
         }
       },
       {
@@ -55,7 +55,7 @@
             ]
           },
           "zIndex": 0,
-          "uid": 20
+          "uid": 332
         }
       }
     ],
@@ -63,22 +63,22 @@
     "isDead": false
   },
   {
-    "uid": 12,
-    "name": "Way",
+    "uid": 398,
+    "name": "Sprite_Object_Gen",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.37870002,
-            "y": 0.37500018
+            "x": -0.125,
+            "y": 0.625
           },
           "size": {
             "x": 0.25,
             "y": 0.25
           },
           "rotation": 0.0,
-          "uid": 19
+          "uid": 333
         }
       },
       {
@@ -118,7 +118,7 @@
             ]
           },
           "zIndex": 0,
-          "uid": 20
+          "uid": 334
         }
       }
     ],
@@ -126,22 +126,22 @@
     "isDead": false
   },
   {
-    "uid": 13,
-    "name": "Way",
+    "uid": 399,
+    "name": "Sprite_Object_Gen",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.1374445,
-            "y": 0.37500012
+            "x": 0.125,
+            "y": 0.625
           },
           "size": {
             "x": 0.25,
             "y": 0.25
           },
           "rotation": 0.0,
-          "uid": 19
+          "uid": 335
         }
       },
       {
@@ -181,7 +181,7 @@
             ]
           },
           "zIndex": 0,
-          "uid": 20
+          "uid": 336
         }
       }
     ],
@@ -189,22 +189,22 @@
     "isDead": false
   },
   {
-    "uid": 14,
-    "name": "Way",
+    "uid": 400,
+    "name": "Sprite_Object_Gen",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.13700056,
-            "y": 0.12836337
+            "x": 0.125,
+            "y": 0.375
           },
           "size": {
             "x": 0.25,
             "y": 0.25
           },
           "rotation": 0.0,
-          "uid": 19
+          "uid": 337
         }
       },
       {
@@ -244,7 +244,7 @@
             ]
           },
           "zIndex": 0,
-          "uid": 20
+          "uid": 338
         }
       }
     ],
@@ -252,211 +252,22 @@
     "isDead": false
   },
   {
-    "uid": 15,
-    "name": "Way",
+    "uid": 401,
+    "name": "Sprite_Object_Gen",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.13700056,
-            "y": -0.12141228
-          },
-          "size": {
-            "x": 0.25,
-            "y": 0.25
-          },
-          "rotation": 0.0,
-          "uid": 19
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 121.0,
-            "height": 120.0,
-            "texture": {
-              "filePath": "assets/images/spritesheet.png",
-              "width": 242,
-              "height": 120
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 0,
-          "uid": 20
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 16,
-    "name": "Way",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": 0.099209785,
-            "y": -0.12099993
-          },
-          "size": {
-            "x": 0.25,
-            "y": 0.25
-          },
-          "rotation": 0.0,
-          "uid": 19
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 121.0,
-            "height": 120.0,
-            "texture": {
-              "filePath": "assets/images/spritesheet.png",
-              "width": 242,
-              "height": 120
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 0,
-          "uid": 20
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 17,
-    "name": "Way",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": 0.60055494,
-            "y": -0.12099993
-          },
-          "size": {
-            "x": 0.25,
-            "y": 0.25
-          },
-          "rotation": 0.0,
-          "uid": 19
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 121.0,
-            "height": 120.0,
-            "texture": {
-              "filePath": "assets/images/spritesheet.png",
-              "width": 242,
-              "height": 120
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 0.0
-              },
-              {
-                "x": 0.5,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 0,
-          "uid": 20
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 18,
-    "name": "base",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": 0.6149099,
-            "y": -0.12499988
-          },
-          "size": {
             "x": 0.125,
             "y": 0.125
           },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
           "rotation": 0.0,
-          "uid": 23
+          "uid": 339
         }
       },
       {
@@ -464,17 +275,17 @@
         "properties": {
           "color": {
             "x": 1.0,
-            "y": 0.99999,
-            "z": 0.99999,
+            "y": 1.0,
+            "z": 1.0,
             "w": 1.0
           },
           "sprite": {
-            "width": 0.0,
-            "height": 0.0,
+            "width": 121.0,
+            "height": 120.0,
             "texture": {
-              "filePath": "assets/images/base.png",
-              "width": 264,
-              "height": 250
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
             },
             "texCoords": [
               {
@@ -486,28 +297,80 @@
                 "y": 0.0
               },
               {
-                "x": 0.0,
+                "x": 0.5,
                 "y": 0.0
               },
               {
-                "x": 0.0,
+                "x": 0.5,
                 "y": 1.0
               }
             ]
           },
-          "zIndex": 2,
-          "uid": 24
+          "zIndex": 0,
+          "uid": 340
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 402,
+    "name": "Sprite_Object_Gen",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -0.375,
+            "y": 0.125
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "uid": 341
         }
       },
       {
-        "type": "controllers.LevelCntrl",
+        "type": "components.SpriteRenderer",
         "properties": {
-          "coin": 100,
-          "baseHpMax": 1,
-          "costBlue": 30,
-          "costGreen": 50,
-          "costRed": 70,
-          "uid": 197
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.5,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 342
         }
       }
     ],
@@ -515,22 +378,62 @@
     "isDead": false
   },
   {
-    "uid": 19,
-    "name": "Point0",
+    "uid": 403,
+    "name": "Sprite_Object_Gen",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.14746994,
-            "y": 0.36250994
+            "x": -0.125,
+            "y": 0.125
           },
           "size": {
-            "x": 0.07,
-            "y": 0.07
+            "x": 0.25,
+            "y": 0.25
           },
           "rotation": 0.0,
-          "uid": 21
+          "uid": 343
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.5,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 344
         }
       }
     ],
@@ -538,45 +441,62 @@
     "isDead": false
   },
   {
-    "uid": 20,
-    "name": "Point1",
+    "uid": 404,
+    "name": "Sprite_Object_Gen",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.12873495,
-            "y": -0.12499988
+            "x": 0.125,
+            "y": -0.375
           },
           "size": {
-            "x": 0.07,
-            "y": 0.07
+            "x": 0.25,
+            "y": 0.25
           },
           "rotation": 0.0,
-          "uid": 21
+          "uid": 345
         }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 21,
-    "name": "Point2",
-    "components": [
+      },
       {
-        "type": "job.StateInWorld",
+        "type": "components.SpriteRenderer",
         "properties": {
-          "position": {
-            "x": 0.60662067,
-            "y": -0.12499988
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
           },
-          "size": {
-            "x": 0.07,
-            "y": 0.07
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.5,
+                "y": 1.0
+              }
+            ]
           },
-          "rotation": 0.0,
-          "uid": 21
+          "zIndex": 0,
+          "uid": 346
         }
       }
     ],
@@ -584,31 +504,31 @@
     "isDead": false
   },
   {
-    "uid": 22,
+    "uid": 405,
     "name": "Spawn",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.625,
-            "y": 0.38749036
+            "x": -0.375,
+            "y": 0.625
           },
           "size": {
-            "x": 0.19049342,
-            "y": 0.15703353
+            "x": 0.20864755,
+            "y": 0.1887371
           },
           "rotation": 0.0,
-          "uid": 154
+          "uid": 349
         }
       },
       {
         "type": "components.SpriteRenderer",
         "properties": {
           "color": {
-            "x": 0.0,
+            "x": 0.07594943,
             "y": 1.0,
-            "z": 0.1772151,
+            "z": 0.0,
             "w": 1.0
           },
           "sprite": {
@@ -639,24 +559,26 @@
             ]
           },
           "zIndex": 0,
-          "uid": 155
+          "uid": 350
         }
       },
       {
         "type": "controllers.Waves",
         "properties": {
           "speed": 0.3,
-          "numOfMonsters": 20,
-          "healthOfMonsters": 50.0,
+          "numOfMonsters": 5,
+          "healthOfMonsters": 4.6,
           "timeBetweenMonsters": 1.0,
-          "timeToStart": 5.0,
-          "moneyForKill": 10,
+          "timeToStart": 0.0,
+          "moneyForKill": 0,
           "wayPoints": [
             "Point0",
             "Point1",
-            "Point2"
+            "Point2",
+            "Point3",
+            "Point4"
           ],
-          "uid": 176
+          "uid": 351
         }
       }
     ],
@@ -664,40 +586,109 @@
     "isDead": false
   },
   {
-    "uid": 23,
-    "name": "Way",
+    "uid": 406,
+    "name": "Point0",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.3492098,
-            "y": -0.12099993
+            "x": 0.1199556,
+            "y": 0.64525247
           },
           "size": {
             "x": 0.25,
             "y": 0.25
           },
           "rotation": 0.0,
-          "uid": 19
+          "uid": 352
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 407,
+    "name": "Point1",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 0.1193319,
+            "y": 0.12657543
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "uid": 352
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 408,
+    "name": "Point2",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -0.39393014,
+            "y": 0.13674645
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "uid": 352
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 409,
+    "name": "Base",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 0.125,
+            "y": -0.375
+          },
+          "size": {
+            "x": 0.17458989,
+            "y": 0.16548237
+          },
+          "rotation": 0.0,
+          "uid": 373
         }
       },
       {
         "type": "components.SpriteRenderer",
         "properties": {
           "color": {
-            "x": 1.0,
-            "y": 1.0,
+            "x": 0.99999964,
+            "y": 0.99999,
             "z": 1.0,
             "w": 1.0
           },
           "sprite": {
-            "width": 121.0,
-            "height": 120.0,
+            "width": 0.0,
+            "height": 0.0,
             "texture": {
-              "filePath": "assets/images/spritesheet.png",
-              "width": 242,
-              "height": 120
+              "filePath": "assets/images/base.png",
+              "width": 264,
+              "height": 250
             },
             "texCoords": [
               {
@@ -709,17 +700,28 @@
                 "y": 0.0
               },
               {
-                "x": 0.5,
+                "x": 0.0,
                 "y": 0.0
               },
               {
-                "x": 0.5,
+                "x": 0.0,
                 "y": 1.0
               }
             ]
           },
           "zIndex": 0,
-          "uid": 20
+          "uid": 374
+        }
+      },
+      {
+        "type": "controllers.LevelCntrl",
+        "properties": {
+          "coin": 1000,
+          "baseHpMax": 5,
+          "costBlue": 100,
+          "costGreen": 200,
+          "costRed": 300,
+          "uid": 375
         }
       }
     ],
@@ -727,22 +729,22 @@
     "isDead": false
   },
   {
-    "uid": 24,
-    "name": "posForTower",
+    "uid": 410,
+    "name": "Sprite_Object_Gen",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.11401272,
-            "y": 0.6263453
+            "x": -0.125,
+            "y": 0.375
           },
           "size": {
             "x": 0.25,
             "y": 0.25
           },
           "rotation": 0.0,
-          "uid": 25
+          "uid": 396
         }
       },
       {
@@ -782,84 +784,14 @@
             ]
           },
           "zIndex": 0,
-          "uid": 26
-        }
-      },
-      {
-        "type": "entities.towers.PlaceForTower",
-        "properties": {
-          "initialRotation": 90,
-          "uid": 218
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 25,
-    "name": "posForTower",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": -0.13598728,
-            "y": -0.37365472
-          },
-          "size": {
-            "x": 0.25,
-            "y": 0.25
-          },
-          "rotation": 0.0,
-          "uid": 25
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 121.0,
-            "height": 120.0,
-            "texture": {
-              "filePath": "assets/images/spritesheet.png",
-              "width": 242,
-              "height": 120
-            },
-            "texCoords": [
-              {
-                "x": 0.5,
-                "y": 1.0
-              },
-              {
-                "x": 0.5,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 0,
-          "uid": 26
+          "uid": 397
         }
       },
       {
         "type": "entities.towers.PlaceForTower",
         "properties": {
           "initialRotation": 0,
-          "uid": 220
+          "uid": 398
         }
       }
     ],
@@ -867,92 +799,22 @@
     "isDead": false
   },
   {
-    "uid": 26,
-    "name": "posForTower",
+    "uid": 411,
+    "name": "Sprite_Object_Gen",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.37489516,
-            "y": 0.12634528
+            "x": -0.375,
+            "y": 0.375
           },
           "size": {
             "x": 0.25,
-            "y": 0.25
+            "y": 0.1876542
           },
           "rotation": 0.0,
-          "uid": 25
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 121.0,
-            "height": 120.0,
-            "texture": {
-              "filePath": "assets/images/spritesheet.png",
-              "width": 242,
-              "height": 120
-            },
-            "texCoords": [
-              {
-                "x": 0.5,
-                "y": 1.0
-              },
-              {
-                "x": 0.5,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 0,
-          "uid": 26
-        }
-      },
-      {
-        "type": "entities.towers.PlaceForTower",
-        "properties": {
-          "initialRotation": 0,
-          "uid": 219
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 27,
-    "name": "bush",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": 0.6297078,
-            "y": -0.36244774
-          },
-          "size": {
-            "x": 0.25,
-            "y": 0.18723857
-          },
-          "rotation": 0.0,
-          "uid": 243
+          "uid": 419
         }
       },
       {
@@ -992,7 +854,7 @@
             ]
           },
           "zIndex": 0,
-          "uid": 244
+          "uid": 420
         }
       }
     ],
@@ -1000,85 +862,22 @@
     "isDead": false
   },
   {
-    "uid": 28,
-    "name": "bush",
+    "uid": 412,
+    "name": "Sprite_Object_Gen",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.375,
+            "x": 0.125,
             "y": -0.125
           },
           "size": {
             "x": 0.25,
-            "y": 0.14671084
+            "y": 0.18437278
           },
           "rotation": 0.0,
-          "uid": 265
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 0.0,
-            "height": 0.0,
-            "texture": {
-              "filePath": "assets/images/bush1.png",
-              "width": 269,
-              "height": 178
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 0,
-          "uid": 266
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 29,
-    "name": "bush",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": -0.375,
-            "y": 0.625
-          },
-          "size": {
-            "x": 0.25,
-            "y": 0.1949324
-          },
-          "rotation": 0.0,
-          "uid": 287
+          "uid": 421
         }
       },
       {
@@ -1118,7 +917,7 @@
             ]
           },
           "zIndex": 0,
-          "uid": 288
+          "uid": 422
         }
       }
     ],
@@ -1126,22 +925,22 @@
     "isDead": false
   },
   {
-    "uid": 30,
-    "name": "bush",
+    "uid": 413,
+    "name": "Sprite_Object_Gen",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.125,
-            "y": 0.125
+            "x": -0.375,
+            "y": -0.125
           },
           "size": {
             "x": 0.25,
-            "y": 0.20869927
+            "y": 0.25
           },
           "rotation": 0.0,
-          "uid": 289
+          "uid": 341
         }
       },
       {
@@ -1154,12 +953,12 @@
             "w": 1.0
           },
           "sprite": {
-            "width": 0.0,
-            "height": 0.0,
+            "width": 121.0,
+            "height": 120.0,
             "texture": {
-              "filePath": "assets/images/bush4.png",
-              "width": 247,
-              "height": 193
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
             },
             "texCoords": [
               {
@@ -1168,6 +967,195 @@
               },
               {
                 "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.5,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 342
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 414,
+    "name": "Sprite_Object_Gen",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -0.375,
+            "y": -0.375
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "uid": 341
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.5,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 342
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 415,
+    "name": "Sprite_Object_Gen",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -0.125,
+            "y": -0.375
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "uid": 341
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.5,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 342
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 416,
+    "name": "Sprite_Object_Gen",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -0.125,
+            "y": -0.125
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "uid": 396
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 0.5,
+                "y": 1.0
+              },
+              {
+                "x": 0.5,
                 "y": 0.0
               },
               {
@@ -1181,7 +1169,60 @@
             ]
           },
           "zIndex": 0,
-          "uid": 290
+          "uid": 397
+        }
+      },
+      {
+        "type": "entities.towers.PlaceForTower",
+        "properties": {
+          "initialRotation": 0,
+          "uid": 398
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 417,
+    "name": "Point3",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -0.36514932,
+            "y": -0.36163205
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "uid": 352
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 418,
+    "name": "Point4",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 0.11751205,
+            "y": -0.36163205
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "uid": 352
         }
       }
     ],

@@ -4,8 +4,10 @@ public enum EventType
 {
     GameEngineStartPlay,
     GameEngineStopPlay,
-    TogglePhysicsDebugDraw,
     SaveLevel,
-    LoadLevel,
+    ResearchTree,
+    LoadLevel1,
+    LoadLevel2,
+    LoadLevel3,
     UserEvent
 }

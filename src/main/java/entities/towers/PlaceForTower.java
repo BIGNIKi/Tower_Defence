@@ -101,6 +101,7 @@ public class PlaceForTower extends Component
                 Vector2f size = null;
                 String path1;
                 float rotateSpeed, observeRadius, timeToAttack, damage;
+                //TODO: переделать на towertype
                 switch(ide)
                 {
                     case 0 -> { // blue
