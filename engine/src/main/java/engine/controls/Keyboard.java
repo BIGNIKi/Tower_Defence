@@ -1,4 +1,4 @@
-package core.controls;
+package engine.controls;
 
 import java.util.Arrays;
 
@@ -33,12 +33,12 @@ public final class Keyboard
 
     public static void keyCallback(long wnd, int key, int scancode, int action, int mods)
     {
-        if(action == GLFW_PRESS) //the key or button was pressed
+        if(action == GLFW.GLFW_PRESS) //the key or button was pressed
         {
             get().keyPressed[key] = true;
             get().keyBeginPress[key] = true;
         }
-        else if(action == GLFW_RELEASE)
+        else if(action == GLFW.GLFW_RELEASE)
         {
             get().keyPressed[key] = false;
             get().keyBeginPress[key] = false;

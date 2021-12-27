@@ -21,6 +21,7 @@ project(':core') {
     dependencies {
         compile project(':entities')
         compile project(':editor')
+        compile project(':engine')
         compile project(':utils')
     }
 }
@@ -28,6 +29,7 @@ project(':core') {
 project(':editor') {
     dependencies {
         compile project(':entities')
+        compile project(':engine')
         compile project(':utils')
     }
 }

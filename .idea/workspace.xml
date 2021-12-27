@@ -23,18 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14b7f6df-c63f-4ea9-817c-6af2046b6254" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/controllers/LevelCntrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/controllers/LevelCntrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/ui/JImGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/ui/JImGui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/ui/MenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/ui/MenuBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/ui/PropertiesWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/ui/PropertiesWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/ui/SceneHierarchyWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/ui/SceneHierarchyWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/components/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/entities/components/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/components/EditorCamera.java" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/entities/components/EditorCamera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/components/FontRenderer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/components/GameCamera.java" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/entities/components/GameCamera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/components/Gizmo.java" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/entities/components/Gizmo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/job/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/entities/job/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/controls/KeyCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/controls/KeyCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/controls/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/controls/Keyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/controls/Mouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/controls/Mouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/ui/GameViewWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/ui/GameViewWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/ui/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/ui/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/debug/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/debug/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +57,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -72,31 +75,28 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/engine" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\somka\OneDrive\Документы\Repos\Tower_Defence\engine" />
+      <recent name="C:\Users\somka\OneDrive\Документы\Repos\Tower_Defence\engine\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\somka\OneDrive\Документы\Repos\Tower_Defence\engine" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="events" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="core.Main" />
-      <module name="Tower_Defence.core.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="core.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -120,6 +120,19 @@
       <setting name="fixLineNumbers" value="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="core.Main" />
+      <module name="Tower_Defence.core.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tower_Defence [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -136,7 +149,9 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -154,8 +169,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640437030624</updated>
+      <workItem from="1640593360765" duration="1614000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -167,56 +186,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="540" y="78" key="#Auto_Import" timestamp="1640449755826">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="540" y="78" key="#Auto_Import/0.0.1536.824@0.0.1536.824" timestamp="1640449755826" />
-    <state x="249" y="0" key="#Project_Structure" timestamp="1640441489718">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1640441489718" />
-    <state x="382" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1640444476785">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="382" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1640444476785" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1640443061123">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1640443061123" />
-    <state width="1493" height="172" key="GridCell.Tab.0.bottom" timestamp="1640442995585">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="172" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1640442995585" />
-    <state width="1493" height="172" key="GridCell.Tab.0.center" timestamp="1640442995585">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="172" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1640442995585" />
-    <state width="1493" height="172" key="GridCell.Tab.0.left" timestamp="1640442995585">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="172" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1640442995585" />
-    <state width="1493" height="172" key="GridCell.Tab.0.right" timestamp="1640442995585">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="172" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1640442995585" />
-    <state x="277" y="0" key="SettingsEditor" timestamp="1640443767502">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="277" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1640443767502" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1640450989271">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1536.824@0.0.1536.824" timestamp="1640450989271" />
-    <state x="392" y="23" key="new project wizard" timestamp="1640447978702">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="392" y="23" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1640447978702" />
-    <state x="420" y="145" width="694" height="678" key="search.everywhere.popup" timestamp="1640441401075">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="420" y="145" width="694" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1640441401075" />
   </component>
 </project>

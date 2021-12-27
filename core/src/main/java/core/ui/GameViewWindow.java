@@ -1,6 +1,6 @@
 package core.ui;
 
-import core.controls.Mouse;
+import engine.controls.Mouse;
 import core.observers.EventSystem;
 import entities.events.Event;
 import entities.events.EventType;

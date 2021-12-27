@@ -1,7 +1,6 @@
 package core;
 
-import core.controls.Keyboard;
-import core.controls.Mouse;
+import engine.controls.Keyboard;
 
 public class Input {
 

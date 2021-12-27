@@ -1,4 +1,4 @@
-package core.controls;
+package engine.controls;
 
 import core.ui.MainWindow;
 import entities.job.Camera;
@@ -92,7 +92,7 @@ public final class Mouse
 
     public static void mouseButtonCallback(long wnd, int button, int action, int mods)
     {
-        if(action == GLFW_PRESS) //the key or button was pressed
+        if(action == GLFW.GLFW_PRESS) //the key or button was pressed
         {
             get().mouseButtonDown++;
 
@@ -101,7 +101,7 @@ public final class Mouse
                 get().mouseButtonPressed[button] = true;
             }
         }
-        else if(action == GLFW_RELEASE) //the key or button was released
+        else if(action == GLFW.GLFW_RELEASE) //the key or button was released
         {
             get().mouseButtonDown--;
 
