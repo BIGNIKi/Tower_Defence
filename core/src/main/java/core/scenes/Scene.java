@@ -3,14 +3,16 @@ package core.scenes;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import core.renderers.Renderer;
-import entities.components.Component;
+import engine.builders.GameObjectBuilder;
+import engine.components.Component;
 import entities.components.ComponentDeserializer;
 import entities.job.Camera;
-import entities.job.GameObject;
+import engine.components.GameObject;
 import entities.job.GameObjectDeserializer;
-import entities.job.StateInWorld;
+import engine.components.StateInWorld;
 
 import org.joml.Vector2f;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -19,8 +21,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class Scene
-{
+public class Scene {
     private Renderer renderer;
     private Camera camera;
     private boolean isRunning;
@@ -35,20 +36,18 @@ public class Scene
         this.isRunning = false;
     }
 
-    public Renderer getRenderer()
-    {
+    public Renderer getRenderer() {
         return renderer;
     }
 
-    public void init()
-    {
+    public void init() {
         this.camera = new Camera(new Vector2f(0, 0));
         this.sceneInitializer.loadResources(this);
         this.sceneInitializer.init(this);
     }
 
     public void start() {
-        for (int i=0; i < gameObjects.size(); i++) {
+        for (int i = 0; i < gameObjects.size(); i++) {
             GameObject go = gameObjects.get(i);
             go.start();
             this.renderer.add(go);
@@ -73,22 +72,17 @@ public class Scene
         return null;
     }
 
-    public void addGameObjectToScene(GameObject go)
-    {
-        if(!isRunning)
-        {
+    public void addGameObjectToScene(GameObject go) {
+        if (!isRunning) {
             gameObjects.add(go);
-        }
-        else
-        {
+        } else {
             gameObjects.add(go);
             go.start();
             this.renderer.add(go);
         }
     }
 
-    public GameObject getGameObject(int gameObjectId)
-    {
+    public GameObject getGameObject(int gameObjectId) {
         Optional<GameObject> result = this.gameObjects.stream()
                 .filter(gameObject -> gameObject.getUid() == gameObjectId)
                 .findFirst();
@@ -99,7 +93,7 @@ public class Scene
     public void editorUpdate(float dt) {
         this.camera.adjuctProjection();
 
-        for (int i=0; i < gameObjects.size(); i++) {
+        for (int i = 0; i < gameObjects.size(); i++) {
             GameObject go = gameObjects.get(i);
             go.editorUpdate(dt);
 
@@ -112,8 +106,7 @@ public class Scene
     }
 
     //each scene has to have such method (it is all job which executes each frame)
-    public void update(double dt)
-    {
+    public void update(double dt) {
         this.camera.adjuctProjection(); // ?????, ????? ??? ???????
 
         //DebugDraw.addBox2D(new Vector2f(200, 200), new Vector2f(64, 32), 45);
@@ -136,9 +129,9 @@ public class Scene
             obj1.getComponent(SpriteRenderer.class).setSprite(sprites.getSprite(spriteIndex));
         }*/
 
-        for (int i=0; i < gameObjects.size(); i++) {
+        for (int i = 0; i < gameObjects.size(); i++) {
             GameObject go = gameObjects.get(i);
-            go.update((float)dt);
+            go.update((float) dt);
 
             if (go.isDead()) {
                 gameObjects.remove(i);
@@ -148,58 +141,47 @@ public class Scene
         }
     }
 
-    public void render()
-    {
+    public void render() {
         this.renderer.render();
     }
 
-    public Camera camera()
-    {
+    public Camera camera() {
         return this.camera;
     }
 
-    public void imgui()
-    {
+    public void imgui() {
         this.sceneInitializer.imgui();
     }
 
     public GameObject createGameObject(String name) {
-        GameObject go = new GameObject(name, this);
-        go.addComponent(new StateInWorld());
-        go.stateInWorld = go.getComponent(StateInWorld.class);
-        return go;
+        var builder = new GameObjectBuilder();
+        builder.setName(name);
+        return builder.build();
     }
 
-    public void save()
-    {
+    public void save() {
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
                 .registerTypeAdapter(Component.class, new ComponentDeserializer())
                 .registerTypeAdapter(GameObject.class, new GameObjectDeserializer(this))
                 .create();
 
-        try
-        {
+        try {
             FileWriter writer = new FileWriter("level.json");
             List<GameObject> objsToSerialize = new ArrayList<>();
-            for(GameObject obj : this.gameObjects)
-            {
-                if(obj.doSerialization())
-                {
+            for (GameObject obj : this.gameObjects) {
+                if (obj.doSerialization()) {
                     objsToSerialize.add(obj);
                 }
             }
             writer.write(gson.toJson(objsToSerialize));
             writer.close();
-        }
-        catch(IOException e)
-        {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public void load()
-    {
+    public void load() {
         Gson gson = new GsonBuilder()
                 .setPrettyPrinting()
                 .registerTypeAdapter(Component.class, new ComponentDeserializer())
@@ -207,32 +189,25 @@ public class Scene
                 .create();
 
         String inFile = "";
-        try
-        {
+        try {
             inFile = new String(Files.readAllBytes(Paths.get("level.json")));
-        } catch(IOException e)
-        {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
-        if(!inFile.equals(""))
-        {
+        if (!inFile.equals("")) {
             int maxGoId = -1;
             int maxCompId = -1;
             GameObject[] objs = gson.fromJson(inFile, GameObject[].class);
-            for(int i = 0; i<objs.length; i++)
-            {
+            for (int i = 0; i < objs.length; i++) {
                 addGameObjectToScene(objs[i]);
 
-                for(Component c : objs[i].getAllComponents())
-                {
-                    if(c.getUid() > maxCompId)
-                    {
+                for (Component c : objs[i].getAllComponents()) {
+                    if (c.getUid() > maxCompId) {
                         maxCompId = c.getUid();
                     }
                 }
-                if(objs[i].getUid() > maxGoId)
-                {
+                if (objs[i].getUid() > maxGoId) {
                     maxGoId = objs[i].getUid();
                 }
             }

@@ -1,7 +1,6 @@
 package core.controllers;
 
-import utils.StringList;
-import entities.components.Component;
+import engine.components.Component;
 import entities.job.Prefabs;
 
 public class Waves extends Component

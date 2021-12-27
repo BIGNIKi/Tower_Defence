@@ -1,7 +1,5 @@
-package entities.job;
+package engine.components;
 
-import entities.components.Component;
-import editor.JImGui;
 import org.joml.Vector2f;
 import org.joml.Vector2fc;
 

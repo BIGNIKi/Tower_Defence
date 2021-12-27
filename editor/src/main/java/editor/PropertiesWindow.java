@@ -1,6 +1,6 @@
 package editor;
 
-import entities.components.Component;
+import engine.components.Component;
 import entities.components.SpriteRenderer;
 import controllers.LevelCntrl;
 import controllers.Waves;
@@ -8,7 +8,7 @@ import entities.entities1.Bird;
 import entities.entities1.Wheel;
 import entities.entities1.towers.PlaceForTower;
 import imgui.ImGui;
-import entities.job.GameObject;
+import engine.components.GameObject;
 import entities.job.MainWindow;
 import org.joml.Vector4f;
 import renderer.PickingTexture;

@@ -1,7 +1,6 @@
 package entities.entities1.monsters;
 
 import utils.SmartCalc;
-import utils.StringList;
 import entities.components.Component;
 import entities.components.SpriteRenderer;
 import entities.job.GameObject;

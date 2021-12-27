@@ -2,7 +2,7 @@ package core.renderers;
 
 import static org.lwjgl.opengl.GL30.*;
 
-import entities.textures.Texture;
+import engine.textures.Texture;
 
 public class Framebuffer
 {

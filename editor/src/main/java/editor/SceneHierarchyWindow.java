@@ -2,7 +2,7 @@ package editor;
 
 import imgui.ImGui;
 import imgui.flag.ImGuiTreeNodeFlags;
-import entities.job.GameObject;
+import engine.components.GameObject;
 import entities.job.MainWindow;
 
 import java.util.List;

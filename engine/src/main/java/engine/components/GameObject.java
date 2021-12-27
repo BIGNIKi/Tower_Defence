@@ -1,4 +1,4 @@
-package entities.job;
+package engine.components;
 
 import Util.AssetPool;
 import com.google.gson.Gson;
@@ -21,7 +21,7 @@ public class GameObject
 
     public String name;
     private List<Component> components;
-    public transient StateInWorld stateInWorld;
+
     private boolean doSerialization = true;
     private boolean isDead = false;
 
@@ -78,10 +78,7 @@ public class GameObject
 
     public void update(float dt)
     {
-        for(int i = 0; i<components.size(); i++)
-        {
-            components.get(i).update(dt);
-        }
+        components.forEach(c -> c.update(dt));
     }
 
     public void editorUpdate(float dt) {

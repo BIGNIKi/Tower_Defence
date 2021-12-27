@@ -26,3 +26,5 @@ dependencies {
     // JOML
     implementation "org.joml:joml:${jomlVersion}"
 }
+sourceCompatibility = JavaVersion.VERSION_16
+targetCompatibility = JavaVersion.VERSION_16

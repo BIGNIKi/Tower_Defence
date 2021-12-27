@@ -2,13 +2,13 @@ package core.ui;
 
 import core.controllers.LevelCntrl;
 import core.controllers.Waves;
-import core.renderers.SpriteRenderer;
-import entities.components.Component;
+import engine.components.SpriteRenderer;
+import engine.components.Component;
 import entities.entities1.Bird;
 import entities.entities1.Wheel;
 import entities.entities1.towers.PlaceForTower;
-import entities.job.GameObject;
-import entities.textures.PickingTexture;
+import engine.components.GameObject;
+import engine.textures.PickingTexture;
 import imgui.ImGui;
 import org.joml.Vector4f;
 import java.util.ArrayList;

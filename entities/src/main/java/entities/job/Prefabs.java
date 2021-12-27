@@ -1,6 +1,5 @@
 package entities.job;
 
-import utils.StringList;
 import entities.components.Sprite;
 import entities.components.SpriteRenderer;
 import entities.entities1.Bullet;

@@ -1,10 +1,10 @@
 package core.controllers;
 
-import entities.components.Component;
+import engine.components.Component;
 import entities.events.EventType;
 import imgui.ImGui;
 import imgui.flag.ImGuiWindowFlags;
-import entities.job.GameObject;
+import engine.components.GameObject;
 import core.ui.MainWindow;
 import core.observers.EventSystem;
 import entities.events.Event;

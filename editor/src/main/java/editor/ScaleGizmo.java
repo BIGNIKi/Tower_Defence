@@ -1,8 +1,7 @@
 package editor;
 
-import editor.PropertiesWindow;
 import entities.components.Gizmo;
-import entities.components.Sprite;
+import engine.components.Sprite;
 import entities.job.Mouse;
 import org.joml.Vector2f;
 

@@ -1,7 +1,8 @@
 package core.renderers;
 
-import entities.textures.Texture;
-import entities.job.GameObject;
+import engine.components.SpriteRenderer;
+import engine.textures.Texture;
+import engine.components.GameObject;
 import core.ui.MainWindow;
 import org.joml.Matrix4f;
 import org.joml.Vector2f;

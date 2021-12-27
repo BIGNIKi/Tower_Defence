@@ -1,6 +1,6 @@
 package core.observers;
 
-import entities.job.GameObject;
+import engine.components.GameObject;
 import entities.events.Event;
 
 import java.util.ArrayList;

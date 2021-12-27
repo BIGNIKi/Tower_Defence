@@ -1,6 +1,6 @@
 package core.ui;
 
-import entities.job.GameObject;
+import engine.components.GameObject;
 import imgui.ImGui;
 import imgui.flag.ImGuiTreeNodeFlags;
 import java.util.List;

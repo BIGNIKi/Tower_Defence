@@ -2,8 +2,8 @@ package editor.components;
 
 import core.ui.MainWindow;
 
-import entities.components.Component;
-import entities.job.GameObject;
+import engine.components.Component;
+import engine.components.GameObject;
 import org.joml.Vector2f;
 
 import java.util.ArrayList;

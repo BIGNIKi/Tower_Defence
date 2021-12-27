@@ -23,18 +23,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14b7f6df-c63f-4ea9-817c-6af2046b6254" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/Input.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/controls/KeyCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/controls/KeyCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/controls/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/controls/Keyboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/controls/Mouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/controls/Mouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/ui/GameViewWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/ui/GameViewWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/controllers/LevelCntrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/controllers/LevelCntrl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/controllers/Waves.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/controllers/Waves.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/observers/EventSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/observers/EventSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/observers/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/observers/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/pools/AssetPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/pools/AssetPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/renderers/DebugDraw.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/renderers/DebugDraw.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/renderers/Framebuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/renderers/Framebuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/renderers/RenderBatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/renderers/RenderBatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/renderers/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/renderers/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/renderers/SpriteRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/components/SpriteRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/scenes/LevelEditorSceneInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/scenes/LevelEditorSceneInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/scenes/LevelSceneInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/scenes/LevelSceneInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/scenes/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/scenes/Scene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/src/main/java/core/ui/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/ui/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/debug/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/ui/PropertiesWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/ui/PropertiesWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/ui/SceneHierarchyWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/ui/SceneHierarchyWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/src/main/java/editor/PropertiesWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/editor/PropertiesWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/src/main/java/editor/ScaleGizmo.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/editor/ScaleGizmo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/src/main/java/editor/SceneHierarchyWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/editor/SceneHierarchyWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/src/main/java/editor/TranslateGizmo.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/editor/TranslateGizmo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/src/main/java/editor/components/KeyControls.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/editor/components/KeyControls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editor/src/main/java/editor/components/MouseControls.java" beforeDir="false" afterPath="$PROJECT_DIR$/editor/src/main/java/editor/components/MouseControls.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/engine/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/components/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/components/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/components/Sprite.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/components/Sprite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/components/SpriteSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/components/SpriteSheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/entities1/monsters/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/entities/entities1/monsters/Monster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/job/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/components/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/job/Prefabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/entities/job/Prefabs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/job/StateInWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/components/StateInWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/textures/PickingTexture.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/textures/PickingTexture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/textures/Texture.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/textures/Texture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/utils/StringList.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +72,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -82,7 +105,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -169,7 +192,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640437030624</updated>
-      <workItem from="1640593360765" duration="1614000" />
+      <workItem from="1640593360765" duration="9269000" />
     </task>
     <servers />
   </component>
@@ -186,5 +209,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/engine/src/main/java/engine/components/SpriteRenderer.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

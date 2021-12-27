@@ -1,4 +1,4 @@
-package entities.textures;
+package engine.textures;
 
 import org.joml.Vector2i;
 

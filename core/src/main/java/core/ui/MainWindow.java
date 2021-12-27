@@ -2,12 +2,12 @@ package core.ui;
 
 import core.observers.EventSystem;
 import core.observers.Observer;
-import core.pools.AssetPool;
+import engine.pools.AssetPool;
 import core.renderers.DebugDraw;
 import core.renderers.Framebuffer;
 import core.renderers.Renderer;
-import entities.textures.PickingTexture;
-import entities.job.GameObject;
+import engine.textures.PickingTexture;
+import engine.components.GameObject;
 import entities.job.IMGuiLayer;
 import engine.controls.Keyboard;
 import engine.controls.Mouse;

@@ -1,12 +1,14 @@
-package core.renderers;
+package engine.components;
 
 import editor.JImGui;
+import engine.textures.Texture;
 import entities.components.Component;
 import entities.components.Sprite;
-import entities.textures.Texture;
 import entities.job.StateInWorld;
 import org.joml.Vector2f;
 import org.joml.Vector4f;
+
+import java.awt.*;
 
 
 public class SpriteRenderer extends Component {
@@ -16,9 +18,8 @@ public class SpriteRenderer extends Component {
 
   public int zIndex;
 
-  //transient - ????????, ??? ??????? ???????????? ????? ???????? ??? ????
   private transient StateInWorld lastStateInWorld;
-  private transient int lastZind; // ����� ������� ��������� zInd, ����� � ������, ���� �� ���������, ������������ ������
+  private transient int lastZind;
   private transient boolean isDirty = true;
 
   @Override
@@ -29,7 +30,6 @@ public class SpriteRenderer extends Component {
 
   @Override
   public void update(float dt) {
-    //???? ???-???? ?????????? ? Transform'?
     if (!this.lastStateInWorld.equals(this.gameObject.stateInWorld) || this.lastZind != zIndex) {
       this.gameObject.stateInWorld.copy(this.lastStateInWorld);
       this.lastZind = zIndex;

@@ -1,8 +1,8 @@
-package core.pools;
+package engine.pools;
 
 import entities.components.SpriteSheet;
 import core.renderers.Shader;
-import entities.textures.Texture;
+import engine.textures.Texture;
 
 import java.io.File;
 import java.util.HashMap;
