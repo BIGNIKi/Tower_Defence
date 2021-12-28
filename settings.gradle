@@ -1,2 +1,8 @@
 rootProject.name = 'Tower_Defence'
+include 'utils'
+include 'core'
+include 'editor'
+include 'entities'
+include 'debug'
+include 'engine'
 

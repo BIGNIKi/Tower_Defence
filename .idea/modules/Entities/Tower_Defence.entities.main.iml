@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":entities:main" external.linked.project.path="$MODULE_DIR$/../../../entities" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="org.example" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../entities/build/classes/java/main" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../entities/build/generated/sources/annotationProcessor/java/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../entities/build/generated/sources/annotationProcessor/java/main" isTestSource="false" generated="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../entities/src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../entities/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../entities/src/main/resources" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Tower_Defence.utils.main" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.projectlombok:lombok:1.18.22" level="project" />
+    <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.8.9" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-assimp:3.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-glfw:3.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-nfd:3.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-openal:3.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-opengl:3.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl-stb:3.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.lwjgl:lwjgl:3.2.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.joml:joml:1.10.2" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.lwjgl:lwjgl-assimp:natives-windows:3.2.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.lwjgl:lwjgl-glfw:natives-windows:3.2.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.lwjgl:lwjgl-nfd:natives-windows:3.2.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.lwjgl:lwjgl-openal:natives-windows:3.2.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.lwjgl:lwjgl-opengl:natives-windows:3.2.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.lwjgl:lwjgl-stb:natives-windows:3.2.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.lwjgl:lwjgl:natives-windows:3.2.3" level="project" />
+  </component>
+</module>
