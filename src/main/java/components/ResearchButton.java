@@ -13,13 +13,14 @@ public class ResearchButton extends Component
     private transient boolean cantBeSelected = false;
 
     private String nameResearch;
-    private transient static int researchPoints = 33;
+    private transient static int researchPoints;
     private int costResearch;
 
     private transient Sprite btnTexture = null;
 
     public ResearchButton()
     {
+        researchPoints = 33;
         btnTexture = new Sprite();
         btnTexture.setTexture(AssetPool.getTexture("assets/images/rshBtn.png"));
     }
