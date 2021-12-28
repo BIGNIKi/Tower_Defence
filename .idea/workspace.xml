@@ -22,7 +22,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14b7f6df-c63f-4ea9-817c-6af2046b6254" name="Default Changelist" comment="" />
+    <list default="true" id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="ResearchFeature">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/bush1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/bush1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/bush2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/bush2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/bush3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/bush3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/bush4.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/bush4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editorCfg.json" beforeDir="false" afterPath="$PROJECT_DIR$/editorCfg.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui.ini" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level.json" beforeDir="false" afterPath="$PROJECT_DIR$/level.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level3.json" beforeDir="false" afterPath="$PROJECT_DIR$/level3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/ResearchButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/ResearchButton.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +50,7 @@
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="module-info" />
       </list>
     </option>
   </component>
@@ -167,6 +179,70 @@
       <updated>1640437030624</updated>
       <workItem from="1640593360765" duration="13002000" />
     </task>
+    <task id="LOCAL-00003" summary="Nothing new">
+      <created>1638691234619</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1638691234619</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed bug with non-drawing selection box">
+      <created>1638692064360</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1638692064360</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added possibility for editor to show List&lt;String&gt;, now reset for editor camera works smoother, replaces and rename func for get GameObject by name and added possibility to get List&lt;GameObject&gt; with the same name, now all monsters move point by point (and we can set these points in editor), settings wave of the enemies, smooth rotation of towers, some bug fixing">
+      <created>1638730919848</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638730919848</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added new textures for towers, possibility to collect and spend coin, add tower while play, some new engine features, base now have hp and we can lose, added delay to start wave">
+      <created>1639553093440</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639553093440</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Some beautiful stuffs">
+      <created>1639749774110</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1639749774110</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Some code reformations">
+      <created>1640156799469</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1640156799469</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Something">
+      <created>1640501556944</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1640501556945</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Something1">
+      <created>1640672406281</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1640672406281</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ResearchFeature">
+      <created>1640690282871</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1640690282871</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +258,21 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Renamed entities to more understandable names and make fields private (added getters and setters also). The game logic is independent of drawing now. Fixed bug with drawing object whose SpriteRenderer component was already destroyed." />
+    <MESSAGE value="Nothing new" />
+    <MESSAGE value="Fixed bug with non-drawing selection box" />
+    <MESSAGE value="Added possibility for editor to show List&lt;String&gt;, now reset for editor camera works smoother, replaces and rename func for get GameObject by name and added possibility to get List&lt;GameObject&gt; with the same name, now all monsters move point by point (and we can set these points in editor), settings wave of the enemies, smooth rotation of towers, some bug fixing" />
+    <MESSAGE value="Added new textures for towers, possibility to collect and spend coin, add tower while play, some new engine features, base now have hp and we can lose, added delay to start wave" />
+    <MESSAGE value="Some beautiful stuffs" />
+    <MESSAGE value="Some code reformations" />
+    <MESSAGE value="Something" />
+    <MESSAGE value="Something1" />
+    <MESSAGE value="ResearchFeature" />
+    <option name="LAST_COMMIT_MESSAGE" value="ResearchFeature" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -190,6 +281,16 @@
           <url>file://$PROJECT_DIR$/engine/src/main/java/engine/components/SpriteRenderer.java</url>
           <line>61</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/job/MainWindow.java</url>
+          <line>393</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/job/MainWindow.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

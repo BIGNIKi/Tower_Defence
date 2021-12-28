@@ -16,6 +16,10 @@
         <module name="Tower_Defence.utils.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="14" />
+    <bytecodeTargetLevel target="14">
+      <module name="Tower_Defence.engine" target="16" />
+      <module name="Tower_Defence.engine.main" target="16" />
+      <module name="Tower_Defence.engine.test" target="16" />
+    </bytecodeTargetLevel>
   </component>
 </project>

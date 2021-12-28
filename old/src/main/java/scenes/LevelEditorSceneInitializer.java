@@ -81,7 +81,12 @@ public class LevelEditorSceneInitializer extends SceneInitializer
         textureToSprite("assets/images/bush2.png");
         textureToSprite("assets/images/bush3.png");
         textureToSprite("assets/images/bush4.png");
-        //textureToSprite("assets/images/angryBird.png");
+        textureToSprite("assets/images/TreeBlue.png");
+        textureToSprite("assets/images/TreeRed.png");
+        textureToSprite("assets/images/TreeGreen.png");
+        textureToSprite("assets/images/line.png");
+        textureToSprite("assets/images/fistL1.png");
+        textureToSprite("assets/images/fistL2.png");
 
         // STOP
 

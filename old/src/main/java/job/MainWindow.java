@@ -1,6 +1,10 @@
 package job;
 
 import Util.AssetPool;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import components.Component;
+import components.ComponentDeserializer;
 import observers.EventSystem;
 import observers.Observer;
 import observers.events.Event;
@@ -17,6 +21,13 @@ import scenes.LevelSceneInitializer;
 import scenes.Scene;
 import scenes.SceneInitializer;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.system.MemoryUtil.NULL;
@@ -30,7 +41,9 @@ public final class MainWindow implements Observer
     private IMGuiLayer imguiLayer;
     private Framebuffer framebuffer;
     private PickingTexture pickingTexture;
+
     private boolean runtimePlaying = false;
+    private EditorInfo editorInfo = null;
 
     private static MainWindow wnd = null; //we have only one instance of this class
 
@@ -45,14 +58,33 @@ public final class MainWindow implements Observer
         EventSystem.addObserver(this);
     }
 
+    public boolean isRuntimePlaying()
+    {
+        return runtimePlaying;
+    }
+
+    private class EditorInfo
+    {
+        String lastScene;
+        public EditorInfo(String lastScene)
+        {
+            this.lastScene = lastScene;
+        }
+
+        public void setLastScene(String lastScene)
+        {
+            this.lastScene = lastScene;
+        }
+    }
+
     //method for switching scenes
-    public static void changeScene(SceneInitializer sceneInitializer) {
+    public static void changeScene(SceneInitializer sceneInitializer, String sceneName) {
         if (currentScene != null) {
             currentScene.destroy();
         }
         getImguiLayer().getPropertiesWindow().setActiveGameObject(null);
         currentScene = new Scene(sceneInitializer);
-        currentScene.load();
+        currentScene.load(sceneName);
         currentScene.init();
         currentScene.start();
         // при запуске сцены нет активного объекта
@@ -74,12 +106,31 @@ public final class MainWindow implements Observer
         return currentScene;
     }
 
+    private void SaveCfg()
+    {
+        Gson gson = new GsonBuilder()
+                .setPrettyPrinting()
+                .create();
+
+        try
+        {
+            FileWriter writer = new FileWriter("editorCfg.json");
+            writer.write(gson.toJson(editorInfo));
+            writer.close();
+        }
+        catch(IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
     public void Run()
     {
         System.out.println("Hello LWGJL " + Version.getVersion() + "!");
 
         Init();
         Loop();
+        SaveCfg();
 
         //вообще, всё что ниже (в этом методе) можно не делать (это сделает за нас операционная система, но мы же не ленивые, да? =)
 
@@ -149,7 +200,35 @@ public final class MainWindow implements Observer
 
         //just some interesting bullshit http://jmonkeyengine.ru/page/2/?author=0
 
-        MainWindow.changeScene(new LevelEditorSceneInitializer());
+        loadLastScene();
+
+        MainWindow.changeScene(new LevelEditorSceneInitializer(), editorInfo.lastScene);
+    }
+
+    private void loadLastScene()
+    {
+        Gson gson = new GsonBuilder()
+                .setPrettyPrinting()
+                .create();
+
+        String inFile = "";
+        try
+        {
+            inFile = new String(Files.readAllBytes(Paths.get("editorCfg.json")));
+        } catch(IOException e)
+        {
+            e.printStackTrace();
+        }
+
+        if(!inFile.equals(""))
+        {
+            editorInfo = gson.fromJson(inFile, EditorInfo.class);
+        }
+        else
+        {
+            // TODO: загрузка сцены, если нет файла конфигурации
+            editorInfo = new EditorInfo("level.json");
+        }
     }
 
     //connects tracker of mouse events
@@ -220,9 +299,9 @@ public final class MainWindow implements Observer
                 } else {
                     currentScene.editorUpdate((float) dt);
                 }
-                DebugDraw.drawGrid(); // рисует линию сетки
+                DebugDraw.drawGrid(getScene().camera()); // рисует линию сетки
                 currentScene.render();
-                DebugDraw.drawAnother(); // рисует остальные дебажные линии
+                DebugDraw.drawAnother(getScene().camera()); // рисует остальные дебажные линии
             }
             this.framebuffer.unbind();
 
@@ -297,17 +376,36 @@ public final class MainWindow implements Observer
             case GameEngineStartPlay -> {
                 MainWindow.getImguiLayer().getPropertiesWindow().clearSelected(); // это нужно, чтобы не сохранялось желтое выделение
                 this.runtimePlaying = true;
-                currentScene.save();
-                MainWindow.changeScene(new LevelSceneInitializer());
+                // TODO: сохранять в temp файлы
+                currentScene.save(editorInfo.lastScene);
+                // TODO: load current scene
+                MainWindow.changeScene(new LevelSceneInitializer(), editorInfo.lastScene);
             }
             case GameEngineStopPlay -> {
                 this.runtimePlaying = false;
-                MainWindow.changeScene(new LevelEditorSceneInitializer());
+                // TODO: load current scene
+                MainWindow.changeScene(new LevelEditorSceneInitializer(), editorInfo.lastScene);
             }
-            case LoadLevel -> MainWindow.changeScene(new LevelEditorSceneInitializer());
+            case ResearchTree -> {
+                editorInfo.setLastScene("researchTree.json");
+                MainWindow.changeScene(new LevelEditorSceneInitializer(), "researchTree.json");
+            }
+
+            case LoadLevel1 -> {
+                editorInfo.setLastScene("level.json");
+                MainWindow.changeScene(new LevelEditorSceneInitializer(), "level.json");
+            }
+            case LoadLevel2 -> {
+                editorInfo.setLastScene("level2.json");
+                MainWindow.changeScene(new LevelEditorSceneInitializer(), "level2.json");
+            }
+            case LoadLevel3 -> {
+                editorInfo.setLastScene("level3.json");
+                MainWindow.changeScene(new LevelEditorSceneInitializer(), "level3.json");
+            }
             case SaveLevel -> {
                 MainWindow.getImguiLayer().getPropertiesWindow().clearSelected(); // это нужно, чтобы не сохранялось желтое выделение
-                currentScene.save();
+                currentScene.save(editorInfo.lastScene);
             }
         }
     }

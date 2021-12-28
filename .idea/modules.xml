@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Tower_Defence.iml" filepath="$PROJECT_DIR$/.idea/Tower_Defence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/Tower_Defence.core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/Tower_Defence.core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/Tower_Defence.core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/core/Tower_Defence.core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/Tower_Defence.core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/core/Tower_Defence.core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/debug/Tower_Defence.debug.iml" filepath="$PROJECT_DIR$/.idea/modules/debug/Tower_Defence.debug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/debug/Tower_Defence.debug.main.iml" filepath="$PROJECT_DIR$/.idea/modules/debug/Tower_Defence.debug.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/debug/Tower_Defence.debug.test.iml" filepath="$PROJECT_DIR$/.idea/modules/debug/Tower_Defence.debug.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Editor/Tower_Defence.editor.iml" filepath="$PROJECT_DIR$/.idea/modules/Editor/Tower_Defence.editor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Editor/Tower_Defence.editor.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Editor/Tower_Defence.editor.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Editor/Tower_Defence.editor.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Editor/Tower_Defence.editor.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/engine/Tower_Defence.engine.iml" filepath="$PROJECT_DIR$/.idea/modules/engine/Tower_Defence.engine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/engine/Tower_Defence.engine.main.iml" filepath="$PROJECT_DIR$/.idea/modules/engine/Tower_Defence.engine.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/engine/Tower_Defence.engine.test.iml" filepath="$PROJECT_DIR$/.idea/modules/engine/Tower_Defence.engine.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Entities/Tower_Defence.entities.iml" filepath="$PROJECT_DIR$/.idea/modules/Entities/Tower_Defence.entities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Entities/Tower_Defence.entities.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Entities/Tower_Defence.entities.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Entities/Tower_Defence.entities.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Entities/Tower_Defence.entities.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tower_Defence.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Tower_Defence.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Tower_Defence.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Tower_Defence.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/Tower_Defence.utils.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/Tower_Defence.utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/Tower_Defence.utils.main.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/Tower_Defence.utils.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/utils/Tower_Defence.utils.test.iml" filepath="$PROJECT_DIR$/.idea/modules/utils/Tower_Defence.utils.test.iml" />
+    </modules>
+  </component>
+</project>

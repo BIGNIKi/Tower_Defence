@@ -1,14 +1,14 @@
 [
   {
-    "uid": 0,
+    "uid": 163,
     "name": "Way",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.3793578,
-            "y": 0.12500012
+            "x": -0.6293578,
+            "y": 0.37500012
           },
           "size": {
             "x": 0.25,
@@ -63,15 +63,15 @@
     "isDead": false
   },
   {
-    "uid": 1,
+    "uid": 164,
     "name": "Way",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.12870002,
-            "y": 0.12500018
+            "x": -0.37870002,
+            "y": 0.37500018
           },
           "size": {
             "x": 0.25,
@@ -126,15 +126,15 @@
     "isDead": false
   },
   {
-    "uid": 2,
+    "uid": 165,
     "name": "Way",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.112555504,
-            "y": 0.12500012
+            "x": -0.1374445,
+            "y": 0.37500012
           },
           "size": {
             "x": 0.25,
@@ -189,15 +189,15 @@
     "isDead": false
   },
   {
-    "uid": 3,
+    "uid": 166,
     "name": "Way",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.11299944,
-            "y": -0.12163663
+            "x": -0.13700056,
+            "y": 0.12836337
           },
           "size": {
             "x": 0.25,
@@ -252,15 +252,15 @@
     "isDead": false
   },
   {
-    "uid": 4,
+    "uid": 167,
     "name": "Way",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.11299944,
-            "y": -0.37141228
+            "x": -0.13700056,
+            "y": -0.12141228
           },
           "size": {
             "x": 0.25,
@@ -315,15 +315,15 @@
     "isDead": false
   },
   {
-    "uid": 5,
+    "uid": 168,
     "name": "Way",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.3492098,
-            "y": -0.37099993
+            "x": 0.099209785,
+            "y": -0.12099993
           },
           "size": {
             "x": 0.25,
@@ -378,15 +378,15 @@
     "isDead": false
   },
   {
-    "uid": 6,
+    "uid": 169,
     "name": "Way",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.85055494,
-            "y": -0.37099993
+            "x": 0.60055494,
+            "y": -0.12099993
           },
           "size": {
             "x": 0.25,
@@ -441,15 +441,15 @@
     "isDead": false
   },
   {
-    "uid": 7,
+    "uid": 170,
     "name": "base",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.8649099,
-            "y": -0.37499988
+            "x": 0.6149099,
+            "y": -0.12499988
           },
           "size": {
             "x": 0.125,
@@ -503,7 +503,7 @@
         "type": "controllers.LevelCntrl",
         "properties": {
           "coin": 100,
-          "baseHpMax": 1,
+          "baseHpMax": 2,
           "costBlue": 30,
           "costGreen": 50,
           "costRed": 70,
@@ -515,15 +515,15 @@
     "isDead": false
   },
   {
-    "uid": 8,
+    "uid": 171,
     "name": "Point0",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.10253006,
-            "y": 0.112509936
+            "x": -0.14746994,
+            "y": 0.36250994
           },
           "size": {
             "x": 0.07,
@@ -538,15 +538,15 @@
     "isDead": false
   },
   {
-    "uid": 9,
+    "uid": 172,
     "name": "Point1",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.121265054,
-            "y": -0.37499988
+            "x": -0.12873495,
+            "y": -0.12499988
           },
           "size": {
             "x": 0.07,
@@ -561,15 +561,15 @@
     "isDead": false
   },
   {
-    "uid": 10,
+    "uid": 173,
     "name": "Point2",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.85662067,
-            "y": -0.37499988
+            "x": 0.60662067,
+            "y": -0.12499988
           },
           "size": {
             "x": 0.07,
@@ -584,15 +584,15 @@
     "isDead": false
   },
   {
-    "uid": 11,
+    "uid": 174,
     "name": "Spawn",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.375,
-            "y": 0.13749036
+            "x": -0.625,
+            "y": 0.38749036
           },
           "size": {
             "x": 0.19049342,
@@ -664,15 +664,15 @@
     "isDead": false
   },
   {
-    "uid": 12,
+    "uid": 175,
     "name": "Way",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.5992098,
-            "y": -0.37099993
+            "x": 0.3492098,
+            "y": -0.12099993
           },
           "size": {
             "x": 0.25,
@@ -727,15 +727,15 @@
     "isDead": false
   },
   {
-    "uid": 13,
+    "uid": 176,
     "name": "posForTower",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.36401272,
-            "y": 0.37634528
+            "x": 0.11401272,
+            "y": 0.6263453
           },
           "size": {
             "x": 0.25,
@@ -797,15 +797,15 @@
     "isDead": false
   },
   {
-    "uid": 14,
+    "uid": 177,
     "name": "posForTower",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.11401272,
-            "y": -0.6236547
+            "x": -0.13598728,
+            "y": -0.37365472
           },
           "size": {
             "x": 0.25,
@@ -867,15 +867,15 @@
     "isDead": false
   },
   {
-    "uid": 15,
+    "uid": 178,
     "name": "posForTower",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.124895155,
-            "y": -0.12365472
+            "x": -0.37489516,
+            "y": 0.12634528
           },
           "size": {
             "x": 0.25,
@@ -937,15 +937,15 @@
     "isDead": false
   },
   {
-    "uid": 16,
+    "uid": 179,
     "name": "bush",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.8797078,
-            "y": -0.61244774
+            "x": 0.6297078,
+            "y": -0.36244774
           },
           "size": {
             "x": 0.25,
@@ -1000,15 +1000,15 @@
     "isDead": false
   },
   {
-    "uid": 17,
+    "uid": 180,
     "name": "bush",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.125,
-            "y": -0.375
+            "x": -0.375,
+            "y": -0.125
           },
           "size": {
             "x": 0.25,
@@ -1063,15 +1063,15 @@
     "isDead": false
   },
   {
-    "uid": 18,
+    "uid": 181,
     "name": "bush",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": -0.125,
-            "y": 0.375
+            "x": -0.375,
+            "y": 0.625
           },
           "size": {
             "x": 0.25,
@@ -1126,15 +1126,15 @@
     "isDead": false
   },
   {
-    "uid": 19,
+    "uid": 182,
     "name": "bush",
     "components": [
       {
         "type": "job.StateInWorld",
         "properties": {
           "position": {
-            "x": 0.375,
-            "y": -0.125
+            "x": 0.125,
+            "y": 0.125
           },
           "size": {
             "x": 0.25,
@@ -1182,144 +1182,6 @@
           },
           "zIndex": 0,
           "uid": 290
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 20,
-    "name": "bird",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": -4.125,
-            "y": 0.625
-          },
-          "size": {
-            "x": 0.2161088,
-            "y": 0.19728035
-          },
-          "rotation": 0.0,
-          "uid": 311
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 0.0,
-            "height": 0.0,
-            "texture": {
-              "filePath": "assets/images/angryBird.png",
-              "width": 920,
-              "height": 920
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 0,
-          "uid": 312
-        }
-      },
-      {
-        "type": "entities.Bird",
-        "properties": {
-          "uid": 333
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 21,
-    "name": "wheel",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": 3.1381311,
-            "y": -0.9390169
-          },
-          "size": {
-            "x": 0.25,
-            "y": 0.25
-          },
-          "rotation": 0.0,
-          "uid": 356
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 0.0,
-            "height": 0.0,
-            "texture": {
-              "filePath": "assets/images/wheel.png",
-              "width": 225,
-              "height": 225
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 1,
-          "uid": 357
-        }
-      },
-      {
-        "type": "entities.Wheel",
-        "properties": {
-          "uid": 378
         }
       }
     ],

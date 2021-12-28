@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.spair:imgui-java-binding:1.81.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.spair/imgui-java-binding/1.81.0/aa24c1101600b47d2f562ad3c8987b14e79e5d0d/imgui-java-binding-1.81.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.spair/imgui-java-binding/1.81.0/a885977d30486af45597b1e4d89ce3c2591be351/imgui-java-binding-1.81.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

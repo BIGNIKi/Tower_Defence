@@ -3,7 +3,6 @@ package renderer;
 import Util.AssetPool;
 import Util.JMath;
 import job.Camera;
-import job.MainWindow;
 import org.joml.Vector2f;
 import org.joml.Vector3f;
 
@@ -79,7 +78,7 @@ public class DebugDraw
         }
     }
 
-    public static void drawAnother()
+    public static void drawAnother(Camera curCam)
     {
         if(notGridLines.size() <= 0) return;
 
@@ -109,8 +108,8 @@ public class DebugDraw
 
         // Use our shader
         shader.use();
-        shader.uploadMat4f("uProjection", MainWindow.getScene().camera().getProjectionMatrix());
-        shader.uploadMat4f("uView", MainWindow.getScene().camera().getViewMatrix());
+        shader.uploadMat4f("uProjection", curCam.getProjectionMatrix());
+        shader.uploadMat4f("uView", curCam.getViewMatrix());
 
         // Bind the vao
         glBindVertexArray(vaoID);
@@ -129,7 +128,7 @@ public class DebugDraw
         shader.detach();
     }
 
-    public static void drawGrid()
+    public static void drawGrid(Camera curCam)
     {
         if(lines.size() <= 0) return;
 
@@ -159,8 +158,8 @@ public class DebugDraw
 
         // Use our shader
         shader.use();
-        shader.uploadMat4f("uProjection", MainWindow.getScene().camera().getProjectionMatrix());
-        shader.uploadMat4f("uView", MainWindow.getScene().camera().getViewMatrix());
+        shader.uploadMat4f("uProjection", curCam.getProjectionMatrix());
+        shader.uploadMat4f("uView", curCam.getViewMatrix());
 
         // Bind the vao
         glBindVertexArray(vaoID);
@@ -192,12 +191,6 @@ public class DebugDraw
 
     public static void addLine2D(Vector2f from, Vector2f to, Vector3f color, int lifetime)
     {
-        Camera camera = MainWindow.getScene().camera();
-        // нижний левый угол камеры
-        Vector2f cameraLeft = new Vector2f(camera.position).add(new Vector2f(-2.0f, -2.0f));
-        Vector2f cameraRight = new Vector2f(camera.position).
-                add(new Vector2f(camera.getProjectionSize()).mul(camera.getZoom())).
-                add(new Vector2f(4.0f, 4.0f));
         // TODO: проверять, что линия в поле зрения камеры (нет смысла рисовать линии вне камеры)
 /*        boolean lineInView =
                 ((from.x >= cameraLeft.x && from.x <= cameraRight.x) && (from.y >= cameraLeft.y && from.y <= cameraRight.y)) ||
@@ -221,19 +214,6 @@ public class DebugDraw
     public static void addGridLine2D(Vector2f from, Vector2f to, Vector3f color, int lifetime)
     {
         // TODO: хорошо бы иметь проверки на линии, которые за экраном, дабы не кушать вычислительное время (не отрисовывать их)
-/*        Camera camera = MainWindow.getScene().camera();
-        // нижний левый угол камеры
-        Vector2f cameraLeft = new Vector2f(camera.position).add(new Vector2f(-2.0f, -2.0f));
-        Vector2f cameraRight = new Vector2f(camera.position).
-                add(new Vector2f(camera.getProjectionSize()).mul(camera.getZoom())).
-                add(new Vector2f(4.0f, 4.0f));
-        boolean lineInView =
-                ((from.x >= cameraLeft.x && from.x <= cameraRight.x) && (from.y >= cameraLeft.y && from.y <= cameraRight.y)) ||
-                        ((to.x >= cameraLeft.x && to.x <= cameraRight.x) && (to.y >= cameraLeft.y && to.y <= cameraRight.y));*/
-/*        if(lines.size() >= MAX_LINES || !lineInView)
-        {
-            return;
-        }*/
         if(lines.size() >= MAX_LINES)
         {
             return;

@@ -103,4 +103,21 @@ public class Prefabs
 
         MainWindow.getScene().addGameObjectToScene(go1);
     }
+
+    public static void addCheckMark(Vector2f position)
+    {
+        GameObject go = MainWindow.getScene().createGameObject("Check mark");
+        go.stateInWorld.setPosition(new Vector2f(position.x, position.y));
+        go.stateInWorld.setScale(new Vector2f(0.25f, 0.25f));
+
+        SpriteRenderer renderer = new SpriteRenderer();
+        renderer.zIndex = 1;
+        Sprite sp = new Sprite();
+        sp.setTexture(AssetPool.getTexture("assets/images/checkMark.png"));
+        renderer.setSprite(sp);
+        renderer.setColor(new Vector4f(1,1,1,1));
+        go.addComponent(renderer);
+
+        MainWindow.getScene().addGameObjectToScene(go);
+    }
 }
