@@ -23,18 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="14b7f6df-c63f-4ea9-817c-6af2046b6254" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/scenes/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/Scene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/core/ui/PropertiesWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/core/ui/PropertiesWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/src/main/java/engine/builders/GameObjectBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/builders/GameObjectBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/src/main/java/engine/components/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/components/Component.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/src/main/java/engine/components/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/components/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/components/GridLines.java" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/entities/components/GridLines.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/job/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/entities/src/main/java/entities/job/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/src/main/java/entities/job/GameObjectDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/components/GameObjectDeserializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old/src/main/java/job/GameObjectDeserializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/old/src/main/java/job/GameObjectDeserializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine/src/main/java/engine/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/engine/src/main/java/engine/Scene.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +168,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1640437030624</updated>
-      <workItem from="1640593360765" duration="12676000" />
+      <workItem from="1640593360765" duration="12907000" />
     </task>
     <servers />
   </component>

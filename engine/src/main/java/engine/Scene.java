@@ -59,14 +59,11 @@ public class Scene {
         gameObjects.forEach(o -> o.destroy());
     }
 
-    public <T extends Component> GameObject getGameObjectWith(Class<T> clazz) {
-        for (GameObject go : gameObjects) {
-            if (go.getComponent(clazz) != null) {
-                return go;
-            }
-        }
-
-        return null;
+    public <T extends Component> GameObject getGameObjectWith(Class<T> component) {
+        return gameObjects.stream()
+                .filter(o -> o.getComponent(component) != null)
+                .findFirst()
+                .orElse(null);
     }
 
     public void addGameObjectToScene(GameObject gameObject) {
@@ -157,11 +154,7 @@ public class Scene {
     }
 
     public void save() {
-        Gson gson = new GsonBuilder()
-                .setPrettyPrinting()
-                .registerTypeAdapter(Component.class, new ComponentDeserializer())
-                .registerTypeAdapter(GameObject.class, new GameObjectDeserializer(this))
-                .create();
+        var gson = getGson();
 
         try {
             FileWriter writer = new FileWriter("level.json");
@@ -179,11 +172,7 @@ public class Scene {
     }
 
     public void load() {
-        var gson = new GsonBuilder()
-                .setPrettyPrinting()
-                .registerTypeAdapter(Component.class, new ComponentDeserializer())
-                .registerTypeAdapter(GameObject.class, new GameObjectDeserializer(this))
-                .create();
+        var gson = getGson();
 
         var inFile = "";
         try {
@@ -222,5 +211,13 @@ public class Scene {
 
     public List<GameObject> getGameObjects() {
         return this.gameObjects;
+    }
+
+    private Gson getGson() {
+        return new GsonBuilder()
+                .setPrettyPrinting()
+                .registerTypeAdapter(Component.class, new ComponentDeserializer())
+                .registerTypeAdapter(GameObject.class, new GameObjectDeserializer(this))
+                .create();
     }
 }
