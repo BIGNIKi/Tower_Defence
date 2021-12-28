@@ -1,7 +1,7 @@
 [
   {
-    "uid": 102,
-    "name": "Sprite_Object_Gen",
+    "uid": 282,
+    "name": "Blue",
     "components": [
       {
         "type": "job.StateInWorld",
@@ -11,8 +11,8 @@
             "y": 0.625
           },
           "size": {
-            "x": 0.25,
-            "y": 0.25
+            "x": 0.31,
+            "y": 0.31
           },
           "rotation": 0.0,
           "uid": 331
@@ -63,8 +63,8 @@
     "isDead": false
   },
   {
-    "uid": 103,
-    "name": "Sprite_Object_Gen",
+    "uid": 283,
+    "name": "Red",
     "components": [
       {
         "type": "job.StateInWorld",
@@ -74,8 +74,8 @@
             "y": 0.625
           },
           "size": {
-            "x": 0.25,
-            "y": 0.25
+            "x": 0.31,
+            "y": 0.31
           },
           "rotation": 0.0,
           "uid": 353
@@ -126,8 +126,8 @@
     "isDead": false
   },
   {
-    "uid": 104,
-    "name": "Sprite_Object_Gen",
+    "uid": 284,
+    "name": "Green",
     "components": [
       {
         "type": "job.StateInWorld",
@@ -137,8 +137,8 @@
             "y": 0.625
           },
           "size": {
-            "x": 0.25,
-            "y": 0.25
+            "x": 0.31,
+            "y": 0.31
           },
           "rotation": 0.0,
           "uid": 355
@@ -189,8 +189,8 @@
     "isDead": false
   },
   {
-    "uid": 105,
-    "name": "Sprite_Object_Gen",
+    "uid": 285,
+    "name": "line",
     "components": [
       {
         "type": "job.StateInWorld",
@@ -252,8 +252,8 @@
     "isDead": false
   },
   {
-    "uid": 106,
-    "name": "Sprite_Object_Gen",
+    "uid": 286,
+    "name": "line",
     "components": [
       {
         "type": "job.StateInWorld",
@@ -315,8 +315,8 @@
     "isDead": false
   },
   {
-    "uid": 107,
-    "name": "Sprite_Object_Gen",
+    "uid": 287,
+    "name": "line",
     "components": [
       {
         "type": "job.StateInWorld",
@@ -371,6 +371,573 @@
           },
           "zIndex": -1,
           "uid": 378
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 288,
+    "name": "blue1",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -0.87251776,
+            "y": -0.038355157
+          },
+          "size": {
+            "x": 0.30977517,
+            "y": 0.31
+          },
+          "rotation": 0.0,
+          "uid": 399
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/fistL1.png",
+              "width": 147,
+              "height": 147
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 400
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 289,
+    "name": "red1",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 0.12962902,
+            "y": -0.038355157
+          },
+          "size": {
+            "x": 0.31,
+            "y": 0.31
+          },
+          "rotation": 0.0,
+          "uid": 399
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/fistL1.png",
+              "width": 147,
+              "height": 147
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 400
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 290,
+    "name": "Green1",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 1.1342582,
+            "y": -0.038355157
+          },
+          "size": {
+            "x": 0.31,
+            "y": 0.31
+          },
+          "rotation": 0.0,
+          "uid": 399
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/fistL1.png",
+              "width": 147,
+              "height": 147
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 400
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 291,
+    "name": "line",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -0.875,
+            "y": -0.36437425
+          },
+          "size": {
+            "x": 0.061478257,
+            "y": 0.44178113
+          },
+          "rotation": 180.0,
+          "uid": 377
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/line.png",
+              "width": 12,
+              "height": 72
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": -1,
+          "uid": 378
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 292,
+    "name": "line",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 0.120937064,
+            "y": -0.36437407
+          },
+          "size": {
+            "x": 0.061478257,
+            "y": 0.44178113
+          },
+          "rotation": 180.0,
+          "uid": 377
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/line.png",
+              "width": 12,
+              "height": 72
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": -1,
+          "uid": 378
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 293,
+    "name": "line",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 1.1292379,
+            "y": -0.352079
+          },
+          "size": {
+            "x": 0.061478257,
+            "y": 0.44178113
+          },
+          "rotation": 180.0,
+          "uid": 377
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/line.png",
+              "width": 12,
+              "height": 72
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": -1,
+          "uid": 378
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 294,
+    "name": "blue2",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -0.875,
+            "y": -0.73565584
+          },
+          "size": {
+            "x": 0.31,
+            "y": 0.31
+          },
+          "rotation": 0.0,
+          "uid": 421
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/fistL2.png",
+              "width": 147,
+              "height": 147
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 422
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 295,
+    "name": "red2",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 0.11731547,
+            "y": -0.73565584
+          },
+          "size": {
+            "x": 0.31,
+            "y": 0.31
+          },
+          "rotation": 0.0,
+          "uid": 421
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/fistL2.png",
+              "width": 147,
+              "height": 147
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 422
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 296,
+    "name": "green2",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 1.1557375,
+            "y": -0.71926236
+          },
+          "size": {
+            "x": 0.31,
+            "y": 0.31
+          },
+          "rotation": 0.0,
+          "uid": 421
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 0.0,
+            "height": 0.0,
+            "texture": {
+              "filePath": "assets/images/fistL2.png",
+              "width": 147,
+              "height": 147
+            },
+            "texCoords": [
+              {
+                "x": 1.0,
+                "y": 1.0
+              },
+              {
+                "x": 1.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 422
         }
       }
     ],
