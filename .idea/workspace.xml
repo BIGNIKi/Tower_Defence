@@ -4,16 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="Something">
-      <change afterPath="$PROJECT_DIR$/assets/images/fist.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/fistL1.pdn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/fistL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/fistL2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+    <list default="true" id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="Something1">
+      <change afterPath="$PROJECT_DIR$/assets/images/checkMark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/rshBtn.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imgui.ini" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level.json" beforeDir="false" afterPath="$PROJECT_DIR$/level.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/researchTree.json" beforeDir="false" afterPath="$PROJECT_DIR$/researchTree.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scenes/LevelEditorSceneInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scenes/LevelEditorSceneInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/GameCamera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/GameCamera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/ResearchButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/ResearchButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/editor/PropertiesWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/editor/PropertiesWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/job/IMGuiLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/IMGuiLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/job/Prefabs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/Prefabs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640501556945</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Something1">
+      <created>1640672406281</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1640672406281</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,7 +240,8 @@
     <MESSAGE value="Some beautiful stuffs" />
     <MESSAGE value="Some code reformations" />
     <MESSAGE value="Something" />
-    <option name="LAST_COMMIT_MESSAGE" value="Something" />
+    <MESSAGE value="Something1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Something1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

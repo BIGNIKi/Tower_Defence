@@ -1,5 +1,6 @@
 package job;
 
+import components.ResearchButton;
 import controllers.LevelCntrl;
 import editor.GameViewWindow;
 import editor.MenuBar;
@@ -214,7 +215,7 @@ public class IMGuiLayer
         }
         // добавление компанент к объекту
 
-
+        // TODO: убрать костыли ниже
         GameObject lvlCntrl = GameObject.FindWithComp(LevelCntrl.class);
         if(lvlCntrl != null)
         {
@@ -225,6 +226,12 @@ public class IMGuiLayer
         for(GameObject go : plsForTow)
         {
             go.getComponent(PlaceForTower.class).selectWindowDraw();
+        }
+
+        List<GameObject> resBtns = GameObject.FindAllByComp(ResearchButton.class);
+        for(GameObject go : resBtns)
+        {
+            go.getComponent(ResearchButton.class).selectWindowDraw();
         }
 
         endFrame();

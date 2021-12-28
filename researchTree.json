@@ -1,6 +1,6 @@
 [
   {
-    "uid": 282,
+    "uid": 0,
     "name": "Blue",
     "components": [
       {
@@ -63,7 +63,7 @@
     "isDead": false
   },
   {
-    "uid": 283,
+    "uid": 1,
     "name": "Red",
     "components": [
       {
@@ -126,7 +126,7 @@
     "isDead": false
   },
   {
-    "uid": 284,
+    "uid": 2,
     "name": "Green",
     "components": [
       {
@@ -189,7 +189,7 @@
     "isDead": false
   },
   {
-    "uid": 285,
+    "uid": 3,
     "name": "line",
     "components": [
       {
@@ -252,7 +252,7 @@
     "isDead": false
   },
   {
-    "uid": 286,
+    "uid": 4,
     "name": "line",
     "components": [
       {
@@ -315,7 +315,7 @@
     "isDead": false
   },
   {
-    "uid": 287,
+    "uid": 5,
     "name": "line",
     "components": [
       {
@@ -378,7 +378,7 @@
     "isDead": false
   },
   {
-    "uid": 288,
+    "uid": 6,
     "name": "blue1",
     "components": [
       {
@@ -435,13 +435,21 @@
           "zIndex": 0,
           "uid": 400
         }
+      },
+      {
+        "type": "components.ResearchButton",
+        "properties": {
+          "nameResearch": "blue tower",
+          "costResearch": 10,
+          "uid": 443
+        }
       }
     ],
     "doSerialization": true,
     "isDead": false
   },
   {
-    "uid": 289,
+    "uid": 7,
     "name": "red1",
     "components": [
       {
@@ -498,13 +506,21 @@
           "zIndex": 0,
           "uid": 400
         }
+      },
+      {
+        "type": "components.ResearchButton",
+        "properties": {
+          "nameResearch": "red tower",
+          "costResearch": 10,
+          "uid": 444
+        }
       }
     ],
     "doSerialization": true,
     "isDead": false
   },
   {
-    "uid": 290,
+    "uid": 8,
     "name": "Green1",
     "components": [
       {
@@ -561,13 +577,21 @@
           "zIndex": 0,
           "uid": 400
         }
+      },
+      {
+        "type": "components.ResearchButton",
+        "properties": {
+          "nameResearch": "green tower",
+          "costResearch": 10,
+          "uid": 445
+        }
       }
     ],
     "doSerialization": true,
     "isDead": false
   },
   {
-    "uid": 291,
+    "uid": 9,
     "name": "line",
     "components": [
       {
@@ -630,7 +654,7 @@
     "isDead": false
   },
   {
-    "uid": 292,
+    "uid": 10,
     "name": "line",
     "components": [
       {
@@ -693,7 +717,7 @@
     "isDead": false
   },
   {
-    "uid": 293,
+    "uid": 11,
     "name": "line",
     "components": [
       {
@@ -756,7 +780,7 @@
     "isDead": false
   },
   {
-    "uid": 294,
+    "uid": 12,
     "name": "blue2",
     "components": [
       {
@@ -813,13 +837,21 @@
           "zIndex": 0,
           "uid": 422
         }
+      },
+      {
+        "type": "components.ResearchButton",
+        "properties": {
+          "nameResearch": "blue tower",
+          "costResearch": 20,
+          "uid": 448
+        }
       }
     ],
     "doSerialization": true,
     "isDead": false
   },
   {
-    "uid": 295,
+    "uid": 13,
     "name": "red2",
     "components": [
       {
@@ -876,13 +908,21 @@
           "zIndex": 0,
           "uid": 422
         }
+      },
+      {
+        "type": "components.ResearchButton",
+        "properties": {
+          "nameResearch": "red tower",
+          "costResearch": 20,
+          "uid": 447
+        }
       }
     ],
     "doSerialization": true,
     "isDead": false
   },
   {
-    "uid": 296,
+    "uid": 14,
     "name": "green2",
     "components": [
       {
@@ -938,6 +978,14 @@
           },
           "zIndex": 0,
           "uid": 422
+        }
+      },
+      {
+        "type": "components.ResearchButton",
+        "properties": {
+          "nameResearch": "green tower",
+          "costResearch": 20,
+          "uid": 446
         }
       }
     ],

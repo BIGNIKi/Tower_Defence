@@ -48,6 +48,16 @@ public class GameCamera extends Component
                 selectedGO = pickedObj;
                 selectedGO.getComponent(PlaceForTower.class).setSelected();
             }
+            // если нажали на кнопку исследования
+            else if(pickedObj != null && pickedObj.getComponent(NonPickable.class) == null && pickedObj.getComponent(ResearchButton.class) != null)
+            {
+                if(selectedGO != null)
+                {
+                    selectedGO.getComponent(ResearchButton.class).resetSelected();
+                }
+                selectedGO = pickedObj;
+                selectedGO.getComponent(ResearchButton.class).setSelected();
+            }
             this.debounce = 0.2f;
         }
 
@@ -55,7 +65,14 @@ public class GameCamera extends Component
         {
             if(selectedGO != null)
             {
-                selectedGO.getComponent(PlaceForTower.class).resetSelected();
+                if(selectedGO.getComponent(ResearchButton.class) != null)
+                {
+                    selectedGO.getComponent(ResearchButton.class).resetSelected();
+                }
+                else if(selectedGO.getComponent(PlaceForTower.class) != null)
+                {
+                    selectedGO.getComponent(PlaceForTower.class).resetSelected();
+                }
                 selectedGO = null;
             }
             this.debounce = 0.2f;

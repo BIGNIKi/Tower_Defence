@@ -1,6 +1,7 @@
 package editor;
 
 import components.Component;
+import components.ResearchButton;
 import components.SpriteRenderer;
 import controllers.LevelCntrl;
 import controllers.Waves;
@@ -40,6 +41,7 @@ public class PropertiesWindow
         possibleClasses.add(PlaceForTower.class);
         possibleClasses.add(Bird.class);
         possibleClasses.add(Wheel.class);
+        possibleClasses.add(ResearchButton.class);
     }
 
     public void imgui()
