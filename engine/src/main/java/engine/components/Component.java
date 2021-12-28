@@ -1,12 +1,12 @@
 package engine.components;
 
 import imgui.ImGui;
-import entities.job.GameObject;
 import org.joml.Vector2f;
 import org.joml.Vector3f;
 import org.joml.Vector4f;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public abstract class Component {
     private static int ID_COUNTER = 0;
@@ -119,6 +119,7 @@ public abstract class Component {
     }
 
     private int indexOf(String str, String[] arr) {
+        Arrays.
         for (int i = 0; i < arr.length; i++) {
             if (str.equals(arr[i])) {
                 return i;

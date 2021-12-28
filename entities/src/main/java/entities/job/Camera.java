@@ -1,5 +1,7 @@
 package entities.job;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.joml.Matrix4f;
 import org.joml.Vector2f;
 import org.joml.Vector3f;
@@ -8,7 +10,10 @@ import org.joml.Vector4f;
 public class Camera {
 
   // projectionMatrix рамеры экрана в пикселях
-  private Matrix4f projectionMatrix, viewMatrix, inverseProjection, inverseVeiw;
+  @Getter
+  @Setter
+  private Matrix4f projectionMatrix, viewMatrix, inverseProjection, inverseView;
+
   public Vector2f position;
 
   private final float projectionWidth = 6;
@@ -23,7 +28,7 @@ public class Camera {
     this.projectionMatrix = new Matrix4f();
     this.viewMatrix = new Matrix4f();
     this.inverseProjection = new Matrix4f();
-    this.inverseVeiw = new Matrix4f();
+    this.inverseView = new Matrix4f();
     adjuctProjection();
   }
 
@@ -55,32 +60,8 @@ public class Camera {
     viewMatrix.lookAt(new Vector3f(position.x, position.y, 20.0f),
         cameraFront.add(position.x, position.y, 0.0f), //center
         cameraUp);
-    this.viewMatrix.invert(inverseVeiw);
+    this.viewMatrix.invert(inverseView);
     return this.viewMatrix;
-  }
-
-  public Matrix4f getProjectionMatrix() {
-    return this.projectionMatrix;
-  }
-
-  public Matrix4f getInverseProjection() {
-    return inverseProjection;
-  }
-
-  public Matrix4f getInverseVeiw() {
-    return inverseVeiw;
-  }
-
-  public Vector2f getProjectionSize() {
-    return this.projectionSize;
-  }
-
-  public float getZoom() {
-    return zoom;
-  }
-
-  public void setZoom(float zoom) {
-    this.zoom = zoom;
   }
 
   public void addZoom(float value) {

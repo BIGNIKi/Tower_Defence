@@ -10,6 +10,7 @@ import imgui.ImGui;
 import core.scenes.Scene;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -20,7 +21,7 @@ public class GameObject
     private int uid = -1;
 
     public String name;
-    private List<Component> components;
+    private ArrayList<Component> components;
 
     private boolean doSerialization = true;
     private boolean isDead = false;
@@ -31,6 +32,15 @@ public class GameObject
     {
         this.name = name;
         this.components = new ArrayList<>();
+
+        this.uid = ID_COUNTER++;
+        this.currentScene = currentScene;
+    }
+
+    public GameObject(String name, Scene currentScene, ArrayList<Component> components)
+    {
+        this.name = name;
+        this.components = components;
 
         this.uid = ID_COUNTER++;
         this.currentScene = currentScene;

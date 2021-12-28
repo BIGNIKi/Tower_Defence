@@ -6,8 +6,9 @@ import engine.components.StateInWorld;
 
 import java.util.ArrayList;
 
-public class GameObjectBuilder implements Builder{
+public class GameObjectBuilder implements Builder {
     private String name;
+    private Scene scene;
     private ArrayList<Component> components;
 
     public GameObjectBuilder() {
@@ -26,8 +27,11 @@ public class GameObjectBuilder implements Builder{
         this.components.add(component);
     }
 
+    public void setScene(Scene scene) {
+        this.scene = scene;
+    }
 
     public GameObject build(){
-        return new GameObject();
+        return new GameObject(name, scene, components);
     }
 }

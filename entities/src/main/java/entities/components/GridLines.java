@@ -1,11 +1,10 @@
 package entities.components;
 
-import Util.Settings;
 import entities.job.Camera;
-import entities.job.MainWindow;
 import org.joml.Vector2f;
 import org.joml.Vector3f;
-import renderer.DebugDraw;
+
+import java.awt.*;
 
 public class GridLines extends Component
 {

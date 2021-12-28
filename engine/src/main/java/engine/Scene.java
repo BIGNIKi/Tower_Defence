@@ -1,4 +1,4 @@
-package core.scenes;
+package engine;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -18,6 +18,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -47,21 +48,17 @@ public class Scene {
     }
 
     public void start() {
-        for (int i = 0; i < gameObjects.size(); i++) {
-            GameObject go = gameObjects.get(i);
-            go.start();
-            this.renderer.add(go);
-        }
+        gameObjects.forEach(o -> {
+            o.start();
+            renderer.add(o);
+        });
         isRunning = true;
     }
 
     public void destroy() {
-        for (GameObject go : gameObjects) {
-            go.destroy();
-        }
+        gameObjects.forEach(o -> o.destroy());
     }
 
-    // �������� ������ ������ � ������ ����������� ��� null
     public <T extends Component> GameObject getGameObjectWith(Class<T> clazz) {
         for (GameObject go : gameObjects) {
             if (go.getComponent(clazz) != null) {
@@ -72,22 +69,22 @@ public class Scene {
         return null;
     }
 
-    public void addGameObjectToScene(GameObject go) {
+    public void addGameObjectToScene(GameObject gameObject) {
+        gameObjects.add(gameObject);
         if (!isRunning) {
-            gameObjects.add(go);
-        } else {
-            gameObjects.add(go);
-            go.start();
-            this.renderer.add(go);
+            return;
         }
+
+        gameObjects.add(gameObject);
+        gameObject.start();
+        this.renderer.add(gameObject);
     }
 
     public GameObject getGameObject(int gameObjectId) {
-        Optional<GameObject> result = this.gameObjects.stream()
+        return this.gameObjects.stream()
                 .filter(gameObject -> gameObject.getUid() == gameObjectId)
-                .findFirst();
-        // ???? ???? ?????????, ?????? GameObject, ???? ???, ?? null
-        return result.orElse(null);
+                .findFirst()
+                .orElse(null);
     }
 
     public void editorUpdate(float dt) {
@@ -182,42 +179,45 @@ public class Scene {
     }
 
     public void load() {
-        Gson gson = new GsonBuilder()
+        var gson = new GsonBuilder()
                 .setPrettyPrinting()
                 .registerTypeAdapter(Component.class, new ComponentDeserializer())
                 .registerTypeAdapter(GameObject.class, new GameObjectDeserializer(this))
                 .create();
 
-        String inFile = "";
+        var inFile = "";
         try {
             inFile = new String(Files.readAllBytes(Paths.get("level.json")));
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        if (!inFile.equals("")) {
-            int maxGoId = -1;
-            int maxCompId = -1;
-            GameObject[] objs = gson.fromJson(inFile, GameObject[].class);
-            for (int i = 0; i < objs.length; i++) {
-                addGameObjectToScene(objs[i]);
+        if (inFile.equals("")) {
+            return;
+        }
 
-                for (Component c : objs[i].getAllComponents()) {
-                    if (c.getUid() > maxCompId) {
-                        maxCompId = c.getUid();
-                    }
-                }
-                if (objs[i].getUid() > maxGoId) {
-                    maxGoId = objs[i].getUid();
+        int maxGoId = -1;
+        int maxCompId = -1;
+        var gameObjects = gson.fromJson(inFile, GameObject[].class);
+        for (var gameObject : gameObjects) {
+            addGameObjectToScene(gameObject);
+
+            var components = gameObject.getAllComponents();
+            for (var component : components) {
+                if (component.getUid() > maxCompId) {
+                    maxCompId = component.getUid();
                 }
             }
 
-            maxGoId++;
-            maxCompId++;
-            GameObject.init(maxGoId);
-            Component.init(maxCompId);
+            if (gameObject.getUid() > maxGoId) {
+                maxGoId = gameObject.getUid();
+            }
         }
 
+        maxGoId++;
+        maxCompId++;
+        GameObject.init(maxGoId);
+        Component.init(maxCompId);
     }
 
     public List<GameObject> getGameObjects() {

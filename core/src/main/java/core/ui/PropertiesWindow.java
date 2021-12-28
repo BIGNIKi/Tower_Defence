@@ -95,6 +95,7 @@ public class PropertiesWindow {
 
   // сброс выделения объектов на сцене
   public void clearSelected() {
+
     if (activeGameObjectsOgColor.size() > 0) {
       int i = 0;
       for (GameObject go : activeGameObjects) {
