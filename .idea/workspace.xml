@@ -3,36 +3,17 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="ResearchFeature">
+    <list default="true" id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="cmt">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bush1.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/bush1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bush2.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/bush2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bush3.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/bush3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/bush4.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/bush4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editorCfg.json" beforeDir="false" afterPath="$PROJECT_DIR$/editorCfg.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imgui.ini" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/level.json" beforeDir="false" afterPath="$PROJECT_DIR$/level.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/level3.json" beforeDir="false" afterPath="$PROJECT_DIR$/level3.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/components/ResearchButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/ResearchButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/job/IMGuiLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/IMGuiLayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/job/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/Keyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/job/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/MainWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +28,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
         <option value="module-info" />
       </list>
@@ -56,6 +35,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -68,43 +48,55 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.1\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
+  <component name="ProblemsViewState">
+    <hideBySeverity>
+      <option value="15" />
+    </hideBySeverity>
   </component>
-  <component name="ProjectId" id="22mJrqJN0zGCSc1vpOW5m3knlzq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="21dDQiBrSJKSn53ETBxB2D5g3Eh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/engine" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\somka\OneDrive\Документы\Repos\Tower_Defence\engine" />
-      <recent name="C:\Users\somka\OneDrive\Документы\Repos\Tower_Defence\engine\src" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\somka\OneDrive\Документы\Repos\Tower_Defence\engine" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="events" />
+      <recent name="C:\Users\nikit\IdeaProjects\Tower_Defence\assets\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Tower_Defence.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
+      <setting name="displayName" value="" />
+      <setting name="bbPath" value="" />
+      <setting name="parameters" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <setting name="workingDir" value="" />
+      <setting name="focusEditor" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
       <setting name="displayName" value="" />
       <setting name="replType" value="NREPL" />
@@ -115,6 +107,7 @@
       <setting name="profiles" value="" />
       <setting name="aliases" value="" />
       <setting name="fixLineNumbers" value="false" />
+      <setting name="focusEditor" value="false" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
@@ -126,58 +119,42 @@
       <setting name="replPortFileType" value="STANDARD" />
       <setting name="customPortFile" value="" />
       <setting name="fixLineNumbers" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="core.Main" />
-      <module name="Tower_Defence.core.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="core.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Tower_Defence [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="dependencies" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <setting name="focusEditor" value="false" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Gradle.Tower_Defence [dependencies]" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="14b7f6df-c63f-4ea9-817c-6af2046b6254" name="Default Changelist" comment="" />
-      <created>1640437030624</created>
+      <changelist id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="Attempt to reset all" />
+      <created>1638262059656</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1640437030624</updated>
-      <workItem from="1640593360765" duration="13002000" />
+      <updated>1638262059656</updated>
+      <workItem from="1640750536863" duration="136000" />
+      <workItem from="1640750806577" duration="280000" />
+      <workItem from="1640751119904" duration="1127000" />
+      <workItem from="1641020745095" duration="14621000" />
+      <workItem from="1641094075406" duration="4673000" />
+    </task>
+    <task id="LOCAL-00001" summary="Nothing new">
+      <created>1638336979869</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638336979869</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Renamed entities to more understandable names and make fields private (added getters and setters also). The game logic is independent of drawing now. Fixed bug with drawing object whose SpriteRenderer component was already destroyed.">
+      <created>1638362158510</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638362158510</updated>
     </task>
     <task id="LOCAL-00003" summary="Nothing new">
       <created>1638691234619</created>
@@ -242,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640690282871</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="cmt">
+      <created>1640697984378</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1640697984378</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,25 +256,39 @@
     <MESSAGE value="Something" />
     <MESSAGE value="Something1" />
     <MESSAGE value="ResearchFeature" />
-    <option name="LAST_COMMIT_MESSAGE" value="ResearchFeature" />
+    <MESSAGE value="cmt" />
+    <option name="LAST_COMMIT_MESSAGE" value="cmt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/components/Component.java</url>
+          <line>144</line>
+          <properties class="components.Component" method="getEnumValues">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/engine/src/main/java/engine/components/SpriteRenderer.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/main/java/components/Component.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/job/MainWindow.java</url>
-          <line>393</line>
+          <line>397</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/job/MainWindow.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="15" />
+          <line>311</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/job/IMGuiLayer.java</url>
+          <line>210</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

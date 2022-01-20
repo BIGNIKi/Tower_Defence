@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: org.example:engine:1.0-SNAPSHOT">
-    <CLASSES>
-      <root url="file://$APPLICATION_HOME_DIR$/jbr/bin/Could not resolve project :engine.&#13;&#10;Required by:&#13;&#10;    project :editor" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

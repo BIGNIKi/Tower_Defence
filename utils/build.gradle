@@ -1,4 +1,0 @@
-dependencies {
-    // JOML
-    implementation "org.joml:joml:${jomlVersion}"
-}
