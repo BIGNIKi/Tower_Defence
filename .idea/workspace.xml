@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="cmt">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editorCfg.json" beforeDir="false" afterPath="$PROJECT_DIR$/editorCfg.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/imgui.ini" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/level.json" beforeDir="false" afterPath="$PROJECT_DIR$/level.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/IMGuiLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/IMGuiLayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/Keyboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/job/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/MainWindow.java" afterDir="false" />
-    </list>
+    <list default="true" id="0e308eb2-6ab6-4a56-bad8-0ff56b0142f0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,21 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="module-info" />
       </list>
     </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -51,76 +28,33 @@
   <component name="ProblemsViewState">
     <hideBySeverity>
       <option value="15" />
+      <option value="200" />
+      <option value="300" />
     </hideBySeverity>
   </component>
-  <component name="ProjectId" id="21dDQiBrSJKSn53ETBxB2D5g3Eh" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="235RQzvEMNhqdcTbrwFRYJQaMd6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\nikit\IdeaProjects\Tower_Defence\assets\images" />
+      <recent name="C:\Users\nikit\IdeaProjects\GameEngine\assets\fonts" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Tower_Defence.main" />
+      <module name="GameEngine.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration default="true" type="Babashka" factoryName="BabashkaLocalRepl" activateToolWindowBeforeRun="false">
-      <setting name="displayName" value="" />
-      <setting name="bbPath" value="" />
-      <setting name="parameters" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <setting name="workingDir" value="" />
-      <setting name="focusEditor" value="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
-      <setting name="displayName" value="" />
-      <setting name="replType" value="NREPL" />
-      <setting name="execution" value="LEININGEN" />
-      <setting name="jvmArgs" value="" />
-      <setting name="parameters" value="" />
-      <setting name="workingDir" value="" />
-      <setting name="profiles" value="" />
-      <setting name="aliases" value="" />
-      <setting name="fixLineNumbers" value="false" />
-      <setting name="focusEditor" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="ClojureREPL" factoryName="Remote" activateToolWindowBeforeRun="false">
-      <setting name="displayName" value="" />
-      <setting name="host" value="" />
-      <setting name="port" value="0" />
-      <setting name="replType" value="SOCKET" />
-      <setting name="configType" value="SPECIFY" />
-      <setting name="replPortFileType" value="STANDARD" />
-      <setting name="customPortFile" value="" />
-      <setting name="fixLineNumbers" value="false" />
-      <setting name="focusEditor" value="false" />
-      <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
@@ -131,164 +65,29 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="Attempt to reset all" />
-      <created>1638262059656</created>
+      <changelist id="0e308eb2-6ab6-4a56-bad8-0ff56b0142f0" name="Changes" comment="" />
+      <created>1641021950800</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1638262059656</updated>
-      <workItem from="1640750536863" duration="136000" />
-      <workItem from="1640750806577" duration="280000" />
-      <workItem from="1640751119904" duration="1127000" />
-      <workItem from="1641020745095" duration="14621000" />
-      <workItem from="1641094075406" duration="4673000" />
+      <updated>1641021950800</updated>
+      <workItem from="1641021954049" duration="15883000" />
+      <workItem from="1641094031125" duration="42000" />
+      <workItem from="1641094080429" duration="4850000" />
+      <workItem from="1641473071770" duration="10503000" />
+      <workItem from="1641528770817" duration="12278000" />
     </task>
-    <task id="LOCAL-00001" summary="Nothing new">
-      <created>1638336979869</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1638336979869</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Renamed entities to more understandable names and make fields private (added getters and setters also). The game logic is independent of drawing now. Fixed bug with drawing object whose SpriteRenderer component was already destroyed.">
-      <created>1638362158510</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1638362158510</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Nothing new">
-      <created>1638691234619</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1638691234619</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Fixed bug with non-drawing selection box">
-      <created>1638692064360</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1638692064360</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added possibility for editor to show List&lt;String&gt;, now reset for editor camera works smoother, replaces and rename func for get GameObject by name and added possibility to get List&lt;GameObject&gt; with the same name, now all monsters move point by point (and we can set these points in editor), settings wave of the enemies, smooth rotation of towers, some bug fixing">
-      <created>1638730919848</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1638730919848</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Added new textures for towers, possibility to collect and spend coin, add tower while play, some new engine features, base now have hp and we can lose, added delay to start wave">
-      <created>1639553093440</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1639553093440</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Some beautiful stuffs">
-      <created>1639749774110</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1639749774110</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Some code reformations">
-      <created>1640156799469</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1640156799469</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Something">
-      <created>1640501556944</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1640501556945</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Something1">
-      <created>1640672406281</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1640672406281</updated>
-    </task>
-    <task id="LOCAL-00011" summary="ResearchFeature">
-      <created>1640690282871</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1640690282871</updated>
-    </task>
-    <task id="LOCAL-00012" summary="cmt">
-      <created>1640697984378</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1640697984378</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Renamed entities to more understandable names and make fields private (added getters and setters also). The game logic is independent of drawing now. Fixed bug with drawing object whose SpriteRenderer component was already destroyed." />
-    <MESSAGE value="Nothing new" />
-    <MESSAGE value="Fixed bug with non-drawing selection box" />
-    <MESSAGE value="Added possibility for editor to show List&lt;String&gt;, now reset for editor camera works smoother, replaces and rename func for get GameObject by name and added possibility to get List&lt;GameObject&gt; with the same name, now all monsters move point by point (and we can set these points in editor), settings wave of the enemies, smooth rotation of towers, some bug fixing" />
-    <MESSAGE value="Added new textures for towers, possibility to collect and spend coin, add tower while play, some new engine features, base now have hp and we can lose, added delay to start wave" />
-    <MESSAGE value="Some beautiful stuffs" />
-    <MESSAGE value="Some code reformations" />
-    <MESSAGE value="Something" />
-    <MESSAGE value="Something1" />
-    <MESSAGE value="ResearchFeature" />
-    <MESSAGE value="cmt" />
-    <option name="LAST_COMMIT_MESSAGE" value="cmt" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/components/Component.java</url>
-          <line>144</line>
-          <properties class="components.Component" method="getEnumValues">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/components/Component.java</url>
-          <line>99</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/job/MainWindow.java</url>
-          <line>397</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/job/MainWindow.java</url>
-          <line>311</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/job/IMGuiLayer.java</url>
-          <line>210</line>
-          <option name="timeStamp" value="25" />
+          <url>file://$PROJECT_DIR$/src/main/java/Core/MainCycle.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
