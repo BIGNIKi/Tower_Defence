@@ -3,6 +3,7 @@ package UI;
 import Controls.Keyboard;
 import Controls.Mouse;
 import Core.Time;
+import UI.InGameGraphic.DebugDraw;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
@@ -190,7 +191,7 @@ public final class MainWindow {
         //glEnable(GL_BLEND);
 
         //Render pass 2. Render actual game
-        //DebugDraw.beginFrame(); // удаляет старые линии
+        DebugDraw.beginFrame(); // удаляет старые линии
 
         //this.framebuffer.bind();
         //Sets the clear value for fixed-point and floating-point color buffers in RGBA mode
