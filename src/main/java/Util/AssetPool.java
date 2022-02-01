@@ -1,6 +1,7 @@
 package Util;
 
 import UI.InGameGraphic.Shader;
+import UI.InGameGraphic.SpriteSheet;
 import UI.InGameGraphic.Texture;
 // import components.SpriteSheet;
 
@@ -13,7 +14,7 @@ public class AssetPool
     //хеш-мапа ключ:абсолютный путь к файлу, значение: объект Shader
     private static Map<String, Shader> shaders = new HashMap<>();
     private static Map<String, Texture> textures = new HashMap<>();
-    // private static Map<String, SpriteSheet> spriteSheets = new HashMap<>();
+    private static Map<String, SpriteSheet> spriteSheets = new HashMap<>();
 
     public static Shader getShader(String resourceName)
     {
@@ -56,7 +57,7 @@ public class AssetPool
         }
     }*/
 
-/*    public static SpriteSheet getSpritesheet(String resourceName)
+    public static SpriteSheet getSpritesheet(String resourceName)
     {
         File file = new File(resourceName);
         if(!AssetPool.spriteSheets.containsKey(file.getAbsolutePath()))
@@ -64,5 +65,5 @@ public class AssetPool
             assert false : "Error: Tried to access spritesheet '" + resourceName + "' and it has not been added to asset pool.";
         }
         return AssetPool.spriteSheets.getOrDefault(file.getAbsolutePath(), null);
-    }*/
+    }
 }

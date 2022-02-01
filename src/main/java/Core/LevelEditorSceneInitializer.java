@@ -1,8 +1,11 @@
 package Core;
 
+import Components.EditorCamera;
 import Components.GridLines;
+import Components.MouseControls;
 import Components.SpriteRenderer;
 import UI.InGameGraphic.Sprite;
+import UI.InGameGraphic.SpriteSheet;
 import Util.AssetPool;
 import imgui.ImGui;
 import imgui.ImVec2;
@@ -24,15 +27,15 @@ public class LevelEditorSceneInitializer extends SceneInitializer
     public void init(Scene scene)
     {
         System.out.println("LevelEditor");
-        //SpriteSheet gizmos = AssetPool.getSpritesheet("assets/images/gizmos.png");
+        SpriteSheet gizmos = AssetPool.getSpritesheet("assets/images/gizmos.png");
 
         levelEditorStuff = scene.createGameObject("LevelEditor"); // объект, который всегда висит на сцене
         // и задействует следующие функции:
         levelEditorStuff.setNoSerialize(); // этот объект не сохраняется
-        //levelEditorStuff.addComponent(new MouseControls()); // отвечает за захват, размещение игрового объекта
+        levelEditorStuff.addComponent(new MouseControls()); // отвечает за захват, размещение игрового объекта
         //levelEditorStuff.addComponent(new KeyControls());
         levelEditorStuff.addComponent(new GridLines()); // рисует сетку
-        //levelEditorStuff.addComponent(new EditorCamera(scene.camera())); // все взаимодействия с камерой для редактора
+        levelEditorStuff.addComponent(new EditorCamera(scene.camera())); // все взаимодействия с камерой для редактора
         //levelEditorStuff.addComponent(new GizmoSystem(gizmos)); // отрисовка стрелок для смены позиции/размера
         scene.addGameObjectToScene(levelEditorStuff);
 

@@ -278,4 +278,16 @@ public final class MainWindow implements Observer {
     {
         return get().framebuffer;
     }
+
+    public static int getWidth()
+    {
+        //return get().width;
+        return WindowSize.getWidth();
+    }
+
+    public static int getHeight()
+    {
+        //return get().heigth;
+        return WindowSize.getHeight();
+    }
 }
