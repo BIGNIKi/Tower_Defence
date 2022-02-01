@@ -1,16 +1,40 @@
 package Core;
 
+import UI.IMGuiLayer;
+import UI.InGameGraphic.DebugDraw;
+import UI.InGameGraphic.Shader;
 import UI.MainWindow;
+import Util.AssetPool;
 
 import static org.lwjgl.glfw.GLFW.*;
 
-public final class MainCycle {
+public final class MainCycle
+{
     private static MainCycle mainCycle;
+
+    private static Scene currentScene;
 
     private boolean runtimePlaying = false;
 
+    private EditorInfo editorInfo = null;
+
     private MainCycle() {
 
+    }
+
+    // класс, который хранит json настройки редактора
+    private class EditorInfo
+    {
+        String lastScene;
+        public EditorInfo(String lastScene)
+        {
+            this.lastScene = lastScene;
+        }
+
+        public void setLastScene(String lastScene)
+        {
+            this.lastScene = lastScene;
+        }
     }
 
     /**
@@ -42,6 +66,10 @@ public final class MainCycle {
         {
             MainWindow wnd = MainCycle.enableUI();
         }
+
+        changeScene(new LevelEditorSceneInitializer(), "blabla.json");
+
+
         loop(isUIEnabled);
         // TODO: несоответсвие с оригиналом
         // SaveCfg();
@@ -60,16 +88,18 @@ public final class MainCycle {
 
         if (isUIEnabled) {
             // TODO: несоответсвие с оригиналом
-            /* Shader defaultShader = AssetPool.getShader("assets/shaders/default.glsl");
-            Shader pickingShader = AssetPool.getShader("assets/shaders/pickingShader.glsl");*/
+
+            MainWindow.get().defaultShader = AssetPool.getShader("assets/shaders/default.glsl");
+            MainWindow.get().pickingShader = AssetPool.getShader("assets/shaders/pickingShader.glsl");
+
             while (!glfwWindowShouldClose(MainWindow.get().get_windowId())) { // пока не закрыли окно опер. системы
                 MainWindow.get().frameStep1();
 
                 businessLogic();
 
-                //DebugDraw.drawGrid(getScene().camera()); // рисует линию сетки
-                //currentScene.render();
-                //DebugDraw.drawAnother(getScene().camera()); // рисует остальные дебажные линии
+                DebugDraw.drawGrid(getScene().camera()); // рисует линию сетки
+                currentScene.render();
+                DebugDraw.drawAnother(getScene().camera()); // рисует остальные дебажные линии
 
                 MainWindow.get().frameStep2();
                 MainWindow.get().frameStep3();
@@ -86,12 +116,36 @@ public final class MainCycle {
         }
     }
 
+    public void setScene(Scene newScene)
+    {
+        currentScene = newScene;
+    }
+
+    public static Scene getScene()
+    {
+        return currentScene;
+    }
+
     private void businessLogic()
     {
         if (runtimePlaying) {
-            //currentScene.update(Time.deltaTime);
+            currentScene.update(Time.deltaTime);
         } else {
-            //currentScene.editorUpdate(Time.deltaTime);
+            currentScene.editorUpdate(Time.deltaTime);
         }
+    }
+
+    //method for switching scenes
+    public static void changeScene(SceneInitializer sceneInitializer, String sceneName) {
+        if (MainCycle.getScene() != null) {
+            MainCycle.getScene().destroy();
+        }
+        MainWindow.getImguiLayer().getPropertiesWindow().setActiveGameObject(null);
+        MainCycle.get().setScene(new Scene(sceneInitializer));
+        MainCycle.getScene().load(sceneName);
+        MainCycle.getScene().init();
+        MainCycle.getScene().start();
+        // при запуске сцены нет активного объекта
+        MainWindow.getImguiLayer().getPropertiesWindow().clearSelected();
     }
 }

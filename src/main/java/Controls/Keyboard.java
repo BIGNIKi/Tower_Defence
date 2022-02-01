@@ -18,6 +18,11 @@ public final class Keyboard {
 
     }
 
+    public static boolean isKeyPressed(int keyCode)
+    {
+        return get().keyPressed[keyCode];
+    }
+
     public boolean[] getKeyPressed() {
         return keyPressed;
     }

@@ -175,4 +175,26 @@ public final class Mouse {
         get().isDragging = false;
         Arrays.fill(get().mouseButtonPressed, false);
     }
+
+    public static boolean mouseButtonDown(int button)
+    {
+        if(button < get().mouseButtonPressed.length)
+        {
+            return get().mouseButtonPressed[button];
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public static float getScreenX()
+    {
+        return getScreen().x;
+    }
+
+    public static float getScreenY()
+    {
+        return getScreen().y;
+    }
 }

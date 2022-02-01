@@ -2,8 +2,10 @@ package UI;
 
 import Controls.Keyboard;
 import Controls.Mouse;
-import Core.Time;
-import UI.InGameGraphic.DebugDraw;
+import Core.*;
+import UI.InGameGraphic.*;
+import Util.AssetPool;
+import org.joml.Vector4f;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
@@ -15,7 +17,7 @@ import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.opengl.GL11.glViewport;
 import static org.lwjgl.system.MemoryUtil.NULL;
 
-public final class MainWindow {
+public final class MainWindow implements Observer {
     // private int width;
     // private int heigth;
 
@@ -23,14 +25,21 @@ public final class MainWindow {
 
     private static MainWindow wnd = null; // we have only one instance of this class
 
+    private PickingTexture pickingTexture;
+
     private long _windowId; // указатель на виндовое окно
 
     private IMGuiLayer imguiLayer;
 
+    private Framebuffer framebuffer;
+
+    public Shader defaultShader = null;
+    public Shader pickingShader = null;
+
     private MainWindow()
     {
         this.title = "HuUnity 2022.1.1f1";
-        //EventSystem.addObserver(this);
+        EventSystem.addObserver(this);
     }
 
     /**
@@ -90,13 +99,12 @@ public final class MainWindow {
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
         // TODO: несоответсвие с оригиналом
-        //this.framebuffer = new Framebuffer(1920,1080);
-        //this.pickingTexture = new PickingTexture(1920, 1080);
+        this.framebuffer = new Framebuffer(WindowSize.getWidth(), WindowSize.getHeight());
+        this.pickingTexture = new PickingTexture(WindowSize.getWidth(), WindowSize.getHeight());
         // TODO: нужно делать изменяемое разрешение
         glViewport(0, 0, WindowSize.getWidth(), WindowSize.getHeight());
 
-        //this.imguiLayer = new IMGuiLayer(_windowId, pickingTexture);
-        this.imguiLayer = new IMGuiLayer(_windowId);
+        this.imguiLayer = new IMGuiLayer(_windowId, pickingTexture);
         this.imguiLayer.initImGui();
 
         //just some interesting bullshit http://jmonkeyengine.ru/page/2/?author=0
@@ -176,7 +184,7 @@ public final class MainWindow {
         // TODO: несоответсвие с оригиналом
         // Render pass 1. Render to picking texture
         glDisable(GL_BLEND);
-        //pickingTexture.enableWriting();
+        pickingTexture.enableWriting();
 
         glViewport(0, 0, WindowSize.getWidth(), WindowSize.getHeight());
         // Set the clear color
@@ -184,29 +192,29 @@ public final class MainWindow {
         // Run the rendering loop until the user has attempted to close the window.
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // clear the framebuffer
 
-        //Renderer.bindShader(pickingShader);
-        //currentScene.render();
+        Renderer.bindShader(pickingShader);
+        MainCycle.getScene().render();
 
-        //pickingTexture.disableWriting();
-        //glEnable(GL_BLEND);
+        pickingTexture.disableWriting();
+        glEnable(GL_BLEND);
 
         //Render pass 2. Render actual game
         DebugDraw.beginFrame(); // удаляет старые линии
 
-        //this.framebuffer.bind();
+        this.framebuffer.bind();
         //Sets the clear value for fixed-point and floating-point color buffers in RGBA mode
-        //Vector4f clearColor = currentScene.camera().clearColor;
-        //GL11.glClearColor(clearColor.x, clearColor.y, clearColor.z, clearColor.w);
+        Vector4f clearColor = MainCycle.getScene().camera().clearColor;
+        GL11.glClearColor(clearColor.x, clearColor.y, clearColor.z, clearColor.w);
 
         //Sets portions of every pixel in a particular buffer to the same value
         GL11.glClear(GL11.GL_COLOR_BUFFER_BIT);
 
-        // Renderer.bindShader(defaultShader);
+        Renderer.bindShader(defaultShader);
     }
 
     public void frameStep2()
     {
-        //this.framebuffer.unbind();
+        this.framebuffer.unbind();
 
         this.imguiLayer.updateFrame();
 
@@ -217,5 +225,57 @@ public final class MainWindow {
     public void frameStep3()
     {
         GLFW.glfwSwapBuffers(_windowId);
+    }
+
+    public static IMGuiLayer getImguiLayer()
+    {
+        return get().imguiLayer;
+    }
+
+    @Override
+    public void onNotify(GameObject object, Event event) {
+        //TODO доделать Notify
+/*        switch(event.type)
+        {
+            case GameEngineStartPlay -> {
+                getImguiLayer().getPropertiesWindow().clearSelected(); // это нужно, чтобы не сохранялось желтое выделение
+                this.runtimePlaying = true;
+                // TODO: сохранять в temp файлы
+                currentScene.save(editorInfo.lastScene);
+                // TODO: load current scene
+                changeScene(new LevelSceneInitializer(), editorInfo.lastScene);
+            }
+            case GameEngineStopPlay -> {
+                this.runtimePlaying = false;
+                // TODO: load current scene
+                changeScene(new LevelEditorSceneInitializer(), editorInfo.lastScene);
+            }
+            case ResearchTree -> {
+                editorInfo.setLastScene("researchTree.json");
+                changeScene(new LevelEditorSceneInitializer(), "researchTree.json");
+            }
+
+            case LoadLevel1 -> {
+                editorInfo.setLastScene("level.json");
+                changeScene(new LevelEditorSceneInitializer(), "level.json");
+            }
+            case LoadLevel2 -> {
+                editorInfo.setLastScene("level2.json");
+                changeScene(new LevelEditorSceneInitializer(), "level2.json");
+            }
+            case LoadLevel3 -> {
+                editorInfo.setLastScene("level3.json");
+                changeScene(new LevelEditorSceneInitializer(), "level3.json");
+            }
+            case SaveLevel -> {
+                getImguiLayer().getPropertiesWindow().clearSelected(); // это нужно, чтобы не сохранялось желтое выделение
+                currentScene.save(editorInfo.lastScene);
+            }
+        }*/
+    }
+
+    public static Framebuffer getFramebuffer()
+    {
+        return get().framebuffer;
     }
 }

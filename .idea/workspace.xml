@@ -5,22 +5,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e308eb2-6ab6-4a56-bad8-0ff56b0142f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Core/Camera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/DebugDraw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/Line2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/Shader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/Texture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Util/AssetPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Util/JMath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Components/GameCamera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Components/GridLines.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Components/NonPickable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Components/SpriteRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Components/StateInWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/ComponentDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/EventSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/EventType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/GameObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/GameObjectDeserializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/LevelEditorSceneInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/LevelSceneInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/Observer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/Prefabs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/Scene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/SceneInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/Framebuffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/PickingTexture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/RenderBatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/Renderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/Sprite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UI/JImGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/UI/PropertiesWindow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Util/Settings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Util/StringList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Controls/Keyboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Controls/Keyboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Controls/Mouse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Controls/Mouse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Core/MainCycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Core/MainCycle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/UI/GameViewWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/UI/GameViewWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/UI/IMGuiLayer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/UI/IMGuiLayer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/UI/IMGuiLayer$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/UI/IMGuiLayer$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/UI/IMGuiLayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/UI/IMGuiLayer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/UI/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/UI/MainWindow.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui.ini" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controls/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controls/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controls/Keyboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controls/Keyboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controls/Mouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controls/Mouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/MainCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/MainCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/GameViewWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/GameViewWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/IMGuiLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/IMGuiLayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UI/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/MainWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +77,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -99,7 +142,8 @@
       <workItem from="1641473071770" duration="10503000" />
       <workItem from="1641528770817" duration="12278000" />
       <workItem from="1643299447106" duration="2034000" />
-      <workItem from="1643380813667" duration="463000" />
+      <workItem from="1643380813667" duration="4180000" />
+      <workItem from="1643706422238" duration="4004000" />
     </task>
     <servers />
   </component>
@@ -120,10 +164,24 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/Core/MainCycle.java</url>
+          <line>63</line>
+          <properties class="Core.MainCycle" method="run">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Core/MainCycle.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="3" />
+          <line>55</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Core/MainCycle.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

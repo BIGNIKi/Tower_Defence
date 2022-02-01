@@ -2,6 +2,7 @@ package UI;
 
 import Controls.Keyboard;
 import Controls.Mouse;
+import UI.InGameGraphic.PickingTexture;
 import imgui.*;
 import imgui.callback.ImStrConsumer;
 import imgui.callback.ImStrSupplier;
@@ -20,6 +21,8 @@ public class IMGuiLayer
 {
     private long glfwWindow;
 
+    private PropertiesWindow propertiesWindow;
+
     // LWJGL3 renderer (SHOULD be initialized)
     private final ImGuiImplGl3 imGuiGl3 = new ImGuiImplGl3();
     private final ImGuiImplGlfw imGuiGlfw = new ImGuiImplGlfw();
@@ -27,10 +30,11 @@ public class IMGuiLayer
     private GameViewWindow gameViewWindow;
 
     // TODO: несоответсвие с оригиналом
-    public IMGuiLayer(long glfwWindow)
+    public IMGuiLayer(long glfwWindow, PickingTexture pickingTexture)
     {
         this.glfwWindow = glfwWindow;
         this.gameViewWindow = new GameViewWindow();
+        this.propertiesWindow = new PropertiesWindow(pickingTexture);
     }
 
     // Initialize Dear ImGui.
@@ -265,5 +269,10 @@ public class IMGuiLayer
         //menuBar.imgui();
 
         ImGui.end();
+    }
+
+    public PropertiesWindow getPropertiesWindow()
+    {
+        return this.propertiesWindow;
     }
 }
