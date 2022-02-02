@@ -46,7 +46,7 @@ public class LevelEditorSceneInitializer extends SceneInitializer
     }
 
     // перегоняет все спрайты из спрайтшита в List всех спрайтов btnTexture
-/*    private void spriteSheetToSprites(String path, int spriteWidth, int spriteHeight, int numSprites, int spacing)
+    private void spriteSheetToSprites(String path, int spriteWidth, int spriteHeight, int numSprites, int spacing)
     {
         // положили спрайты на видеокарту (теперь она знает о них)
         AssetPool.addSpritesheet(path,
@@ -59,7 +59,7 @@ public class LevelEditorSceneInitializer extends SceneInitializer
             btnTexture.add(sprite);
         }
 
-    }*/
+    }
 
     // загрузит текстуру в List всех спрайтов btnTexture
     private void textureToSprite(String path)
@@ -68,6 +68,8 @@ public class LevelEditorSceneInitializer extends SceneInitializer
         sprite.setTexture(AssetPool.getTexture(path));
         btnTexture.add(sprite);
     }
+
+    // TODO: загружать спрайты из asset'ов автоматически
 
     // эта функция запускается РАНЬШЕ чем init
     @Override

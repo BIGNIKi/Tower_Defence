@@ -1,7 +1,6 @@
 package UI;
 
 import static org.lwjgl.glfw.GLFW.glfwGetWindowSize;
-import static org.lwjgl.opengl.GL11.glViewport;
 
 public class WindowSize {
     // TODO: можно сделать запоминание размера экрана при выходе и сделать загрузку при входе
@@ -24,7 +23,7 @@ public class WindowSize {
 
         MainWindow.getFramebuffer().resizeBuffer(width, heigth);
         MainWindow.getPickingtexture().reinit(width, heigth);
-        glViewport(0, 0, width, heigth);
+        //glViewport(0, 0, width, heigth); // вроде не нужна
     }
 
     public static int getHeight() {

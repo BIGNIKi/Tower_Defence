@@ -14,13 +14,9 @@ public class PickingTexture
 
     public PickingTexture(int width, int height)
     {
-        if(!init(width, height))
-        {
-            assert false : "Error initializing picking texture";
-        }
+        reinit(width, height);
     }
 
-    // TODO: могут быть утечки памяти
     public void reinit(int width, int height)
     {
         if(!init(width, height))

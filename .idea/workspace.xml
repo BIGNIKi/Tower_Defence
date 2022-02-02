@@ -6,11 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="0e308eb2-6ab6-4a56-bad8-0ff56b0142f0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/LevelEditorSceneInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/LevelEditorSceneInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Core/MainCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/MainCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/IMGuiLayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/IMGuiLayer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/Framebuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/Framebuffer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/PickingTexture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/PickingTexture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/Renderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UI/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/MainWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UI/WindowSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/WindowSize.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Util/AssetPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/AssetPool.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +102,7 @@
       <workItem from="1643299447106" duration="2034000" />
       <workItem from="1643380813667" duration="4180000" />
       <workItem from="1643706422238" duration="5883000" />
-      <workItem from="1643816567951" duration="2042000" />
+      <workItem from="1643816567951" duration="6505000" />
     </task>
     <servers />
   </component>
@@ -121,18 +125,37 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Core/MainCycle.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="10" />
+          <line>91</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Core/MainCycle.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/src/main/java/UI/InGameGraphic/Framebuffer.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/UI/MainWindow.java</url>
-          <line>109</line>
-          <option name="timeStamp" value="16" />
+          <line>111</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/UI/MainWindow.java</url>
+          <line>191</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Core/MainCycle.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/Core/MainCycle.java</url>
+          <line>135</line>
+          <properties class="Core.MainCycle" method="changeScene">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

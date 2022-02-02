@@ -48,14 +48,14 @@ public class AssetPool
         }
     }
 
-/*    public static void addSpritesheet(String resourceName, SpriteSheet spriteSheet)
+    public static void addSpritesheet(String resourceName, SpriteSheet spriteSheet)
     {
         File file = new File(resourceName);
         if(!AssetPool.spriteSheets.containsKey(file.getAbsolutePath()))
         {
             AssetPool.spriteSheets.put(file.getAbsolutePath(), spriteSheet);
         }
-    }*/
+    }
 
     public static SpriteSheet getSpritesheet(String resourceName)
     {

@@ -1,8 +1,6 @@
 package Core;
 
-import UI.InGameGraphic.DebugDraw;
 import UI.MainWindow;
-import Util.AssetPool;
 
 import static org.lwjgl.glfw.GLFW.*;
 
@@ -14,13 +12,13 @@ public final class MainCycle
 
     private boolean runtimePlaying = false;
 
-    private EditorInfo editorInfo = null;
+    // private EditorInfo editorInfo = null;
 
     private MainCycle() {
 
     }
 
-    // класс, который хранит json настройки редактора
+/*    // класс, который хранит json настройки редактора
     private class EditorInfo
     {
         String lastScene;
@@ -33,7 +31,7 @@ public final class MainCycle
         {
             this.lastScene = lastScene;
         }
-    }
+    }*/
 
     /**
      * @return возвращает ссылку на синглетон данного класса
@@ -65,11 +63,12 @@ public final class MainCycle
             MainWindow wnd = MainCycle.enableUI();
         }
 
-        changeScene(new LevelEditorSceneInitializer());
+        // TODO: загрузка сцены
+        changeScene(new LevelEditorSceneInitializer()); // загрузка пустой сцены
 
+        loop(isUIEnabled); // основной цикл программы
 
-        loop(isUIEnabled);
-        // TODO: несоответсвие с оригиналом
+        // TODO: сделать сохранение конфигов
         // SaveCfg();
         if (isUIEnabled) {
             MainWindow.get().closeWnd();
@@ -87,20 +86,14 @@ public final class MainCycle
         if (isUIEnabled) {
             // TODO: несоответсвие с оригиналом
 
-            MainWindow.get().defaultShader = AssetPool.getShader("assets/shaders/default.glsl");
-            MainWindow.get().pickingShader = AssetPool.getShader("assets/shaders/pickingShader.glsl");
+            MainWindow.loadShaders();
 
             while (!glfwWindowShouldClose(MainWindow.get().get_windowId())) { // пока не закрыли окно опер. системы
                 MainWindow.get().frameStep1();
 
                 businessLogic();
 
-                DebugDraw.drawGrid(getScene().camera()); // рисует линию сетки
-                currentScene.render();
-                DebugDraw.drawAnother(getScene().camera()); // рисует остальные дебажные линии
-
                 MainWindow.get().frameStep2();
-                MainWindow.get().frameStep3();
 
                 double endTime = glfwGetTime(); //the time when frame was ended
 
@@ -109,12 +102,13 @@ public final class MainCycle
             }
         } else {
             while (true) {
+                // TODO: сейчас в бизнес логике не только бизнес логика, но и рендеринг :(
                 businessLogic();
             }
         }
     }
 
-    public void setScene(Scene newScene)
+    private void setScene(Scene newScene)
     {
         currentScene = newScene;
     }
@@ -133,13 +127,13 @@ public final class MainCycle
         }
     }
 
-    public static void changeScene(SceneInitializer sceneInitializer)
+    private static void changeScene(SceneInitializer sceneInitializer)
     {
         changeScene(sceneInitializer, "");
     }
 
     //method for switching scenes
-    public static void changeScene(SceneInitializer sceneInitializer, String sceneName) {
+    private static void changeScene(SceneInitializer sceneInitializer, String sceneName) {
         if (MainCycle.getScene() != null) {
             MainCycle.getScene().destroy();
         }

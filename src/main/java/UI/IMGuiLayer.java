@@ -21,13 +21,13 @@ public class IMGuiLayer
 {
     private long glfwWindow;
 
-    private PropertiesWindow propertiesWindow;
+    private PropertiesWindow propertiesWindow; // свойства выбранного объекта
 
     // LWJGL3 renderer (SHOULD be initialized)
     private final ImGuiImplGl3 imGuiGl3 = new ImGuiImplGl3();
     private final ImGuiImplGlfw imGuiGlfw = new ImGuiImplGlfw();
 
-    private GameViewWindow gameViewWindow;
+    private GameViewWindow gameViewWindow; // окно с игрой
 
     // TODO: несоответсвие с оригиналом
     public IMGuiLayer(long glfwWindow, PickingTexture pickingTexture)

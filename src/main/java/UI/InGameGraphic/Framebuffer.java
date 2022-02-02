@@ -28,31 +28,9 @@ public class Framebuffer
         return texture.getId();
     }
 
-    // TODO: конструктор и resizeBuffer одинаковые
-    // TODO: также тут могут быть утечки памяти
-
     public Framebuffer(int width, int height)
     {
-        // Generate framebuffer
-        fboID = glGenFramebuffers();
-        glBindFramebuffer(GL_FRAMEBUFFER, fboID);
-
-        // Create the texture to render the data to, and attach it to our framebuffer
-        this.texture = new Texture(width, height);
-        glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D,
-                this.texture.getId(), 0);
-
-        // Create renderbuffer store the depth info
-        int rboID = glGenRenderbuffers();
-        glBindRenderbuffer(GL_RENDERBUFFER, rboID);
-        glRenderbufferStorage(GL_RENDERBUFFER, GL_DEPTH_COMPONENT32, width, height);
-        glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, rboID);
-
-        if(glCheckFramebufferStatus(GL_FRAMEBUFFER) != GL_FRAMEBUFFER_COMPLETE)
-        {
-            assert false : "Error : Framebuffer is not complete";
-        }
-        glBindFramebuffer(GL_FRAMEBUFFER, 0);
+        resizeBuffer(width, height);
     }
 
     public void resizeBuffer(int width, int height)

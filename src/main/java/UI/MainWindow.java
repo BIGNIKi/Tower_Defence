@@ -4,13 +4,12 @@ import Controls.Keyboard;
 import Controls.Mouse;
 import Core.*;
 import UI.InGameGraphic.*;
+import Util.AssetPool;
 import org.joml.Vector4f;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
 import org.lwjgl.opengl.GL11;
-
-import java.nio.IntBuffer;
 
 import static org.lwjgl.glfw.Callbacks.glfwFreeCallbacks;
 import static org.lwjgl.glfw.GLFW.*;
@@ -19,9 +18,6 @@ import static org.lwjgl.opengl.GL11.glViewport;
 import static org.lwjgl.system.MemoryUtil.NULL;
 
 public final class MainWindow implements Observer {
-    // private int width;
-    // private int heigth;
-
     private final String title;
 
     private static MainWindow wnd = null; // we have only one instance of this class
@@ -30,12 +26,12 @@ public final class MainWindow implements Observer {
 
     private long _windowId; // указатель на виндовое окно
 
-    private IMGuiLayer imguiLayer;
+    private IMGuiLayer imguiLayer; // вся интерфейсная штука живёт благодаря этому
 
-    private Framebuffer framebuffer;
+    private Framebuffer framebuffer; // буфер с кадром отрисовки игры
 
-    public Shader defaultShader = null;
-    public Shader pickingShader = null;
+    private Shader defaultShader = null;
+    private Shader pickingShader = null;
 
     private MainWindow()
     {
@@ -55,6 +51,14 @@ public final class MainWindow implements Observer {
         return wnd;
     }
 
+    // запускается перед началом основного цикла игры
+    public static void loadShaders()
+    {
+        get().defaultShader = AssetPool.getShader("assets/shaders/default.glsl");
+        get().pickingShader = AssetPool.getShader("assets/shaders/pickingShader.glsl");
+    }
+
+    // вызывается раньше, чем loadShaders
     public void init()
     {
         // Setup an error callback. The default implementation
@@ -103,7 +107,6 @@ public final class MainWindow implements Observer {
 
         this.framebuffer = new Framebuffer(WindowSize.getWidth(), WindowSize.getHeight());
         this.pickingTexture = new PickingTexture(WindowSize.getWidth(), WindowSize.getHeight());
-        // TODO: нужно делать изменяемое разрешение
         glViewport(0, 0, WindowSize.getWidth(), WindowSize.getHeight());
 
         this.imguiLayer = new IMGuiLayer(_windowId, pickingTexture);
@@ -175,7 +178,6 @@ public final class MainWindow implements Observer {
         // invoked during this call.
         glfwPollEvents();
 
-        // TODO: несоответсвие с оригиналом
         // Render pass 1. Render to picking texture
         glDisable(GL_BLEND);
         pickingTexture.enableWriting();
@@ -208,17 +210,18 @@ public final class MainWindow implements Observer {
 
     public void frameStep2()
     {
+        DebugDraw.drawGrid(MainCycle.getScene().camera()); // рисует линию сетки
+        MainCycle.getScene().render();
+        DebugDraw.drawAnother(MainCycle.getScene().camera()); // рисует остальные дебажные линии
+
         this.framebuffer.unbind();
 
         this.imguiLayer.updateFrame();
 
         Keyboard.endFrame();
-        Mouse.endFrame();
-    }
-
-    public void frameStep3()
-    {
+        //Swaps the front and back buffers of the specified window when rendering with OpenGL
         GLFW.glfwSwapBuffers(_windowId);
+        Mouse.endFrame();
     }
 
     public static IMGuiLayer getImguiLayer()
