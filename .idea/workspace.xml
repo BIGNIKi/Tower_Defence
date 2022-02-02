@@ -5,29 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e308eb2-6ab6-4a56-bad8-0ff56b0142f0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Components/EditorCamera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Components/Gizmo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Components/GizmoSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Components/MouseControls.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Components/ScaleGizmo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Components/TranslateGizmo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/SpriteSheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Controls/Mouse.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Controls/Mouse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Core/LevelEditorSceneInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Core/LevelEditorSceneInitializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/UI/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/UI/MainWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Util/AssetPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Util/AssetPool.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controls/Mouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controls/Mouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Core/LevelEditorSceneInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/LevelEditorSceneInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/MainCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/MainCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/Framebuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/Framebuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/PickingTexture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/InGameGraphic/PickingTexture.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/UI/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Util/AssetPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/AssetPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UI/WindowSize.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UI/WindowSize.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +97,8 @@
       <workItem from="1641528770817" duration="12278000" />
       <workItem from="1643299447106" duration="2034000" />
       <workItem from="1643380813667" duration="4180000" />
-      <workItem from="1643706422238" duration="5556000" />
+      <workItem from="1643706422238" duration="5883000" />
+      <workItem from="1643816567951" duration="2042000" />
     </task>
     <servers />
   </component>
@@ -135,24 +119,20 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Core/MainCycle.java</url>
-          <line>63</line>
-          <properties class="Core.MainCycle" method="run">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="4" />
+          <line>62</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Core/MainCycle.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="5" />
+          <line>54</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Core/MainCycle.java</url>
-          <line>144</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/src/main/java/UI/MainWindow.java</url>
+          <line>109</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -20,6 +20,15 @@ public class PickingTexture
         }
     }
 
+    // TODO: могут быть утечки памяти
+    public void reinit(int width, int height)
+    {
+        if(!init(width, height))
+        {
+            assert false : "Error initializing picking texture";
+        }
+    }
+
     public boolean init(int width, int height)
     {
         // Generate framebuffer

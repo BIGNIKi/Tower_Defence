@@ -4,12 +4,13 @@ import Controls.Keyboard;
 import Controls.Mouse;
 import Core.*;
 import UI.InGameGraphic.*;
-import Util.AssetPool;
 import org.joml.Vector4f;
 import org.lwjgl.glfw.GLFW;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
 import org.lwjgl.opengl.GL11;
+
+import java.nio.IntBuffer;
 
 import static org.lwjgl.glfw.Callbacks.glfwFreeCallbacks;
 import static org.lwjgl.glfw.GLFW.*;
@@ -69,12 +70,14 @@ public final class MainWindow implements Observer {
         // All defaults states are described here https://javadoc.lwjgl.org/index.html?org/lwjgl/glfw/GLFWErrorCallback.html
         glfwWindowHint(GLFW_VISIBLE, GLFW_FALSE); // the window will stay hidden after creation
         glfwWindowHint(GLFW_RESIZABLE, GLFW_TRUE); // the window will be resizable
-        // glfwWindowHint(GLFW_MAXIMIZED, GLFW_TRUE); //window will be maximized when created
+        glfwWindowHint(GLFW_MAXIMIZED, GLFW_TRUE); //window will be maximized when created
 
         // Create the window
         _windowId = glfwCreateWindow(WindowSize.getWidth(), WindowSize.getHeight(), title, NULL, NULL);
         if ( _windowId == NULL )
             throw new RuntimeException("Failed to create the GLFW window");
+
+        WindowSize.init(_windowId);
 
         connectCallbacks();
 
@@ -98,7 +101,6 @@ public final class MainWindow implements Observer {
         glEnable(GL_BLEND);
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-        // TODO: несоответсвие с оригиналом
         this.framebuffer = new Framebuffer(WindowSize.getWidth(), WindowSize.getHeight());
         this.pickingTexture = new PickingTexture(WindowSize.getWidth(), WindowSize.getHeight());
         // TODO: нужно делать изменяемое разрешение
@@ -113,6 +115,12 @@ public final class MainWindow implements Observer {
 
         //MainWindow.changeScene(new LevelEditorSceneInitializer(), editorInfo.lastScene);
     }
+
+    public static PickingTexture getPickingtexture()
+    {
+        return get().pickingTexture;
+    }
+
 
     /**
      * включает прерывания на изменения в системе
@@ -133,23 +141,9 @@ public final class MainWindow implements Observer {
         GLFW.glfwSetScrollCallback(_windowId, Mouse::mouseScrollCallback); //https://www.glfw.org/docs/3.3/input_guide.html#scrolling
         //registers keyboard events
         GLFW.glfwSetKeyCallback(_windowId, Keyboard::keyCallback); //https://www.glfw.org/docs/3.3/input_guide.html#input_key
-/*        glfwSetWindowSizeCallback(_windowId, (w, newWidth, newHeight) -> {
-            MainWindow.setWidth(newWidth);
-            MainWindow.setHeight(newHeight);
-        });*/
 
         glfwSetWindowSizeCallback(_windowId, WindowSize::windowSizeCallback);
     }
-
-/*    public static void setWidth(int newWidth)
-    {
-        get().width = newWidth;
-    }
-
-    public static void setHeight(int newHeight)
-    {
-        get().heigth = newHeight;
-    }*/
 
     /**
      * Возвращаем ресурсы операционной системе

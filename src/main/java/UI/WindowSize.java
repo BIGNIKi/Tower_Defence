@@ -1,14 +1,30 @@
 package UI;
 
-public class WindowSize {
-    // TODO: сделать запоминание размера экрана
-    private static int width = 1920;
-    private static int heigth = 1080;
+import static org.lwjgl.glfw.GLFW.glfwGetWindowSize;
+import static org.lwjgl.opengl.GL11.glViewport;
 
+public class WindowSize {
+    // TODO: можно сделать запоминание размера экрана при выходе и сделать загрузку при входе
+    private static int width = 3000;
+    private static int heigth = 3000;
+
+    public static void init(long _windowId)
+    {
+        int[] winWidth = new int[1], winHeight = new int[1];
+        glfwGetWindowSize(_windowId, winWidth, winHeight);
+        width = winWidth[0];
+        heigth = winHeight[0];
+    }
+
+    // TODO: лаги во время изменения размера экрана
     public static void windowSizeCallback(long w, int newWidth, int newHeight)
     {
         width = newWidth;
         heigth = newHeight;
+
+        MainWindow.getFramebuffer().resizeBuffer(width, heigth);
+        MainWindow.getPickingtexture().reinit(width, heigth);
+        glViewport(0, 0, width, heigth);
     }
 
     public static int getHeight() {
@@ -21,7 +37,7 @@ public class WindowSize {
 
     public static float getTargetAspectRatio()
     {
-        // TODO: покумекать с отношениями сторон
+        // подогнанные значения для окна игры
         return 16.0f / 9.0f;
     }
 }

@@ -1,8 +1,6 @@
 package Core;
 
-import UI.IMGuiLayer;
 import UI.InGameGraphic.DebugDraw;
-import UI.InGameGraphic.Shader;
 import UI.MainWindow;
 import Util.AssetPool;
 
@@ -67,7 +65,7 @@ public final class MainCycle
             MainWindow wnd = MainCycle.enableUI();
         }
 
-        changeScene(new LevelEditorSceneInitializer(), "blabla.json");
+        changeScene(new LevelEditorSceneInitializer());
 
 
         loop(isUIEnabled);
@@ -133,6 +131,11 @@ public final class MainCycle
         } else {
             currentScene.editorUpdate(Time.deltaTime);
         }
+    }
+
+    public static void changeScene(SceneInitializer sceneInitializer)
+    {
+        changeScene(sceneInitializer, "");
     }
 
     //method for switching scenes
