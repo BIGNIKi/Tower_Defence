@@ -31,6 +31,10 @@ public class MenuBar {
                 EventSystem.notify(null, new Event(EventType.LoadLevel3));
             }
 
+            if (ImGui.menuItem("Load multiplayer")) {
+                EventSystem.notify(null, new Event(EventType.Multiplayer));
+            }
+
             ImGui.endMenu();
         }
 

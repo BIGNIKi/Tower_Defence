@@ -206,6 +206,7 @@ public final class MainWindow implements Observer
         loadLastScene();
 
         MainWindow.changeScene(new LevelEditorSceneInitializer(), editorInfo.lastScene);
+        //MainWindow.changeScene(new LevelEditorSceneInitializer(), "");
     }
 
     private void loadLastScene()
@@ -265,6 +266,8 @@ public final class MainWindow implements Observer
 
         while(!GLFW.glfwWindowShouldClose(_windowId)) //while window shouldn't be closed
         {
+            //businessLogic((float)dt);
+
             //Poll events
             GLFW.glfwPollEvents(); //Processes all pending events.
 
@@ -298,11 +301,15 @@ public final class MainWindow implements Observer
            // {
                 //DebugDraw.draw(); // рисует линию сетки
                 Renderer.bindShader(defaultShader);
-                if (runtimePlaying) {
+
+                businessLogic((float)dt);
+
+/*                if (runtimePlaying) {
                     currentScene.update((float)dt);
                 } else {
                     currentScene.editorUpdate((float) dt);
-                }
+                }*/
+
                 DebugDraw.drawGrid(getScene().camera()); // рисует линию сетки
                 currentScene.render();
                 DebugDraw.drawAnother(getScene().camera()); // рисует остальные дебажные линии
@@ -333,6 +340,15 @@ public final class MainWindow implements Observer
             dt = endTime - beginTime;
             //System.out.println(dt);
             beginTime = endTime;
+        }
+    }
+
+    private void businessLogic(float dt)
+    {
+        if (runtimePlaying) {
+            currentScene.update(dt);
+        } else {
+            currentScene.editorUpdate(dt);
         }
     }
 
@@ -406,6 +422,10 @@ public final class MainWindow implements Observer
             case LoadLevel3 -> {
                 editorInfo.setLastScene("level3.json");
                 MainWindow.changeScene(new LevelEditorSceneInitializer(), "level3.json");
+            }
+            case Multiplayer -> {
+                editorInfo.setLastScene("Multiplayer.json");
+                MainWindow.changeScene(new LevelEditorSceneInitializer(), "Multiplayer.json");
             }
             case SaveLevel -> {
                 MainWindow.getImguiLayer().getPropertiesWindow().clearSelected(); // это нужно, чтобы не сохранялось желтое выделение

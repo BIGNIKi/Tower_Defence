@@ -1,6 +1,6 @@
 [
   {
-    "uid": 0,
+    "uid": 58,
     "name": "Blue",
     "components": [
       {
@@ -63,7 +63,7 @@
     "isDead": false
   },
   {
-    "uid": 1,
+    "uid": 59,
     "name": "Red",
     "components": [
       {
@@ -126,7 +126,7 @@
     "isDead": false
   },
   {
-    "uid": 2,
+    "uid": 60,
     "name": "Green",
     "components": [
       {
@@ -189,7 +189,7 @@
     "isDead": false
   },
   {
-    "uid": 3,
+    "uid": 61,
     "name": "line",
     "components": [
       {
@@ -252,7 +252,7 @@
     "isDead": false
   },
   {
-    "uid": 4,
+    "uid": 62,
     "name": "line",
     "components": [
       {
@@ -315,7 +315,7 @@
     "isDead": false
   },
   {
-    "uid": 5,
+    "uid": 63,
     "name": "line",
     "components": [
       {
@@ -378,7 +378,7 @@
     "isDead": false
   },
   {
-    "uid": 6,
+    "uid": 64,
     "name": "blue1",
     "components": [
       {
@@ -449,7 +449,7 @@
     "isDead": false
   },
   {
-    "uid": 7,
+    "uid": 65,
     "name": "red1",
     "components": [
       {
@@ -520,7 +520,7 @@
     "isDead": false
   },
   {
-    "uid": 8,
+    "uid": 66,
     "name": "Green1",
     "components": [
       {
@@ -591,7 +591,7 @@
     "isDead": false
   },
   {
-    "uid": 9,
+    "uid": 67,
     "name": "line",
     "components": [
       {
@@ -654,7 +654,7 @@
     "isDead": false
   },
   {
-    "uid": 10,
+    "uid": 68,
     "name": "line",
     "components": [
       {
@@ -717,7 +717,7 @@
     "isDead": false
   },
   {
-    "uid": 11,
+    "uid": 69,
     "name": "line",
     "components": [
       {
@@ -780,7 +780,7 @@
     "isDead": false
   },
   {
-    "uid": 12,
+    "uid": 70,
     "name": "blue2",
     "components": [
       {
@@ -851,7 +851,7 @@
     "isDead": false
   },
   {
-    "uid": 13,
+    "uid": 71,
     "name": "red2",
     "components": [
       {
@@ -922,7 +922,7 @@
     "isDead": false
   },
   {
-    "uid": 14,
+    "uid": 72,
     "name": "green2",
     "components": [
       {

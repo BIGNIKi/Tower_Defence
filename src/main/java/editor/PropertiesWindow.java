@@ -4,12 +4,11 @@ import components.Component;
 import components.ResearchButton;
 import components.SpriteRenderer;
 import controllers.LevelCntrl;
+import controllers.OnlineObserver;
 import controllers.Waves;
 import entities.Bird;
 import entities.Wheel;
-import entities.monsters.Monster;
 import entities.towers.PlaceForTower;
-import entities.towers.Tower;
 import imgui.ImGui;
 import job.GameObject;
 import job.MainWindow;
@@ -42,6 +41,7 @@ public class PropertiesWindow
         possibleClasses.add(Bird.class);
         possibleClasses.add(Wheel.class);
         possibleClasses.add(ResearchButton.class);
+        possibleClasses.add(OnlineObserver.class);
     }
 
     public void imgui()

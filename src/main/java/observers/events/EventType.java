@@ -9,5 +9,6 @@ public enum EventType
     LoadLevel1,
     LoadLevel2,
     LoadLevel3,
+    Multiplayer,
     UserEvent
 }

@@ -1,7 +1,6 @@
 package Util;
 
 import components.SpriteSheet;
-import org.w3c.dom.Text;
 import renderer.Shader;
 import renderer.Texture;
 
