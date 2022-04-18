@@ -33,6 +33,11 @@ public abstract class Component
 
     }
 
+    public void OnStartScene()
+    {
+
+    }
+
     // здесь написано, как инспектор должен отображать тот или иной тип данных
     public void imgui()
     {

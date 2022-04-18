@@ -10,7 +10,7 @@ import java.io.IOException;
 public class OnlineObserver extends Component
 {
     @Override
-    public void start()
+    public void OnStartScene()
     {
         WWWForm form = new WWWForm();
         //form.AddField("name", "John Doe");

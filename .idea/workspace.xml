@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="cmt">
-      <change afterPath="$PROJECT_DIR$/Multiplayer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/OnlineObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/onlineStuff/OurWebRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/onlineStuff/WWWForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/editorCfg.json" beforeDir="false" afterPath="$PROJECT_DIR$/editorCfg.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/researchTree.json" beforeDir="false" afterPath="$PROJECT_DIR$/researchTree.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Util/AssetPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/AssetPool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/editor/MenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/editor/MenuBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/editor/PropertiesWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/editor/PropertiesWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Multiplayer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Multiplayer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/components/Component.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/components/Component.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/OnlineObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/OnlineObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/job/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/GameObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/job/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/job/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/observers/events/EventType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observers/events/EventType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/scenes/SceneInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scenes/SceneInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scenes/LevelEditorSceneInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scenes/LevelEditorSceneInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/scenes/Scene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/scenes/Scene.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,16 +266,21 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/components/Component.java</url>
-          <line>144</line>
-          <properties class="components.Component">
+          <line>149</line>
+          <properties class="components.Component" method="getEnumValues">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/components/Component.java</url>
-          <line>99</line>
+          <line>104</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/job/MainWindow.java</url>
+          <line>396</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

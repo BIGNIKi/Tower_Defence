@@ -89,6 +89,7 @@ public final class MainWindow implements Observer
         currentScene.load(sceneName);
         currentScene.init();
         currentScene.start();
+
         // при запуске сцены нет активного объекта
         getImguiLayer().getPropertiesWindow().clearSelected();
     }
@@ -400,6 +401,7 @@ public final class MainWindow implements Observer
                 currentScene.save(editorInfo.lastScene);
                 // TODO: load current scene
                 MainWindow.changeScene(new LevelSceneInitializer(), editorInfo.lastScene);
+                currentScene.OnStartScene();
             }
             case GameEngineStopPlay -> {
                 this.runtimePlaying = false;

@@ -111,6 +111,14 @@ public class Scene
         }
     }
 
+    public void OnStartScene()
+    {
+        for(GameObject go : gameObjects)
+        {
+            go.OnStartScene();
+        }
+    }
+
     //each scene has to have such method (it is all job which executes each frame)
     public void update(double dt)
     {
