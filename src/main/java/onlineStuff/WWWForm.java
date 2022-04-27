@@ -4,19 +4,19 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class WWWForm
 {
-    private final HashMap<String, String> Values = new HashMap<>();
+    private final Map<String, Object> data = new HashMap<>();
 
     public void AddField(String fieldName, String value)
     {
-        Values.put(fieldName, value);
+        data.put(fieldName, value);
     }
 
-    public String GetRequestString() throws JsonProcessingException
+    protected Map<String, Object> GetPostData()
     {
-        var objectMapper = new ObjectMapper();
-        return objectMapper.writeValueAsString(Values);
+        return data;
     }
 }

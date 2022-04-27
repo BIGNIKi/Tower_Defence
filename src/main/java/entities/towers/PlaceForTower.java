@@ -1,17 +1,26 @@
 package entities.towers;
 
 import Util.AssetPool;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import components.Component;
+import components.ComponentDeserializer;
 import components.MouseControls;
 import components.Sprite;
 import controllers.LevelCntrl;
+import controllers.OnlineObserver;
 import imgui.ImGui;
 import imgui.ImVec2;
 import imgui.flag.ImGuiWindowFlags;
 import job.GameObject;
+import job.GameObjectDeserializer;
 import job.Prefabs;
+import onlineStuff.OurWebRequest;
+import onlineStuff.WWWForm;
 import org.joml.Vector2f;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +28,8 @@ public class PlaceForTower extends Component
 {
     private transient boolean isIamSelected = false;
     private transient boolean cantBeSelected = false;
+
+    //private transient OurWebRequest wwwTest = null;
 
     private transient final List<Sprite> btnTexture = new ArrayList<>(); // все спрайты, которые нужно будет отобразить как кнопки
 
@@ -41,6 +52,13 @@ public class PlaceForTower extends Component
     @Override
     public void update(float dt)
     {
+/*        if(wwwTest != null)
+        {
+            if(wwwTest.GetResponseBody() != null)
+            {
+                System.out.println(wwwTest.GetResponseBody());
+            }
+        }*/
     }
 
     public void selectWindowDraw()
@@ -151,11 +169,74 @@ public class PlaceForTower extends Component
                             size, path1, initialRotation, rotateSpeed, observeRadius, timeToAttack, damage);
                     lC.addCoin(-cost);
                     resetSelected();
+
+                    GameObject onlineTool = GameObject.FindWithComp(OnlineObserver.class);
+                    if(onlineTool != null)
+                    {
+                        SendOnServerThatPlaced(this.gameObject.stateInWorld.getPosition(), path,
+                                size, path1, initialRotation, rotateSpeed, observeRadius, timeToAttack, damage);
+                    }
+
                     cantBeSelected = true;
                 }
             }
         }
         ImGui.popID();
+    }
+
+    private void SendOnServerThatPlaced(Vector2f position, String pathSpr0, Vector2f sizeTower,
+                                        String pathSpr1, float initialRotation, float rotateSpeed,
+                                        float observeRadius, float timeToAttack, float damage)
+    {
+        Gson gson = new GsonBuilder()
+                .setPrettyPrinting()
+                .create();
+
+        TowerPlaceData tPD = new TowerPlaceData(position, pathSpr0, sizeTower, pathSpr1, initialRotation,
+            rotateSpeed, observeRadius, timeToAttack, damage);
+
+        String jsonText = gson.toJson(tPD);
+
+        WWWForm form = new WWWForm();
+        form.AddField("placeData", jsonText);
+        OurWebRequest www = null;
+        try
+        {
+            www = OurWebRequest.Post("http://abobnik228.ru/main/placeTower.php", form);
+            www.SendWebRequest();
+            //wwwTest = www;
+        } catch(IOException | InterruptedException e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    public class TowerPlaceData
+    {
+        public Vector2f position;
+        public String pathSpr0;
+        public Vector2f sizeTower;
+        public String pathSpr1;
+        public float initialRotation;
+        public float rotateSpeed;
+        public float observeRadius;
+        public float timeToAttack;
+        public float damage;
+
+        public TowerPlaceData(Vector2f position, String pathSpr0, Vector2f sizeTower,
+                              String pathSpr1, float initialRotation, float rotateSpeed,
+                              float observeRadius, float timeToAttack, float damage)
+        {
+            this.position = position;
+            this.pathSpr0 = pathSpr0;
+            this.sizeTower = sizeTower;
+            this.pathSpr1 = pathSpr1;
+            this.initialRotation = initialRotation;
+            this.rotateSpeed = rotateSpeed;
+            this.observeRadius = observeRadius;
+            this.timeToAttack = timeToAttack;
+            this.damage = damage;
+        }
     }
 
     public void setSelected()

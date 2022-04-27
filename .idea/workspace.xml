@@ -7,8 +7,11 @@
     <list default="true" id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="cmt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Multiplayer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Multiplayer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level.json" beforeDir="false" afterPath="$PROJECT_DIR$/level.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/OnlineObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/OnlineObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/towers/PlaceForTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/towers/PlaceForTower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/onlineStuff/OurWebRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/onlineStuff/OurWebRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/onlineStuff/WWWForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/onlineStuff/WWWForm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +72,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.19885057" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="settings.editor.selected.configurable" value="inlay.hints.JAVA" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -118,6 +121,15 @@
       <setting name="customPortFile" value="" />
       <setting name="fixLineNumbers" value="false" />
       <setting name="focusEditor" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -274,9 +286,9 @@
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/job/MainWindow.java</url>
-          <line>396</line>
-          <option name="timeStamp" value="31" />
+          <url>file://$PROJECT_DIR$/src/main/java/entities/towers/PlaceForTower.java</url>
+          <line>167</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

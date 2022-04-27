@@ -21,9 +21,7 @@ public class OnlineObserver extends Component
         {
             www = OurWebRequest.Post("http://abobnik228.ru/main/sendHello.php", form);
             www.SendWebRequest();
-            //String response = www.GetResponseBody();
             System.out.println("blabla");
-            //System.out.println(response);
         } catch(IOException | InterruptedException e)
         {
             e.printStackTrace();
@@ -33,9 +31,14 @@ public class OnlineObserver extends Component
     @Override
     public void update(float dt)
     {
-        if(www.CheckError() == OurWebRequest.Status.Success)
+        if(www != null && www.CheckError() == OurWebRequest.Status.Success)
         {
             System.out.println(www.GetResponseBody());
+            www = null;
+        }
+        else if(www != null && www.CheckError() == OurWebRequest.Status.Error)
+        {
+            System.err.println("Trouble");
         }
 
     }

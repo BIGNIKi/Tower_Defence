@@ -5,9 +5,12 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 
 import java.io.IOException;
 import java.net.URI;
+import java.net.URLEncoder;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.nio.charset.StandardCharsets;
+import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
 public class OurWebRequest
@@ -30,14 +33,30 @@ public class OurWebRequest
 
     public static OurWebRequest Post(String uri, WWWForm formData) throws JsonProcessingException
     {
-        String requestBody = formData.GetRequestString();
+        //String requestBody = formData.GetRequestString();
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("http://abobnik228.ru/main/sendHello.php"))
-                .POST(HttpRequest.BodyPublishers.ofString(requestBody))
+                .uri(URI.create(uri))
+                .POST(ofFormData(formData.GetPostData()))
+                .setHeader("User-Agent", "Java 11 HttpClient Bot") // add request header
+                .header("Content-Type", "application/x-www-form-urlencoded")
                 .build();
 
         return new OurWebRequest(client, request);
+    }
+
+    private static HttpRequest.BodyPublisher ofFormData(Map<String, Object> data) {
+
+        var builder = new StringBuilder();
+        for (Map.Entry<String, Object> entry : data.entrySet()) {
+            if (builder.length() > 0) {
+                builder.append("&");
+            }
+            builder.append(URLEncoder.encode(entry.getKey(), StandardCharsets.UTF_8));
+            builder.append("=");
+            builder.append(URLEncoder.encode(entry.getValue().toString(), StandardCharsets.UTF_8));
+        }
+        return HttpRequest.BodyPublishers.ofString(builder.toString());
     }
 
     public void SendWebRequest() throws IOException, InterruptedException
@@ -55,6 +74,7 @@ public class OurWebRequest
                     }
                 }
         );
+        _response.join();
     }
 
     public String GetResponseBody()

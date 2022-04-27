@@ -57,6 +57,13 @@
           "zIndex": 0,
           "uid": 63
         }
+      },
+      {
+        "type": "entities.towers.PlaceForTower",
+        "properties": {
+          "initialRotation": 0,
+          "uid": 108
+        }
       }
     ],
     "doSerialization": true,
@@ -125,6 +132,87 @@
         "type": "controllers.OnlineObserver",
         "properties": {
           "uid": 86
+        }
+      },
+      {
+        "type": "entities.towers.PlaceForTower",
+        "properties": {
+          "initialRotation": 0,
+          "uid": 107
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 2,
+    "name": "LevelCntrl",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -1.875,
+            "y": 0.375
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "uid": 129
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 0.0
+          },
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 0.5,
+                "y": 1.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 130
+        }
+      },
+      {
+        "type": "controllers.LevelCntrl",
+        "properties": {
+          "coin": 0,
+          "baseHpMax": 10,
+          "costBlue": 0,
+          "costGreen": 0,
+          "costRed": 0,
+          "uid": 131
         }
       }
     ],
