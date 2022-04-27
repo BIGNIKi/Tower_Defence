@@ -1,6 +1,13 @@
 package controllers;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import components.Component;
+import components.ComponentDeserializer;
+import entities.towers.PlaceForTower;
+import job.GameObject;
+import job.GameObjectDeserializer;
+import job.Prefabs;
 import onlineStuff.OurWebRequest;
 import onlineStuff.WWWForm;
 
@@ -14,6 +21,9 @@ public class OnlineObserver extends Component
 
     private transient String _sessionId = null;
     private transient int _numPlayer = -1;
+
+    private transient final float TimeToCheck = 0.5f;
+    private transient float _actualTime = 0f;
 
     public String get_sessionId()
     {
@@ -61,6 +71,34 @@ public class OnlineObserver extends Component
             www = null;
         }
 
-        
+        _actualTime += dt;
+        if(_sessionId != null)
+        {
+            if(www == null && _actualTime >= TimeToCheck)
+            {
+                _actualTime = 0;
+                WWWForm form = new WWWForm();
+                form.AddField("sessionId", get_sessionId());
+                form.AddField("idPlayer", get_numPlayer());
+                www = OurWebRequest.Post("http://abobnik228.ru/main/checkNewTower.php", form);
+                www.SendWebRequest();
+            }
+            else if(www != null && www.CheckError() == OurWebRequest.Status.Success)
+            {
+                //System.out.println(www.GetResponseBody());
+                Gson gson = new GsonBuilder()
+                        .setPrettyPrinting()
+                        .create();
+
+                if(!www.GetResponseBody().equals("Nope"))
+                {
+                    PlaceForTower.TowerPlaceData tPD = gson.fromJson(www.GetResponseBody(), PlaceForTower.TowerPlaceData.class);
+                    Prefabs.addTower(tPD.position, tPD.pathSpr0, tPD.sizeTower, tPD.pathSpr1, tPD.initialRotation,
+                            tPD.rotateSpeed, tPD.observeRadius, tPD.timeToAttack, tPD.damage);
+                }
+
+                www = null;
+            }
+        }
     }
 }
