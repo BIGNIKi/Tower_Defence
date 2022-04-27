@@ -35,6 +35,9 @@ public class PlaceForTower extends Component
 
     private int initialRotation;
 
+    private transient GameObject _onlineTool = null;
+    private transient GameObject _lvlCntrl = null;
+
     public PlaceForTower()
     {
         textureToSprite("assets/images/fullBlue.png");
@@ -72,12 +75,15 @@ public class PlaceForTower extends Component
             ImGui.setNextWindowSize(140, 270);
             ImGui.begin("Tower selection:", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoDocking);
 
-            GameObject lvlCntrl = GameObject.FindWithComp(LevelCntrl.class);
+            if(_lvlCntrl == null)
+            {
+                _lvlCntrl = GameObject.FindWithComp(LevelCntrl.class);
+            }
 
             int costBlue = 0, costGreen = 0, costRed = 0;
-            if(lvlCntrl != null)
+            if(_lvlCntrl != null)
             {
-                LevelCntrl lc = lvlCntrl.getComponent(LevelCntrl.class);
+                LevelCntrl lc = _lvlCntrl.getComponent(LevelCntrl.class);
                 costGreen = lc.costGreen;
                 costBlue = lc.costBlue;
                 costRed = lc.costRed;
@@ -109,8 +115,7 @@ public class PlaceForTower extends Component
         // в длину
         float spriteHeight = 50;
 
-        GameObject onlineTool = GameObject.FindWithComp(OnlineObserver.class);
-        if(onlineTool != null && onlineTool.getComponent(OnlineObserver.class).get_sessionId() != null)
+        if(_onlineTool != null)
         {
             if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))
             {
@@ -119,20 +124,36 @@ public class PlaceForTower extends Component
         }
         else
         {
-            if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))
+            _onlineTool = GameObject.FindWithComp(OnlineObserver.class);;
+            if(_onlineTool != null && _onlineTool.getComponent(OnlineObserver.class).get_sessionId() != null)
             {
-                OnTowerLogic(ide);
+                if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))
+                {
+                    OnTowerLogic(ide);
+                }
+                else
+                {
+                    if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))
+                    {
+                        OnTowerLogic(ide);
+                    }
+                }
             }
         }
+
+
         ImGui.popID();
     }
 
     private void OnTowerLogic(int ide)
     {
-        GameObject lvlCntrl = GameObject.FindWithComp(LevelCntrl.class);
-        if(lvlCntrl != null)
+        if(_lvlCntrl == null)
         {
-            LevelCntrl lC = lvlCntrl.getComponent(LevelCntrl.class);
+            _lvlCntrl = GameObject.FindWithComp(LevelCntrl.class);
+        }
+        if(_lvlCntrl != null)
+        {
+            LevelCntrl lC = _lvlCntrl.getComponent(LevelCntrl.class);
             int cost;
             String path;
             Vector2f size = null;
@@ -216,9 +237,8 @@ public class PlaceForTower extends Component
 
         WWWForm form = new WWWForm();
         form.AddField("placeData", jsonText);
-        GameObject onlineTool = GameObject.FindWithComp(OnlineObserver.class);
-        form.AddField("sessionId", onlineTool.getComponent(OnlineObserver.class).get_sessionId());
-        form.AddField("idPlayer", onlineTool.getComponent(OnlineObserver.class).get_numPlayer());
+        form.AddField("sessionId", _onlineTool.getComponent(OnlineObserver.class).get_sessionId());
+        form.AddField("idPlayer", _onlineTool.getComponent(OnlineObserver.class).get_numPlayer());
         OurWebRequest www = OurWebRequest.Post("http://abobnik228.ru/main/placeTower.php", form);
         www.SendWebRequest();
             //wwwTest = www;

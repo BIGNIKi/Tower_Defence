@@ -93,13 +93,13 @@ public class OnlineObserver extends Component
             }
             else if(www != null && www.CheckError() == OurWebRequest.Status.Success)
             {
-                Gson gson = new GsonBuilder()
-                        .setPrettyPrinting()
-                        .create();
+
 
                 if(!www.GetResponseBody().equals("Nope"))
                 {
-                    String g = www.GetResponseBody();
+                    Gson gson = new GsonBuilder()
+                            .setPrettyPrinting()
+                            .create();
                     //System.out.println(g);
                     PlaceForTower.TowerPlaceData tPD = gson.fromJson(www.GetResponseBody(), PlaceForTower.TowerPlaceData.class);
                     Prefabs.addTower(tPD.position, tPD.pathSpr0, tPD.sizeTower, tPD.pathSpr1, tPD.initialRotation,
