@@ -1,6 +1,6 @@
 [
   {
-    "uid": 0,
+    "uid": 16,
     "name": "Place1",
     "components": [
       {
@@ -70,7 +70,7 @@
     "isDead": false
   },
   {
-    "uid": 1,
+    "uid": 17,
     "name": "Place0",
     "components": [
       {
@@ -146,7 +146,7 @@
     "isDead": false
   },
   {
-    "uid": 2,
+    "uid": 18,
     "name": "LevelCntrl",
     "components": [
       {
@@ -213,6 +213,538 @@
           "costGreen": 0,
           "costRed": 0,
           "uid": 131
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 25,
+    "name": "Place2",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -0.375,
+            "y": 0.875
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "uid": 64
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 0.5,
+                "y": 1.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 65
+        }
+      },
+      {
+        "type": "controllers.OnlineObserver",
+        "properties": {
+          "uid": 86
+        }
+      },
+      {
+        "type": "entities.towers.PlaceForTower",
+        "properties": {
+          "initialRotation": 0,
+          "uid": 107
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 27,
+    "name": "Place3",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 0.125,
+            "y": 0.875
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "uid": 64
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 0.5,
+                "y": 1.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 65
+        }
+      },
+      {
+        "type": "controllers.OnlineObserver",
+        "properties": {
+          "uid": 86
+        }
+      },
+      {
+        "type": "entities.towers.PlaceForTower",
+        "properties": {
+          "initialRotation": 0,
+          "uid": 107
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 29,
+    "name": "Place4",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 0.625,
+            "y": 0.875
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "uid": 64
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 0.5,
+                "y": 1.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 65
+        }
+      },
+      {
+        "type": "controllers.OnlineObserver",
+        "properties": {
+          "uid": 86
+        }
+      },
+      {
+        "type": "entities.towers.PlaceForTower",
+        "properties": {
+          "initialRotation": 0,
+          "uid": 107
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 31,
+    "name": "Place5",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 0.625,
+            "y": 0.375
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "uid": 64
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 0.8
+          },
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 0.5,
+                "y": 1.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 65
+        }
+      },
+      {
+        "type": "controllers.OnlineObserver",
+        "properties": {
+          "uid": 86
+        }
+      },
+      {
+        "type": "entities.towers.PlaceForTower",
+        "properties": {
+          "initialRotation": 0,
+          "uid": 107
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 33,
+    "name": "Place6",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 0.625,
+            "y": -0.125
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "uid": 64
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 0.5,
+                "y": 1.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 65
+        }
+      },
+      {
+        "type": "controllers.OnlineObserver",
+        "properties": {
+          "uid": 86
+        }
+      },
+      {
+        "type": "entities.towers.PlaceForTower",
+        "properties": {
+          "initialRotation": 0,
+          "uid": 107
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 35,
+    "name": "Place7",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": 0.125,
+            "y": -0.125
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "uid": 64
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 0.5,
+                "y": 1.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 65
+        }
+      },
+      {
+        "type": "controllers.OnlineObserver",
+        "properties": {
+          "uid": 86
+        }
+      },
+      {
+        "type": "entities.towers.PlaceForTower",
+        "properties": {
+          "initialRotation": 0,
+          "uid": 107
+        }
+      }
+    ],
+    "doSerialization": true,
+    "isDead": false
+  },
+  {
+    "uid": 37,
+    "name": "Place8",
+    "components": [
+      {
+        "type": "job.StateInWorld",
+        "properties": {
+          "position": {
+            "x": -0.375,
+            "y": -0.125
+          },
+          "size": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "rotation": 0.0,
+          "uid": 64
+        }
+      },
+      {
+        "type": "components.SpriteRenderer",
+        "properties": {
+          "color": {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0,
+            "w": 1.0
+          },
+          "sprite": {
+            "width": 121.0,
+            "height": 120.0,
+            "texture": {
+              "filePath": "assets/images/spritesheet.png",
+              "width": 242,
+              "height": 120
+            },
+            "texCoords": [
+              {
+                "x": 0.5,
+                "y": 1.0
+              },
+              {
+                "x": 0.5,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0
+              },
+              {
+                "x": 0.0,
+                "y": 1.0
+              }
+            ]
+          },
+          "zIndex": 0,
+          "uid": 65
+        }
+      },
+      {
+        "type": "controllers.OnlineObserver",
+        "properties": {
+          "uid": 86
+        }
+      },
+      {
+        "type": "entities.towers.PlaceForTower",
+        "properties": {
+          "initialRotation": 0,
+          "uid": 107
         }
       }
     ],

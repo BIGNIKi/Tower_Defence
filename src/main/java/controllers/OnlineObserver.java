@@ -35,6 +35,14 @@ public class OnlineObserver extends Component
         return _numPlayer;
     }
 
+    private int getEnemyId()
+    {
+        if(_numPlayer == 1)
+            return 2;
+        else
+            return 1;
+    }
+
     @Override
     public void OnStartScene()
     {
@@ -85,13 +93,14 @@ public class OnlineObserver extends Component
             }
             else if(www != null && www.CheckError() == OurWebRequest.Status.Success)
             {
-                //System.out.println(www.GetResponseBody());
                 Gson gson = new GsonBuilder()
                         .setPrettyPrinting()
                         .create();
 
                 if(!www.GetResponseBody().equals("Nope"))
                 {
+                    String g = www.GetResponseBody();
+                    //System.out.println(g);
                     PlaceForTower.TowerPlaceData tPD = gson.fromJson(www.GetResponseBody(), PlaceForTower.TowerPlaceData.class);
                     Prefabs.addTower(tPD.position, tPD.pathSpr0, tPD.sizeTower, tPD.pathSpr1, tPD.initialRotation,
                             tPD.rotateSpeed, tPD.observeRadius, tPD.timeToAttack, tPD.damage);
