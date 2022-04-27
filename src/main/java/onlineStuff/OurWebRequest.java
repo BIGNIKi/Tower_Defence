@@ -31,9 +31,8 @@ public class OurWebRequest
         this.request = request;
     }
 
-    public static OurWebRequest Post(String uri, WWWForm formData) throws JsonProcessingException
+    public static OurWebRequest Post(String uri, WWWForm formData)
     {
-        //String requestBody = formData.GetRequestString();
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(uri))
@@ -59,7 +58,7 @@ public class OurWebRequest
         return HttpRequest.BodyPublishers.ofString(builder.toString());
     }
 
-    public void SendWebRequest() throws IOException, InterruptedException
+    public void SendWebRequest()
     {
         _response = client.sendAsync(request, HttpResponse.BodyHandlers.ofString()).thenApplyAsync(
         resp -> {
@@ -68,7 +67,7 @@ public class OurWebRequest
         }).whenComplete(
                 (resp,t) -> {
                     if(t != null){
-                        //t.printStackTrace();
+                        t.printStackTrace();
                     }else{
                         _body = resp.body();
                     }

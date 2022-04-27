@@ -1,6 +1,6 @@
 [
   {
-    "uid": 0,
+    "uid": 14,
     "name": "Place1",
     "components": [
       {
@@ -70,7 +70,7 @@
     "isDead": false
   },
   {
-    "uid": 1,
+    "uid": 15,
     "name": "Place0",
     "components": [
       {
@@ -146,7 +146,7 @@
     "isDead": false
   },
   {
-    "uid": 2,
+    "uid": 16,
     "name": "LevelCntrl",
     "components": [
       {

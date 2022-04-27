@@ -108,80 +108,97 @@ public class PlaceForTower extends Component
         float spriteWidth = 50;
         // в длину
         float spriteHeight = 50;
-        if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))
+
+        GameObject onlineTool = GameObject.FindWithComp(OnlineObserver.class);
+        if(onlineTool != null && onlineTool.getComponent(OnlineObserver.class).get_sessionId() != null)
         {
-            GameObject lvlCntrl = GameObject.FindWithComp(LevelCntrl.class);
-            if(lvlCntrl != null)
+            if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))
             {
-                LevelCntrl lC = lvlCntrl.getComponent(LevelCntrl.class);
-                int cost;
-                String path;
-                Vector2f size = null;
-                String path1;
-                float rotateSpeed, observeRadius, timeToAttack, damage;
-                //TODO: переделать на towertype
-                switch(ide)
-                {
-                    case 0 -> { // blue
-                        cost = lC.costBlue;
-                        path = "assets/images/standTower.png";
-                        size = new Vector2f(0.086f, 0.154f);
-                        path1 = "assets/images/standTower1.png";
-                        rotateSpeed = 60;
-                        observeRadius = 0.5f;
-                        timeToAttack = 0.25f;
-                        damage = 8;
-                    }
-                    case 1 -> {
-                        cost = lC.costGreen;
-                        path = "assets/images/standTowerGreen.png";
-                        size = new Vector2f(0.064f, 0.065f);
-                        path1 = "assets/images/standTower1Green.png";
-                        rotateSpeed = 60;
-                        observeRadius = 0.5f;
-                        timeToAttack = 1f;
-                        damage = 32;
-                    }
-                    case 2 -> {
-                        cost = lC.costRed;
-                        path = "assets/images/standTowerRed.png";
-                        size = new Vector2f(0.097f, 0.099f);
-                        path1 = "assets/images/standTower1Red.png";
-                        rotateSpeed = 60;
-                        observeRadius = 0.5f;
-                        timeToAttack = 2f;
-                        damage = 100;
-                    }
-                    default -> {
-                        cost = 0;
-                        path = "";
-                        size = new Vector2f(0, 0);
-                        path1 = "";
-                        rotateSpeed = 0;
-                        observeRadius = 0;
-                        timeToAttack = 0;
-                        damage = 0;
-                    }
-                }
-                if(lC.getCoin() >= cost)
-                {
-                    Prefabs.addTower(this.gameObject.stateInWorld.getPosition(), path,
-                            size, path1, initialRotation, rotateSpeed, observeRadius, timeToAttack, damage);
-                    lC.addCoin(-cost);
-                    resetSelected();
-
-                    GameObject onlineTool = GameObject.FindWithComp(OnlineObserver.class);
-                    if(onlineTool != null)
-                    {
-                        SendOnServerThatPlaced(this.gameObject.stateInWorld.getPosition(), path,
-                                size, path1, initialRotation, rotateSpeed, observeRadius, timeToAttack, damage);
-                    }
-
-                    cantBeSelected = true;
-                }
+                OnTowerLogic(ide);
+            }
+        }
+        else
+        {
+            if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))
+            {
+                OnTowerLogic(ide);
             }
         }
         ImGui.popID();
+    }
+
+    private void OnTowerLogic(int ide)
+    {
+        GameObject lvlCntrl = GameObject.FindWithComp(LevelCntrl.class);
+        if(lvlCntrl != null)
+        {
+            LevelCntrl lC = lvlCntrl.getComponent(LevelCntrl.class);
+            int cost;
+            String path;
+            Vector2f size = null;
+            String path1;
+            float rotateSpeed, observeRadius, timeToAttack, damage;
+            //TODO: переделать на towertype
+            switch(ide)
+            {
+                case 0 -> { // blue
+                    cost = lC.costBlue;
+                    path = "assets/images/standTower.png";
+                    size = new Vector2f(0.086f, 0.154f);
+                    path1 = "assets/images/standTower1.png";
+                    rotateSpeed = 60;
+                    observeRadius = 0.5f;
+                    timeToAttack = 0.25f;
+                    damage = 8;
+                }
+                case 1 -> {
+                    cost = lC.costGreen;
+                    path = "assets/images/standTowerGreen.png";
+                    size = new Vector2f(0.064f, 0.065f);
+                    path1 = "assets/images/standTower1Green.png";
+                    rotateSpeed = 60;
+                    observeRadius = 0.5f;
+                    timeToAttack = 1f;
+                    damage = 32;
+                }
+                case 2 -> {
+                    cost = lC.costRed;
+                    path = "assets/images/standTowerRed.png";
+                    size = new Vector2f(0.097f, 0.099f);
+                    path1 = "assets/images/standTower1Red.png";
+                    rotateSpeed = 60;
+                    observeRadius = 0.5f;
+                    timeToAttack = 2f;
+                    damage = 100;
+                }
+                default -> {
+                    cost = 0;
+                    path = "";
+                    size = new Vector2f(0, 0);
+                    path1 = "";
+                    rotateSpeed = 0;
+                    observeRadius = 0;
+                    timeToAttack = 0;
+                    damage = 0;
+                }
+            }
+            if(lC.getCoin() >= cost)
+            {
+                Prefabs.addTower(this.gameObject.stateInWorld.getPosition(), path,
+                        size, path1, initialRotation, rotateSpeed, observeRadius, timeToAttack, damage);
+                lC.addCoin(-cost);
+                resetSelected();
+
+                GameObject onlineTool = GameObject.FindWithComp(OnlineObserver.class);
+                if(onlineTool != null)
+                {
+                    SendOnServerThatPlaced(this.gameObject.stateInWorld.getPosition(), path,
+                            size, path1, initialRotation, rotateSpeed, observeRadius, timeToAttack, damage);
+                }
+
+                cantBeSelected = true;
+            }
+        }
     }
 
     private void SendOnServerThatPlaced(Vector2f position, String pathSpr0, Vector2f sizeTower,
@@ -199,16 +216,12 @@ public class PlaceForTower extends Component
 
         WWWForm form = new WWWForm();
         form.AddField("placeData", jsonText);
-        OurWebRequest www = null;
-        try
-        {
-            www = OurWebRequest.Post("http://abobnik228.ru/main/placeTower.php", form);
-            www.SendWebRequest();
+        GameObject onlineTool = GameObject.FindWithComp(OnlineObserver.class);
+        form.AddField("sessionId", onlineTool.getComponent(OnlineObserver.class).get_sessionId());
+        form.AddField("idPlayer", onlineTool.getComponent(OnlineObserver.class).get_numPlayer());
+        OurWebRequest www = OurWebRequest.Post("http://abobnik228.ru/main/placeTower.php", form);
+        www.SendWebRequest();
             //wwwTest = www;
-        } catch(IOException | InterruptedException e)
-        {
-            e.printStackTrace();
-        }
     }
 
     public class TowerPlaceData
