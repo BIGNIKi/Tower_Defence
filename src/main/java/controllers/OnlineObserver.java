@@ -77,7 +77,7 @@ public class OnlineObserver extends Component
             {
                 _numPlayer = 2;
                 _sessionId = www.GetResponseBody();
-                System.out.println(_sessionId);
+                //System.out.println(_sessionId);
                 GameObject.FindWithComp(Waves.class).getComponent(Waves.class).SetisWaitingForEnemy(false);
                 _isGameStarted = true;
             }
@@ -97,8 +97,10 @@ public class OnlineObserver extends Component
             }
             else if(www.CheckError() == OurWebRequest.Status.Success)
             {
+                System.out.println(www.GetResponseBody());
                 if(www.GetResponseBody().equals("GO"))
                 {
+                    GameObject.FindWithComp(Waves.class).getComponent(Waves.class).SetisWaitingForEnemy(false);
                     _isGameStarted = true;
                 }
 
