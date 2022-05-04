@@ -21,6 +21,7 @@ public class OnlineObserver extends Component
 
     private transient String _sessionId = null;
     private transient int _numPlayer = -1;
+    private transient boolean _isGameStarted = false;
 
     private transient final float TimeToCheck = 0.5f;
     private transient float _actualTime = 0f;
@@ -60,6 +61,7 @@ public class OnlineObserver extends Component
     {
         if(_sessionId == null && www != null && www.CheckError() == OurWebRequest.Status.Success)
         {
+            System.out.println(www.GetResponseBody());
             if(www.GetResponseBody().equals("Nope"))
             {
                 byte[] array = new byte[7]; // length is bounded by 7
@@ -77,13 +79,35 @@ public class OnlineObserver extends Component
                 _sessionId = www.GetResponseBody();
                 System.out.println(_sessionId);
                 GameObject.FindWithComp(Waves.class).getComponent(Waves.class).SetisWaitingForEnemy(false);
+                _isGameStarted = true;
             }
 
             www = null;
         }
 
+        // проверка на то, что нашёлся противник
+        if(_sessionId != null && !_isGameStarted)
+        {
+            if(www != null)
+            {
+                WWWForm form = new WWWForm();
+                form.AddField("sessionId", _sessionId);
+                www = OurWebRequest.Post("http://abobnik228.ru/main/checkSession.php", form);
+                www.SendWebRequest();
+            }
+            else if(www.CheckError() == OurWebRequest.Status.Success)
+            {
+                if(www.GetResponseBody().equals("GO"))
+                {
+                    _isGameStarted = true;
+                }
+
+                www = null;
+            }
+        }
+
         _actualTime += dt;
-        if(_sessionId != null)
+        if(_sessionId != null && _isGameStarted)
         {
             if(www == null && _actualTime >= TimeToCheck)
             {
