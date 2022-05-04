@@ -100,10 +100,10 @@ public class OnlineObserver extends Component
                     Gson gson = new GsonBuilder()
                             .setPrettyPrinting()
                             .create();
-                    //System.out.println(g);
                     PlaceForTower.TowerPlaceData tPD = gson.fromJson(www.GetResponseBody(), PlaceForTower.TowerPlaceData.class);
                     Prefabs.addTower(tPD.position, tPD.pathSpr0, tPD.sizeTower, tPD.pathSpr1, tPD.initialRotation,
                             tPD.rotateSpeed, tPD.observeRadius, tPD.timeToAttack, tPD.damage);
+                    GameObject.Find(tPD.placeName).getComponent(PlaceForTower.class).SetCantBeSelected();
                 }
 
                 www = null;

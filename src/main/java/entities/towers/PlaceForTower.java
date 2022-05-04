@@ -1,26 +1,20 @@
 package entities.towers;
 
 import Util.AssetPool;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import components.Component;
-import components.ComponentDeserializer;
-import components.MouseControls;
 import components.Sprite;
 import controllers.LevelCntrl;
 import controllers.OnlineObserver;
 import imgui.ImGui;
-import imgui.ImVec2;
 import imgui.flag.ImGuiWindowFlags;
 import job.GameObject;
-import job.GameObjectDeserializer;
 import job.Prefabs;
 import onlineStuff.OurWebRequest;
 import onlineStuff.WWWForm;
 import org.joml.Vector2f;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,8 +22,6 @@ public class PlaceForTower extends Component
 {
     private transient boolean isIamSelected = false;
     private transient boolean cantBeSelected = false;
-
-    //private transient OurWebRequest wwwTest = null;
 
     private transient final List<Sprite> btnTexture = new ArrayList<>(); // все спрайты, которые нужно будет отобразить как кнопки
 
@@ -222,6 +214,11 @@ public class PlaceForTower extends Component
         }
     }
 
+    public void SetCantBeSelected()
+    {
+        cantBeSelected = true;
+    }
+
     private void SendOnServerThatPlaced(Vector2f position, String pathSpr0, Vector2f sizeTower,
                                         String pathSpr1, float initialRotation, float rotateSpeed,
                                         float observeRadius, float timeToAttack, float damage)
@@ -231,7 +228,7 @@ public class PlaceForTower extends Component
                 .create();
 
         TowerPlaceData tPD = new TowerPlaceData(position, pathSpr0, sizeTower, pathSpr1, initialRotation,
-            rotateSpeed, observeRadius, timeToAttack, damage);
+            rotateSpeed, observeRadius, timeToAttack, damage, gameObject.name);
 
         String jsonText = gson.toJson(tPD);
 
@@ -239,6 +236,7 @@ public class PlaceForTower extends Component
         form.AddField("placeData", jsonText);
         form.AddField("sessionId", _onlineTool.getComponent(OnlineObserver.class).get_sessionId());
         form.AddField("idPlayer", _onlineTool.getComponent(OnlineObserver.class).get_numPlayer());
+        //form.AddField("placeName", gameObject.name);
         OurWebRequest www = OurWebRequest.Post("http://abobnik228.ru/main/placeTower.php", form);
         www.SendWebRequest();
             //wwwTest = www;
@@ -255,10 +253,11 @@ public class PlaceForTower extends Component
         public float observeRadius;
         public float timeToAttack;
         public float damage;
+        public String placeName;
 
         public TowerPlaceData(Vector2f position, String pathSpr0, Vector2f sizeTower,
                               String pathSpr1, float initialRotation, float rotateSpeed,
-                              float observeRadius, float timeToAttack, float damage)
+                              float observeRadius, float timeToAttack, float damage, String placeName)
         {
             this.position = position;
             this.pathSpr0 = pathSpr0;
@@ -269,6 +268,7 @@ public class PlaceForTower extends Component
             this.observeRadius = observeRadius;
             this.timeToAttack = timeToAttack;
             this.damage = damage;
+            this.placeName = placeName;
         }
     }
 
