@@ -8,9 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Multiplayer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Multiplayer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/imgui.ini" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/LevelCntrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/LevelCntrl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/OnlineObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/OnlineObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Waves.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Waves.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entities/towers/PlaceForTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/towers/PlaceForTower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/onlineStuff/OurWebRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/onlineStuff/OurWebRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

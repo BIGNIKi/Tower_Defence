@@ -19,9 +19,14 @@ public class Waves extends Component
 
     private StringList wayPoints = new StringList(); // список имен точек, по которым нужно ходить
 
+    private transient boolean _isWaitingForEnemy = false; // настройка для ожидания противника онлайн
+
     @Override
     public void update(float dt)
     {
+        if(_isWaitingForEnemy)
+            return;
+
         alreadyTime += dt;
         if(timeToStart > 0.0f)
         {
@@ -36,5 +41,15 @@ public class Waves extends Component
 
             alreadyMonsters++;
         }
+    }
+
+    public void SetisWaitingForEnemy(boolean val)
+    {
+        _isWaitingForEnemy = val;
+    }
+
+    public boolean GetisWaitingForEnemy()
+    {
+        return _isWaitingForEnemy;
     }
 }

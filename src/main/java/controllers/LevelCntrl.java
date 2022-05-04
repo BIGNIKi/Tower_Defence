@@ -61,6 +61,10 @@ public class LevelCntrl extends Component
                 }
                 ImGui.text("Monsters left = " + (w.numOfMonsters - w.alreadyMonsters));
             }
+            if(GameObject.FindWithComp(Waves.class).getComponent(Waves.class).GetisWaitingForEnemy())
+            {
+                ImGui.text("Waiting for enemy...");
+            }
             ImGui.end();
         }
     }

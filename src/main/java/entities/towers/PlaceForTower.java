@@ -7,6 +7,7 @@ import components.Component;
 import components.Sprite;
 import controllers.LevelCntrl;
 import controllers.OnlineObserver;
+import controllers.Waves;
 import imgui.ImGui;
 import imgui.flag.ImGuiWindowFlags;
 import job.GameObject;
@@ -62,7 +63,7 @@ public class PlaceForTower extends Component
         {
             return;
         }
-        if(isIamSelected)
+        if(isIamSelected && !GameObject.FindWithComp(Waves.class).getComponent(Waves.class).GetisWaitingForEnemy())
         {
             ImGui.setNextWindowSize(140, 270);
             ImGui.begin("Tower selection:", ImGuiWindowFlags.NoResize | ImGuiWindowFlags.NoDocking);
@@ -139,6 +140,12 @@ public class PlaceForTower extends Component
 
     private void OnTowerLogic(int ide)
     {
+        // если не нашли противника для онлайн игры
+        if(GameObject.FindWithComp(Waves.class).getComponent(Waves.class).GetisWaitingForEnemy())
+        {
+            return;
+        }
+
         if(_lvlCntrl == null)
         {
             _lvlCntrl = GameObject.FindWithComp(LevelCntrl.class);

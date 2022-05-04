@@ -51,6 +51,8 @@ public class OnlineObserver extends Component
 
         www = OurWebRequest.Post("http://abobnik228.ru/main/findSession.php", form);
         www.SendWebRequest();
+
+        GameObject.FindWithComp(Waves.class).getComponent(Waves.class).SetisWaitingForEnemy(true);
     }
 
     @Override
@@ -74,6 +76,7 @@ public class OnlineObserver extends Component
                 _numPlayer = 2;
                 _sessionId = www.GetResponseBody();
                 System.out.println(_sessionId);
+                GameObject.FindWithComp(Waves.class).getComponent(Waves.class).SetisWaitingForEnemy(false);
             }
 
             www = null;
