@@ -117,7 +117,7 @@ public class PlaceForTower extends Component
         }
         else
         {
-            _onlineTool = GameObject.FindWithComp(OnlineObserver.class);;
+            _onlineTool = GameObject.FindWithComp(OnlineObserver.class);
             if(_onlineTool != null && _onlineTool.getComponent(OnlineObserver.class).get_sessionId() != null)
             {
                 if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))

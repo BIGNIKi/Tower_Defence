@@ -1,13 +1,17 @@
 package editor;
 
+import controllers.OnlineObserver;
 import imgui.ImGui;
 import imgui.ImVec2;
 import imgui.flag.ImGuiWindowFlags;
+import job.GameObject;
 import job.MainWindow;
 import job.Mouse;
 import observers.EventSystem;
 import observers.events.Event;
 import observers.events.EventType;
+import onlineStuff.OurWebRequest;
+import onlineStuff.WWWForm;
 import org.joml.Vector2f;
 
 public class GameViewWindow
@@ -26,6 +30,15 @@ public class GameViewWindow
         }
         if (ImGui.menuItem("Stop", "", !isPlaying, isPlaying)) {
             isPlaying = false;
+            GameObject go = GameObject.FindWithComp(OnlineObserver.class);
+            if(go != null)
+            {
+                WWWForm form = new WWWForm();
+                form.AddField("sessionId", go.getComponent(OnlineObserver.class).get_sessionId());
+                OurWebRequest www = OurWebRequest.Post("http://abobnik228.ru/main/stopSession.php", form);
+                www.SendWebRequest();
+            }
+
             EventSystem.notify(null, new Event(EventType.GameEngineStopPlay));
         }
         ImGui.endMenuBar();
