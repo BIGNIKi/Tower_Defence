@@ -88,7 +88,7 @@ public class OnlineObserver extends Component
         // проверка на то, что нашёлся противник
         if(_sessionId != null && !_isGameStarted)
         {
-            if(www != null)
+            if(www == null)
             {
                 WWWForm form = new WWWForm();
                 form.AddField("sessionId", _sessionId);
