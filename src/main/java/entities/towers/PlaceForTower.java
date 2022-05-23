@@ -124,13 +124,10 @@ public class PlaceForTower extends Component
                 {
                     OnTowerLogic(ide);
                 }
-                else
-                {
-                    if(ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))
-                    {
-                        OnTowerLogic(ide);
-                    }
-                }
+            }
+            else if(_onlineTool == null && ImGui.imageButton(id, spriteWidth, spriteHeight, texCoords[2].x, texCoords[0].y, texCoords[0].x, texCoords[2].y))
+            {
+                OnTowerLogic(ide);
             }
         }
 

@@ -8,4 +8,3 @@ public final class Main
         wnd.Run();
     }
 }
-
