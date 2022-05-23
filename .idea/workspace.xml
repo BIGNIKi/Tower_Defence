@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="cmt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/editor/GameViewWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/editor/GameViewWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/towers/PlaceForTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/towers/PlaceForTower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Multiplayer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Multiplayer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/imgui.ini" beforeDir="false" afterPath="$PROJECT_DIR$/imgui.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/level.json" beforeDir="false" afterPath="$PROJECT_DIR$/level.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

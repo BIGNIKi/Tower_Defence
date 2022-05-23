@@ -1,6 +1,6 @@
 [
   {
-    "uid": 64,
+    "uid": 35,
     "name": "way",
     "components": [
       {
@@ -63,7 +63,7 @@
     "isDead": false
   },
   {
-    "uid": 65,
+    "uid": 36,
     "name": "way",
     "components": [
       {
@@ -126,7 +126,7 @@
     "isDead": false
   },
   {
-    "uid": 66,
+    "uid": 37,
     "name": "way",
     "components": [
       {
@@ -189,7 +189,7 @@
     "isDead": false
   },
   {
-    "uid": 67,
+    "uid": 38,
     "name": "way",
     "components": [
       {
@@ -252,7 +252,7 @@
     "isDead": false
   },
   {
-    "uid": 68,
+    "uid": 39,
     "name": "way",
     "components": [
       {
@@ -315,7 +315,7 @@
     "isDead": false
   },
   {
-    "uid": 69,
+    "uid": 40,
     "name": "way",
     "components": [
       {
@@ -378,7 +378,7 @@
     "isDead": false
   },
   {
-    "uid": 70,
+    "uid": 41,
     "name": "way",
     "components": [
       {
@@ -441,7 +441,7 @@
     "isDead": false
   },
   {
-    "uid": 71,
+    "uid": 42,
     "name": "way",
     "components": [
       {
@@ -504,7 +504,7 @@
     "isDead": false
   },
   {
-    "uid": 72,
+    "uid": 43,
     "name": "way",
     "components": [
       {
@@ -567,7 +567,7 @@
     "isDead": false
   },
   {
-    "uid": 73,
+    "uid": 44,
     "name": "way",
     "components": [
       {
@@ -630,7 +630,7 @@
     "isDead": false
   },
   {
-    "uid": 74,
+    "uid": 45,
     "name": "way",
     "components": [
       {
@@ -693,7 +693,7 @@
     "isDead": false
   },
   {
-    "uid": 75,
+    "uid": 46,
     "name": "place",
     "components": [
       {
@@ -763,7 +763,7 @@
     "isDead": false
   },
   {
-    "uid": 76,
+    "uid": 47,
     "name": "place",
     "components": [
       {
@@ -833,7 +833,7 @@
     "isDead": false
   },
   {
-    "uid": 77,
+    "uid": 48,
     "name": "place",
     "components": [
       {
@@ -903,7 +903,7 @@
     "isDead": false
   },
   {
-    "uid": 78,
+    "uid": 49,
     "name": "spawn",
     "components": [
       {
@@ -984,7 +984,7 @@
     "isDead": false
   },
   {
-    "uid": 79,
+    "uid": 50,
     "name": "base",
     "components": [
       {
@@ -1058,7 +1058,7 @@
     "isDead": false
   },
   {
-    "uid": 80,
+    "uid": 51,
     "name": "point0",
     "components": [
       {
@@ -1081,7 +1081,7 @@
     "isDead": false
   },
   {
-    "uid": 81,
+    "uid": 52,
     "name": "point1",
     "components": [
       {
@@ -1104,7 +1104,7 @@
     "isDead": false
   },
   {
-    "uid": 82,
+    "uid": 53,
     "name": "point2",
     "components": [
       {
@@ -1127,7 +1127,7 @@
     "isDead": false
   },
   {
-    "uid": 83,
+    "uid": 54,
     "name": "point3",
     "components": [
       {
@@ -1150,7 +1150,7 @@
     "isDead": false
   },
   {
-    "uid": 84,
+    "uid": 55,
     "name": "point4",
     "components": [
       {
@@ -1173,7 +1173,7 @@
     "isDead": false
   },
   {
-    "uid": 90,
+    "uid": 56,
     "name": "Sprite_Object_Gen",
     "components": [
       {
@@ -1236,7 +1236,7 @@
     "isDead": false
   },
   {
-    "uid": 91,
+    "uid": 57,
     "name": "Sprite_Object_Gen",
     "components": [
       {
