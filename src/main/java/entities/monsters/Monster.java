@@ -39,6 +39,12 @@ public class Monster extends Component
     private transient GameObject goal; // точка, к которой идет противник
     private transient float finishDistance = 0; // общая пройденная дистанция
     private transient float health; // число хп максимальное
+
+    public float getHealthNow()
+    {
+        return healthNow;
+    }
+
     private transient float healthNow; // число хп сейчас
     private transient int moneyForKill; // число coin'ов за убийство
 

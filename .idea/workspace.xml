@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="cmt">
+      <change afterPath="$PROJECT_DIR$/src/main/java/SyncStuff/MonsterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SyncStuff/SyncClasses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SyncStuff/TowerClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Util/MonsterList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Util/TowerList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/towers/PlaceForTower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/towers/PlaceForTower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Multiplayer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Multiplayer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editorCfg.json" beforeDir="false" afterPath="$PROJECT_DIR$/editorCfg.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/OnlineObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/OnlineObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entities/monsters/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/monsters/Monster.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +76,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.19885057" />
-    <property name="settings.editor.selected.configurable" value="inlay.hints.JAVA" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">

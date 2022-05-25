@@ -1,17 +1,20 @@
 package controllers;
 
+import SyncStuff.MonsterClass;
+import SyncStuff.SyncClasses;
+import SyncStuff.TowerClass;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import components.Component;
-import components.ComponentDeserializer;
+import entities.monsters.Monster;
 import entities.towers.PlaceForTower;
 import job.GameObject;
-import job.GameObjectDeserializer;
 import job.Prefabs;
 import onlineStuff.OurWebRequest;
 import onlineStuff.WWWForm;
 
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 import java.util.Random;
 
 
@@ -25,6 +28,10 @@ public class OnlineObserver extends Component
 
     private transient final float TimeToCheck = 0.5f;
     private transient float _actualTime = 0f;
+
+    private transient final float TimeToSync = 5f;
+    private transient float _actualTimeSync = 0f; // текущее время для синхронизации
+    private transient int _syncId = 0; //номер последней синхронизации
 
     public String get_sessionId()
     {
@@ -136,6 +143,42 @@ public class OnlineObserver extends Component
                 }
 
                 www = null;
+            }
+
+            if(_numPlayer == 1) // если мы - хост
+            {
+                _actualTimeSync += dt;
+                if(_actualTimeSync >= TimeToSync)
+                {
+                    _actualTimeSync = 0;
+                    SyncClasses syncCl = new SyncClasses();
+
+                    List<GameObject> nL = GameObject.FindAllByName("TowerSt");
+                    for(GameObject go : nL)
+                    {
+                        TowerClass newTower = new TowerClass();
+                        newTower.posX = go.stateInWorld.getPosition().x;
+                        newTower.posY = go.stateInWorld.getPosition().y;
+                        newTower.angle = go.stateInWorld.getRotation();
+                        syncCl.towerClasses.add(newTower);
+                    }
+
+                    List<GameObject> enemies = GameObject.FindAllByName("Enemy");
+                    for(GameObject go : enemies)
+                    {
+                        MonsterClass newMonstr = new MonsterClass();
+                        newMonstr.posX = go.stateInWorld.getPosition().x;
+                        newMonstr.posY = go.stateInWorld.getPosition().y;
+                        Monster m = go.getComponent(Monster.class);
+                        newMonstr.health = m.getHealthNow();
+                        syncCl.monsterClasses.add(newMonstr);
+                    }
+
+                    Gson gson = new GsonBuilder()
+                            .setPrettyPrinting()
+                            .create();
+                    System.out.println(gson.toJson(syncCl));
+                }
             }
         }
     }
