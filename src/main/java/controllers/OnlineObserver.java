@@ -96,11 +96,8 @@ public class OnlineObserver extends Component
         }
     }
 
-    @Override
-    public void update(float dt)
+    private void FindEnemy()
     {
-        CreateOrFindSession();
-
         // проверка на то, что нашёлся противник
         if(_sessionId != null && !_isGameStarted)
         {
@@ -123,36 +120,48 @@ public class OnlineObserver extends Component
                 www = null;
             }
         }
+    }
+
+    // чек сообытий на предмет новых поставленных башен
+    private void CheckNewTower()
+    {
+        if(www == null && _actualTime >= TimeToCheck)
+        {
+            _actualTime = 0;
+            WWWForm form = new WWWForm();
+            form.AddField("sessionId", get_sessionId());
+            form.AddField("idPlayer", get_numPlayer());
+            www = OurWebRequest.Post("http://abobnik228.ru/main/checkNewTower.php", form);
+            www.SendWebRequest();
+        }
+        else if(www != null && www.CheckError() == OurWebRequest.Status.Success)
+        {
+            if(!www.GetResponseBody().equals("Nope"))
+            {
+                Gson gson = new GsonBuilder()
+                        .setPrettyPrinting()
+                        .create();
+                PlaceForTower.TowerPlaceData tPD = gson.fromJson(www.GetResponseBody(), PlaceForTower.TowerPlaceData.class);
+                Prefabs.addTower(tPD.position, tPD.pathSpr0, tPD.sizeTower, tPD.pathSpr1, tPD.initialRotation,
+                        tPD.rotateSpeed, tPD.observeRadius, tPD.timeToAttack, tPD.damage);
+                GameObject.Find(tPD.placeName).getComponent(PlaceForTower.class).SetCantBeSelected();
+            }
+
+            www = null;
+        }
+    }
+
+    @Override
+    public void update(float dt)
+    {
+        CreateOrFindSession();
+
+        FindEnemy();
 
         _actualTime += dt;
         if(_sessionId != null && _isGameStarted)
         {
-            if(www == null && _actualTime >= TimeToCheck)
-            {
-                _actualTime = 0;
-                WWWForm form = new WWWForm();
-                form.AddField("sessionId", get_sessionId());
-                form.AddField("idPlayer", get_numPlayer());
-                www = OurWebRequest.Post("http://abobnik228.ru/main/checkNewTower.php", form);
-                www.SendWebRequest();
-            }
-            else if(www != null && www.CheckError() == OurWebRequest.Status.Success)
-            {
-
-
-                if(!www.GetResponseBody().equals("Nope"))
-                {
-                    Gson gson = new GsonBuilder()
-                            .setPrettyPrinting()
-                            .create();
-                    PlaceForTower.TowerPlaceData tPD = gson.fromJson(www.GetResponseBody(), PlaceForTower.TowerPlaceData.class);
-                    Prefabs.addTower(tPD.position, tPD.pathSpr0, tPD.sizeTower, tPD.pathSpr1, tPD.initialRotation,
-                            tPD.rotateSpeed, tPD.observeRadius, tPD.timeToAttack, tPD.damage);
-                    GameObject.Find(tPD.placeName).getComponent(PlaceForTower.class).SetCantBeSelected();
-                }
-
-                www = null;
-            }
+            CheckNewTower();
 
             if(_numPlayer == 1) // если мы - хост (сервер)
             {
