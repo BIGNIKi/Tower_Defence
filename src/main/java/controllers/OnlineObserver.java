@@ -170,6 +170,36 @@ public class OnlineObserver extends Component
                     }
                 }
             }
+            else // клиент
+            {
+                _actualTimeSync += dt;
+                if(_actualTimeSync >= TimeToSync)
+                {
+                    if(www1 == null)
+                    {
+                        WWWForm form = new WWWForm();
+                        form.AddField("id", _syncId);
+                        //_syncId++;
+                        form.AddField("sessionId", _sessionId);
+                        www1 = OurWebRequest.Post("http://abobnik228.ru/main/getSyncInfo.php", form);
+                        www1.SendWebRequest();
+                    }
+                    else if(www1 != null && www1.CheckError() == OurWebRequest.Status.Success)
+                    {
+                        String response = www1.GetResponseBody();
+                        if(response.equals("Nope"))
+                        {
+                            _actualTimeSync = 0;
+                            www1 = null;
+                        }
+                        else
+                        {
+                            // TODO: лоигика синхронизации
+                            System.out.println(response);
+                        }
+                    }
+                }
+            }
         }
     }
 
