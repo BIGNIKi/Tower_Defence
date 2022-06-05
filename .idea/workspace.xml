@@ -5,17 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="421d56be-91f6-4a69-b550-80ef837370bb" name="Changes" comment="cmt">
-      <change afterPath="$PROJECT_DIR$/src/main/java/SyncStuff/MonsterClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SyncStuff/SyncClasses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SyncStuff/TowerClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Util/MonsterList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Util/TowerList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Multiplayer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Multiplayer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editorCfg.json" beforeDir="false" afterPath="$PROJECT_DIR$/editorCfg.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/OnlineObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/OnlineObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entities/monsters/Monster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entities/monsters/Monster.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,11 +281,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/components/Component.java</url>
           <line>104</line>
           <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/entities/towers/PlaceForTower.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

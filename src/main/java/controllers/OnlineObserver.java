@@ -21,6 +21,7 @@ import java.util.Random;
 public class OnlineObserver extends Component
 {
     private transient OurWebRequest www = null;
+    private transient OurWebRequest www1 = null;
 
     private transient String _sessionId = null;
     private transient int _numPlayer = -1;
@@ -145,41 +146,65 @@ public class OnlineObserver extends Component
                 www = null;
             }
 
-            if(_numPlayer == 1) // если мы - хост
+            if(_numPlayer == 1) // если мы - хост (сервер)
             {
                 _actualTimeSync += dt;
                 if(_actualTimeSync >= TimeToSync)
                 {
-                    _actualTimeSync = 0;
-                    SyncClasses syncCl = new SyncClasses();
-
-                    List<GameObject> nL = GameObject.FindAllByName("TowerSt");
-                    for(GameObject go : nL)
+                    if(www1 == null)
                     {
-                        TowerClass newTower = new TowerClass();
-                        newTower.posX = go.stateInWorld.getPosition().x;
-                        newTower.posY = go.stateInWorld.getPosition().y;
-                        newTower.angle = go.stateInWorld.getRotation();
-                        syncCl.towerClasses.add(newTower);
+                        String jsonData = CreateJsonSyncData();
+                        WWWForm form = new WWWForm();
+                        form.AddField("placeData", jsonData);
+                        form.AddField("id", _syncId);
+                        _syncId++;
+                        form.AddField("sessionId", _sessionId);
+                        www1 = OurWebRequest.Post("http://abobnik228.ru/main/addSyncInfo.php", form);
+                        www1.SendWebRequest();
                     }
-
-                    List<GameObject> enemies = GameObject.FindAllByName("Enemy");
-                    for(GameObject go : enemies)
+                    else if(www1 != null && www1.CheckError() == OurWebRequest.Status.Success)
                     {
-                        MonsterClass newMonstr = new MonsterClass();
-                        newMonstr.posX = go.stateInWorld.getPosition().x;
-                        newMonstr.posY = go.stateInWorld.getPosition().y;
-                        Monster m = go.getComponent(Monster.class);
-                        newMonstr.health = m.getHealthNow();
-                        syncCl.monsterClasses.add(newMonstr);
-                    }
+                        www1 = null;
 
-                    Gson gson = new GsonBuilder()
-                            .setPrettyPrinting()
-                            .create();
-                    System.out.println(gson.toJson(syncCl));
+                        _actualTimeSync = 0;
+                    }
                 }
             }
         }
+    }
+
+    // срабатывает только на клиенте, создавшим партию (на сервере)
+    // собирает текущее состояние карты, дабы отправить это на сервер
+    // и чтобы второй игрок мог синхрониться по этим данным
+    private String CreateJsonSyncData()
+    {
+        SyncClasses syncCl = new SyncClasses();
+
+        List<GameObject> nL = GameObject.FindAllByName("TowerSt");
+        for(GameObject go : nL)
+        {
+            TowerClass newTower = new TowerClass();
+            newTower.posX = go.stateInWorld.getPosition().x;
+            newTower.posY = go.stateInWorld.getPosition().y;
+            newTower.angle = go.stateInWorld.getRotation();
+            syncCl.towerClasses.add(newTower);
+        }
+
+        List<GameObject> enemies = GameObject.FindAllByName("Enemy");
+        for(GameObject go : enemies)
+        {
+            MonsterClass newMonstr = new MonsterClass();
+            newMonstr.posX = go.stateInWorld.getPosition().x;
+            newMonstr.posY = go.stateInWorld.getPosition().y;
+            Monster m = go.getComponent(Monster.class);
+            newMonstr.health = m.getHealthNow();
+            syncCl.monsterClasses.add(newMonstr);
+        }
+
+        Gson gson = new GsonBuilder()
+                .setPrettyPrinting()
+                .create();
+        //System.out.println(gson.toJson(syncCl));
+        return gson.toJson(syncCl);
     }
 }
