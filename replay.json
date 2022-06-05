@@ -1,6 +1,6 @@
 [
   {
-    "uid": 0,
+    "uid": 46,
     "name": "Way",
     "components": [
       {
@@ -63,7 +63,7 @@
     "isDead": false
   },
   {
-    "uid": 1,
+    "uid": 47,
     "name": "Way",
     "components": [
       {
@@ -126,7 +126,7 @@
     "isDead": false
   },
   {
-    "uid": 2,
+    "uid": 48,
     "name": "Way",
     "components": [
       {
@@ -189,7 +189,7 @@
     "isDead": false
   },
   {
-    "uid": 3,
+    "uid": 49,
     "name": "Way",
     "components": [
       {
@@ -252,7 +252,7 @@
     "isDead": false
   },
   {
-    "uid": 4,
+    "uid": 50,
     "name": "Way",
     "components": [
       {
@@ -315,7 +315,7 @@
     "isDead": false
   },
   {
-    "uid": 5,
+    "uid": 51,
     "name": "Way",
     "components": [
       {
@@ -378,7 +378,7 @@
     "isDead": false
   },
   {
-    "uid": 6,
+    "uid": 52,
     "name": "Way",
     "components": [
       {
@@ -441,7 +441,7 @@
     "isDead": false
   },
   {
-    "uid": 7,
+    "uid": 53,
     "name": "base",
     "components": [
       {
@@ -515,7 +515,7 @@
     "isDead": false
   },
   {
-    "uid": 8,
+    "uid": 54,
     "name": "Point0",
     "components": [
       {
@@ -538,7 +538,7 @@
     "isDead": false
   },
   {
-    "uid": 9,
+    "uid": 55,
     "name": "Point1",
     "components": [
       {
@@ -561,7 +561,7 @@
     "isDead": false
   },
   {
-    "uid": 10,
+    "uid": 56,
     "name": "Point2",
     "components": [
       {
@@ -584,7 +584,7 @@
     "isDead": false
   },
   {
-    "uid": 11,
+    "uid": 57,
     "name": "Spawn",
     "components": [
       {
@@ -649,7 +649,7 @@
           "numOfMonsters": 20,
           "healthOfMonsters": 50.0,
           "timeBetweenMonsters": 1.0,
-          "timeToStart": 5.0,
+          "timeToStart": 0.0,
           "moneyForKill": 10,
           "wayPoints": [
             "Point0",
@@ -664,7 +664,7 @@
     "isDead": false
   },
   {
-    "uid": 12,
+    "uid": 58,
     "name": "Way",
     "components": [
       {
@@ -727,7 +727,7 @@
     "isDead": false
   },
   {
-    "uid": 13,
+    "uid": 59,
     "name": "posForTower",
     "components": [
       {
@@ -797,7 +797,7 @@
     "isDead": false
   },
   {
-    "uid": 14,
+    "uid": 60,
     "name": "posForTower",
     "components": [
       {
@@ -867,7 +867,7 @@
     "isDead": false
   },
   {
-    "uid": 15,
+    "uid": 61,
     "name": "posForTower",
     "components": [
       {
@@ -937,7 +937,7 @@
     "isDead": false
   },
   {
-    "uid": 16,
+    "uid": 62,
     "name": "bush",
     "components": [
       {
@@ -1000,7 +1000,7 @@
     "isDead": false
   },
   {
-    "uid": 17,
+    "uid": 63,
     "name": "bush",
     "components": [
       {
@@ -1063,7 +1063,7 @@
     "isDead": false
   },
   {
-    "uid": 18,
+    "uid": 64,
     "name": "bush",
     "components": [
       {
@@ -1126,7 +1126,7 @@
     "isDead": false
   },
   {
-    "uid": 19,
+    "uid": 65,
     "name": "bush",
     "components": [
       {

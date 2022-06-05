@@ -4,10 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import components.Component;
 import components.ComponentDeserializer;
-import job.Camera;
-import job.GameObject;
-import job.GameObjectDeserializer;
-import job.StateInWorld;
+import job.*;
 import org.joml.Vector2f;
 import renderer.Renderer;
 
@@ -146,7 +143,8 @@ public class Scene
 
         for (int i=0; i < gameObjects.size(); i++) {
             GameObject go = gameObjects.get(i);
-            go.update((float)dt);
+            if(!MainWindow.get().is_isReplayOn())
+                go.update((float)dt);
 
             if (go.isDead()) {
                 gameObjects.remove(i);

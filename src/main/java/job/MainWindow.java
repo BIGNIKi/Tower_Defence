@@ -1,5 +1,9 @@
 package job;
 
+import ReplayStuff.MonsterReplayClass;
+import ReplayStuff.SyncClassesReplayList;
+import ReplayStuff.SyncReplayClasses;
+import ReplayStuff.TowerReplayClass;
 import SyncStuff.MonsterClass;
 import SyncStuff.SyncClasses;
 import SyncStuff.TowerClass;
@@ -9,11 +13,14 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import components.Component;
 import components.ComponentDeserializer;
+import controllers.Waves;
 import entities.monsters.Monster;
+import entities.towers.PlaceForTower;
 import entities.towers.Tower;
 import observers.EventSystem;
 import observers.Observer;
 import observers.events.Event;
+import observers.events.EventType;
 import org.joml.Vector4f;
 import org.lwjgl.Version;
 import org.lwjgl.glfw.Callbacks;
@@ -51,6 +58,12 @@ public final class MainWindow implements Observer
     private PickingTexture pickingTexture;
 
     private boolean runtimePlaying = false;
+
+    public boolean is_isReplayOn()
+    {
+        return _isReplayOn;
+    }
+
     private boolean _isReplayOn = false;
     private EditorInfo editorInfo = null;
 
@@ -363,20 +376,22 @@ public final class MainWindow implements Observer
         }
         else if(_isReplayOn)
         {
-            DoReplayLogic();
+            currentScene.update(dt);
+            DoReplayLogic(dt);
         }
     }
 
-    private final SyncClassesList _allEventsData = new SyncClassesList();
-    private final float TimeOnOneEvent = 1f;
+    private SyncClassesReplayList _allEventsData = new SyncClassesReplayList();
+    private final float TimeOnOneEvent = 0.1f;
     private float _timeReplay = 0f;
+    private final String ReplayDataName = "replayData.json";
     private void StoreReplayInfo(float dt)
     {
         _timeReplay += dt;
         if(_timeReplay >= TimeOnOneEvent)
         {
             _timeReplay = 0;
-            SyncClasses syncCl = CollectCurrentSyncData();
+            SyncReplayClasses syncCl = CollectCurrentSyncData();
             _allEventsData.add(syncCl);
         }
     }
@@ -389,8 +404,13 @@ public final class MainWindow implements Observer
         //System.out.println(gson.toJson(syncCl));
         try
         {
-            FileWriter writer = new FileWriter("replayData.json");
+            FileWriter writer = new FileWriter(ReplayDataName);
             writer.write(gson.toJson(_allEventsData));
+
+            // сбрасываем данные
+            _allEventsData = new SyncClassesReplayList();
+            _timeReplay = 0;
+
             writer.close();
         } catch(IOException e)
         {
@@ -399,13 +419,13 @@ public final class MainWindow implements Observer
 
     }
 
-    public static SyncClasses CollectCurrentSyncData()
+    public static SyncReplayClasses CollectCurrentSyncData()
     {
-        SyncClasses syncCl = new SyncClasses();
+        SyncReplayClasses syncCl = new SyncReplayClasses();
         List<GameObject> nL = GameObject.FindAllByComp(Tower.class);
         for(GameObject go : nL)
         {
-            TowerClass newTower = new TowerClass();
+            TowerReplayClass newTower = new TowerReplayClass();
             newTower.posX = go.stateInWorld.getPosition().x;
             newTower.posY = go.stateInWorld.getPosition().y;
             newTower.angle = go.stateInWorld.getRotation();
@@ -415,7 +435,7 @@ public final class MainWindow implements Observer
         List<GameObject> enemies = GameObject.FindAllByName("Enemy");
         for(GameObject go : enemies)
         {
-            MonsterClass newMonstr = new MonsterClass();
+            MonsterReplayClass newMonstr = new MonsterReplayClass();
             newMonstr.posX = go.stateInWorld.getPosition().x;
             newMonstr.posY = go.stateInWorld.getPosition().y;
             Monster m = go.getComponent(Monster.class);
@@ -426,10 +446,82 @@ public final class MainWindow implements Observer
         return syncCl;
     }
 
-    // проигрывание реплея
-    private void DoReplayLogic()
+    private SyncClassesList _loadedInfoReplay = new SyncClassesList();
+    private int _idLastEvent = 0;
+    // предзагружает данные, когда влючаем реплей
+    private void LoadReplayData()
     {
+        _idLastEvent = 0; // сбрасываем
+        Gson gson = new GsonBuilder().create();
+        try
+        {
+            String inFile = new String(Files.readAllBytes(Paths.get(ReplayDataName)));
+            _loadedInfoReplay = gson.fromJson(inFile, SyncClassesList.class);
+        } catch(IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+    // проигрывание реплея
+    private void DoReplayLogic(float dt)
+    {
+        _timeReplay += dt;
+        if(_timeReplay >= TimeOnOneEvent)
+        {
+            _timeReplay = 0;
+            if(_idLastEvent > _loadedInfoReplay.size()-1)
+            {
+                _isReplayOn = true;
+                EventSystem.notify(null, new Event(EventType.GameEngineStopPlay));
+                MainWindow.getImguiLayer().getGameViewWindow().changePlayMode();
+                return;
+            }
+            SyncClasses sC = _loadedInfoReplay.get(_idLastEvent);
+            _idLastEvent++;
+            MakeAReplayStep(sC);
+        }
+    }
+    // отображает событие в определенное время (replay stuff)
+    private void MakeAReplayStep(SyncClasses syncCl)
+    {
+        List<GameObject> allEnemy = GameObject.FindAllByName("Enemy");
+        for(GameObject go : allEnemy)
+        {
+            go.destroy();
+        }
 
+        // sync для монстров
+        Waves obToCreateMonster = GameObject.FindWithComp(Waves.class).getComponent(Waves.class);
+        for(int i = 0; i<syncCl.monsterClasses.size(); i++)
+        {
+            MonsterClass mC = syncCl.monsterClasses.get(i);
+            obToCreateMonster.CreateMonsterSync(mC);
+        }
+        obToCreateMonster.setAlreadyMonsters(syncCl.monsterClasses.size());
+
+        // sync для башен
+        List<GameObject> towers = GameObject.FindAllByComp(Tower.class); // все башни
+        for(GameObject go : towers)
+        {
+            go.destroy();
+        }
+
+        for(int i = 0; i<syncCl.towerClasses.size(); i++)
+        {
+            TowerClass tC = syncCl.towerClasses.get(i);
+            List<GameObject> allPlaces = GameObject.FindAllByComp(PlaceForTower.class);
+            for(GameObject go : allPlaces)
+            {
+                if(go.stateInWorld.getPosition().equals(tC.posX, tC.posY))
+                {
+                    PlaceForTower pFT = go.getComponent(PlaceForTower.class);
+
+                    pFT.AddTowerDefaultReplay(tC.angle);
+
+                    break;
+                }
+            }
+        }
     }
 
     public static int getWidth()
@@ -492,10 +584,11 @@ public final class MainWindow implements Observer
                 MainWindow.changeScene(new LevelEditorSceneInitializer(), editorInfo.lastScene);
             }
             case GameEngineReplay -> {
-                _isReplayOn = true;
+                _isReplayOn = true; // реплей проигрывается
                 this.runtimePlaying = true;
                 editorInfo.setLastScene(ReplaySceneName);
                 MainWindow.changeScene(new LevelSceneInitializer(), editorInfo.lastScene);
+                LoadReplayData();
             }
             case ResearchTree -> {
                 editorInfo.setLastScene("researchTree.json");

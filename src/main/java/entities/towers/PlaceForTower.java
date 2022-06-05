@@ -218,6 +218,25 @@ public class PlaceForTower extends Component
         }
     }
 
+    public void AddTowerDefaultReplay(float rotate)
+    {
+        String path;
+        Vector2f size = null;
+        String path1;
+        float rotateSpeed, observeRadius, timeToAttack, damage;
+        path = "assets/images/standTower.png";
+        size = new Vector2f(0.086f, 0.154f);
+        path1 = "assets/images/standTower1.png";
+        rotateSpeed = 60;
+        observeRadius = 0.5f;
+        timeToAttack = 0.25f;
+        damage = 8;
+        Prefabs.addTower(this.gameObject.stateInWorld.getPosition(), path,
+                size, path1, rotate, rotateSpeed, observeRadius, timeToAttack, damage);
+        resetSelected();
+        cantBeSelected = true;
+    }
+
     public void SetCantBeSelected()
     {
         cantBeSelected = true;

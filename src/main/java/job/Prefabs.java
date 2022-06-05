@@ -44,6 +44,7 @@ public class Prefabs
         go.addComponent(m);
 
         MainWindow.getScene().addGameObjectToScene(go);
+        m.changeColor();
     }
 
     public static void addBullet(GameObject goal, Vector2f startPosition, float damage)

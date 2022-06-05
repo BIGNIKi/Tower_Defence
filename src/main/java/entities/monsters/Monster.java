@@ -152,7 +152,7 @@ public class Monster extends Component
         }
     }
 
-    private void changeColor()
+    public void changeColor()
     {
         SpriteRenderer sR = this.gameObject.getComponent(SpriteRenderer.class);
         float percent = healthNow * 100 / health;
