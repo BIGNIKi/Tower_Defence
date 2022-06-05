@@ -66,8 +66,8 @@ public class OnlineObserver extends Component
         GameObject.FindWithComp(Waves.class).getComponent(Waves.class).SetisWaitingForEnemy(true);
     }
 
-    @Override
-    public void update(float dt)
+    // создаёт сессию или находит (если нужно)
+    private void CreateOrFindSession()
     {
         if(_sessionId == null && www != null && www.CheckError() == OurWebRequest.Status.Success)
         {
@@ -94,6 +94,12 @@ public class OnlineObserver extends Component
 
             www = null;
         }
+    }
+
+    @Override
+    public void update(float dt)
+    {
+        CreateOrFindSession();
 
         // проверка на то, что нашёлся противник
         if(_sessionId != null && !_isGameStarted)
