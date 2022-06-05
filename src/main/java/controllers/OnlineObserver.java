@@ -6,9 +6,11 @@ import SyncStuff.TowerClass;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import components.Component;
+import components.ComponentDeserializer;
 import entities.monsters.Monster;
 import entities.towers.PlaceForTower;
 import job.GameObject;
+import job.GameObjectDeserializer;
 import job.Prefabs;
 import onlineStuff.OurWebRequest;
 import onlineStuff.WWWForm;
@@ -194,8 +196,11 @@ public class OnlineObserver extends Component
                         }
                         else
                         {
-                            // TODO: лоигика синхронизации
-                            System.out.println(response);
+                            _actualTimeSync = 0;
+                            www1 = null;
+                            _syncId++;
+                            //System.out.println(response);
+                            SyncState(response);
                         }
                     }
                 }
@@ -236,5 +241,25 @@ public class OnlineObserver extends Component
                 .create();
         //System.out.println(gson.toJson(syncCl));
         return gson.toJson(syncCl);
+    }
+
+    private void SyncState(String jsonTxt)
+    {
+        Gson gson = new GsonBuilder().create();
+        SyncClasses syncCl = gson.fromJson(jsonTxt, SyncClasses.class);
+
+        List<GameObject> allEnemy = GameObject.FindAllByName("Enemy");
+        for(GameObject go : allEnemy)
+        {
+            go.destroy();
+        }
+
+        Waves obToCreateMonster = GameObject.FindWithComp(Waves.class).getComponent(Waves.class);
+        for(int i = 0; i<syncCl.monsterClasses.size(); i++)
+        {
+            MonsterClass mC = syncCl.monsterClasses.get(i);
+            obToCreateMonster.CreateMonsterSync(mC);
+        }
+        obToCreateMonster.setAlreadyMonsters(syncCl.monsterClasses.size());
     }
 }

@@ -24,7 +24,7 @@ public class Prefabs
     }
 
     // добавление префаба монстра с заданными параметрами
-    public static void addEnemy(float speed, StringList wayPoints, Vector2f position, float health, int moneyForKill)
+    public static void addEnemy(float speed, StringList wayPoints, Vector2f position, float health, int moneyForKill, float healthNow)
     {
         GameObject go = MainWindow.getScene().createGameObject("Enemy");
         go.stateInWorld.setPosition(new Vector2f(position.x, position.y));
@@ -39,7 +39,7 @@ public class Prefabs
         go.addComponent(renderer);
 
         Monster m = new Monster();
-        m.settingMonster(speed, wayPoints, health, moneyForKill);
+        m.settingMonster(speed, wayPoints, health, moneyForKill, healthNow);
         go.addComponent(m);
 
         MainWindow.getScene().addGameObjectToScene(go);

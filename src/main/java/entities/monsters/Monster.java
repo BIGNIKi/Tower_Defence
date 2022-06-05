@@ -48,12 +48,12 @@ public class Monster extends Component
     private transient float healthNow; // число хп сейчас
     private transient int moneyForKill; // число coin'ов за убийство
 
-    public void settingMonster(float speed, StringList wayPoints, float health, int moneyForKill)
+    public void settingMonster(float speed, StringList wayPoints, float health, int moneyForKill, float healthNow)
     {
         this.speed = speed;
         this.wayPoints = (StringList) wayPoints.clone();
         this.health = health;
-        this.healthNow = health;
+        this.healthNow = healthNow;
         this.moneyForKill = moneyForKill;
     }
 

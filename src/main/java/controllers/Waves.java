@@ -1,8 +1,10 @@
 package controllers;
 
+import SyncStuff.MonsterClass;
 import Util.StringList;
 import components.Component;
 import job.Prefabs;
+import org.joml.Vector2f;
 
 public class Waves extends Component
 {
@@ -37,10 +39,21 @@ public class Waves extends Component
         {
             alreadyTime = 0;
 
-            Prefabs.addEnemy(speed, wayPoints, this.gameObject.stateInWorld.getPosition(), healthOfMonsters, moneyForKill);
+            Prefabs.addEnemy(speed, wayPoints, this.gameObject.stateInWorld.getPosition(), healthOfMonsters, moneyForKill, healthOfMonsters);
 
             alreadyMonsters++;
         }
+    }
+
+    public void CreateMonsterSync(MonsterClass mC)
+    {
+        Vector2f actualPos = new Vector2f(mC.posX, mC.posY);
+        Prefabs.addEnemy(speed, wayPoints, actualPos, healthOfMonsters, moneyForKill, mC.health);
+    }
+
+    public void setAlreadyMonsters(int alreadyMonsters)
+    {
+        this.alreadyMonsters = alreadyMonsters;
     }
 
     public void SetisWaitingForEnemy(boolean val)
