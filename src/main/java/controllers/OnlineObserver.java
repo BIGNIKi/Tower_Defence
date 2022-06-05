@@ -215,7 +215,8 @@ public class OnlineObserver extends Component
     {
         SyncClasses syncCl = new SyncClasses();
 
-        List<GameObject> nL = GameObject.FindAllByName("TowerSt");
+        //List<GameObject> nL = GameObject.FindAllByName("TowerSt");
+        List<GameObject> nL = GameObject.FindAllByComp(Tower.class);
         for(GameObject go : nL)
         {
             TowerClass newTower = new TowerClass();
