@@ -123,7 +123,7 @@ public class OnlineObserver extends Component
     }
 
     // чек сообытий на предмет новых поставленных башен
-    private void CheckNewTower()
+    private void CheckNewTower(float dt)
     {
         if(www == null && _actualTime >= TimeToCheck)
         {
@@ -149,6 +149,69 @@ public class OnlineObserver extends Component
 
             www = null;
         }
+
+        _actualTime += dt;
+    }
+
+    private void SyncLogic(float dt)
+    {
+        if(_numPlayer == 1) // если мы - хост (сервер)
+        {
+            _actualTimeSync += dt;
+            if(_actualTimeSync >= TimeToSync)
+            {
+                if(www1 == null)
+                {
+                    String jsonData = CreateJsonSyncData();
+                    WWWForm form = new WWWForm();
+                    form.AddField("placeData", jsonData);
+                    form.AddField("id", _syncId);
+                    _syncId++;
+                    form.AddField("sessionId", _sessionId);
+                    www1 = OurWebRequest.Post("http://abobnik228.ru/main/addSyncInfo.php", form);
+                    www1.SendWebRequest();
+                }
+                else if(www1 != null && www1.CheckError() == OurWebRequest.Status.Success)
+                {
+                    www1 = null;
+
+                    _actualTimeSync = 0;
+                }
+            }
+        }
+        else // клиент
+        {
+            _actualTimeSync += dt;
+            if(_actualTimeSync >= TimeToSyncClient)
+            {
+                if(www1 == null)
+                {
+                    WWWForm form = new WWWForm();
+                    form.AddField("id", _syncId);
+                    //_syncId++;
+                    form.AddField("sessionId", _sessionId);
+                    www1 = OurWebRequest.Post("http://abobnik228.ru/main/getSyncInfo.php", form);
+                    www1.SendWebRequest();
+                }
+                else if(www1 != null && www1.CheckError() == OurWebRequest.Status.Success)
+                {
+                    String response = www1.GetResponseBody();
+                    if(response.equals("Nope"))
+                    {
+                        _actualTimeSync = 0;
+                        www1 = null;
+                    }
+                    else
+                    {
+                        _actualTimeSync = 0;
+                        www1 = null;
+                        _syncId++;
+                        //System.out.println(response);
+                        SyncState(response);
+                    }
+                }
+            }
+        }
     }
 
     @Override
@@ -157,69 +220,12 @@ public class OnlineObserver extends Component
         CreateOrFindSession();
 
         FindEnemy();
-
-        _actualTime += dt;
+        
         if(_sessionId != null && _isGameStarted)
         {
-            CheckNewTower();
+            CheckNewTower(dt);
 
-            if(_numPlayer == 1) // если мы - хост (сервер)
-            {
-                _actualTimeSync += dt;
-                if(_actualTimeSync >= TimeToSync)
-                {
-                    if(www1 == null)
-                    {
-                        String jsonData = CreateJsonSyncData();
-                        WWWForm form = new WWWForm();
-                        form.AddField("placeData", jsonData);
-                        form.AddField("id", _syncId);
-                        _syncId++;
-                        form.AddField("sessionId", _sessionId);
-                        www1 = OurWebRequest.Post("http://abobnik228.ru/main/addSyncInfo.php", form);
-                        www1.SendWebRequest();
-                    }
-                    else if(www1 != null && www1.CheckError() == OurWebRequest.Status.Success)
-                    {
-                        www1 = null;
-
-                        _actualTimeSync = 0;
-                    }
-                }
-            }
-            else // клиент
-            {
-                _actualTimeSync += dt;
-                if(_actualTimeSync >= TimeToSyncClient)
-                {
-                    if(www1 == null)
-                    {
-                        WWWForm form = new WWWForm();
-                        form.AddField("id", _syncId);
-                        //_syncId++;
-                        form.AddField("sessionId", _sessionId);
-                        www1 = OurWebRequest.Post("http://abobnik228.ru/main/getSyncInfo.php", form);
-                        www1.SendWebRequest();
-                    }
-                    else if(www1 != null && www1.CheckError() == OurWebRequest.Status.Success)
-                    {
-                        String response = www1.GetResponseBody();
-                        if(response.equals("Nope"))
-                        {
-                            _actualTimeSync = 0;
-                            www1 = null;
-                        }
-                        else
-                        {
-                            _actualTimeSync = 0;
-                            www1 = null;
-                            _syncId++;
-                            //System.out.println(response);
-                            SyncState(response);
-                        }
-                    }
-                }
-            }
+            SyncLogic(dt);
         }
     }
 
