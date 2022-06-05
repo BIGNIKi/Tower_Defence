@@ -9,11 +9,13 @@ import components.Component;
 import components.ComponentDeserializer;
 import entities.monsters.Monster;
 import entities.towers.PlaceForTower;
+import entities.towers.Tower;
 import job.GameObject;
 import job.GameObjectDeserializer;
 import job.Prefabs;
 import onlineStuff.OurWebRequest;
 import onlineStuff.WWWForm;
+import org.joml.Vector2f;
 
 import java.nio.charset.StandardCharsets;
 import java.util.List;
@@ -255,6 +257,7 @@ public class OnlineObserver extends Component
             go.destroy();
         }
 
+        // sync для монстров
         Waves obToCreateMonster = GameObject.FindWithComp(Waves.class).getComponent(Waves.class);
         for(int i = 0; i<syncCl.monsterClasses.size(); i++)
         {
@@ -262,5 +265,20 @@ public class OnlineObserver extends Component
             obToCreateMonster.CreateMonsterSync(mC);
         }
         obToCreateMonster.setAlreadyMonsters(syncCl.monsterClasses.size());
+
+        // sync для башен
+        List<GameObject> towers = GameObject.FindAllByComp(Tower.class); // все башни
+        for(int i = 0; i<syncCl.towerClasses.size(); i++)
+        {
+            TowerClass tC = syncCl.towerClasses.get(i);
+            for(GameObject t : towers)
+            {
+                if(t.stateInWorld.getPosition().equals(tC.posX, tC.posY))
+                {
+                    t.stateInWorld.setRotation(tC.angle);
+                    break;
+                }
+            }
+        }
     }
 }
