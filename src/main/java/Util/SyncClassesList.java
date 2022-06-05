@@ -1,19 +1,18 @@
 package Util;
 
-import SyncStuff.MonsterClass;
+import SyncStuff.SyncClasses;
 
 import java.util.ArrayList;
 
-// данные, которые используеются для синхронизации в процессе игры
-public class MonsterList extends ArrayList<MonsterClass>
+public class SyncClassesList extends ArrayList<SyncClasses>
 {
     private int size = 0;
 
-    public MonsterClass get(int index) {
-        return (MonsterClass) super.get(index);
+    public SyncClasses get(int index) {
+        return (SyncClasses) super.get(index);
     }
 
-    public boolean add(MonsterClass e) {
+    public boolean add(SyncClasses e) {
         size++;
         return super.add(e);
     }
@@ -37,7 +36,7 @@ public class MonsterList extends ArrayList<MonsterClass>
         {
             for(int i = size; i<newSize; i++)
             {
-                this.add(new MonsterClass());
+                this.add(new SyncClasses());
             }
             size = newSize;
         }
@@ -54,7 +53,8 @@ public class MonsterList extends ArrayList<MonsterClass>
 
     @Override
     public Object clone() {
-        MonsterList sL = (MonsterList) super.clone();
+        SyncClassesList sL = (SyncClassesList) super.clone();
+        sL.size = size;
         return sL;
     }
 }

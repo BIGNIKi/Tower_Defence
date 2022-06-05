@@ -1,10 +1,16 @@
 package job;
 
+import SyncStuff.MonsterClass;
+import SyncStuff.SyncClasses;
+import SyncStuff.TowerClass;
 import Util.AssetPool;
+import Util.SyncClassesList;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import components.Component;
 import components.ComponentDeserializer;
+import entities.monsters.Monster;
+import entities.towers.Tower;
 import observers.EventSystem;
 import observers.Observer;
 import observers.events.Event;
@@ -45,7 +51,10 @@ public final class MainWindow implements Observer
     private PickingTexture pickingTexture;
 
     private boolean runtimePlaying = false;
+    private boolean _isReplayOn = false;
     private EditorInfo editorInfo = null;
+
+    private final String ReplaySceneName = "replay.json";
 
     private static MainWindow wnd = null; //we have only one instance of this class
 
@@ -346,11 +355,81 @@ public final class MainWindow implements Observer
 
     private void businessLogic(float dt)
     {
-        if (runtimePlaying) {
+        if (runtimePlaying && !_isReplayOn) {
             currentScene.update(dt);
-        } else {
+            StoreReplayInfo(dt);
+        } else if (!runtimePlaying) {
             currentScene.editorUpdate(dt);
         }
+        else if(_isReplayOn)
+        {
+            DoReplayLogic();
+        }
+    }
+
+    private final SyncClassesList _allEventsData = new SyncClassesList();
+    private final float TimeOnOneEvent = 1f;
+    private float _timeReplay = 0f;
+    private void StoreReplayInfo(float dt)
+    {
+        _timeReplay += dt;
+        if(_timeReplay >= TimeOnOneEvent)
+        {
+            _timeReplay = 0;
+            SyncClasses syncCl = CollectCurrentSyncData();
+            _allEventsData.add(syncCl);
+        }
+    }
+
+    private void SaveReplay()
+    {
+        Gson gson = new GsonBuilder()
+                .setPrettyPrinting()
+                .create();
+        //System.out.println(gson.toJson(syncCl));
+        try
+        {
+            FileWriter writer = new FileWriter("replayData.json");
+            writer.write(gson.toJson(_allEventsData));
+            writer.close();
+        } catch(IOException e)
+        {
+            e.printStackTrace();
+        }
+
+    }
+
+    public static SyncClasses CollectCurrentSyncData()
+    {
+        SyncClasses syncCl = new SyncClasses();
+        List<GameObject> nL = GameObject.FindAllByComp(Tower.class);
+        for(GameObject go : nL)
+        {
+            TowerClass newTower = new TowerClass();
+            newTower.posX = go.stateInWorld.getPosition().x;
+            newTower.posY = go.stateInWorld.getPosition().y;
+            newTower.angle = go.stateInWorld.getRotation();
+            syncCl.towerClasses.add(newTower);
+        }
+
+        List<GameObject> enemies = GameObject.FindAllByName("Enemy");
+        for(GameObject go : enemies)
+        {
+            MonsterClass newMonstr = new MonsterClass();
+            newMonstr.posX = go.stateInWorld.getPosition().x;
+            newMonstr.posY = go.stateInWorld.getPosition().y;
+            Monster m = go.getComponent(Monster.class);
+            newMonstr.health = m.getHealthNow();
+            newMonstr.numOfPointToMove = m.getNumOfPointsNow()-1;
+            syncCl.monsterClasses.add(newMonstr);
+        }
+        return syncCl;
+    }
+
+    // проигрывание реплея
+    private void DoReplayLogic()
+    {
+
     }
 
     public static int getWidth()
@@ -399,14 +478,24 @@ public final class MainWindow implements Observer
                 this.runtimePlaying = true;
                 // TODO: сохранять в temp файлы
                 currentScene.save(editorInfo.lastScene);
+                currentScene.save(ReplaySceneName); // сохраняем как реплейную сцену
                 // TODO: load current scene
                 MainWindow.changeScene(new LevelSceneInitializer(), editorInfo.lastScene);
                 currentScene.OnStartScene();
             }
             case GameEngineStopPlay -> {
+                if(!_isReplayOn)
+                    SaveReplay();
+                _isReplayOn = false;
                 this.runtimePlaying = false;
                 // TODO: load current scene
                 MainWindow.changeScene(new LevelEditorSceneInitializer(), editorInfo.lastScene);
+            }
+            case GameEngineReplay -> {
+                _isReplayOn = true;
+                this.runtimePlaying = true;
+                editorInfo.setLastScene(ReplaySceneName);
+                MainWindow.changeScene(new LevelSceneInitializer(), editorInfo.lastScene);
             }
             case ResearchTree -> {
                 editorInfo.setLastScene("researchTree.json");

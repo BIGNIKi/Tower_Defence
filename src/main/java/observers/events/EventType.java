@@ -4,6 +4,7 @@ public enum EventType
 {
     GameEngineStartPlay,
     GameEngineStopPlay,
+    GameEngineReplay,
     SaveLevel,
     ResearchTree,
     LoadLevel1,

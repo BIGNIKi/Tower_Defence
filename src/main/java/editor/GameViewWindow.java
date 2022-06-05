@@ -41,6 +41,11 @@ public class GameViewWindow
 
             EventSystem.notify(null, new Event(EventType.GameEngineStopPlay));
         }
+        if(ImGui.menuItem("Replay", "", isPlaying, !isPlaying))
+        {
+            isPlaying = true;
+            EventSystem.notify(null, new Event(EventType.GameEngineReplay));
+        }
         ImGui.endMenuBar();
 
         ImVec2 windowSize = getLargestSizeForViewport();

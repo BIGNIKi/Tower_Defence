@@ -4,6 +4,7 @@ import SyncStuff.TowerClass;
 
 import java.util.ArrayList;
 
+// данные, которые используеются для синхронизации в процессе игры
 public class TowerList extends ArrayList<TowerClass>
 {
     private int size = 0;

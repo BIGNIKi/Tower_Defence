@@ -10,6 +10,7 @@ import entities.monsters.Monster;
 import entities.towers.PlaceForTower;
 import entities.towers.Tower;
 import job.GameObject;
+import job.MainWindow;
 import job.Prefabs;
 import onlineStuff.OurWebRequest;
 import onlineStuff.WWWForm;
@@ -58,7 +59,6 @@ public class OnlineObserver extends Component
     public void OnStartScene()
     {
         WWWForm form = new WWWForm();
-        //form.AddField("name", "John Doe");
 
         www = OurWebRequest.Post("http://abobnik228.ru/main/findSession.php", form);
         www.SendWebRequest();
@@ -220,7 +220,7 @@ public class OnlineObserver extends Component
         CreateOrFindSession();
 
         FindEnemy();
-        
+
         if(_sessionId != null && _isGameStarted)
         {
             CheckNewTower(dt);
@@ -235,8 +235,6 @@ public class OnlineObserver extends Component
     private String CreateJsonSyncData()
     {
         SyncClasses syncCl = new SyncClasses();
-
-        //List<GameObject> nL = GameObject.FindAllByName("TowerSt");
         List<GameObject> nL = GameObject.FindAllByComp(Tower.class);
         for(GameObject go : nL)
         {
