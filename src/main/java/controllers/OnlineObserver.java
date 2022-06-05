@@ -31,7 +31,8 @@ public class OnlineObserver extends Component
     private transient final float TimeToCheck = 0.5f;
     private transient float _actualTime = 0f;
 
-    private transient final float TimeToSync = 1f;
+    private transient final float TimeToSync = 3f;
+    private transient final float TimeToSyncClient = 5f;
     private transient float _actualTimeSync = 0f; // текущее время для синхронизации
     private transient int _syncId = 0; //номер последней синхронизации
 
@@ -174,7 +175,7 @@ public class OnlineObserver extends Component
             else // клиент
             {
                 _actualTimeSync += dt;
-                if(_actualTimeSync >= TimeToSync)
+                if(_actualTimeSync >= TimeToSyncClient)
                 {
                     if(www1 == null)
                     {
