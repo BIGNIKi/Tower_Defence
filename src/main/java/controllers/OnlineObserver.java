@@ -6,16 +6,13 @@ import SyncStuff.TowerClass;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import components.Component;
-import components.ComponentDeserializer;
 import entities.monsters.Monster;
 import entities.towers.PlaceForTower;
 import entities.towers.Tower;
 import job.GameObject;
-import job.GameObjectDeserializer;
 import job.Prefabs;
 import onlineStuff.OurWebRequest;
 import onlineStuff.WWWForm;
-import org.joml.Vector2f;
 
 import java.nio.charset.StandardCharsets;
 import java.util.List;
@@ -34,7 +31,7 @@ public class OnlineObserver extends Component
     private transient final float TimeToCheck = 0.5f;
     private transient float _actualTime = 0f;
 
-    private transient final float TimeToSync = 5f;
+    private transient final float TimeToSync = 1f;
     private transient float _actualTimeSync = 0f; // текущее время для синхронизации
     private transient int _syncId = 0; //номер последней синхронизации
 
