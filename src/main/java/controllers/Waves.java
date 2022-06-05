@@ -39,7 +39,7 @@ public class Waves extends Component
         {
             alreadyTime = 0;
 
-            Prefabs.addEnemy(speed, wayPoints, this.gameObject.stateInWorld.getPosition(), healthOfMonsters, moneyForKill, healthOfMonsters);
+            Prefabs.addEnemy(speed, wayPoints, this.gameObject.stateInWorld.getPosition(), healthOfMonsters, moneyForKill, healthOfMonsters, 0);
 
             alreadyMonsters++;
         }
@@ -48,7 +48,7 @@ public class Waves extends Component
     public void CreateMonsterSync(MonsterClass mC)
     {
         Vector2f actualPos = new Vector2f(mC.posX, mC.posY);
-        Prefabs.addEnemy(speed, wayPoints, actualPos, healthOfMonsters, moneyForKill, mC.health);
+        Prefabs.addEnemy(speed, wayPoints, actualPos, healthOfMonsters, moneyForKill, mC.health, mC.numOfPointToMove);
     }
 
     public void setAlreadyMonsters(int alreadyMonsters)

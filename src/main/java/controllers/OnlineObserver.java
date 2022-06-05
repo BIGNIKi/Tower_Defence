@@ -233,6 +233,7 @@ public class OnlineObserver extends Component
             newMonstr.posY = go.stateInWorld.getPosition().y;
             Monster m = go.getComponent(Monster.class);
             newMonstr.health = m.getHealthNow();
+            newMonstr.numOfPointToMove = m.getNumOfPointsNow();
             syncCl.monsterClasses.add(newMonstr);
         }
 

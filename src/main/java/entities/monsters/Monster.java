@@ -31,6 +31,17 @@ public class Monster extends Component
     private transient float speed;
 
     private transient StringList wayPoints; // список имен точек, по которым нужно ходить
+
+    public int getNumOfPointsNow()
+    {
+        return numOfPointsNow;
+    }
+
+    public void setNumOfPointsNow(int numOfPointsNow)
+    {
+        this.numOfPointsNow = numOfPointsNow;
+    }
+
     private transient int numOfPointsNow = 0; // точка, в которой мы сейчас
     private transient float currentTime = 0;
     private transient float timeOfTravel;
