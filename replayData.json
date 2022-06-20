@@ -1,438 +1,897 @@
 [
   {
     "towerClasses": [],
-    "monsterClasses": []
+    "monsterClasses": [],
+    "bulletClasses": []
   },
   {
     "towerClasses": [],
-    "monsterClasses": []
+    "monsterClasses": [],
+    "bulletClasses": []
   },
   {
     "towerClasses": [],
-    "monsterClasses": []
+    "monsterClasses": [],
+    "bulletClasses": []
   },
   {
     "towerClasses": [],
-    "monsterClasses": []
+    "monsterClasses": [],
+    "bulletClasses": []
   },
   {
     "towerClasses": [],
-    "monsterClasses": []
+    "monsterClasses": [],
+    "bulletClasses": []
   },
   {
     "towerClasses": [],
-    "monsterClasses": []
+    "monsterClasses": [],
+    "bulletClasses": []
   },
   {
     "towerClasses": [],
-    "monsterClasses": []
+    "monsterClasses": [],
+    "bulletClasses": []
   },
   {
     "towerClasses": [],
-    "monsterClasses": []
+    "monsterClasses": [],
+    "bulletClasses": []
   },
   {
     "towerClasses": [],
-    "monsterClasses": []
+    "monsterClasses": [],
+    "bulletClasses": []
   },
   {
     "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 0.0
+      }
+    ],
+    "monsterClasses": [],
+    "bulletClasses": []
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 1.301892
+      }
+    ],
     "monsterClasses": [
       {
-        "posX": -0.6104975,
-        "posY": 0.3867317,
+        "posX": -0.61849946,
+        "posY": 0.38715032,
         "health": 50.0,
         "numOfPointToMove": 0
       }
-    ]
+    ],
+    "bulletClasses": []
   },
   {
-    "towerClasses": [],
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 4.56675
+      }
+    ],
     "monsterClasses": [
       {
-        "posX": -0.57916737,
-        "posY": 0.38509277,
+        "posX": -0.6021974,
+        "posY": 0.38629752,
         "health": 50.0,
         "numOfPointToMove": 0
       }
-    ]
+    ],
+    "bulletClasses": []
   },
   {
-    "towerClasses": [],
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 7.963242
+      }
+    ],
     "monsterClasses": [
       {
-        "posX": -0.5479041,
-        "posY": 0.38345733,
+        "posX": -0.58523816,
+        "posY": 0.38541034,
         "health": 50.0,
         "numOfPointToMove": 0
       }
-    ]
+    ],
+    "bulletClasses": []
   },
   {
-    "towerClasses": [],
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 11.311493
+      }
+    ],
     "monsterClasses": [
       {
-        "posX": -0.51674294,
-        "posY": 0.38182724,
+        "posX": -0.5685198,
+        "posY": 0.3845358,
         "health": 50.0,
         "numOfPointToMove": 0
       }
-    ]
+    ],
+    "bulletClasses": []
   },
   {
-    "towerClasses": [],
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 14.690764
+      }
+    ],
     "monsterClasses": [
       {
-        "posX": -0.48538792,
-        "posY": 0.380187,
+        "posX": -0.5516465,
+        "posY": 0.3836531,
         "health": 50.0,
         "numOfPointToMove": 0
       }
-    ]
+    ],
+    "bulletClasses": []
   },
   {
-    "towerClasses": [],
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 17.912193
+      }
+    ],
     "monsterClasses": [
       {
-        "posX": -0.45438713,
-        "posY": 0.3785653,
+        "posX": -0.5355613,
+        "posY": 0.38281167,
         "health": 50.0,
         "numOfPointToMove": 0
       }
-    ]
+    ],
+    "bulletClasses": []
   },
   {
-    "towerClasses": [],
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": 20.943039
+      }
+    ],
     "monsterClasses": [
       {
-        "posX": -0.4231583,
-        "posY": 0.37693167,
+        "posX": -0.52042776,
+        "posY": 0.38202,
         "health": 50.0,
         "numOfPointToMove": 0
       }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
+    ],
+    "bulletClasses": [
       {
-        "posX": -0.39187324,
-        "posY": 0.3752951,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
-      {
-        "posX": -0.3607245,
-        "posY": 0.37366566,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
-      {
-        "posX": -0.3299438,
-        "posY": 0.37205547,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
-      {
-        "posX": -0.2982549,
-        "posY": 0.37039775,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.5973712,
-        "posY": 0.38604504,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
-      {
-        "posX": -0.26763222,
-        "posY": 0.36879584,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.5667485,
-        "posY": 0.38444313,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
-      {
-        "posX": -0.23578784,
-        "posY": 0.36713,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.5349041,
-        "posY": 0.3827773,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
-      {
-        "posX": -0.20515332,
-        "posY": 0.36552745,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.50426954,
-        "posY": 0.38117474,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
-      {
-        "posX": -0.17346776,
-        "posY": 0.36386994,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.47258395,
-        "posY": 0.37951723,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
-      {
-        "posX": -0.14876044,
-        "posY": 0.35860106,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.4415087,
-        "posY": 0.3778916,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
-      {
-        "posX": -0.14745948,
-        "posY": 0.32718384,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.4101075,
-        "posY": 0.37624896,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
-      {
-        "posX": -0.14619021,
-        "posY": 0.29653192,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.37947118,
-        "posY": 0.37464634,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
-      {
-        "posX": -0.14488097,
-        "posY": 0.26491478,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.3478702,
-        "posY": 0.37299323,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
-      {
-        "posX": -0.14349669,
-        "posY": 0.23148556,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.31445798,
-        "posY": 0.37124538,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.6165911,
-        "posY": 0.38705048,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
-      {
-        "posX": -0.14222391,
-        "posY": 0.20074868,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.28373674,
-        "posY": 0.3696383,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.5858699,
-        "posY": 0.3854434,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
-      {
-        "posX": -0.14091536,
-        "posY": 0.16914843,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.25215265,
-        "posY": 0.36798608,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.55428576,
-        "posY": 0.38379118,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
-      {
-        "posX": -0.13962056,
-        "posY": 0.13787967,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.22089982,
-        "posY": 0.3663512,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.52303296,
-        "posY": 0.38215628,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
-      {
-        "posX": -0.1383253,
-        "posY": 0.106600195,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.18963623,
-        "posY": 0.36471573,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.4917694,
-        "posY": 0.38052085,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [],
-    "monsterClasses": [
-      {
-        "posX": -0.13703592,
-        "posY": 0.0754627,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.15851453,
-        "posY": 0.36308768,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.46064776,
-        "posY": 0.3788928,
-        "health": 50.0,
-        "numOfPointToMove": 0
+        "posX": -0.38959804,
+        "posY": 0.15217564
       }
     ]
   },
@@ -441,27 +900,21 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -5.3588943
+        "angle": 24.277628
       }
     ],
     "monsterClasses": [
       {
-        "posX": -0.1357433,
-        "posY": 0.044246763,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.14731394,
-        "posY": 0.3439599,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.42944777,
-        "posY": 0.37726068,
+        "posX": -0.5037776,
+        "posY": 0.381149,
         "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.4022416,
+        "posY": 0.18040983
       }
     ]
   },
@@ -470,27 +923,21 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -11.625847
+        "angle": 24.612549
       }
     ],
     "monsterClasses": [
       {
-        "posX": -0.13444686,
-        "posY": 0.012938827,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.1460735,
-        "posY": 0.3126497,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.39815578,
-        "posY": 0.37562373,
+        "posX": -0.48537618,
+        "posY": 0.3801864,
         "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.41190907,
+        "posY": 0.21138841
       }
     ]
   },
@@ -499,27 +946,21 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -17.845537
+        "angle": 21.454128
       }
     ],
     "monsterClasses": [
       {
-        "posX": -0.1331602,
-        "posY": -0.018132985,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.14484243,
-        "posY": 0.28157562,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.3670998,
-        "posY": 0.37399915,
+        "posX": -0.46853316,
+        "posY": 0.3793053,
         "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.4167949,
+        "posY": 0.23953608
       }
     ]
   },
@@ -528,27 +969,25 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -24.105541
+        "angle": 18.380356
       }
     ],
     "monsterClasses": [
       {
-        "posX": -0.13186522,
-        "posY": -0.0494062,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.14360337,
-        "posY": 0.25030014,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.33584255,
-        "posY": 0.37236404,
+        "posX": -0.4522537,
+        "posY": 0.3784537,
         "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.4179176,
+        "posY": 0.2665537
+      },
+      {
+        "posX": -0.37917134,
+        "posY": 0.14028123
       }
     ]
   },
@@ -557,33 +996,25 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -30.343813
+        "angle": 15.355408
       }
     ],
     "monsterClasses": [
       {
-        "posX": -0.13057472,
-        "posY": -0.08057079,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.14236861,
-        "posY": 0.21913323,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.30469385,
-        "posY": 0.3707346,
+        "posX": -0.4365713,
+        "posY": 0.37763333,
         "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.41565293,
+        "posY": 0.29240537
       },
       {
-        "posX": -0.60637146,
-        "posY": 0.3865159,
-        "health": 50.0,
-        "numOfPointToMove": 0
+        "posX": -0.38476148,
+        "posY": 0.16654378
       }
     ]
   },
@@ -592,33 +1023,25 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -36.615234
+        "angle": 11.730597
       }
     ],
     "monsterClasses": [
       {
-        "posX": -0.12927736,
-        "posY": -0.111900985,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.1411273,
-        "posY": 0.18780077,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.2733796,
-        "posY": 0.3690965,
+        "posX": -0.418472,
+        "posY": 0.3766865,
         "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.40895754,
+        "posY": 0.32202762
       },
       {
-        "posX": -0.5750572,
-        "posY": 0.38487777,
-        "health": 50.0,
-        "numOfPointToMove": 0
+        "posX": -0.3871314,
+        "posY": 0.19664028
       }
     ]
   },
@@ -627,33 +1050,25 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -42.867035
+        "angle": 7.9649916
       }
     ],
     "monsterClasses": [
       {
-        "posX": -0.112003736,
-        "posY": -0.12456926,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13988988,
-        "posY": 0.15656628,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.24216327,
-        "posY": 0.3674635,
+        "posX": -0.39966965,
+        "posY": 0.37570295,
         "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.39737016,
+        "posY": 0.35255823
       },
       {
-        "posX": -0.5438409,
-        "posY": 0.38324478,
-        "health": 50.0,
-        "numOfPointToMove": 0
+        "posX": -0.38496146,
+        "posY": 0.22766355
       }
     ]
   },
@@ -662,657 +1077,21 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -49.4703
+        "angle": 4.321954
       }
     ],
     "monsterClasses": [
       {
-        "posX": -0.07898745,
-        "posY": -0.12458905,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13858289,
-        "posY": 0.12357584,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.20919207,
-        "posY": 0.36573872,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.5108697,
-        "posY": 0.38152,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -55.79319
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": -0.047372997,
-        "posY": -0.12460799,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13733138,
-        "posY": 0.09198615,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.17762077,
-        "posY": 0.36408716,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.47929838,
-        "posY": 0.37986845,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -61.951702
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": -0.016580433,
-        "posY": -0.12462644,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.1361124,
-        "posY": 0.061217725,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.15063459,
-        "posY": 0.3626755,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.44854784,
-        "posY": 0.37825984,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -68.19789
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.014650553,
-        "posY": -0.12464516,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13487609,
-        "posY": 0.030011177,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.14923353,
-        "posY": 0.33147594,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.4173595,
-        "posY": 0.37662834,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -74.51868
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.046254545,
-        "posY": -0.12466409,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.133625,
-        "posY": -0.0015680492,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.14781575,
-        "posY": 0.29990375,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.38579866,
-        "posY": 0.37497732,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -80.692986
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.077126116,
-        "posY": -0.12468259,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.1324029,
-        "posY": -0.03241545,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.14643082,
-        "posY": 0.26906326,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.35496923,
-        "posY": 0.3733646,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -87.03138
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.108818084,
-        "posY": -0.12470158,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13114834,
-        "posY": -0.06408262,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.14500909,
-        "posY": 0.23740315,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.32332054,
-        "posY": 0.371709,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -93.20219
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 95.32371
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.13967213,
-        "posY": -0.124720074,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.12992693,
-        "posY": -0.09491247,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.14362495,
-        "posY": 0.20658018,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.2925086,
-        "posY": 0.37009716,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.5941881,
-        "posY": 0.38587853,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -99.864624
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 101.986145
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.17298436,
-        "posY": -0.124740034,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.12876035,
-        "posY": -0.124358475,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.14213052,
-        "posY": 0.17330146,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.25924188,
-        "posY": 0.3683569,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.5609214,
-        "posY": 0.3841383,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -106.108025
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 108.229546
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.20420125,
-        "posY": -0.12475874,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.09754342,
-        "posY": -0.1243857,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.1407301,
-        "posY": 0.14211594,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.22806758,
-        "posY": 0.36672613,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.529747,
-        "posY": 0.3825075,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -112.45101
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 114.57253
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.2359162,
-        "posY": -0.12477774,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.06582845,
-        "posY": -0.12441336,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13930734,
-        "posY": 0.11043286,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.19639593,
-        "posY": 0.36506933,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.49807534,
-        "posY": 0.3808507,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -118.72256
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 120.84408
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.26727396,
-        "posY": -0.12479653,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.034470692,
-        "posY": -0.124440715,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13790059,
-        "posY": 0.07910666,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.165081,
-        "posY": 0.36343122,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.4667604,
-        "posY": 0.37921256,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -124.04764
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 126.99503
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.29802874,
-        "posY": -0.124814965,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.0037159324,
-        "posY": -0.12446754,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.1365209,
-        "posY": 0.04838285,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.14785998,
-        "posY": 0.3500619,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.4360476,
-        "posY": 0.37760594,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -121.94192
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 133.22617
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.32918438,
-        "posY": -0.124833636,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.027439713,
-        "posY": -0.12449472,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13512324,
-        "posY": 0.017258614,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.14660673,
-        "posY": 0.31893143,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.40493453,
-        "posY": 0.37597835,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -120.29663
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 139.60081
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.3610577,
-        "posY": -0.12485273,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.05931294,
-        "posY": -0.124522515,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13369337,
-        "posY": -0.014582634,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.14532462,
-        "posY": 0.28708398,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.37310478,
-        "posY": 0.3743133,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -125.66844
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 145.29535
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.39435512,
-        "posY": -0.124872684,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.09261033,
-        "posY": -0.12455156,
+        "posX": -0.38147932,
+        "posY": 0.3747514,
         "health": 42.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13219962,
-        "posY": -0.047846556,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.14398521,
-        "posY": 0.25381353,
-        "health": 42.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.33985287,
-        "posY": 0.37257382,
-        "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.37836996,
+        "posY": 0.257442
       }
     ]
   },
@@ -1321,50 +1100,25 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -130.01642
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 147.51517
+        "angle": 1.019962
       }
     ],
     "monsterClasses": [
       {
-        "posX": 0.42511714,
-        "posY": -0.12489112,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.1233723,
-        "posY": -0.12457839,
+        "posX": -0.36499193,
+        "posY": 0.37388888,
         "health": 42.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13081959,
-        "posY": -0.07857761,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.1427478,
-        "posY": 0.22307639,
-        "health": 42.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.30913287,
-        "posY": 0.3709668,
-        "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.3685787,
+        "posY": 0.28423303
       },
       {
-        "posX": -0.60829926,
-        "posY": 0.3866167,
-        "health": 50.0,
-        "numOfPointToMove": 0
+        "posX": -0.37395772,
+        "posY": 0.14977731
       }
     ]
   },
@@ -1373,50 +1127,25 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -133.92722
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 147.96622
+        "angle": -1.9868481
       }
     ],
     "monsterClasses": [
       {
-        "posX": 0.45669305,
-        "posY": -0.12491004,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.15494825,
-        "posY": -0.12460593,
+        "posX": -0.34997842,
+        "posY": 0.3731035,
         "health": 42.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.12940307,
-        "posY": -0.11012173,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.14147764,
-        "posY": 0.19152601,
-        "health": 42.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.27760008,
-        "posY": 0.36931726,
-        "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.35650548,
+        "posY": 0.308464
       },
       {
-        "posX": -0.57676643,
-        "posY": 0.38496718,
-        "health": 50.0,
-        "numOfPointToMove": 0
+        "posX": -0.37003925,
+        "posY": 0.17443481
       }
     ]
   },
@@ -1425,50 +1154,91 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -133.92102
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 141.71288
+        "angle": -5.781206
       }
     ],
     "monsterClasses": [
       {
-        "posX": 0.48795968,
-        "posY": -0.12492877,
-        "health": 50.0,
-        "numOfPointToMove": 2
+        "posX": -0.33103254,
+        "posY": 0.37211242,
+        "health": 42.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.3369749,
+        "posY": 0.33881682
       },
       {
-        "posX": 0.186215,
-        "posY": -0.1246332,
+        "posX": -0.3607993,
+        "posY": 0.20532595
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -9.541514
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.3122567,
+        "posY": 0.37113023,
+        "health": 42.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.6123708,
+        "posY": 0.3868297,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.3128914,
+        "posY": 0.3686499
+      },
+      {
+        "posX": -0.34691408,
+        "posY": 0.23569253
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -13.230339
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.29383773,
+        "posY": 0.3701667,
         "health": 34.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.11419535,
-        "posY": -0.12471599,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.14021993,
-        "posY": 0.16028461,
-        "health": 34.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.24637601,
-        "posY": 0.3676839,
-        "health": 50.0,
         "numOfPointToMove": 0
       },
       {
-        "posX": -0.5455424,
-        "posY": 0.3833338,
+        "posX": -0.5939518,
+        "posY": 0.38586617,
         "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.32871932,
+        "posY": 0.26524258
+      },
+      {
+        "posX": -0.37166014,
+        "posY": 0.13607624
       }
     ]
   },
@@ -1477,50 +1247,31 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -130.67441
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 135.42009
+        "angle": -17.022963
       }
     ],
     "monsterClasses": [
       {
-        "posX": 0.5194237,
-        "posY": -0.12494763,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.21767901,
-        "posY": -0.12466064,
+        "posX": -0.27490053,
+        "posY": 0.36917606,
         "health": 34.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.082731314,
-        "posY": -0.12472838,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13895428,
-        "posY": 0.12884606,
-        "health": 34.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.21495494,
-        "posY": 0.3660402,
-        "health": 50.0,
         "numOfPointToMove": 0
       },
       {
-        "posX": -0.51412135,
-        "posY": 0.3816901,
+        "posX": -0.5750146,
+        "posY": 0.38487554,
         "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.30528998,
+        "posY": 0.2953771
+      },
+      {
+        "posX": -0.35826296,
+        "posY": 0.16673556
       }
     ]
   },
@@ -1529,50 +1280,93 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -127.83794
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 131.3219
+        "angle": -20.742632
       }
     ],
     "monsterClasses": [
       {
-        "posX": 0.5505158,
-        "posY": -0.124966264,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.248771,
-        "posY": -0.12468776,
+        "posX": -0.25632754,
+        "posY": 0.36820447,
         "health": 34.0,
-        "numOfPointToMove": 2
+        "numOfPointToMove": 0
       },
       {
-        "posX": -0.05163934,
-        "posY": -0.12474063,
-        "health": 42.0,
-        "numOfPointToMove": 2
+        "posX": -0.55644166,
+        "posY": 0.38390395,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.27766046,
+        "posY": 0.32468867
       },
       {
-        "posX": -0.13770358,
-        "posY": 0.097779304,
+        "posX": -0.3404726,
+        "posY": 0.19656184
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -24.800838
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.2360642,
+        "posY": 0.36714447,
+        "health": 34.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.53617835,
+        "posY": 0.38284394,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.24226278,
+        "posY": 0.35639316
+      },
+      {
+        "posX": -0.31580958,
+        "posY": 0.22882786
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -28.221735
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.218983,
+        "posY": 0.3662509,
         "health": 26.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.1839054,
-        "posY": 0.36441594,
-        "health": 50.0,
         "numOfPointToMove": 0
       },
       {
-        "posX": -0.48307183,
-        "posY": 0.38006586,
+        "posX": -0.51909715,
+        "posY": 0.3819504,
         "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.29076126,
+        "posY": 0.255804
       }
     ]
   },
@@ -1581,50 +1375,31 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -125.31513
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 134.65236
+        "angle": -31.583462
       }
     ],
     "monsterClasses": [
       {
-        "posX": 0.5817,
-        "posY": -0.12498495,
-        "health": 50.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.27995533,
-        "posY": -0.12471496,
-        "health": 34.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.020455003,
-        "posY": -0.12475291,
-        "health": 42.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13644919,
-        "posY": 0.06662017,
+        "posX": -0.20219734,
+        "posY": 0.36537284,
         "health": 26.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.1527636,
-        "posY": 0.36278686,
-        "health": 50.0,
         "numOfPointToMove": 0
       },
       {
-        "posX": -0.45193005,
-        "posY": 0.37843677,
+        "posX": -0.50231147,
+        "posY": 0.3810723,
         "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.26235124,
+        "posY": 0.28211504
+      },
+      {
+        "posX": -0.35554305,
+        "posY": 0.15313013
       }
     ]
   },
@@ -1633,44 +1408,31 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -123.06337
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 137.83759
+        "angle": -35.319126
       }
     ],
     "monsterClasses": [
       {
-        "posX": 0.31125683,
-        "posY": -0.12474226,
-        "health": 34.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.010846496,
-        "posY": -0.12476524,
-        "health": 42.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13519007,
-        "posY": 0.035344005,
+        "posX": -0.18354449,
+        "posY": 0.36439705,
         "health": 26.0,
-        "numOfPointToMove": 1
+        "numOfPointToMove": 0
       },
       {
-        "posX": -0.14745958,
-        "posY": 0.33760107,
-        "health": 50.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.42067128,
-        "posY": 0.37680158,
+        "posX": -0.48365864,
+        "posY": 0.38009655,
         "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.22636811,
+        "posY": 0.31112188
+      },
+      {
+        "posX": -0.32962546,
+        "posY": 0.18266352
       }
     ]
   },
@@ -1679,44 +1441,31 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -121.05113
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 140.89043
+        "angle": -39.099865
       }
     ],
     "monsterClasses": [
       {
-        "posX": 0.34261018,
-        "posY": -0.124769606,
-        "health": 34.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.042199865,
-        "posY": -0.124777585,
-        "health": 34.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13392887,
-        "posY": 0.0040160418,
+        "posX": -0.1646666,
+        "posY": 0.36340952,
         "health": 26.0,
-        "numOfPointToMove": 1
+        "numOfPointToMove": 0
       },
       {
-        "posX": -0.14619152,
-        "posY": 0.3062733,
-        "health": 42.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.38936073,
-        "posY": 0.37516367,
+        "posX": -0.46478075,
+        "posY": 0.37910903,
         "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.18522106,
+        "posY": 0.34023127
+      },
+      {
+        "posX": -0.29866534,
+        "posY": 0.21230581
       }
     ]
   },
@@ -1725,194 +1474,27 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -122.020386
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 143.73984
+        "angle": -42.84955
       }
     ],
     "monsterClasses": [
       {
-        "posX": 0.37549394,
-        "posY": -0.12479829,
-        "health": 34.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.075083524,
-        "posY": -0.12479054,
-        "health": 34.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.1326061,
-        "posY": -0.028841108,
-        "health": 26.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.1448616,
-        "posY": 0.27341652,
-        "health": 42.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.35652196,
-        "posY": 0.3734458,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -126.87886
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 146.14784
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.40665317,
-        "posY": -0.12482547,
-        "health": 34.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.10624273,
-        "posY": -0.12480281,
-        "health": 26.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13135271,
-        "posY": -0.059975147,
-        "health": 26.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.14360139,
-        "posY": 0.24228278,
-        "health": 42.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.3254053,
-        "posY": 0.37181804,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -131.42896
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 148.45087
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.4400012,
-        "posY": -0.12485456,
-        "health": 34.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.1395907,
-        "posY": -0.12481595,
-        "health": 26.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13001128,
-        "posY": -0.09329617,
-        "health": 26.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.14225267,
-        "posY": 0.2089621,
-        "health": 34.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.2921028,
-        "posY": 0.37007594,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.5941983,
-        "posY": 0.38587907,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -135.38399
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 144.98872
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.47156262,
-        "posY": -0.12488208,
-        "health": 34.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.17115216,
-        "posY": -0.124828376,
+        "posX": -0.15232265,
+        "posY": 0.3627638,
         "health": 18.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.1287417,
-        "posY": -0.12483212,
-        "health": 26.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.1409762,
-        "posY": 0.17742643,
-        "health": 34.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.26058438,
-        "posY": 0.36842716,
-        "health": 50.0,
         "numOfPointToMove": 0
       },
       {
-        "posX": -0.56267995,
-        "posY": 0.3842303,
+        "posX": -0.44605798,
+        "posY": 0.3781296,
         "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.26637018,
+        "posY": 0.24162148
       }
     ]
   },
@@ -1921,206 +1503,6566 @@
       {
         "posX": -0.37489516,
         "posY": 0.12634528,
-        "angle": -132.57661
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 138.69514
+        "angle": -44.90704
       }
     ],
     "monsterClasses": [
       {
-        "posX": 0.5030305,
-        "posY": -0.12490953,
-        "health": 34.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.20261998,
-        "posY": -0.124840766,
-        "health": 18.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.099450685,
-        "posY": -0.12483881,
-        "health": 26.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13970353,
-        "posY": 0.14598423,
-        "health": 26.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.22915953,
-        "posY": 0.36678326,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.53125495,
-        "posY": 0.3825864,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -129.52751
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 132.46878
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.5341622,
-        "posY": -0.124936685,
-        "health": 34.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.23375182,
-        "posY": -0.12485303,
-        "health": 18.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.068318956,
-        "posY": -0.12484591,
-        "health": 26.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13844445,
-        "posY": 0.114878,
-        "health": 26.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.19807023,
-        "posY": 0.36515692,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.50016576,
-        "posY": 0.38096008,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -126.809975
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 132.86662
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.565459,
-        "posY": -0.12496398,
-        "health": 34.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.26504856,
-        "posY": -0.12486535,
-        "health": 18.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.03702218,
-        "posY": -0.124853045,
-        "health": 18.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13717869,
-        "posY": 0.08360684,
-        "health": 26.0,
-        "numOfPointToMove": 1
-      },
-      {
-        "posX": -0.1668162,
-        "posY": 0.36352196,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      },
-      {
-        "posX": -0.4689117,
-        "posY": 0.37932512,
-        "health": 50.0,
-        "numOfPointToMove": 0
-      }
-    ]
-  },
-  {
-    "towerClasses": [
-      {
-        "posX": -0.37489516,
-        "posY": 0.12634528,
-        "angle": -124.383606
-      },
-      {
-        "posX": 0.11401272,
-        "posY": 0.6263453,
-        "angle": 136.11263
-      }
-    ],
-    "monsterClasses": [
-      {
-        "posX": 0.5966264,
-        "posY": -0.12499116,
-        "health": 34.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": 0.29621607,
-        "posY": -0.12487763,
-        "health": 18.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.0058547184,
-        "posY": -0.12486016,
-        "health": 18.0,
-        "numOfPointToMove": 2
-      },
-      {
-        "posX": -0.13591816,
-        "posY": 0.052464813,
+        "posX": -0.15141355,
+        "posY": 0.34396482,
         "health": 18.0,
         "numOfPointToMove": 1
       },
       {
-        "posX": -0.14767626,
-        "posY": 0.35227224,
+        "posX": -0.42726272,
+        "posY": 0.3771464,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.237886,
+        "posY": 0.2597606
+      },
+      {
+        "posX": -0.34685424,
+        "posY": 0.15365066
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -47.54637
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.15051982,
+        "posY": 0.3254835,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.40878505,
+        "posY": 0.37617978,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.20966077,
+        "posY": 0.27299458
+      },
+      {
+        "posX": -0.3190648,
+        "posY": 0.175896
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -50.32132
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14960232,
+        "posY": 0.30651098,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.3898163,
+        "posY": 0.3751875,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.18045601,
+        "posY": 0.28183743
+      },
+      {
+        "posX": -0.29030737,
+        "posY": 0.19398975
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -53.38801
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14869994,
+        "posY": 0.28785077,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.3711598,
+        "posY": 0.37421155,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.1515053,
+        "posY": 0.28584772
+      },
+      {
+        "posX": -0.26179668,
+        "posY": 0.20709863
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -56.697086
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14778641,
+        "posY": 0.26896012,
+        "health": 10.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.35227287,
+        "posY": 0.37322354,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.23270497,
+        "posY": 0.2156348
+      },
+      {
+        "posX": -0.35565415,
+        "posY": 0.13842784
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -60.209972
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 93.7368
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14688393,
+        "posY": 0.25029793,
+        "health": 10.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.3336144,
+        "posY": 0.3722475,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.20373887,
+        "posY": 0.21939015
+      },
+      {
+        "posX": -0.3271766,
+        "posY": 0.15228629
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -63.832844
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 97.454414
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14598608,
+        "posY": 0.23173158,
+        "health": 10.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.31505173,
+        "posY": 0.37127644,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.6188068,
+        "posY": 0.38716638,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.17469838,
+        "posY": 0.21851286
+      },
+      {
+        "posX": -0.2986222,
+        "posY": 0.1614602
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -67.66787
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 101.28944
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14505987,
+        "posY": 0.21257886,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.29590282,
+        "posY": 0.37027472,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.59965783,
+        "posY": 0.38616467,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.26893282,
+        "posY": 0.16610207
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -71.35477
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 104.97633
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14416945,
+        "posY": 0.19416592,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.2774935,
+        "posY": 0.3693117,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.5812486,
+        "posY": 0.38520166,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.24016695,
+        "posY": 0.16594794
+      },
+      {
+        "posX": -0.36506173,
+        "posY": 0.12923576
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -74.98967
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 108.61124
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14329156,
+        "posY": 0.17601258,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.2593438,
+        "posY": 0.36836225,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.56309885,
+        "posY": 0.3842522,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.21159239,
+        "posY": 0.1613655
+      },
+      {
+        "posX": -0.33696237,
+        "posY": 0.13447994
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -78.422966
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 112.04453
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14246239,
+        "posY": 0.1588661,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.24220076,
+        "posY": 0.36746547,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.5459558,
+        "posY": 0.3833554,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.18440735,
+        "posY": 0.15299736
+      },
+      {
+        "posX": -0.31022617,
+        "posY": 0.13539344
+      },
+      {
+        "posX": 0.089256376,
+        "posY": 0.6083535
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -82.170235
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 115.7918
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14155738,
+        "posY": 0.1401516,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.22349003,
+        "posY": 0.36648667,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.527245,
+        "posY": 0.38237664,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.15451966,
+        "posY": 0.13938464
+      },
+      {
+        "posX": -0.2808284,
+        "posY": 0.1319111
+      },
+      {
+        "posX": 0.04839962,
+        "posY": 0.57582676
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -84.83132
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 118.999245
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.20747471,
+        "posY": 0.3656489,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.5112297,
+        "posY": 0.38153884,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.25551966,
+        "posY": 0.12591283
+      },
+      {
+        "posX": 0.017141357,
+        "posY": 0.5477916
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -80.95513
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 122.875435
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.18812022,
+        "posY": 0.36463642,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.49187517,
+        "posY": 0.38052636,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.22527938,
+        "posY": 0.12580328
+      },
+      {
+        "posX": -0.016064212,
+        "posY": 0.5136721
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -77.74666
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 126.08391
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.17209974,
+        "posY": 0.36379838,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.4758547,
+        "posY": 0.37968832,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.2002483,
+        "posY": 0.1257126
+      },
+      {
+        "posX": -0.039766446,
+        "posY": 0.48523208
+      },
+      {
+        "posX": 0.11058595,
+        "posY": 0.6232008
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -74.27188
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 129.55869
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.15474954,
+        "posY": 0.36289075,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.4585045,
+        "posY": 0.3787807,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.17313965,
+        "posY": 0.12561439
+      },
+      {
+        "posX": -0.061570734,
+        "posY": 0.45422938
+      },
+      {
+        "posX": 0.079664096,
+        "posY": 0.592675
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -70.21128
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 133.6193
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14799953,
+        "posY": 0.34988257,
         "health": 50.0,
         "numOfPointToMove": 1
       },
       {
-        "posX": -0.43778682,
-        "posY": 0.3776969,
+        "posX": -0.43822926,
+        "posY": 0.37772006,
         "health": 50.0,
         "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.14146066,
+        "posY": 0.12549964
+      },
+      {
+        "posX": -0.092625186,
+        "posY": 0.4083109
+      },
+      {
+        "posX": 0.045062512,
+        "posY": 0.5535923
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -65.99051
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 137.84006
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14714411,
+        "posY": 0.32879606,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.4171542,
+        "posY": 0.37661758,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.12869334,
+        "posY": 0.34981796
+      },
+      {
+        "posX": 0.008544847,
+        "posY": 0.5061804
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -62.734196
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 140.30426
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14648417,
+        "posY": 0.31252787,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.40089485,
+        "posY": 0.37576702,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.019463956,
+        "posY": 0.46554756
+      },
+      {
+        "posX": -0.35984048,
+        "posY": 0.13861665
+      },
+      {
+        "posX": 0.10698113,
+        "posY": 0.6178744
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -58.6124
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 142.17146
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.1456488,
+        "posY": 0.2919358,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.38031405,
+        "posY": 0.3746904,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.054711655,
+        "posY": 0.40905076
+      },
+      {
+        "posX": -0.32828856,
+        "posY": 0.16001043
+      },
+      {
+        "posX": 0.07132795,
+        "posY": 0.571373
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -55.70307
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 143.48354
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14502221,
+        "posY": 0.27648997,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.36487657,
+        "posY": 0.37388286,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.08099988,
+        "posY": 0.3629592
+      },
+      {
+        "posX": -0.30447114,
+        "posY": 0.1723437
+      },
+      {
+        "posX": 0.044735596,
+        "posY": 0.53277886
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -59.12017
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 144.95766
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14427426,
+        "posY": 0.25805283,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.3464495,
+        "posY": 0.3729189,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.11221005,
+        "posY": 0.3037733
+      },
+      {
+        "posX": -0.27587208,
+        "posY": 0.18289734
+      },
+      {
+        "posX": 0.013162345,
+        "posY": 0.48254234
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -62.741234
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 146.36787
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14351001,
+        "posY": 0.23921362,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.3276205,
+        "posY": 0.37193394,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.24645929,
+        "posY": 0.18899556
+      },
+      {
+        "posX": -0.018909335,
+        "posY": 0.42652473
+      },
+      {
+        "posX": -0.36529607,
+        "posY": 0.13102767
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -66.50123
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 147.68475
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14274798,
+        "posY": 0.22042911,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.3088462,
+        "posY": 0.3709518,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.61240524,
+        "posY": 0.38683152,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.2169406,
+        "posY": 0.19036058
+      },
+      {
+        "posX": -0.050696597,
+        "posY": 0.3659543
+      },
+      {
+        "posX": -0.33616874,
+        "posY": 0.1420402
+      },
+      {
+        "posX": 0.081832126,
+        "posY": 0.57547057
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -69.74566
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 148.75482
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14209044,
+        "posY": 0.20422027,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.2926462,
+        "posY": 0.37010437,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.59620523,
+        "posY": 0.38598406,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.19131589,
+        "posY": 0.18775398
+      },
+      {
+        "posX": -0.07797177,
+        "posY": 0.3099046
+      },
+      {
+        "posX": -0.31088173,
+        "posY": 0.14775828
+      },
+      {
+        "posX": 0.054217547,
+        "posY": 0.5277872
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -72.76039
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 146.44096
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14147945,
+        "posY": 0.18915899,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.27759314,
+        "posY": 0.3693169,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.58115214,
+        "posY": 0.3851966,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.16737784,
+        "posY": 0.18218955
+      },
+      {
+        "posX": -0.10318847,
+        "posY": 0.2546807
+      },
+      {
+        "posX": -0.2872575,
+        "posY": 0.14992915
+      },
+      {
+        "posX": 0.028685503,
+        "posY": 0.48033732
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -76.50149
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 142.69987
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14072125,
+        "posY": 0.1704689,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.25891322,
+        "posY": 0.36833972,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.56247216,
+        "posY": 0.38421944,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13431007,
+        "posY": 0.18194246
+      },
+      {
+        "posX": -0.2577706,
+        "posY": 0.14841418
+      },
+      {
+        "posX": -0.0028274432,
+        "posY": 0.4172461
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -80.28789
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 138.91348
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13995387,
+        "posY": 0.15155245,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.24000701,
+        "posY": 0.3673507,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.54356605,
+        "posY": 0.38323042,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.22773403,
+        "posY": 0.1421344
+      },
+      {
+        "posX": -0.034529448,
+        "posY": 0.34864435
+      },
+      {
+        "posX": -0.3452424,
+        "posY": 0.12952676
+      },
+      {
+        "posX": 0.09848563,
+        "posY": 0.61498594
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -84.02151
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 135.17987
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13919717,
+        "posY": 0.13289969,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.22136441,
+        "posY": 0.36637548,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.52492344,
+        "posY": 0.3822552,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.19792649,
+        "posY": 0.1312665
+      },
+      {
+        "posX": -0.06559986,
+        "posY": 0.2763233
+      },
+      {
+        "posX": -0.31581336,
+        "posY": 0.12798825
+      },
+      {
+        "posX": 0.057564255,
+        "posY": 0.58258885
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -87.772575
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 131.4288
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13843694,
+        "posY": 0.11415976,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.20263463,
+        "posY": 0.3653957,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.5061937,
+        "posY": 0.3812754,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.16778998,
+        "posY": 0.115672424
+      },
+      {
+        "posX": -0.096625805,
+        "posY": 0.1989888
+      },
+      {
+        "posX": -0.2860571,
+        "posY": 0.12176714
+      },
+      {
+        "posX": 0.021124534,
+        "posY": 0.549796
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -91.47757
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 130.68068
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13768606,
+        "posY": 0.09565002,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.18413496,
+        "posY": 0.36442795,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.487694,
+        "posY": 0.38030764,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13783705,
+        "posY": 0.09566955
+      },
+      {
+        "posX": -0.12708403,
+        "posY": 0.118003964
+      },
+      {
+        "posX": -0.2564797,
+        "posY": 0.111022115
+      },
+      {
+        "posX": -0.010269776,
+        "posY": 0.51716536
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -95.29281
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 132.58736
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13691284,
+        "posY": 0.076589495,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.16508478,
+        "posY": 0.3634314,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.46864384,
+        "posY": 0.37931108,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.22582836,
+        "posY": 0.09517937
+      },
+      {
+        "posX": -0.037822917,
+        "posY": 0.48331392
+      },
+      {
+        "posX": -0.3446298,
+        "posY": 0.120017596
+      },
+      {
+        "posX": 0.10176804,
+        "posY": 0.6148106
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -99.01872
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 134.66585
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.1361577,
+        "posY": 0.057975233,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.1526443,
+        "posY": 0.36278063,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.4500397,
+        "posY": 0.3783379,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.19570489,
+        "posY": 0.075028464
+      },
+      {
+        "posX": -0.06417301,
+        "posY": 0.45022595
+      },
+      {
+        "posX": -0.3148833,
+        "posY": 0.10915898
+      },
+      {
+        "posX": 0.06919584,
+        "posY": 0.5820481
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -102.74195
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 136.04794
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13540313,
+        "posY": 0.03937438,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.1517329,
+        "posY": 0.3441868,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.431449,
+        "posY": 0.37736538,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.16541575,
+        "posY": 0.05027338
+      },
+      {
+        "posX": -0.096545056,
+        "posY": 0.40278316
+      },
+      {
+        "posX": -0.28497085,
+        "posY": 0.0936895
+      },
+      {
+        "posX": 0.036367968,
+        "posY": 0.5439051
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -106.52297
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 138.04132
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13463683,
+        "posY": 0.020484775,
+        "health": -6.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.15080735,
+        "posY": 0.32530436,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.4125697,
+        "posY": 0.37637776,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.12918809,
+        "posY": 0.3498806
+      },
+      {
+        "posX": -0.25440234,
+        "posY": 0.073254794
+      },
+      {
+        "posX": 0.0032620057,
+        "posY": 0.5004466
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -105.173256
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 139.87823
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14987682,
+        "posY": 0.30632043,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.39358896,
+        "posY": 0.37538484,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.22380279,
+        "posY": 0.05599378
+      },
+      {
+        "posX": -0.029786661,
+        "posY": 0.4519565
+      },
+      {
+        "posX": 0.10254825,
+        "posY": 0.6124421
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -101.47984
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 141.59944
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.1489727,
+        "posY": 0.28787553,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.3751471,
+        "posY": 0.37442014,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.19419314,
+        "posY": 0.042206958
+      },
+      {
+        "posX": -0.06167105,
+        "posY": 0.40023524
+      },
+      {
+        "posX": 0.07021044,
+        "posY": 0.5699705
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -97.70699
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 143.2266
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14804916,
+        "posY": 0.2690339,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.3563086,
+        "posY": 0.37343466,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.16394661,
+        "posY": 0.028123595
+      },
+      {
+        "posX": -0.09401144,
+        "posY": 0.3427123
+      },
+      {
+        "posX": 0.037406944,
+        "posY": 0.52189624
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -94.01442
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 144.73685
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14714526,
+        "posY": 0.2505932,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.33787096,
+        "posY": 0.37247014,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.12543875,
+        "posY": 0.28182435
+      },
+      {
+        "posX": 0.005526334,
+        "posY": 0.4702559
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -90.23755
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 146.25618
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14622071,
+        "posY": 0.23173146,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.3190124,
+        "posY": 0.37148362,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.6202903,
+        "posY": 0.387244,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.026851892,
+        "posY": 0.41274047
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -86.93481
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 147.33731
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14541224,
+        "posY": 0.21523754,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.30252126,
+        "posY": 0.37062094,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.6037991,
+        "posY": 0.3863813,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.05497472,
+        "posY": 0.35855284
+      },
+      {
+        "posX": 0.08545226,
+        "posY": 0.58108586
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -83.16712
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 148.57584
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14448996,
+        "posY": 0.19642176,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.28370857,
+        "posY": 0.3696368,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.58498645,
+        "posY": 0.3853972,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.086839095,
+        "posY": 0.2923026
+      },
+      {
+        "posX": 0.053088654,
+        "posY": 0.52502066
+      },
+      {
+        "posX": -0.3560902,
+        "posY": 0.13206472
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -79.429726
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 144.83846
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14357507,
+        "posY": 0.17775719,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.26504713,
+        "posY": 0.3686606,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.566325,
+        "posY": 0.38442096,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.11821848,
+        "posY": 0.2219156
+      },
+      {
+        "posX": 0.02121403,
+        "posY": 0.46473676
+      },
+      {
+        "posX": -0.3271977,
+        "posY": 0.13694625
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -80.480316
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 140.33063
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14247161,
+        "posY": 0.15524508,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.24253875,
+        "posY": 0.36748314,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.5438166,
+        "posY": 0.38324353,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.016928032,
+        "posY": 0.3858385
+      },
+      {
+        "posX": -0.29204598,
+        "posY": 0.13664684
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -83.49967
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 137.31126
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.1417325,
+        "posY": 0.1401664,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.22746259,
+        "posY": 0.36669448,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.52874047,
+        "posY": 0.38245487,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.042290255,
+        "posY": 0.32920894
+      },
+      {
+        "posX": -0.2683158,
+        "posY": 0.13266295
+      },
+      {
+        "posX": 0.07964487,
+        "posY": 0.6002127
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -87.2456
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 133.56534
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14081554,
+        "posY": 0.121459216,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.20875853,
+        "posY": 0.36571604,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.5100364,
+        "posY": 0.3814764,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.07354878,
+        "posY": 0.25473353
+      },
+      {
+        "posX": -0.2386685,
+        "posY": 0.12350175
+      },
+      {
+        "posX": 0.041224763,
+        "posY": 0.5675709
+      },
+      {
+        "posX": -0.35526693,
+        "posY": 0.12593557
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -91.06321
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 130.1087
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13988103,
+        "posY": 0.102394044,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.18969655,
+        "posY": 0.36471888,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.4909744,
+        "posY": 0.38047925,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.10516988,
+        "posY": 0.17402616
+      },
+      {
+        "posX": -0.2082182,
+        "posY": 0.109358564
+      },
+      {
+        "posX": 0.0068752617,
+        "posY": 0.5340531
+      },
+      {
+        "posX": -0.32528213,
+        "posY": 0.121289015
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -94.76007
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 131.97055
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13897608,
+        "posY": 0.08393189,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.1712375,
+        "posY": 0.36375326,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.47251534,
+        "posY": 0.37951362,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13556413,
+        "posY": 0.09124726
+      },
+      {
+        "posX": -0.1785044,
+        "posY": 0.09103827
+      },
+      {
+        "posX": -0.02176404,
+        "posY": 0.5013536
+      },
+      {
+        "posX": -0.2960191,
+        "posY": 0.11216499
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -98.49897
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 133.97964
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13806084,
+        "posY": 0.065259874,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.15256858,
+        "posY": 0.36277667,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.4538464,
+        "posY": 0.37853703,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.1482259,
+        "posY": 0.067881696
+      },
+      {
+        "posX": -0.046101764,
+        "posY": 0.4680403
+      },
+      {
+        "posX": -0.2661965,
+        "posY": 0.09830922
+      },
+      {
+        "posX": 0.08078875,
+        "posY": 0.5934968
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -102.23921
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 135.34927
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13714527,
+        "posY": 0.04658109,
+        "health": 10.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.15196912,
+        "posY": 0.35050824,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.43517074,
+        "posY": 0.37756008,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.078902915,
+        "posY": 0.42628172
+      },
+      {
+        "posX": -0.2361349,
+        "posY": 0.07979174
+      },
+      {
+        "posX": 0.047702275,
+        "posY": 0.5575779
+      },
+      {
+        "posX": -0.35542652,
+        "posY": 0.11981363
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -105.89696
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 137.37892
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.03744507
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13624988,
+        "posY": 0.028314263,
+        "health": 10.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.15107657,
+        "posY": 0.33224133,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.416907,
+        "posY": 0.37660465,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.110576496,
+        "posY": 0.3771742
+      },
+      {
+        "posX": -0.20651552,
+        "posY": 0.057178073
+      },
+      {
+        "posX": 0.015603848,
+        "posY": 0.5171653
+      },
+      {
+        "posX": -0.32625642,
+        "posY": 0.1063654
+      },
+      {
+        "posX": -0.13600165,
+        "posY": -0.3516671
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -109.27031
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 139.20973
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.083780594
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13542414,
+        "posY": 0.011467755,
+        "health": 10.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.15025342,
+        "posY": 0.31539464,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.40006322,
+        "posY": 0.37572354,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13959458,
+        "posY": 0.32793644
+      },
+      {
+        "posX": -0.17900552,
+        "posY": 0.032374337
+      },
+      {
+        "posX": -0.01380603,
+        "posY": 0.47594643
+      },
+      {
+        "posX": -0.29916078,
+        "posY": 0.09001446
+      },
+      {
+        "posX": -0.13589315,
+        "posY": -0.30928344
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -112.31622
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 140.8026
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.20271292
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13467853,
+        "posY": -0.0037435591,
+        "health": 10.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14951015,
+        "posY": 0.3001832,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.38485444,
+        "posY": 0.37492794,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.15400626,
+        "posY": 0.006723337
+      },
+      {
+        "posX": -0.04020217,
+        "posY": 0.43547362
+      },
+      {
+        "posX": -0.27453563,
+        "posY": 0.07199577
+      },
+      {
+        "posX": -0.13563564,
+        "posY": -0.27426863
+      },
+      {
+        "posX": 0.1013563,
+        "posY": 0.61068046
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -115.8901
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 142.14574
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.355361
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13380368,
+        "posY": -0.021591514,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14863805,
+        "posY": 0.2823351,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.36700946,
+        "posY": 0.37399444,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.070981205,
+        "posY": 0.38404715
+      },
+      {
+        "posX": -0.2454491,
+        "posY": 0.04691553
+      },
+      {
+        "posX": -0.13514046,
+        "posY": -0.23712291
+      },
+      {
+        "posX": 0.0701088,
+        "posY": 0.5688416
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -119.302956
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 143.67491
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.5163082
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13296825,
+        "posY": -0.038635314,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14780526,
+        "posY": 0.26529118,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.34996852,
+        "posY": 0.373103,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.10017952,
+        "posY": 0.33096838
+      },
+      {
+        "posX": -0.21747848,
+        "posY": 0.018995933
+      },
+      {
+        "posX": -0.13447304,
+        "posY": -0.20562015
+      },
+      {
+        "posX": 0.04046312,
+        "posY": 0.5249184
+      },
+      {
+        "posX": -0.34737313,
+        "posY": 0.10757679
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -122.36433
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 144.86937
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.6752713
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13221885,
+        "posY": -0.053923845,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14705823,
+        "posY": 0.25000256,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.33468255,
+        "posY": 0.37230337,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.12620953,
+        "posY": 0.2800567
+      },
+      {
+        "posX": -0.19222681,
+        "posY": -0.009347677
+      },
+      {
+        "posX": -0.1337126,
+        "posY": -0.18066123
+      },
+      {
+        "posX": 0.014031835,
+        "posY": 0.4822194
+      },
+      {
+        "posX": -0.32252383,
+        "posY": 0.08744187
+      },
+      {
+        "posX": -0.13560273,
+        "posY": -0.3410276
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -126.06218
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 146.25146
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.888779
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13131367,
+        "posY": -0.072390914,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.1461559,
+        "posY": 0.23153536,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.31621855,
+        "posY": 0.37133747,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.6199516,
+        "posY": 0.38722628,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.1615212,
+        "posY": -0.047744825
+      },
+      {
+        "posX": -0.13259016,
+        "posY": -0.15467392
+      },
+      {
+        "posX": -0.017691404,
+        "posY": 0.42648226
+      },
+      {
+        "posX": -0.29230422,
+        "posY": 0.05895999
+      },
+      {
+        "posX": -0.13493428,
+        "posY": -0.30577782
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -129.19055
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 147.53032
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -1.0909438
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13054787,
+        "posY": -0.088014066,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14539252,
+        "posY": 0.21591213,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.30059803,
+        "posY": 0.37052032,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.60433114,
+        "posY": 0.38640913,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13537005,
+        "posY": -0.0837837
+      },
+      {
+        "posX": -0.1314663,
+        "posY": -0.13624361
+      },
+      {
+        "posX": -0.044355527,
+        "posY": 0.37577373
+      },
+      {
+        "posX": -0.26656422,
+        "posY": 0.03130944
+      },
+      {
+        "posX": -0.13419452,
+        "posY": -0.27951145
+      },
+      {
+        "posX": 0.088847816,
+        "posY": 0.58652914
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -128.03322
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 148.60806
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.850708
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14445758,
+        "posY": 0.19677778,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.28146702,
+        "posY": 0.36951956,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.58520013,
+        "posY": 0.38540837,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13045777,
+        "posY": -0.10616577
+      },
+      {
+        "posX": -0.076795116,
+        "posY": 0.30923015
+      },
+      {
+        "posX": -0.23517065,
+        "posY": 1.19552016E-4
+      },
+      {
+        "posX": -0.13335016,
+        "posY": -0.24608453
+      },
+      {
+        "posX": 0.055928137,
+        "posY": 0.52981097
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -124.18084
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 144.75569
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.78271484
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14351752,
+        "posY": 0.17753881,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.26223144,
+        "posY": 0.36851332,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.56596446,
+        "posY": 0.38440213,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.109171316,
+        "posY": 0.23739508
+      },
+      {
+        "posX": -0.20375131,
+        "posY": -0.028264374
+      },
+      {
+        "posX": -0.13260965,
+        "posY": -0.21026205
+      },
+      {
+        "posX": 0.02306921,
+        "posY": 0.46785504
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -120.87071
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 141.44556
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.72036743
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14270979,
+        "posY": 0.16100788,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.24570337,
+        "posY": 0.3676487,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.54943645,
+        "posY": 0.3835375,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13679746,
+        "posY": 0.17172462
+      },
+      {
+        "posX": -0.17675449,
+        "posY": -0.05265303
+      },
+      {
+        "posX": -0.13197336,
+        "posY": -0.1794819
+      },
+      {
+        "posX": -0.004971698,
+        "posY": 0.4106731
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -117.113594
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 137.68843
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.6447449
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.141793,
+        "posY": 0.14224465,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.22694343,
+        "posY": 0.36666733,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.5306765,
+        "posY": 0.38255614,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.14611207,
+        "posY": -0.08033508
+      },
+      {
+        "posX": -0.13125116,
+        "posY": -0.14454523
+      },
+      {
+        "posX": -0.03658326,
+        "posY": 0.34134927
+      },
+      {
+        "posX": 0.093215145,
+        "posY": 0.6105055
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -113.39057
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 133.9654
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.564209
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.1408845,
+        "posY": 0.12365171,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.20835373,
+        "posY": 0.36569488,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.51208675,
+        "posY": 0.38158366,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.1305355,
+        "posY": -0.10992563
+      },
+      {
+        "posX": -0.06768137,
+        "posY": 0.26801875
+      },
+      {
+        "posX": 0.054343145,
+        "posY": 0.57809925
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -110.02803
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 130.60286
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.48608398
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14006399,
+        "posY": 0.10685903,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.19156396,
+        "posY": 0.36481658,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.495297,
+        "posY": 0.3807054,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.09557463,
+        "posY": 0.19782218
+      },
+      {
+        "posX": 0.0232004,
+        "posY": 0.54862326
+      },
+      {
+        "posX": -0.13610683,
+        "posY": -0.35956317
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -106.71861
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 131.59181
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.40368652
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13925643,
+        "posY": 0.0903317,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.17503947,
+        "posY": 0.36395216,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.47877252,
+        "posY": 0.37984094,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.12284754,
+        "posY": 0.12505907
+      },
+      {
+        "posX": -0.0037752464,
+        "posY": 0.5194208
+      },
+      {
+        "posX": -0.13644378,
+        "posY": -0.30886376
+      },
+      {
+        "posX": -0.34890094,
+        "posY": 0.122372486
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -102.31545
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 133.555
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.28448486
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13818198,
+        "posY": 0.06834209,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.15305367,
+        "posY": 0.36280203,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.45678675,
+        "posY": 0.37869084,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.034014016,
+        "posY": 0.4802713
+      },
+      {
+        "posX": -0.13661587,
+        "posY": -0.24706154
+      },
+      {
+        "posX": -0.3140395,
+        "posY": 0.11143347
+      },
+      {
+        "posX": 0.09691598,
+        "posY": 0.60947406
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -106.20243
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 135.79437
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.16897583
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.1372335,
+        "posY": 0.048930347,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.149803,
+        "posY": 0.35036856,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.4373784,
+        "posY": 0.37767556,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.06639381,
+        "posY": 0.4376226
+      },
+      {
+        "posX": -0.13650568,
+        "posY": -0.19786863
+      },
+      {
+        "posX": -0.2830028,
+        "posY": 0.09641264
+      },
+      {
+        "posX": 0.062942535,
+        "posY": 0.5729209
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -109.943344
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 137.79454
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.047302246
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13632064,
+        "posY": 0.030248016,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14897484,
+        "posY": 0.33168232,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.41869938,
+        "posY": 0.3766984,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.09862131,
+        "posY": 0.38810065
+      },
+      {
+        "posX": -0.13616751,
+        "posY": -0.15527453
+      },
+      {
+        "posX": -0.25290027,
+        "posY": 0.077206016
+      },
+      {
+        "posX": 0.030309044,
+        "posY": 0.53256
+      },
+      {
+        "posX": -0.36778605,
+        "posY": 0.12348175
+      },
+      {
+        "posX": -0.13599722,
+        "posY": -0.36161914
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -114.017044
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 139.63362
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.098695315
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13532658,
+        "posY": 0.009903818,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.148073,
+        "posY": 0.3113338,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.3983587,
+        "posY": 0.37563437,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13348077,
+        "posY": 0.3288728
+      },
+      {
+        "posX": -0.13554034,
+        "posY": -0.1141907
+      },
+      {
+        "posX": -0.21986094,
+        "posY": 0.050991446
+      },
+      {
+        "posX": -0.004992552,
+        "posY": 0.48330802
+      },
+      {
+        "posX": -0.33522543,
+        "posY": 0.10706395
+      },
+      {
+        "posX": -0.13587788,
+        "posY": -0.31014195
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -117.05462
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 141.08562
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.21803999
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13458537,
+        "posY": -0.0052659214,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14740054,
+        "posY": 0.29616085,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.38319156,
+        "posY": 0.37484095,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.134897,
+        "posY": -0.08715227
+      },
+      {
+        "posX": -0.19504933,
+        "posY": 0.027848564
+      },
+      {
+        "posX": -0.031155929,
+        "posY": 0.44298646
+      },
+      {
+        "posX": -0.31077075,
+        "posY": 0.09122606
+      },
+      {
+        "posX": -0.13561319,
+        "posY": -0.27535364
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -120.349495
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 142.7229
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.35912532
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13378136,
+        "posY": -0.021720648,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14667113,
+        "posY": 0.27970266,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.36673972,
+        "posY": 0.3739803,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13402942,
+        "posY": -0.06129682
+      },
+      {
+        "posX": -0.16796632,
+        "posY": -7.279515E-4
+      },
+      {
+        "posX": -0.059381515,
+        "posY": 0.39577544
+      },
+      {
+        "posX": -0.28407493,
+        "posY": 0.070573345
+      },
+      {
+        "posX": -0.13515638,
+        "posY": -0.24109186
+      },
+      {
+        "posX": 0.085382074,
+        "posY": 0.5882739
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -122.99361
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 143.7808
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.49975508
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13304836,
+        "posY": -0.036722094,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14600614,
+        "posY": 0.264698,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.35174084,
+        "posY": 0.3731957,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13308458,
+        "posY": -0.04087451
+      },
+      {
+        "posX": -0.14312132,
+        "posY": -0.029930308
+      },
+      {
+        "posX": -0.08497469,
+        "posY": 0.3495836
+      },
+      {
+        "posX": -0.2595829,
+        "posY": 0.04859495
+      },
+      {
+        "posX": -0.134586,
+        "posY": -0.21300566
+      },
+      {
+        "posX": 0.05941963,
+        "posY": 0.55041444
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -125.90653
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 145.25833
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.6932872
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13213608,
+        "posY": -0.055392623,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14517848,
+        "posY": 0.24602354,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.3330736,
+        "posY": 0.37221918,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.11664136,
+        "posY": 0.28789723
+      },
+      {
+        "posX": -0.22889563,
+        "posY": 0.017044947
+      },
+      {
+        "posX": -0.1336711,
+        "posY": -0.18224637
+      },
+      {
+        "posX": 0.027293354,
+        "posY": 0.49909845
+      },
+      {
+        "posX": -0.35441202,
+        "posY": 0.11101089
+      },
+      {
+        "posX": -0.13566233,
+        "posY": -0.34680092
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -128.57062
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 146.62683
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.91104716
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.1312233,
+        "posY": -0.074073434,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.1443504,
+        "posY": 0.22733884,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.31439605,
+        "posY": 0.37124214,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.61865115,
+        "posY": 0.38715824,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.19796397,
+        "posY": -0.019179612
+      },
+      {
+        "posX": -0.13252814,
+        "posY": -0.15612745
+      },
+      {
+        "posX": -0.0046441033,
+        "posY": 0.4430961
+      },
+      {
+        "posX": -0.3239523,
+        "posY": 0.08444506
+      },
+      {
+        "posX": -0.1349913,
+        "posY": -0.31102324
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -131.08997
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 147.94052
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -1.1585752
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13030763,
+        "posY": -0.09281346,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14351967,
+        "posY": 0.20859484,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.29565924,
+        "posY": 0.37026197,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.5999144,
+        "posY": 0.38617808,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.16670546,
+        "posY": -0.060199767
+      },
+      {
+        "posX": -0.13115284,
+        "posY": -0.13460633
+      },
+      {
+        "posX": -0.03647539,
+        "posY": 0.38223433
+      },
+      {
+        "posX": -0.2931672,
+        "posY": 0.053114265
+      },
+      {
+        "posX": -0.13408946,
+        "posY": -0.27981275
+      },
+      {
+        "posX": 0.09233673,
+        "posY": 0.5911841
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -133.3436
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 147.46257
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -1.4407705
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.129394,
+        "posY": -0.11151174,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14269081,
+        "posY": 0.18989265,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.27696425,
+        "posY": 0.369284,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.5812194,
+        "posY": 0.3852001,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.1352883,
+        "posY": -0.10580096
+      },
+      {
+        "posX": -0.12955229,
+        "posY": -0.1178056
+      },
+      {
+        "posX": -0.068028644,
+        "posY": 0.3168348
+      },
+      {
+        "posX": -0.26222244,
+        "posY": 0.017180845
+      },
+      {
+        "posX": -0.13296129,
+        "posY": -0.25334424
+      },
+      {
+        "posX": 0.06036892,
+        "posY": 0.53513896
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -133.58604
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 143.71155
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.61764526
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.1418604,
+        "posY": 0.1711559,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.25823474,
+        "posY": 0.36830422,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.56248987,
+        "posY": 0.38422036,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.09943263,
+        "posY": 0.24663341
+      },
+      {
+        "posX": -0.23116511,
+        "posY": -0.019953832
+      },
+      {
+        "posX": -0.1317756,
+        "posY": -0.22796185
+      },
+      {
+        "posX": 0.02854956,
+        "posY": 0.4743093
+      },
+      {
+        "posX": -0.3543948,
+        "posY": 0.105478495
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -130.31491
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 140.44041
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.55822754
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14113623,
+        "posY": 0.15481624,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.24190134,
+        "posY": 0.36744982,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.54615647,
+        "posY": 0.38336593,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.12664953,
+        "posY": 0.18158844
+      },
+      {
+        "posX": -0.20432864,
+        "posY": -0.04727
+      },
+      {
+        "posX": -0.13098922,
+        "posY": -0.2007589
+      },
+      {
+        "posX": 9.704605E-4,
+        "posY": 0.41743708
+      },
+      {
+        "posX": -0.32755834,
+        "posY": 0.07816234
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -126.477264
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 136.60277
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.4836731
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14028665,
+        "posY": 0.13564682,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.22273925,
+        "posY": 0.3664474,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.5269944,
+        "posY": 0.38236353,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.1728446,
+        "posY": -0.079316795
+      },
+      {
+        "posX": -0.13006666,
+        "posY": -0.16884491
+      },
+      {
+        "posX": -0.031183496,
+        "posY": 0.3461733
+      },
+      {
+        "posX": -0.2960743,
+        "posY": 0.046115547
+      },
+      {
+        "posX": 0.103186615,
+        "posY": 0.6179899
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -123.145485
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 133.271
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.4142151
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13954906,
+        "posY": 0.11900422,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.20610312,
+        "posY": 0.36557713,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.5103583,
+        "posY": 0.38149324,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.14551069,
+        "posY": -0.107139274
+      },
+      {
+        "posX": -0.12926571,
+        "posY": -0.1411377
+      },
+      {
+        "posX": -0.058922783,
+        "posY": 0.28032598
+      },
+      {
+        "posX": -0.26874036,
+        "posY": 0.018293038
+      },
+      {
+        "posX": 0.06816957,
+        "posY": 0.5890012
+      },
+      {
+        "posX": -0.13614275,
+        "posY": -0.35215044
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -119.41816
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 130.33238
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.3307495
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13872391,
+        "posY": 0.100385845,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.18749192,
+        "posY": 0.36460355,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.49174708,
+        "posY": 0.38051966,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.08976108,
+        "posY": 0.20228031
+      },
+      {
+        "posX": -0.23816139,
+        "posY": -0.0128325075
+      },
+      {
+        "posX": 0.033374645,
+        "posY": 0.5563419
+      },
+      {
+        "posX": -0.13644674,
+        "posY": -0.29406637
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -115.65116
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 132.2157
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.23947144
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13788998,
+        "posY": 0.081569344,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.16868266,
+        "posY": 0.36361963,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.47293782,
+        "posY": 0.37953573,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.120719254,
+        "posY": 0.118703485
+      },
+      {
+        "posX": -0.20725697,
+        "posY": -0.04428932
+      },
+      {
+        "posX": 0.0029081255,
+        "posY": 0.5230892
+      },
+      {
+        "posX": -0.13654564,
+        "posY": -0.24006458
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -111.946815
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 134.26611
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.14202881
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13706991,
+        "posY": 0.06306571,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.15018618,
+        "posY": 0.36265203,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.45444134,
+        "posY": 0.37856814,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.1768665,
+        "posY": -0.075223014
+      },
+      {
+        "posX": -0.022445276,
+        "posY": 0.49014845
+      },
+      {
+        "posX": -0.13643867,
+        "posY": -0.19156913
+      },
+      {
+        "posX": -0.34552887,
+        "posY": 0.118531615
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -108.08274
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 136.13815
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.020935059
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13613921,
+        "posY": 0.042065978,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14943223,
+        "posY": 0.3455124,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.4334497,
+        "posY": 0.37747002,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.1423763,
+        "posY": -0.11032969
+      },
+      {
+        "posX": -0.058973923,
+        "posY": 0.44194114
+      },
+      {
+        "posX": -0.13607192,
+        "posY": -0.14206737
+      },
+      {
+        "posX": -0.3119557,
+        "posY": 0.10412806
+      },
+      {
+        "posX": 0.077094644,
+        "posY": 0.58699054
+      },
+      {
+        "posX": -0.13599378,
+        "posY": -0.35586038
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -111.799
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 138.12756
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.0967691
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.1353165,
+        "posY": 0.023502886,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14861564,
+        "posY": 0.32694903,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.41489372,
+        "posY": 0.37649933,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.09097092,
+        "posY": 0.39266402
+      },
+      {
+        "posX": -0.13553052,
+        "posY": -0.10321036
+      },
+      {
+        "posX": -0.28206092,
+        "posY": 0.08649492
+      },
+      {
+        "posX": 0.044675887,
+        "posY": 0.5473013
+      },
+      {
+        "posX": -0.13587548,
+        "posY": -0.3074569
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -115.566025
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 139.97223
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.22787277
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13448256,
+        "posY": 0.004686266,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14778791,
+        "posY": 0.30813214,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.39608437,
+        "posY": 0.3755154,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.123198465,
+        "posY": 0.33802012
+      },
+      {
+        "posX": -0.1347737,
+        "posY": -0.068516284
+      },
+      {
+        "posX": -0.25154984,
+        "posY": 0.0639273
+      },
+      {
+        "posX": 0.012020841,
+        "posY": 0.5023763
+      },
+      {
+        "posX": -0.13554753,
+        "posY": -0.26308602
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -119.08209
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 141.6801
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.3733968
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13364479,
+        "posY": -0.014216661,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14695638,
+        "posY": 0.28922892,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.37718868,
+        "posY": 0.37452692,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13380253,
+        "posY": -0.038421065
+      },
+      {
+        "posX": -0.22068788,
+        "posY": 0.036498062
+      },
+      {
+        "posX": -0.020574734,
+        "posY": 0.45248702
+      },
+      {
+        "posX": -0.1350072,
+        "posY": -0.22326958
+      },
+      {
+        "posX": -0.34446302,
+        "posY": 0.10861432
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -122.32192
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 143.31265
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.53357863
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13281435,
+        "posY": -0.032954305,
+        "health": 10.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14613213,
+        "posY": 0.27049097,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.35845822,
+        "posY": 0.3735471,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.18988718,
+        "posY": 0.0046020746
+      },
+      {
+        "posX": -0.052678257,
+        "posY": 0.3983273
+      },
+      {
+        "posX": -0.13426301,
+        "posY": -0.1885079
+      },
+      {
+        "posX": -0.31408837,
+        "posY": 0.0863318
+      },
+      {
+        "posX": 0.08148411,
+        "posY": 0.5818491
+      },
+      {
+        "posX": -0.13585368,
+        "posY": -0.35930914
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -125.27605
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 144.81343
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.70971173
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.1319957,
+        "posY": -0.051425993,
+        "health": 10.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14531957,
+        "posY": 0.25201905,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.3399937,
+        "posY": 0.37258118,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.15932043,
+        "posY": -0.0314278
+      },
+      {
+        "posX": -0.08412431,
+        "posY": 0.3403497
+      },
+      {
+        "posX": -0.13332611,
+        "posY": -0.15882632
+      },
+      {
+        "posX": -0.28394166,
+        "posY": 0.059778966
+      },
+      {
+        "posX": 0.049619004,
+        "posY": 0.5333979
+      },
+      {
+        "posX": -0.13532719,
+        "posY": -0.32036725
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -128.0595
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 146.24384
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.90924627
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13116924,
+        "posY": -0.070073575,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14449927,
+        "posY": 0.23337115,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.32135326,
+        "posY": 0.37160608,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.11566666,
+        "posY": 0.27720073
+      },
+      {
+        "posX": -0.13217556,
+        "posY": -0.13348112
+      },
+      {
+        "posX": -0.25330308,
+        "posY": 0.028354153
+      },
+      {
+        "posX": 0.017653622,
+        "posY": 0.47986606
+      },
+      {
+        "posX": -0.13459097,
+        "posY": -0.28567356
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -130.54898
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 147.54105
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -1.1430846
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13031462,
+        "posY": -0.08935684,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14365101,
+        "posY": 0.2140876,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.30207744,
+        "posY": 0.37059772,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.60572416,
+        "posY": 0.386482,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13076948,
+        "posY": -0.112152964
+      },
+      {
+        "posX": -0.22140379,
+        "posY": -0.009022862
+      },
+      {
+        "posX": -0.015186682,
+        "posY": 0.41962838
+      },
+      {
+        "posX": -0.13361332,
+        "posY": -0.25467828
+      },
+      {
+        "posX": -0.34342223,
+        "posY": 0.09858847
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -132.91336
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 148.79247
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.050740242
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14283878,
+        "posY": 0.19562325,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.28362045,
+        "posY": 0.3696322,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.58726716,
+        "posY": 0.3855165,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.19065349,
+        "posY": -0.049463123
+      },
+      {
+        "posX": -0.04642731,
+        "posY": 0.35729855
+      },
+      {
+        "posX": -0.13247107,
+        "posY": -0.22965072
+      },
+      {
+        "posX": -0.31308016,
+        "posY": 0.06735973
+      },
+      {
+        "posX": 0.092491135,
+        "posY": 0.5902551
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -129.20944
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 145.08855
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.6482849
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.1420249,
+        "posY": 0.17712153,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.2651261,
+        "posY": 0.36866474,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.56877285,
+        "posY": 0.38454902,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.16035557,
+        "posY": -0.07837422
+      },
+      {
+        "posX": -0.077530354,
+        "posY": 0.29027867
+      },
+      {
+        "posX": -0.13166967,
+        "posY": -0.19682983
+      },
+      {
+        "posX": -0.28278226,
+        "posY": 0.03844864
+      },
+      {
+        "posX": 0.0609479,
+        "posY": 0.53324187
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -125.94548
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 141.82458
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.585907
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14130771,
+        "posY": 0.16081747,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.24882856,
+        "posY": 0.3678122,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.55247533,
+        "posY": 0.38369647,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13365646,
+        "posY": -0.10385123
+      },
+      {
+        "posX": -0.104772374,
+        "posY": 0.22743267
+      },
+      {
+        "posX": -0.13096346,
+        "posY": -0.16790743
+      },
+      {
+        "posX": -0.25608313,
+        "posY": 0.012971632
+      },
+      {
+        "posX": 0.033317983,
+        "posY": 0.4792139
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -122.93131
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 138.81041
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.523468
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.1406454,
+        "posY": 0.14576115,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.2337783,
+        "posY": 0.36702487,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.53742504,
+        "posY": 0.38290915,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.12979098,
+        "posY": 0.16624528
+      },
+      {
+        "posX": -0.1303113,
+        "posY": -0.14119843
+      },
+      {
+        "posX": -0.23142728,
+        "posY": -0.010555655
+      },
+      {
+        "posX": 0.007941157,
+        "posY": 0.4261698
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -119.28684
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 135.16595
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.4671631
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.1398446,
+        "posY": 0.1275564,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.21558082,
+        "posY": 0.36607292,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.51922756,
+        "posY": 0.38195723,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.12952276,
+        "posY": -0.1089043
+      },
+      {
+        "posX": -0.20161563,
+        "posY": -0.03900273
+      },
+      {
+        "posX": -0.022564486,
+        "posY": 0.357993
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -116.25476
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 132.13387
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.3873291
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13917835,
+        "posY": 0.112410635,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.20044109,
+        "posY": 0.36528096,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.50408787,
+        "posY": 0.38116524,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.17681332,
+        "posY": -0.06266977
+      },
+      {
+        "posX": -0.04779589,
+        "posY": 0.29790142
+      },
+      {
+        "posX": 0.08223106,
+        "posY": 0.5999597
+      },
+      {
+        "posX": -0.1361352,
+        "posY": -0.35112336
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -112.51358
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 131.05417
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.31314087
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.1383563,
+        "posY": 0.09372276,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.1817607,
+        "posY": 0.36430374,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.48540747,
+        "posY": 0.38018805,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.14621057,
+        "posY": -0.09187175
+      },
+      {
+        "posX": -0.078742534,
+        "posY": 0.21953708
+      },
+      {
+        "posX": 0.047234304,
+        "posY": 0.5671827
+      },
+      {
+        "posX": -0.13639253,
+        "posY": -0.29370475
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -108.75872
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 132.9894
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.22210693
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13753124,
+        "posY": 0.07496661,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.16301206,
+        "posY": 0.36332297,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.46665877,
+        "posY": 0.37920725,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.10959609,
+        "posY": 0.13619977
+      },
+      {
+        "posX": 0.016794309,
+        "posY": 0.53404087
+      },
+      {
+        "posX": -0.13644464,
+        "posY": -0.24076286
+      },
+      {
+        "posX": -0.3451862,
+        "posY": 0.11991462
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -105.33101
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 135.06294
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.12310791
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.1367056,
+        "posY": 0.056197554,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14915553,
+        "posY": 0.36259812,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.44789723,
+        "posY": 0.3782258,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.011304259,
+        "posY": 0.5007526
+      },
+      {
+        "posX": -0.13629003,
+        "posY": -0.19248445
+      },
+      {
+        "posX": -0.31525007,
+        "posY": 0.10877957
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -108.448494
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 136.5346
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.010223389
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13597569,
+        "posY": 0.039604247,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14846054,
+        "posY": 0.34600332,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.43131053,
+        "posY": 0.37735814,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.040036708,
+        "posY": 0.46180844
+      },
+      {
+        "posX": -0.13598111,
+        "posY": -0.15371831
+      },
+      {
+        "posX": -0.28861198,
+        "posY": 0.09501969
+      },
+      {
+        "posX": 0.08729246,
+        "posY": 0.597806
+      },
+      {
+        "posX": -0.13598713,
+        "posY": -0.36828154
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -112.53626
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 138.3927
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.09348769
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13507748,
+        "posY": 0.019185126,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14760531,
+        "posY": 0.32558236,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.41089964,
+        "posY": 0.3762904,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.07518257,
+        "posY": 0.40884143
+      },
+      {
+        "posX": -0.13537912,
+        "posY": -0.1110574
+      },
+      {
+        "posX": -0.2556103,
+        "posY": 0.07304401
+      },
+      {
+        "posX": 0.051731724,
+        "posY": 0.55474544
+      },
+      {
+        "posX": -0.13585149,
+        "posY": -0.31501907
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -116.34179
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 140.35922
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.23289576
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13424128,
+        "posY": 1.758635E-4,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14680913,
+        "posY": 0.30657136,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.39189792,
+        "posY": 0.37529638,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.10769239,
+        "posY": 0.35452944
+      },
+      {
+        "posX": -0.13459867,
+        "posY": -0.07634342
+      },
+      {
+        "posX": -0.2246671,
+        "posY": 0.047584087
+      },
+      {
+        "posX": 0.018835701,
+        "posY": 0.50965595
+      },
+      {
+        "posX": -0.13550518,
+        "posY": -0.27043554
+      },
+      {
+        "posX": -0.34569302,
+        "posY": 0.11103525
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -119.660614
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 142.0624
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.37652707
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13349918,
+        "posY": -0.016694307,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14610255,
+        "posY": 0.28969964,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.3750345,
+        "posY": 0.37441424,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13637468,
+        "posY": 0.3022896
+      },
+      {
+        "posX": -0.13372836,
+        "posY": -0.04957503
+      },
+      {
+        "posX": -0.1970283,
+        "posY": 0.020949975
+      },
+      {
+        "posX": -0.010189347,
+        "posY": 0.46560085
+      },
+      {
+        "posX": -0.13502018,
+        "posY": -0.23490821
+      },
+      {
+        "posX": -0.3184274,
+        "posY": 0.092885226
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -122.73505
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 143.36873
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.50526965
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13267383,
+        "posY": -0.035457075,
+        "health": 10.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14531669,
+        "posY": 0.27093524,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.35627925,
+        "posY": 0.3734331,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.16609265,
+        "posY": -0.013133511
+      },
+      {
+        "posX": -0.04228364,
+        "posY": 0.41214168
+      },
+      {
+        "posX": -0.13428451,
+        "posY": -0.19985677
+      },
+      {
+        "posX": -0.28790686,
+        "posY": 0.068237625
+      },
+      {
+        "posX": 0.09207781,
+        "posY": 0.59628356
+      },
+      {
+        "posX": -0.13584872,
+        "posY": -0.3595113
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -125.63572
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 144.85431
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.6768926
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13185214,
+        "posY": -0.054136693,
+        "health": 10.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14453432,
+        "posY": 0.25225392,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.3376071,
+        "posY": 0.37245634,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13508873,
+        "posY": -0.051733226
+      },
+      {
+        "posX": -0.07404031,
+        "posY": 0.3542516
+      },
+      {
+        "posX": -0.1333468,
+        "posY": -0.16962783
+      },
+      {
+        "posX": -0.25731614,
+        "posY": 0.039031968
+      },
+      {
+        "posX": 0.059915785,
+        "posY": 0.5480725
+      },
+      {
+        "posX": -0.1352989,
+        "posY": -0.32046416
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -128.36903
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 146.2701
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.87279546
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13102607,
+        "posY": -0.072915435,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14374779,
+        "posY": 0.23347348,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.31883588,
+        "posY": 0.3714744,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.105768934,
+        "posY": 0.29135987
+      },
+      {
+        "posX": -0.13219762,
+        "posY": -0.14393243
+      },
+      {
+        "posX": -0.2263566,
+        "posY": 0.0049772933
+      },
+      {
+        "posX": 0.027779654,
+        "posY": 0.4949111
+      },
+      {
+        "posX": -0.13453968,
+        "posY": -0.2859038
+      },
+      {
+        "posX": -0.35423183,
+        "posY": 0.10946168
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -130.8673
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 147.58205
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -1.0916681
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13020557,
+        "posY": -0.09156805,
+        "health": 2.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14296655,
+        "posY": 0.21481915,
+        "health": 42.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.30019066,
+        "posY": 0.370499,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.60635483,
+        "posY": 0.386515,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13708934,
+        "posY": 0.22423095
+      },
+      {
+        "posX": -0.13085121,
+        "posY": -0.12306872
+      },
+      {
+        "posX": -0.19540003,
+        "posY": -0.033507794
+      },
+      {
+        "posX": -0.003945507,
+        "posY": 0.4374472
+      },
+      {
+        "posX": -0.13358061,
+        "posY": -0.25623468
+      },
+      {
+        "posX": -0.3237055,
+        "posY": 0.08075728
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -133.201
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 148.8267
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -1.3437668
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.12938865,
+        "posY": -0.11013931,
+        "health": -6.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14218871,
+        "posY": 0.19624618,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.28162682,
+        "posY": 0.3695279,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.58779097,
+        "posY": 0.38554388,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.16437559,
+        "posY": -0.07643807
+      },
+      {
+        "posX": -0.035339043,
+        "posY": 0.37562048
+      },
+      {
+        "posX": -0.1324228,
+        "posY": -0.23130809
+      },
+      {
+        "posX": -0.29310942,
+        "posY": 0.047565028
+      },
+      {
+        "posX": 0.10343657,
+        "posY": 0.60859054
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -131.72194
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 145.48102
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.5856018
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14148875,
+        "posY": 0.17953238,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.26492122,
+        "posY": 0.368654,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.57108533,
+        "posY": 0.38467,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13675325,
+        "posY": -0.10832946
+      },
+      {
+        "posX": -0.06342526,
+        "posY": 0.3160473
+      },
+      {
+        "posX": -0.13152367,
+        "posY": -0.2056311
+      },
+      {
+        "posX": -0.2656184,
+        "posY": 0.01865954
+      },
+      {
+        "posX": 0.07497118,
+        "posY": 0.55807066
+      },
+      {
+        "posX": -0.13522345,
+        "posY": -0.34490174
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -128.39816
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 142.15724
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.5348816
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14079335,
+        "posY": 0.162928,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.24832493,
+        "posY": 0.36778584,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.55448914,
+        "posY": 0.38380182,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.09117302,
+        "posY": 0.25317276
+      },
+      {
+        "posX": -0.13076483,
+        "posY": -0.17706639
+      },
+      {
+        "posX": -0.23839031,
+        "posY": -0.0081721395
+      },
+      {
+        "posX": 0.046846762,
+        "posY": 0.50419015
+      },
+      {
+        "posX": -0.1344646,
+        "posY": -0.31633705
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -124.75837
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 138.51744
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.47039795
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.14003184,
+        "posY": 0.14474493,
+        "health": 34.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.23015082,
+        "posY": 0.36683512,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.53631496,
+        "posY": 0.3828511,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.12138216,
+        "posY": 0.18009973
+      },
+      {
+        "posX": -0.12993385,
+        "posY": -0.14578584
+      },
+      {
+        "posX": -0.20857346,
+        "posY": -0.03755489
+      },
+      {
+        "posX": 0.01622513,
+        "posY": 0.44096625
+      },
+      {
+        "posX": -0.13363363,
+        "posY": -0.28505647
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -120.99339
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 134.75247
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.39834595
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13924415,
+        "posY": 0.12593654,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.2113516,
+        "posY": 0.3658517,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.5175158,
+        "posY": 0.38186768,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.17773111,
+        "posY": -0.06794819
+      },
+      {
+        "posX": -0.0152552575,
+        "posY": 0.37092543
+      },
+      {
+        "posX": -0.13277407,
+        "posY": -0.2527001
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -117.95412
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 131.71321
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.3371277
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13860829,
+        "posY": 0.11075351,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.19617602,
+        "posY": 0.36505783,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.5023402,
+        "posY": 0.3810738,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.15283372,
+        "posY": -0.0924831
+      },
+      {
+        "posX": -0.040523484,
+        "posY": 0.3109416
+      },
+      {
+        "posX": -0.1320802,
+        "posY": -0.2265805
+      },
+      {
+        "posX": 0.087811634,
+        "posY": 0.6042748
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -114.223694
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 131.32057
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.2557373
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13782781,
+        "posY": 0.0921177,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.17754936,
+        "posY": 0.36408344,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.48371357,
+        "posY": 0.38009942,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.071361765,
+        "posY": 0.23311165
+      },
+      {
+        "posX": -0.13122852,
+        "posY": -0.19452113
+      },
+      {
+        "posX": 0.053130005,
+        "posY": 0.5715809
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -110.46458
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 133.2812
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.1670227
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13704135,
+        "posY": 0.07333857,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.15877947,
+        "posY": 0.36310157,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      },
+      {
+        "posX": -0.46494362,
+        "posY": 0.37911755,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.102240935,
+        "posY": 0.14999479
+      },
+      {
+        "posX": -0.1303703,
+        "posY": -0.16221511
+      },
+      {
+        "posX": 0.0228675,
+        "posY": 0.5383904
+      },
+      {
+        "posX": -0.34509113,
+        "posY": 0.11970332
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -106.73551
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 134.68004
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": 0.07006836
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13626117,
+        "posY": 0.054709554,
+        "health": 26.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.1522192,
+        "posY": 0.3566283,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.44632375,
+        "posY": 0.3781435,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13267851,
+        "posY": 0.0628925
+      },
+      {
+        "posX": -0.12951894,
+        "posY": -0.13016738
+      },
+      {
+        "posX": -0.00803379,
+        "posY": 0.50270116
+      },
+      {
+        "posX": -0.31533062,
+        "posY": 0.108464554
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -109.220245
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 136.7307
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.034175504
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13547142,
+        "posY": 0.035851955,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.15129998,
+        "posY": 0.3377765,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.42747533,
+        "posY": 0.3771575,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.040996104,
+        "posY": 0.4577491
+      },
+      {
+        "posX": -0.28500736,
+        "posY": 0.092371
+      },
+      {
+        "posX": -0.13592237,
+        "posY": -0.3221274
+      },
+      {
+        "posX": 0.10269294,
+        "posY": 0.6140333
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -113.02155
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 138.70717
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.15193102
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13467611,
+        "posY": 0.016862065,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.15037432,
+        "posY": 0.31879252,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.40849477,
+        "posY": 0.3761646,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.073955834,
+        "posY": 0.40768763
+      },
+      {
+        "posX": -0.25427055,
+        "posY": 0.07136892
+      },
+      {
+        "posX": -0.13565616,
+        "posY": -0.2750344
+      },
+      {
+        "posX": 0.0692319,
+        "posY": 0.5742532
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -116.73351
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 140.47946
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.27610695
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13389951,
+        "posY": -0.0016815066,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14947042,
+        "posY": 0.30025476,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.3899603,
+        "posY": 0.37519503,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.10591449,
+        "posY": 0.35416022
+      },
+      {
+        "posX": -0.22406171,
+        "posY": 0.04621636
+      },
+      {
+        "posX": -0.13520172,
+        "posY": -0.23369236
+      },
+      {
+        "posX": 0.03678371,
+        "posY": 0.53076553
+      },
+      {
+        "posX": -0.3450763,
+        "posY": 0.11050427
+      }
+    ]
+  },
+  {
+    "towerClasses": [
+      {
+        "posX": -0.37489516,
+        "posY": 0.12634528,
+        "angle": -120.192444
+      },
+      {
+        "posX": 0.11401272,
+        "posY": 0.6263453,
+        "angle": 142.17458
+      },
+      {
+        "posX": -0.13598728,
+        "posY": -0.37365472,
+        "angle": -0.41618323
+      }
+    ],
+    "monsterClasses": [
+      {
+        "posX": -0.13312246,
+        "posY": -0.020235956,
+        "health": 18.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.14856598,
+        "posY": 0.2817061,
+        "health": 50.0,
+        "numOfPointToMove": 1
+      },
+      {
+        "posX": -0.37141493,
+        "posY": 0.3742249,
+        "health": 50.0,
+        "numOfPointToMove": 0
+      }
+    ],
+    "bulletClasses": [
+      {
+        "posX": -0.13766807,
+        "posY": 0.2960098
+      },
+      {
+        "posX": -0.19364277,
+        "posY": 0.016456112
+      },
+      {
+        "posX": -0.13455465,
+        "posY": -0.1969189
+      },
+      {
+        "posX": 0.004540302,
+        "posY": 0.48266077
+      },
+      {
+        "posX": -0.3150475,
+        "posY": 0.090061024
       }
     ]
   }

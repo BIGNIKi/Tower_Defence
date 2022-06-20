@@ -1,9 +1,6 @@
 package job;
 
-import ReplayStuff.MonsterReplayClass;
-import ReplayStuff.SyncClassesReplayList;
-import ReplayStuff.SyncReplayClasses;
-import ReplayStuff.TowerReplayClass;
+import ReplayStuff.*;
 import SyncStuff.MonsterClass;
 import SyncStuff.SyncClasses;
 import SyncStuff.TowerClass;
@@ -21,6 +18,7 @@ import observers.EventSystem;
 import observers.Observer;
 import observers.events.Event;
 import observers.events.EventType;
+import org.joml.Vector2f;
 import org.joml.Vector4f;
 import org.lwjgl.Version;
 import org.lwjgl.glfw.Callbacks;
@@ -382,7 +380,7 @@ public final class MainWindow implements Observer
     }
 
     private SyncClassesReplayList _allEventsData = new SyncClassesReplayList();
-    private final float TimeOnOneEvent = 0.1f;
+    private final float TimeOnOneEvent = 0.05f;
     private float _timeReplay = 0f;
     private final String ReplayDataName = "replayData.json";
     private void StoreReplayInfo(float dt)
@@ -443,10 +441,20 @@ public final class MainWindow implements Observer
             newMonstr.numOfPointToMove = m.getNumOfPointsNow()-1;
             syncCl.monsterClasses.add(newMonstr);
         }
+
+        List<GameObject> bullets = GameObject.FindAllByName("Bullet");
+        for(GameObject go : bullets)
+        {
+            BulletReplayClass newBullet = new BulletReplayClass();
+            newBullet.posX = go.stateInWorld.getPosition().x;
+            newBullet.posY = go.stateInWorld.getPosition().y;
+            syncCl.bulletClasses.add(newBullet);
+        }
+
         return syncCl;
     }
 
-    private SyncClassesList _loadedInfoReplay = new SyncClassesList();
+    private SyncClassesReplayList _loadedInfoReplay = new SyncClassesReplayList();
     private int _idLastEvent = 0;
     // предзагружает данные, когда влючаем реплей
     private void LoadReplayData()
@@ -456,7 +464,7 @@ public final class MainWindow implements Observer
         try
         {
             String inFile = new String(Files.readAllBytes(Paths.get(ReplayDataName)));
-            _loadedInfoReplay = gson.fromJson(inFile, SyncClassesList.class);
+            _loadedInfoReplay = gson.fromJson(inFile, SyncClassesReplayList.class);
         } catch(IOException e)
         {
             e.printStackTrace();
@@ -476,13 +484,13 @@ public final class MainWindow implements Observer
                 MainWindow.getImguiLayer().getGameViewWindow().changePlayMode();
                 return;
             }
-            SyncClasses sC = _loadedInfoReplay.get(_idLastEvent);
+            SyncReplayClasses sC = _loadedInfoReplay.get(_idLastEvent);
             _idLastEvent++;
             MakeAReplayStep(sC);
         }
     }
     // отображает событие в определенное время (replay stuff)
-    private void MakeAReplayStep(SyncClasses syncCl)
+    private void MakeAReplayStep(SyncReplayClasses syncCl)
     {
         List<GameObject> allEnemy = GameObject.FindAllByName("Enemy");
         for(GameObject go : allEnemy)
@@ -494,7 +502,7 @@ public final class MainWindow implements Observer
         Waves obToCreateMonster = GameObject.FindWithComp(Waves.class).getComponent(Waves.class);
         for(int i = 0; i<syncCl.monsterClasses.size(); i++)
         {
-            MonsterClass mC = syncCl.monsterClasses.get(i);
+            MonsterReplayClass mC = syncCl.monsterClasses.get(i);
             obToCreateMonster.CreateMonsterSync(mC);
         }
         obToCreateMonster.setAlreadyMonsters(syncCl.monsterClasses.size());
@@ -508,7 +516,8 @@ public final class MainWindow implements Observer
 
         for(int i = 0; i<syncCl.towerClasses.size(); i++)
         {
-            TowerClass tC = syncCl.towerClasses.get(i);
+
+            TowerReplayClass tC = syncCl.towerClasses.get(i);
             List<GameObject> allPlaces = GameObject.FindAllByComp(PlaceForTower.class);
             for(GameObject go : allPlaces)
             {
@@ -521,6 +530,18 @@ public final class MainWindow implements Observer
                     break;
                 }
             }
+        }
+
+        List<GameObject> bullets = GameObject.FindAllByName("Bullet");
+        for(GameObject go : bullets)
+        {
+            go.destroy();
+        }
+
+        for(int i = 0; i<syncCl.bulletClasses.size(); i++)
+        {
+            BulletReplayClass bRC = syncCl.bulletClasses.get(i);
+            Prefabs.addBulletWithoutGoalAndDamage(new Vector2f(bRC.posX, bRC.posY));
         }
     }
 

@@ -1,6 +1,6 @@
 [
   {
-    "uid": 46,
+    "uid": 1849,
     "name": "Way",
     "components": [
       {
@@ -63,7 +63,7 @@
     "isDead": false
   },
   {
-    "uid": 47,
+    "uid": 1850,
     "name": "Way",
     "components": [
       {
@@ -126,7 +126,7 @@
     "isDead": false
   },
   {
-    "uid": 48,
+    "uid": 1851,
     "name": "Way",
     "components": [
       {
@@ -149,8 +149,8 @@
         "properties": {
           "color": {
             "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
+            "y": 0.99999,
+            "z": 0.99999,
             "w": 1.0
           },
           "sprite": {
@@ -189,7 +189,7 @@
     "isDead": false
   },
   {
-    "uid": 49,
+    "uid": 1852,
     "name": "Way",
     "components": [
       {
@@ -252,7 +252,7 @@
     "isDead": false
   },
   {
-    "uid": 50,
+    "uid": 1853,
     "name": "Way",
     "components": [
       {
@@ -315,7 +315,7 @@
     "isDead": false
   },
   {
-    "uid": 51,
+    "uid": 1854,
     "name": "Way",
     "components": [
       {
@@ -378,7 +378,7 @@
     "isDead": false
   },
   {
-    "uid": 52,
+    "uid": 1855,
     "name": "Way",
     "components": [
       {
@@ -441,7 +441,7 @@
     "isDead": false
   },
   {
-    "uid": 53,
+    "uid": 1856,
     "name": "base",
     "components": [
       {
@@ -515,7 +515,7 @@
     "isDead": false
   },
   {
-    "uid": 54,
+    "uid": 1857,
     "name": "Point0",
     "components": [
       {
@@ -538,7 +538,7 @@
     "isDead": false
   },
   {
-    "uid": 55,
+    "uid": 1858,
     "name": "Point1",
     "components": [
       {
@@ -561,7 +561,7 @@
     "isDead": false
   },
   {
-    "uid": 56,
+    "uid": 1859,
     "name": "Point2",
     "components": [
       {
@@ -584,7 +584,7 @@
     "isDead": false
   },
   {
-    "uid": 57,
+    "uid": 1860,
     "name": "Spawn",
     "components": [
       {
@@ -649,7 +649,7 @@
           "numOfMonsters": 20,
           "healthOfMonsters": 50.0,
           "timeBetweenMonsters": 1.0,
-          "timeToStart": 0.0,
+          "timeToStart": 5.0,
           "moneyForKill": 10,
           "wayPoints": [
             "Point0",
@@ -664,7 +664,7 @@
     "isDead": false
   },
   {
-    "uid": 58,
+    "uid": 1861,
     "name": "Way",
     "components": [
       {
@@ -727,7 +727,7 @@
     "isDead": false
   },
   {
-    "uid": 59,
+    "uid": 1862,
     "name": "posForTower",
     "components": [
       {
@@ -797,7 +797,7 @@
     "isDead": false
   },
   {
-    "uid": 60,
+    "uid": 1863,
     "name": "posForTower",
     "components": [
       {
@@ -867,7 +867,7 @@
     "isDead": false
   },
   {
-    "uid": 61,
+    "uid": 1864,
     "name": "posForTower",
     "components": [
       {
@@ -937,7 +937,7 @@
     "isDead": false
   },
   {
-    "uid": 62,
+    "uid": 1865,
     "name": "bush",
     "components": [
       {
@@ -1000,7 +1000,7 @@
     "isDead": false
   },
   {
-    "uid": 63,
+    "uid": 1866,
     "name": "bush",
     "components": [
       {
@@ -1063,70 +1063,7 @@
     "isDead": false
   },
   {
-    "uid": 64,
-    "name": "bush",
-    "components": [
-      {
-        "type": "job.StateInWorld",
-        "properties": {
-          "position": {
-            "x": -0.375,
-            "y": 0.625
-          },
-          "size": {
-            "x": 0.25,
-            "y": 0.1949324
-          },
-          "rotation": 0.0,
-          "uid": 287
-        }
-      },
-      {
-        "type": "components.SpriteRenderer",
-        "properties": {
-          "color": {
-            "x": 1.0,
-            "y": 1.0,
-            "z": 1.0,
-            "w": 1.0
-          },
-          "sprite": {
-            "width": 0.0,
-            "height": 0.0,
-            "texture": {
-              "filePath": "assets/images/bush2.png",
-              "width": 266,
-              "height": 196
-            },
-            "texCoords": [
-              {
-                "x": 1.0,
-                "y": 1.0
-              },
-              {
-                "x": 1.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 0.0
-              },
-              {
-                "x": 0.0,
-                "y": 1.0
-              }
-            ]
-          },
-          "zIndex": 0,
-          "uid": 288
-        }
-      }
-    ],
-    "doSerialization": true,
-    "isDead": false
-  },
-  {
-    "uid": 65,
+    "uid": 1867,
     "name": "bush",
     "components": [
       {

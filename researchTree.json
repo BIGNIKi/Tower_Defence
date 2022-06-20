@@ -1,6 +1,6 @@
 [
   {
-    "uid": 58,
+    "uid": 25,
     "name": "Blue",
     "components": [
       {
@@ -63,7 +63,7 @@
     "isDead": false
   },
   {
-    "uid": 59,
+    "uid": 26,
     "name": "Red",
     "components": [
       {
@@ -126,7 +126,7 @@
     "isDead": false
   },
   {
-    "uid": 60,
+    "uid": 27,
     "name": "Green",
     "components": [
       {
@@ -189,7 +189,7 @@
     "isDead": false
   },
   {
-    "uid": 61,
+    "uid": 28,
     "name": "line",
     "components": [
       {
@@ -252,7 +252,7 @@
     "isDead": false
   },
   {
-    "uid": 62,
+    "uid": 29,
     "name": "line",
     "components": [
       {
@@ -315,7 +315,7 @@
     "isDead": false
   },
   {
-    "uid": 63,
+    "uid": 30,
     "name": "line",
     "components": [
       {
@@ -378,7 +378,7 @@
     "isDead": false
   },
   {
-    "uid": 64,
+    "uid": 31,
     "name": "blue1",
     "components": [
       {
@@ -449,7 +449,7 @@
     "isDead": false
   },
   {
-    "uid": 65,
+    "uid": 32,
     "name": "red1",
     "components": [
       {
@@ -520,7 +520,7 @@
     "isDead": false
   },
   {
-    "uid": 66,
+    "uid": 33,
     "name": "Green1",
     "components": [
       {
@@ -591,7 +591,7 @@
     "isDead": false
   },
   {
-    "uid": 67,
+    "uid": 34,
     "name": "line",
     "components": [
       {
@@ -654,7 +654,7 @@
     "isDead": false
   },
   {
-    "uid": 68,
+    "uid": 35,
     "name": "line",
     "components": [
       {
@@ -717,7 +717,7 @@
     "isDead": false
   },
   {
-    "uid": 69,
+    "uid": 36,
     "name": "line",
     "components": [
       {
@@ -780,7 +780,7 @@
     "isDead": false
   },
   {
-    "uid": 70,
+    "uid": 37,
     "name": "blue2",
     "components": [
       {
@@ -851,7 +851,7 @@
     "isDead": false
   },
   {
-    "uid": 71,
+    "uid": 38,
     "name": "red2",
     "components": [
       {
@@ -922,7 +922,7 @@
     "isDead": false
   },
   {
-    "uid": 72,
+    "uid": 39,
     "name": "green2",
     "components": [
       {

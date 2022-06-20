@@ -2,15 +2,15 @@ package ReplayStuff;
 
 import java.util.ArrayList;
 
-public class MonsterReplayList extends ArrayList<MonsterReplayClass>
+public class BulletReplayList extends ArrayList<BulletReplayClass>
 {
     private int size = 0;
 
-    public MonsterReplayClass get(int index) {
-        return (MonsterReplayClass) super.get(index);
+    public BulletReplayClass get(int index) {
+        return (BulletReplayClass) super.get(index);
     }
 
-    public boolean add(MonsterReplayClass e) {
+    public boolean add(BulletReplayClass e) {
         size++;
         return super.add(e);
     }
@@ -34,7 +34,7 @@ public class MonsterReplayList extends ArrayList<MonsterReplayClass>
         {
             for(int i = size; i<newSize; i++)
             {
-                this.add(new MonsterReplayClass());
+                this.add(new BulletReplayClass());
             }
             size = newSize;
         }
@@ -51,7 +51,7 @@ public class MonsterReplayList extends ArrayList<MonsterReplayClass>
 
     @Override
     public Object clone() {
-        MonsterReplayList sL = (MonsterReplayList) super.clone();
+        BulletReplayList sL = (BulletReplayList) super.clone();
         return sL;
     }
 }

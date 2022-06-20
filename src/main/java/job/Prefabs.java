@@ -68,6 +68,23 @@ public class Prefabs
         MainWindow.getScene().addGameObjectToScene(go);
     }
 
+    public static void addBulletWithoutGoalAndDamage(Vector2f startPosition)
+    {
+        GameObject go = MainWindow.getScene().createGameObject("Bullet");
+        go.stateInWorld.setPosition(new Vector2f(startPosition.x, startPosition.y));
+        go.stateInWorld.setScale(new Vector2f(0.035f, 0.035f));
+
+        SpriteRenderer renderer = new SpriteRenderer();
+        renderer.zIndex = 2;
+        Sprite sp = new Sprite();
+        sp.setTexture(AssetPool.getTexture("assets/images/greenEnemy1.png"));
+        renderer.setSprite(sp);
+        renderer.setColor(new Vector4f(1,1,1,0.5f)); // green
+        go.addComponent(renderer);
+
+        MainWindow.getScene().addGameObjectToScene(go);
+    }
+
     public static void addTower(Vector2f position, String pathSpr0, Vector2f sizeTower,
                                 String pathSpr1, float initialRotation, float rotateSpeed,
                                 float observeRadius, float timeToAttack, float damage)

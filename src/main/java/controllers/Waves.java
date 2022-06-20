@@ -1,5 +1,6 @@
 package controllers;
 
+import ReplayStuff.MonsterReplayClass;
 import SyncStuff.MonsterClass;
 import Util.StringList;
 import components.Component;
@@ -43,6 +44,12 @@ public class Waves extends Component
 
             alreadyMonsters++;
         }
+    }
+
+    public void CreateMonsterSync(MonsterReplayClass mC)
+    {
+        Vector2f actualPos = new Vector2f(mC.posX, mC.posY);
+        Prefabs.addEnemy(speed, wayPoints, actualPos, healthOfMonsters, moneyForKill, mC.health, mC.numOfPointToMove);
     }
 
     public void CreateMonsterSync(MonsterClass mC)
